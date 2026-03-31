@@ -18,11 +18,11 @@ export function HeroSection() {
             Join 17,000+ Canadians and refugees
           </div>
           
-          <h1 className="font-[family-name:var(--font-montserrat)] font-black text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">
+          <h1 className="font-sans font-black text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">
             We help refugees become independent in Canada faster.
           </h1>
           
-          <p className="font-[family-name:var(--font-montserrat)] font-medium text-xl text-muted-foreground max-w-lg leading-relaxed">
+          <p className="font-sans font-medium text-xl text-muted-foreground max-w-lg leading-relaxed">
             Newcomers connect with Canadians for help with language, employment, and community.
           </p>
 
