@@ -16,9 +16,9 @@ export function Header() {
           <Image 
             src="/images/haven-logo.png" 
             alt="Haven" 
-            width={160} 
-            height={48}
-            style={{ width: "auto", height: "48px" }}
+            width={400} 
+            height={120}
+            style={{ width: "auto", height: "auto", maxHeight: "120px" }}
           />
         </Link>
 
