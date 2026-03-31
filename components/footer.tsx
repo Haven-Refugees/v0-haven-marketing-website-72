@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 
 export function Footer() {
   return (
@@ -8,13 +7,11 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center mb-4">
-              <Image 
+              <img 
                 src="/images/haven-logo.png" 
                 alt="Haven" 
-                width={120} 
-                height={40}
                 className="brightness-0 invert"
-                style={{ width: "auto", height: "auto", maxHeight: "40px" }}
+                style={{ width: "120px", height: "auto" }}
               />
             </Link>
             <p className="text-background/70 max-w-sm leading-relaxed">
