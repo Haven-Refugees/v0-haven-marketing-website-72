@@ -14,9 +14,9 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium">
-            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 3L10 7L6 6L8 10L4 11L7 13L5 17L9 15L10 19H14L15 15L19 17L17 13L20 11L16 10L18 6L14 7L12 3Z" />
-              <path d="M12 19V22" />
+            <svg className="w-4 h-4" viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M256 48L287 144L368 112L336 192L432 192L368 240L400 320L304 288L288 368L256 304L224 368L208 288L112 320L144 240L80 192L176 192L144 112L225 144L256 48Z" />
+              <path d="M256 368L256 464" />
             </svg>
             Haven is a registered Canadian charity
           </div>

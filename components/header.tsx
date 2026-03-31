@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
@@ -13,11 +12,9 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image 
+          <img 
             src="/images/haven-logo.png" 
             alt="Haven" 
-            width={130} 
-            height={40}
             style={{ width: "130px", height: "auto" }}
           />
         </Link>
