@@ -18,7 +18,7 @@ export function Header() {
             alt="Haven" 
             width={130} 
             height={40}
-            style={{ width: "auto", height: "auto", maxHeight: "40px" }}
+            style={{ width: "130px", height: "auto" }}
           />
         </Link>
 
