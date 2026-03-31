@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { DM_Sans, DM_Serif_Display } from 'next/font/google'
+import { DM_Sans, DM_Serif_Display, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -12,6 +12,11 @@ const dmSerif = DM_Serif_Display({
   weight: '400',
   subsets: ["latin"],
   variable: '--font-dm-serif',
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
@@ -44,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${dmSerif.variable} font-sans antialiased`}>
+      <body className={`${dmSans.variable} ${dmSerif.variable} ${montserrat.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

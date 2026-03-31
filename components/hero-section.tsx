@@ -18,12 +18,12 @@ export function HeroSection() {
             Join 17,000+ Canadians and refugees
           </div>
           
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">
-            We make it easier for Canadians to help refugees
+          <h1 className="font-[family-name:var(--font-montserrat)] font-black text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">
+            We help refugees become independent in Canada faster.
           </h1>
           
-          <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-            Haven is a registered Canadian charity. Join today to help a refugee start life in Canada through meaningful connections.
+          <p className="font-[family-name:var(--font-montserrat)] font-medium text-xl text-muted-foreground max-w-lg leading-relaxed">
+            Newcomers connect with Canadians for help with language, employment, and community.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
