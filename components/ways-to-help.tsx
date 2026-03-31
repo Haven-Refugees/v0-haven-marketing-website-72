@@ -11,7 +11,7 @@ const ways = [
     icon: Briefcase,
     title: "Network",
     description: "Help refugees explore the Canadian job market by sharing your own professional experience. Your insights can open doors.",
-    color: "bg-accent/10 text-accent",
+    color: "bg-primary/10 text-primary",
   },
   {
     icon: Users,
