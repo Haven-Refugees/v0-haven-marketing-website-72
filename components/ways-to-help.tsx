@@ -5,19 +5,19 @@ const ways = [
     icon: MessageCircle,
     title: "Language",
     description: "Help refugees build confidence in English or French through conversation practice. No teaching experience required—just patience and conversation.",
-    color: "bg-primary/10 text-primary",
+    color: "bg-accent/10 text-accent",
   },
   {
     icon: Briefcase,
     title: "Network",
     description: "Help refugees explore the Canadian job market by sharing your own professional experience. Your insights can open doors.",
-    color: "bg-primary/10 text-primary",
+    color: "bg-accent/10 text-accent",
   },
   {
     icon: Users,
     title: "Community",
     description: "Welcome refugees in your city and help them build a local support network. Sometimes a friendly face makes all the difference.",
-    color: "bg-primary/10 text-primary",
+    color: "bg-accent/10 text-accent",
   },
 ]
 
@@ -38,7 +38,7 @@ export function WaysToHelp() {
           {ways.map((way, index) => (
             <div 
               key={index}
-              className="group bg-card p-8 rounded-2xl border border-border hover:border-primary/50 transition-all hover:shadow-xl"
+              className="group bg-card p-8 rounded-2xl border border-border hover:border-accent/50 transition-all hover:shadow-xl"
             >
               <div className={`w-16 h-16 ${way.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                 <way.icon className="w-8 h-8" />

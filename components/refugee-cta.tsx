@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 export function RefugeeCta() {
   return (
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section className="py-20 bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-6 text-balance">
@@ -15,8 +15,7 @@ export function RefugeeCta() {
           </p>
           <Button 
             size="lg" 
-            variant="secondary" 
-            className="text-lg px-8 py-6"
+            className="text-lg px-8 py-6 bg-white text-secondary hover:bg-white/90"
             asChild
           >
             <Link href="https://app.findhaven.org">
