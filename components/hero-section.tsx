@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ShieldCheck } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -14,10 +14,7 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium">
-            <svg className="w-4 h-4" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M16 2L18 8L22 6L20 10L26 10L22 14L25 18L20 16L20 20L16 16L12 20L12 16L7 18L10 14L6 10L12 10L10 6L14 8L16 2Z" />
-              <path d="M16 20V30" />
-            </svg>
+            <ShieldCheck className="w-4 h-4" />
             Haven is a registered Canadian charity
           </div>
           
