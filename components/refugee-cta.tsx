@@ -7,7 +7,7 @@ export function RefugeeCta() {
     <section className="py-20 bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-4xl mb-6 text-balance">
+          <h2 className="font-sans font-bold text-3xl md:text-4xl mb-6 text-balance">
             Are you a refugee or a person in Canada because of conflict?
           </h2>
           <p className="text-lg opacity-90 mb-8 leading-relaxed">
