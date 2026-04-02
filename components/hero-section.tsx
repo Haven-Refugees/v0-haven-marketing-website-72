@@ -22,7 +22,7 @@ export function HeroSection() {
             We help refugees become independent in Canada faster.
           </h1>
           
-          <p className="font-sans font-medium text-base text-muted-foreground max-w-md leading-relaxed">
+          <p className="font-sans font-medium text-xl text-muted-foreground max-w-md leading-relaxed">
             Newcomers connect with Canadians for help with language, employment, and community.
           </p>
 
