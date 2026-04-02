@@ -11,7 +11,7 @@ export function HeroSection() {
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-4 grid lg:grid-cols-2 gap-6 items-center">
+      <div className="max-w-6xl mx-auto px-6 py-4 grid lg:grid-cols-[3fr_2fr] gap-6 items-center">
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 rounded-full text-primary text-xs font-medium">
             <ShieldCheck className="w-3.5 h-3.5" />
