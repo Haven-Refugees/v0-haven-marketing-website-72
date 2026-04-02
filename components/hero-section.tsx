@@ -4,7 +4,7 @@ import { ShieldCheck } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center min-h-[calc(100vh-40px)] pt-28 pb-8 overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-[calc(100vh-40px)] pt-28 pb-16 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-10 left-10 w-56 h-56 bg-primary/10 rounded-full blur-3xl" />
