@@ -23,7 +23,7 @@ export function HowItWorks() {
     <section id="how-it-works" className="py-24 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ export function HowItWorks() {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                 <step.icon className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-serif text-xl text-foreground mb-3">
+              <h3 className="font-sans font-bold text-xl text-foreground mb-3">
                 {step.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">

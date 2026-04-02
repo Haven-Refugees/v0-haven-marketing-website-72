@@ -35,7 +35,7 @@ export function Testimonials() {
     <section id="testimonials" className="py-24 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
             What our users say
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -53,11 +53,11 @@ export function Testimonials() {
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />
               <div className="mb-6">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="font-serif text-xl text-primary">
+                  <span className="font-sans font-bold text-xl text-primary">
                     {testimonial.name[0]}
                   </span>
                 </div>
-                <h3 className="font-serif text-xl text-foreground">{testimonial.name}</h3>
+                <h3 className="font-sans font-bold text-xl text-foreground">{testimonial.name}</h3>
                 <p className="text-sm text-muted-foreground">
                   From {testimonial.location} · {testimonial.type}
                 </p>
@@ -75,7 +75,7 @@ export function Testimonials() {
             <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />
             <div className="mb-6">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <span className="font-serif text-xl text-primary">
+                <span className="font-sans font-bold text-xl text-primary">
                   {testimonials[activeIndex].name[0]}
                 </span>
               </div>

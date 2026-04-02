@@ -8,7 +8,7 @@ export function TeamSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6 text-balance">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6 text-balance">
               Meet the team behind Haven
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">

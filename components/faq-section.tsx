@@ -27,7 +27,7 @@ export function FaqSection() {
     <section id="faq" className="py-24">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
             Frequently Asked Questions
           </h2>
         </div>

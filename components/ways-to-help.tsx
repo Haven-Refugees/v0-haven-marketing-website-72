@@ -26,7 +26,7 @@ export function WaysToHelp() {
     <section id="ways-to-help" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
             Ways to help
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ export function WaysToHelp() {
               <div className={`w-16 h-16 ${way.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                 <way.icon className="w-8 h-8" />
               </div>
-              <h3 className="font-serif text-2xl text-foreground mb-4">
+              <h3 className="font-sans font-bold text-2xl text-foreground mb-4">
                 {way.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
