@@ -11,7 +11,7 @@ export function SectionTwo() {
             />
           </div>
           <div>
-            <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
+            <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight text-balance">
               Canada's fastest growing community of refugees and supporters
             </h2>
           </div>
