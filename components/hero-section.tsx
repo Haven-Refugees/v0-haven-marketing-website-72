@@ -35,7 +35,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative flex items-center justify-center h-full">
+        <div className="relative flex items-center justify-start h-full">
           <img 
             src="/images/hero-image.png" 
             alt="Stephanie from Calgary and Olena from Ukraine - a Haven connection" 
