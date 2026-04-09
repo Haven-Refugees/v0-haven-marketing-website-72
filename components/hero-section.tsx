@@ -26,10 +26,15 @@ export function HeroSection() {
             Newcomers connect with Canadians for help with language, employment, and community.
           </p>
 
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col sm:flex-row gap-3">
             <Button size="lg" className="text-base px-8 py-6" asChild>
               <Link href="https://app.findhaven.org">
-                Visit the platform
+                I need help
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" className="text-base px-8 py-6 bg-white border-primary text-primary hover:bg-primary/5" asChild>
+              <Link href="https://app.findhaven.org">
+                I want to help
               </Link>
             </Button>
           </div>
