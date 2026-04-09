@@ -14,7 +14,7 @@ export function HeroSection() {
             Haven is a registered Canadian charity
           </span>
           
-          <h1 className="font-sans font-black text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
+          <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
             We help refugees become independent in Canada faster.
           </h1>
           
