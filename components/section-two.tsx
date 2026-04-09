@@ -12,7 +12,7 @@ export function SectionTwo() {
           </div>
           <div>
             <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
-              Join our community of 20,000+ Canadians and refugees.
+              Canada's fastest growing community of refugees and supporters
             </h2>
           </div>
         </div>
