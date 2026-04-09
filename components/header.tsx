@@ -20,19 +20,20 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="#for-refugees" className="text-muted-foreground hover:text-foreground transition-colors">
-            For Refugees
-          </Link>
-          <Link href="#for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">
-            For Canadians
-          </Link>
-          <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            About Haven
-          </Link>
-        </nav>
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-8">
+            <Link href="#for-refugees" className="text-muted-foreground hover:text-foreground transition-colors">
+              For Refugees
+            </Link>
+            <Link href="#for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">
+              For Canadians
+            </Link>
+            <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              About Haven
+            </Link>
+          </nav>
 
-        <div className="hidden md:flex items-center gap-4">
+          <div className="flex items-center gap-4">
           <button className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="Language">
             <Globe className="w-5 h-5" />
           </button>
@@ -42,6 +43,7 @@ export function Header() {
           <Button asChild>
             <Link href="https://app.findhaven.org">Join Haven</Link>
           </Button>
+          </div>
         </div>
 
         <button
