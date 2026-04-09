@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { RefugeeCta } from "@/components/refugee-cta"
+
 import { HowItWorks } from "@/components/how-it-works"
 import { WaysToHelp } from "@/components/ways-to-help"
 import { Testimonials } from "@/components/testimonials"
@@ -15,7 +15,6 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <RefugeeCta />
         <HowItWorks />
         <WaysToHelp />
         <Testimonials />
