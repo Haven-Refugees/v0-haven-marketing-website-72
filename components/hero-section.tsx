@@ -4,7 +4,7 @@ import { ShieldCheck } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center min-h-[90vh] pt-28 pb-16 overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-[90vh] pt-28 pb-4 overflow-hidden">
       
 
       <div className="max-w-7xl mx-auto px-6 py-2 grid lg:grid-cols-[3fr_2fr] gap-4 items-stretch">
