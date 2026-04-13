@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative flex items-center justify-center min-h-[90vh] pt-28 pb-4 overflow-hidden">
       
 
-      <div className="max-w-7xl mx-auto px-6 py-2 grid lg:grid-cols-[3fr_2fr] gap-4 items-stretch">
+      <div className="max-w-7xl mx-auto px-6 py-2 grid lg:grid-cols-[1fr_1fr] gap-4 items-stretch">
         <div className="space-y-4 flex flex-col justify-center lg:pl-12">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 rounded-full text-primary text-xs font-medium w-fit">
             <ShieldCheck className="w-3.5 h-3.5" />
@@ -36,11 +36,11 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative flex items-center justify-start h-full -ml-12">
+        <div className="relative flex items-center justify-start h-full -ml-8">
           <img 
             src="/images/hero-image.png" 
             alt="Stephanie from Calgary and Olena from Ukraine - a Haven connection" 
-            className="h-full max-h-[750px] w-auto object-contain"
+            className="w-full max-w-[550px] h-auto object-contain"
           />
         </div>
       </div>
