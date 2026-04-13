@@ -36,11 +36,11 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative flex items-center justify-start h-full -ml-8">
+        <div className="relative flex items-center justify-end h-full">
           <img 
             src="/images/hero-image.png" 
             alt="Stephanie from Calgary and Olena from Ukraine - a Haven connection" 
-            className="w-full max-w-[550px] h-auto object-contain"
+            className="w-full max-w-[660px] h-auto object-contain"
           />
         </div>
       </div>
