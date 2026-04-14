@@ -50,12 +50,14 @@ function MatchIllustration() {
 function HelpingIllustration() {
   return (
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Purple circle - left */}
-      <circle cx="28" cy="45" r="24" fill="#B8A9E8" />
-      {/* Coral circle - right */}
-      <circle cx="52" cy="45" r="24" fill="#E8998D" />
-      {/* Blue star burst in center */}
-      <path d="M40 30 L42 40 L52 38 L44 44 L52 52 L42 48 L40 58 L38 48 L28 52 L36 44 L28 38 L38 40 Z" fill="#3B5CE9" />
+      {/* Left purple egg/oval */}
+      <ellipse cx="25" cy="40" rx="22" ry="28" fill="#B8A9E8" />
+      {/* Right coral egg/oval */}
+      <ellipse cx="55" cy="40" rx="22" ry="28" fill="#E8998D" />
+      {/* Blue 8-pointed starburst in center */}
+      <path d="M40 18 L43 32 L52 22 L46 34 L60 34 L48 40 L60 46 L46 46 L52 58 L43 48 L40 62 L37 48 L28 58 L34 46 L20 46 L32 40 L20 34 L34 34 L28 22 L37 32 Z" fill="#3B5CE9" />
+      {/* Small rectangular notch at bottom of star */}
+      <rect x="37" y="52" width="6" height="4" fill="#F5F3EE" />
     </svg>
   )
 }
