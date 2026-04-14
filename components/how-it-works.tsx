@@ -54,10 +54,8 @@ function HelpingIllustration() {
       <ellipse cx="25" cy="40" rx="22" ry="28" fill="#B8A9E8" />
       {/* Right coral egg/oval */}
       <ellipse cx="55" cy="40" rx="22" ry="28" fill="#E8998D" />
-      {/* Blue 8-pointed starburst in center */}
-      <path d="M40 18 L43 32 L52 22 L46 34 L60 34 L48 40 L60 46 L46 46 L52 58 L43 48 L40 62 L37 48 L28 58 L34 46 L20 46 L32 40 L20 34 L34 34 L28 22 L37 32 Z" fill="#3B5CE9" />
-      {/* Small rectangular notch at bottom of star */}
-      <rect x="37" y="52" width="6" height="4" fill="#F5F3EE" />
+      {/* Blue maple leaf in center */}
+      <path d="M40 15 L42 22 L48 18 L46 25 L54 24 L48 30 L56 32 L48 36 L52 42 L44 40 L44 48 L40 44 L36 48 L36 40 L28 42 L32 36 L24 32 L32 30 L26 24 L34 25 L32 18 L38 22 Z M38 48 L38 60 L40 62 L42 60 L42 48 Z" fill="#3B5CE9" />
     </svg>
   )
 }
