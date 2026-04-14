@@ -19,10 +19,15 @@ const steps = [
 function ProfileIllustration() {
   return (
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Large purple circle */}
-      <circle cx="32" cy="48" r="30" fill="#B8A9E8" />
-      {/* Blue speech bubble - rounded rectangle with tail */}
-      <path d="M50 15 C50 10, 55 8, 62 8 L72 8 C78 8, 80 12, 80 17 L80 28 C80 33, 76 36, 70 36 L58 36 L52 42 L54 36 L55 36 C50 36, 50 32, 50 28 Z" fill="#3B5CE9" />
+      {/* Irregular purple blob */}
+      <path d="M5 50 C0 35, 8 20, 25 18 C35 16, 45 22, 50 35 C55 48, 52 62, 40 70 C28 78, 10 68, 5 50 Z" fill="#B8A9E8" />
+      {/* Blue speech bubble - rounded rectangle */}
+      <rect x="42" y="8" width="32" height="24" rx="8" fill="#3B5CE9" />
+      {/* Speech bubble tail */}
+      <path d="M48 32 L42 40 L50 32 Z" fill="#3B5CE9" />
+      {/* Accent lines */}
+      <line x1="76" y1="12" x2="80" y2="8" stroke="#3B5CE9" strokeWidth="2" strokeLinecap="round" />
+      <line x1="78" y1="18" x2="82" y2="18" stroke="#3B5CE9" strokeWidth="2" strokeLinecap="round" />
     </svg>
   )
 }
