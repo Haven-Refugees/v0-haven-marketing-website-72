@@ -31,15 +31,12 @@ function ProfileIllustration() {
 
 function MatchIllustration() {
   return (
-    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Left purple egg/blob - tilted */}
-      <ellipse cx="18" cy="40" rx="14" ry="22" transform="rotate(-10 18 40)" fill="#B8A9E8" />
-      {/* Right coral egg/blob - tilted */}
-      <ellipse cx="62" cy="40" rx="14" ry="20" transform="rotate(10 62 40)" fill="#E8998D" />
-      {/* Three connecting dots in the middle */}
-      <circle cx="34" cy="40" r="4" fill="#3B5CE9" />
-      <circle cx="44" cy="40" r="3" fill="#3B5CE9" />
-      <circle cx="52" cy="40" r="2" fill="#3B5CE9" />
+    <svg width="100" height="90" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 24C12 23 7 28 7 36C7 44 12 51 19 52C26 54 31 49 30 42C29 35 25 25 18 24Z" fill="#B8AEE8" opacity="0.9"/>
+      <path d="M62 24C68 23 73 28 73 36C73 44 68 51 61 52C54 54 49 49 50 42C51 35 55 25 62 24Z" fill="#E8836A" opacity="0.85"/>
+      <circle cx="33" cy="36" r="2.5" fill="#2F54EF" opacity="0.5"/>
+      <circle cx="40" cy="36" r="2.5" fill="#2F54EF"/>
+      <circle cx="47" cy="36" r="2.5" fill="#2F54EF" opacity="0.5"/>
     </svg>
   )
 }
