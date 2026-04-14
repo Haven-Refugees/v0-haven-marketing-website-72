@@ -20,7 +20,7 @@ function CollapsiblePill({ title, description, variant, isExpanded, onToggle }: 
   const chevronColor = variant === "secondary" ? "text-secondary" : "text-accent"
 
   return (
-    <div className={`${bgColor} ${borderColor} border rounded-full ${isExpanded ? "rounded-2xl" : ""} overflow-hidden transition-all`}>
+    <div className={`${bgColor} ${borderColor} border ${isExpanded ? "rounded-2xl" : "rounded-full"} overflow-hidden transition-all`}>
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between px-4 py-3 text-left"
