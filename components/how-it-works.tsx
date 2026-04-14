@@ -1,22 +1,52 @@
-import { Globe, Monitor, Calendar } from "lucide-react"
-
 const steps = [
   {
-    icon: Globe,
-    title: "Canadians and refugees connect directly",
-    description: "Use the Haven platform to find and connect with someone who matches your interests and availability.",
+    title: "Create your profile",
+    description: "Tell us who you are and how you want to give or receive help. Takes less than 10 minutes.",
+    illustration: "profile",
   },
   {
-    icon: Monitor,
-    title: "You choose who you help and how",
-    description: "Helping starts with a 30 minute video call. It's simple, flexible, and entirely on your terms.",
+    title: "Find your match",
+    description: "Browse verified profiles and reach out. Your first conversation is just 30 minutes on a video call.",
+    illustration: "match",
   },
   {
-    icon: Calendar,
-    title: "Continue at your own pace",
-    description: "Keep helping whenever you can, online or in-person. Take a break if you get busy—no pressure!",
+    title: "Keep helping",
+    description: "Continue meeting for as long as you want. An old Canadian helps a new Canadian — that's Haven.",
+    illustration: "helping",
   },
 ]
+
+function ProfileIllustration() {
+  return (
+    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="35" cy="45" r="28" fill="#C4B5FD" />
+      <rect x="38" y="18" width="28" height="20" rx="10" fill="#3B82F6" />
+      <circle cx="52" cy="28" r="3" fill="white" />
+    </svg>
+  )
+}
+
+function MatchIllustration() {
+  return (
+    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="25" cy="45" rx="18" ry="28" fill="#C4B5FD" />
+      <ellipse cx="55" cy="45" rx="18" ry="28" fill="#F9A8A8" />
+      <circle cx="40" cy="30" r="3" fill="#3B82F6" />
+      <circle cx="40" cy="40" r="2" fill="#3B82F6" />
+      <circle cx="40" cy="48" r="1.5" fill="#3B82F6" />
+    </svg>
+  )
+}
+
+function HelpingIllustration() {
+  return (
+    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="45" r="22" fill="#C4B5FD" />
+      <circle cx="50" cy="45" r="22" fill="#F9A8A8" />
+      <polygon points="40,20 43,30 53,30 45,37 48,47 40,41 32,47 35,37 27,30 37,30" fill="#3B82F6" />
+    </svg>
+  )
+}
 
 export function HowItWorks() {
   return (
@@ -35,13 +65,12 @@ export function HowItWorks() {
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative bg-background p-8 rounded-2xl border border-border hover:shadow-lg transition-shadow"
+              className="bg-[#F5F3EE] p-8 rounded-2xl"
             >
-              <div className="absolute -top-4 left-8 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
-                {index + 1}
-              </div>
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                <step.icon className="w-8 h-8 text-primary" />
+              <div className="mb-6">
+                {step.illustration === "profile" && <ProfileIllustration />}
+                {step.illustration === "match" && <MatchIllustration />}
+                {step.illustration === "helping" && <HelpingIllustration />}
               </div>
               <h3 className="font-sans font-bold text-xl text-foreground mb-3">
                 {step.title}
