@@ -35,13 +35,14 @@ function ProfileIllustration() {
 function MatchIllustration() {
   return (
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Top purple oval */}
-      <ellipse cx="28" cy="22" rx="16" ry="20" fill="#B8A9E8" />
-      {/* Bottom coral oval */}
-      <ellipse cx="52" cy="58" rx="16" ry="20" fill="#E8998D" />
-      {/* Connecting dots */}
-      <circle cx="38" cy="36" r="3" fill="#3B5CE9" />
-      <circle cx="42" cy="44" r="2.5" fill="#3B5CE9" />
+      {/* Left purple egg/blob - tilted */}
+      <ellipse cx="18" cy="40" rx="14" ry="22" transform="rotate(-10 18 40)" fill="#B8A9E8" />
+      {/* Right coral egg/blob - tilted */}
+      <ellipse cx="62" cy="40" rx="14" ry="20" transform="rotate(10 62 40)" fill="#E8998D" />
+      {/* Three connecting dots in the middle */}
+      <circle cx="34" cy="40" r="4" fill="#3B5CE9" />
+      <circle cx="44" cy="40" r="3" fill="#3B5CE9" />
+      <circle cx="52" cy="40" r="2" fill="#3B5CE9" />
     </svg>
   )
 }
