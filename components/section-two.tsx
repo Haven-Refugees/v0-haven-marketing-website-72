@@ -18,7 +18,7 @@ export function SectionTwo() {
             <div className="space-y-4">
               <div className="flex items-center gap-6 py-4">
                 <span className="font-sans font-bold text-4xl md:text-5xl text-foreground min-w-[140px]">20,000+</span>
-                <span className="text-muted-foreground text-lg">Canadians and newcomers on the platform</span>
+                <span className="text-muted-foreground text-lg">Canadians and refugees on the platform</span>
               </div>
               
               <div className="flex items-center gap-6 py-4">
