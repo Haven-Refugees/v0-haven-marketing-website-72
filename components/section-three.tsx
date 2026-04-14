@@ -1,8 +1,73 @@
-import { Check } from "lucide-react"
+"use client"
+
+import { useState } from "react"
+import { ChevronDown, ChevronUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
+interface CollapsiblePillProps {
+  title: string
+  description: string
+  variant: "secondary" | "accent"
+  isExpanded: boolean
+  onToggle: () => void
+}
+
+function CollapsiblePill({ title, description, variant, isExpanded, onToggle }: CollapsiblePillProps) {
+  const bgColor = variant === "secondary" ? "bg-white" : "bg-white"
+  const borderColor = variant === "secondary" ? "border-secondary/30" : "border-accent/30"
+  const chevronBg = variant === "secondary" ? "bg-secondary/20" : "bg-accent/20"
+  const chevronColor = variant === "secondary" ? "text-secondary" : "text-accent"
+
+  return (
+    <div className={`${bgColor} ${borderColor} border rounded-full ${isExpanded ? "rounded-2xl" : ""} overflow-hidden transition-all`}>
+      <button
+        onClick={onToggle}
+        className="w-full flex items-center justify-between px-4 py-3 text-left"
+      >
+        <span className="font-medium text-foreground">{title}</span>
+        <div className={`w-7 h-7 rounded-full ${chevronBg} flex items-center justify-center flex-shrink-0`}>
+          {isExpanded ? (
+            <ChevronUp className={`w-4 h-4 ${chevronColor}`} />
+          ) : (
+            <ChevronDown className={`w-4 h-4 ${chevronColor}`} />
+          )}
+        </div>
+      </button>
+      {isExpanded && (
+        <div className="px-4 pb-4 text-muted-foreground text-sm">
+          {description}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export function SectionThree() {
+  const [expandedPills, setExpandedPills] = useState<Record<string, boolean>>({})
+
+  const togglePill = (id: string) => {
+    setExpandedPills(prev => ({ ...prev, [id]: !prev[id] }))
+  }
+
+  const languageProgramFeatures = [
+    { id: "classes", title: "Classes with teachers", description: "Individual and small group online ESL classes with professional teachers." },
+    { id: "chats", title: "Chats with volunteers", description: "Practice conversational English with friendly Canadian volunteers." },
+    { id: "study", title: "Individual study", description: "Self-paced learning materials and exercises to improve on your own time." },
+  ]
+
+  const newcomerMatchingFeatures = [
+    { id: "n-language", title: "Language", description: "Get help improving your English or French skills through conversation practice." },
+    { id: "n-community", title: "Community", description: "Connect with Canadians who share your interests and values." },
+    { id: "n-network", title: "Network", description: "Build professional connections to help advance your career in Canada." },
+  ]
+
+  const canadianMatchingFeatures = [
+    { id: "c-language", title: "Language", description: "Help newcomers practice their English or French conversation skills." },
+    { id: "c-community", title: "Community", description: "Welcome newcomers into your community and share Canadian culture." },
+    { id: "c-network", title: "Network", description: "Share your professional network and career advice with newcomers." },
+  ]
+
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -43,24 +108,16 @@ export function SectionThree() {
               The best way for a newcomer to improve their English — and soon, French!
             </p>
             <div className="border-t border-secondary/20 pt-4 space-y-2 flex-grow">
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                </div>
-                <span className="text-foreground">Classes with teachers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                </div>
-                <span className="text-foreground">Chats with volunteers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                </div>
-                <span className="text-foreground">Individual study</span>
-              </div>
+              {languageProgramFeatures.map((feature) => (
+                <CollapsiblePill
+                  key={feature.id}
+                  title={feature.title}
+                  description={feature.description}
+                  variant="secondary"
+                  isExpanded={expandedPills[feature.id] || false}
+                  onToggle={() => togglePill(feature.id)}
+                />
+              ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit" asChild>
               <Link href="https://app.findhaven.org">Learn more</Link>
@@ -76,24 +133,16 @@ export function SectionThree() {
               The best way to meet Canadians who want to help.
             </p>
             <div className="border-t border-secondary/20 pt-4 space-y-2 flex-grow">
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                </div>
-                <span className="text-foreground">Language</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                </div>
-                <span className="text-foreground">Community</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-secondary" />
-                </div>
-                <span className="text-foreground">Network</span>
-              </div>
+              {newcomerMatchingFeatures.map((feature) => (
+                <CollapsiblePill
+                  key={feature.id}
+                  title={feature.title}
+                  description={feature.description}
+                  variant="secondary"
+                  isExpanded={expandedPills[feature.id] || false}
+                  onToggle={() => togglePill(feature.id)}
+                />
+              ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit" asChild>
               <Link href="https://app.findhaven.org">Learn more</Link>
@@ -109,24 +158,16 @@ export function SectionThree() {
               The best way to help newcomers in Canada.
             </p>
             <div className="border-t border-accent/20 pt-4 space-y-2 flex-grow">
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-accent" />
-                </div>
-                <span className="text-foreground">Language</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-accent" />
-                </div>
-                <span className="text-foreground">Community</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-3.5 h-3.5 text-accent" />
-                </div>
-                <span className="text-foreground">Network</span>
-              </div>
+              {canadianMatchingFeatures.map((feature) => (
+                <CollapsiblePill
+                  key={feature.id}
+                  title={feature.title}
+                  description={feature.description}
+                  variant="accent"
+                  isExpanded={expandedPills[feature.id] || false}
+                  onToggle={() => togglePill(feature.id)}
+                />
+              ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit" asChild>
               <Link href="https://app.findhaven.org">Learn more</Link>
