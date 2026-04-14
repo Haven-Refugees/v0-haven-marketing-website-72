@@ -10,7 +10,7 @@ export function SectionTwo() {
               className="w-full h-auto"
             />
           </div>
-          <div className="flex flex-col justify-center h-full">
+          <div className="flex flex-col justify-center h-full pt-12">
             <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight text-balance mb-8">
               Canada&apos;s fastest growing community of refugees and supporters
             </h2>
