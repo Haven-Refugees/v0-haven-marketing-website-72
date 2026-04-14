@@ -18,16 +18,13 @@ const steps = [
 
 function ProfileIllustration() {
   return (
-    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Irregular purple blob */}
-      <path d="M5 50 C0 35, 8 20, 25 18 C35 16, 45 22, 50 35 C55 48, 52 62, 40 70 C28 78, 10 68, 5 50 Z" fill="#B8A9E8" />
-      {/* Blue speech bubble - rounded rectangle */}
-      <rect x="42" y="8" width="32" height="24" rx="8" fill="#3B5CE9" />
-      {/* Speech bubble tail */}
-      <path d="M48 32 L42 40 L50 32 Z" fill="#3B5CE9" />
-      {/* Accent lines */}
-      <line x1="76" y1="12" x2="80" y2="8" stroke="#3B5CE9" strokeWidth="2" strokeLinecap="round" />
-      <line x1="78" y1="18" x2="82" y2="18" stroke="#3B5CE9" strokeWidth="2" strokeLinecap="round" />
+    <svg width="100" height="90" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 16C20 14 8 22 8 36C8 50 20 62 34 62C48 66 60 54 58 40C56 26 46 18 32 16Z" fill="#B8AEE8" opacity="0.9"/>
+      <rect x="42" y="2" width="32" height="22" rx="8" fill="#2F54EF"/>
+      <path d="M46 24L40 32L54 24Z" fill="#2F54EF"/>
+      <line x1="76" y1="4" x2="79" y2="2" stroke="#2F54EF" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="77" y1="10" x2="80" y2="10" stroke="#2F54EF" strokeWidth="1.5" strokeLinecap="round"/>
+      <line x1="76" y1="16" x2="79" y2="18" stroke="#2F54EF" strokeWidth="1.5" strokeLinecap="round"/>
     </svg>
   )
 }
