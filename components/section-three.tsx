@@ -119,7 +119,7 @@ export function SectionThree() {
                 />
               ))}
             </div>
-            <Button variant="outline" className="mt-6 w-fit" asChild>
+            <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
               <Link href="https://app.findhaven.org">Learn more</Link>
             </Button>
           </div>
@@ -144,7 +144,7 @@ export function SectionThree() {
                 />
               ))}
             </div>
-            <Button variant="outline" className="mt-6 w-fit" asChild>
+            <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
               <Link href="https://app.findhaven.org">Learn more</Link>
             </Button>
           </div>
@@ -169,7 +169,7 @@ export function SectionThree() {
                 />
               ))}
             </div>
-            <Button variant="outline" className="mt-6 w-fit" asChild>
+            <Button variant="outline" className="mt-6 w-fit hover:bg-accent/10 hover:text-accent hover:border-accent" asChild>
               <Link href="https://app.findhaven.org">Learn more</Link>
             </Button>
           </div>
