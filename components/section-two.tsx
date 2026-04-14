@@ -17,17 +17,17 @@ export function SectionTwo() {
             
             <div className="space-y-4">
               <div className="flex items-center gap-6 py-4">
-                <span className="font-sans font-bold text-4xl md:text-5xl text-foreground min-w-[140px]">20,000+</span>
+                <span className="font-sans font-bold text-3xl md:text-4xl text-foreground min-w-[120px]">20,000+</span>
                 <span className="text-muted-foreground text-lg">Canadians and refugees on the platform</span>
               </div>
               
               <div className="flex items-center gap-6 py-4">
-                <span className="font-sans font-bold text-4xl md:text-5xl text-foreground min-w-[140px]">100+</span>
+                <span className="font-sans font-bold text-3xl md:text-4xl text-foreground min-w-[120px]">100+</span>
                 <span className="text-muted-foreground text-lg">Communities active across Canada</span>
               </div>
               
               <div className="flex items-center gap-6 py-4 bg-accent/10 rounded-lg px-4 -mx-4">
-                <span className="font-sans font-bold text-4xl md:text-5xl text-accent min-w-[140px]">1,476</span>
+                <span className="font-sans font-bold text-3xl md:text-4xl text-accent min-w-[120px]">1,476</span>
                 <span className="text-accent text-lg">Newcomers waiting for a connection right now</span>
               </div>
             </div>
