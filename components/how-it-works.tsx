@@ -19,9 +19,10 @@ const steps = [
 function ProfileIllustration() {
   return (
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="35" cy="45" r="28" fill="#C4B5FD" />
-      <rect x="38" y="18" width="28" height="20" rx="10" fill="#3B82F6" />
-      <circle cx="52" cy="28" r="3" fill="white" />
+      {/* Large purple circle */}
+      <circle cx="32" cy="48" r="30" fill="#B8A9E8" />
+      {/* Blue speech bubble - rounded rectangle with tail */}
+      <path d="M50 15 C50 10, 55 8, 62 8 L72 8 C78 8, 80 12, 80 17 L80 28 C80 33, 76 36, 70 36 L58 36 L52 42 L54 36 L55 36 C50 36, 50 32, 50 28 Z" fill="#3B5CE9" />
     </svg>
   )
 }
@@ -29,11 +30,13 @@ function ProfileIllustration() {
 function MatchIllustration() {
   return (
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="25" cy="45" rx="18" ry="28" fill="#C4B5FD" />
-      <ellipse cx="55" cy="45" rx="18" ry="28" fill="#F9A8A8" />
-      <circle cx="40" cy="30" r="3" fill="#3B82F6" />
-      <circle cx="40" cy="40" r="2" fill="#3B82F6" />
-      <circle cx="40" cy="48" r="1.5" fill="#3B82F6" />
+      {/* Top purple oval */}
+      <ellipse cx="28" cy="22" rx="16" ry="20" fill="#B8A9E8" />
+      {/* Bottom coral oval */}
+      <ellipse cx="52" cy="58" rx="16" ry="20" fill="#E8998D" />
+      {/* Connecting dots */}
+      <circle cx="38" cy="36" r="3" fill="#3B5CE9" />
+      <circle cx="42" cy="44" r="2.5" fill="#3B5CE9" />
     </svg>
   )
 }
@@ -41,9 +44,12 @@ function MatchIllustration() {
 function HelpingIllustration() {
   return (
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="30" cy="45" r="22" fill="#C4B5FD" />
-      <circle cx="50" cy="45" r="22" fill="#F9A8A8" />
-      <polygon points="40,20 43,30 53,30 45,37 48,47 40,41 32,47 35,37 27,30 37,30" fill="#3B82F6" />
+      {/* Purple circle - left */}
+      <circle cx="28" cy="45" r="24" fill="#B8A9E8" />
+      {/* Coral circle - right */}
+      <circle cx="52" cy="45" r="24" fill="#E8998D" />
+      {/* Blue star burst in center */}
+      <path d="M40 30 L42 40 L52 38 L44 44 L52 52 L42 48 L40 58 L38 48 L28 52 L36 44 L28 38 L38 40 Z" fill="#3B5CE9" />
     </svg>
   )
 }
