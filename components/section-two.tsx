@@ -2,7 +2,7 @@ export function SectionTwo() {
   return (
     <section className="pt-8 pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-[3fr_2fr] gap-8 items-center">
           <div className="relative">
             <img 
               src="/images/platform-mockup.png" 
