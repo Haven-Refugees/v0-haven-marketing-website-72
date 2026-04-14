@@ -43,13 +43,13 @@ function MatchIllustration() {
 
 function HelpingIllustration() {
   return (
-    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Left purple egg/oval */}
-      <ellipse cx="25" cy="40" rx="22" ry="28" fill="#B8A9E8" />
-      {/* Right coral egg/oval */}
-      <ellipse cx="55" cy="40" rx="22" ry="28" fill="#E8998D" />
-      {/* Blue maple leaf in center */}
-      <path d="M40 15 L42 22 L48 18 L46 25 L54 24 L48 30 L56 32 L48 36 L52 42 L44 40 L44 48 L40 44 L36 48 L36 40 L28 42 L32 36 L24 32 L32 30 L26 24 L34 25 L32 18 L38 22 Z M38 48 L38 60 L40 62 L42 60 L42 48 Z" fill="#3B5CE9" />
+    <svg width="100" height="90" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
+      <path d="M26 24C20 23 15 28 15 36C15 44 20 51 27 52C34 54 39 49 38 42C37 35 33 25 26 24Z" fill="#B8AEE8" opacity="0.9"/>
+      <path d="M54 24C60 23 65 28 65 36C65 44 60 51 53 52C46 54 41 49 42 42C43 35 47 25 54 24Z" fill="#E8836A" opacity="0.85"/>
+      <g transform="translate(40, 36) scale(0.20)">
+        <path d="M0,-54 L-4.5,-28 L-22,-32 L-16,-16 L-50,-8 L-28,6 L-38,22 L-16,18 L-14,40 L0,32 L14,40 L16,18 L38,22 L28,6 L50,-8 L16,-16 L22,-32 L4.5,-28 Z" fill="#2F54EF"/>
+        <rect x="-3.5" y="40" width="7" height="14" rx="2" fill="#2F54EF"/>
+      </g>
     </svg>
   )
 }
