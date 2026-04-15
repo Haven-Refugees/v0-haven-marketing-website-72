@@ -65,9 +65,7 @@ export function SectionThree() {
   ]
 
   const newcomerMatchingFeatures = [
-    { id: "n-language", title: "Language", description: "Get help improving your English or French skills through conversation practice." },
-    { id: "n-community", title: "Community", description: "Connect with Canadians who share your interests and values." },
-    { id: "n-network", title: "Network", description: "Build professional connections to help advance your career in Canada." },
+    { id: "n-matching", title: "Matching", description: "Get help improving your English or French skills through conversation practice." },
   ]
 
   const canadianMatchingFeatures = [
