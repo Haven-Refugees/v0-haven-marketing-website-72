@@ -102,7 +102,7 @@ export function Footer() {
           </div>
           <p className="text-gray-400 text-sm">
             Questions?{" "}
-            <Link href="mailto:info@findhaven.org" className="text-secondary hover:underline">
+            <Link href="mailto:info@findhaven.org" className="text-white hover:underline">
               info@findhaven.org
             </Link>
           </p>
