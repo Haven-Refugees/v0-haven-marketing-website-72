@@ -45,8 +45,7 @@ export function SectionTwo() {
             <div className="mt-4 bg-muted/50 rounded-lg px-5 py-4 flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
               <p className="text-sm text-foreground">
-                <span className="font-semibold">Registered Canadian charity</span>
-                <span className="text-muted-foreground"> · CRA #758177547 RR 0001</span>
+                Haven is a registered Canadian charity with the CRA
               </p>
             </div>
           </div>
