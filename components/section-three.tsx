@@ -83,8 +83,7 @@ export function SectionThree() {
             How Haven helps
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            We help all newcomers fleeing conflict who are now in Canada — including refugees, 
-            refugee claimants, and all other Canadian humanitarian programs like CUAET.
+            We have two programs: Haven Language Program and Haven Connect. Both help newcomers improve their English and meet Canadians. The difference is commitment - and results.
           </p>
         </div>
 
