@@ -14,8 +14,8 @@ export function SectionTwo() {
           </div>
           <div className="flex flex-col justify-center h-full">
             {/* Main heading */}
-            <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-8 max-w-[320px]">
-              Where old Canadians meet new ones.
+            <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-8">
+              Where old Canadians<br />meet new ones.
             </h2>
             
             {/* Stats cards */}
