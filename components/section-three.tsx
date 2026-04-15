@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, ChevronUp } from "lucide-react"
+import { ChevronDown, ChevronUp, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -106,6 +106,10 @@ export function SectionThree() {
         <div className="grid md:grid-cols-3 gap-6">
           {/* Haven Language Program Card */}
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
+            <span className="inline-flex items-center gap-1.5 w-fit bg-secondary text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
+              <Clock className="w-3.5 h-3.5" />
+              6+ hours per week
+            </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
               Haven Language Program
             </h4>
@@ -132,6 +136,10 @@ export function SectionThree() {
 
           {/* Haven Connect Card - Newcomers */}
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
+            <span className="inline-flex items-center gap-1.5 w-fit bg-secondary text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
+              <Clock className="w-3.5 h-3.5" />
+              As little as 30 minutes a week
+            </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
               Haven Connect
             </h4>
@@ -166,6 +174,10 @@ export function SectionThree() {
 
           {/* Haven Connect Card - Canadians */}
           <div className="bg-accent/10 border border-accent/20 rounded-2xl p-6 flex flex-col">
+            <span className="inline-flex items-center gap-1.5 w-fit bg-secondary text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
+              <Clock className="w-3.5 h-3.5" />
+              You pick your schedule
+            </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
               Haven Connect
             </h4>
