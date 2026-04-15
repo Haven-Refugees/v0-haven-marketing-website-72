@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function TeamSection() {
@@ -9,17 +8,15 @@ export function TeamSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6 text-balance">
-              Meet the team behind Haven
+              Canada wins when newcomers become independent faster.
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We are a team of Canadians and newcomers who care about improving the Canadian resettlement system for those fleeing conflict.
+              We believe Canada should have a system that helps newcomers learn English and French and integrate into their communities, faster than ever before. Technology makes that possible at scale, and at a fraction of the current cost. That&apos;s good for refugees, good for Canadians, and good for Canada.
             </p>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="https://app.findhaven.org">
-                Learn more about Haven
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
+            <Link href="https://app.findhaven.org" className="text-foreground hover:text-primary inline-flex items-center gap-1 font-medium">
+              Read more about our vision and team
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
 
           <div className="relative">
