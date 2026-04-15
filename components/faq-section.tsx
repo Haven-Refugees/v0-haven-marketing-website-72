@@ -9,15 +9,15 @@ import {
 
 const faqs = [
   {
-    question: "Is Haven safe and trustworthy?",
+    question: "Who is eligible to get help on Haven?",
     answer: "Haven Refugees is a Canadian charity registered with the Canada Revenue Agency. We have already helped thousands of refugees and Canadians match directly. We keep everyone on Haven safe by verifying the IDs of our users. You can do this instantly on the platform, or if you prefer, on a video call with a Haven staff member.",
   },
   {
-    question: "I've never done this before. Can I help?",
+    question: "How does Haven keep its users safe?",
     answer: "Yes! Helping on Haven is easy. The best way to help is English conversation practice. That means a 30 minute video call where you are speaking to a refugee who is trying to improve their English. Take a look at our conversation guides to get a sense of what you could talk about.",
   },
   {
-    question: "How do I start to help?",
+    question: "Is Haven all online?",
     answer: "Create an account, verify your ID, and reach out to a refugee. That's it! Get started by clicking sign-up on our platform.",
   },
 ]
