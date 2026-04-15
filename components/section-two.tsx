@@ -13,11 +13,6 @@ export function SectionTwo() {
             />
           </div>
           <div className="flex flex-col justify-center h-full">
-            {/* Section label */}
-            <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-2">
-              The Platform
-            </p>
-            
             {/* Main heading */}
             <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-8">
               Where old Canadians meet new ones.
