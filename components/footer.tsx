@@ -8,12 +8,14 @@ export function Footer() {
         <div className="grid md:grid-cols-5 gap-12 mb-12">
           {/* Logo and tagline */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex items-center">
-                <div className="w-5 h-5 rounded-full bg-accent -mr-1.5"></div>
-                <div className="w-5 h-5 rounded-full bg-secondary"></div>
-              </div>
-              <span className="font-bold text-xl text-white">Haven</span>
+            <Link href="/" className="flex items-center mb-4">
+              <img 
+                src="/images/haven-logo.png" 
+                alt="Haven" 
+                width={130}
+                height={40}
+                className="brightness-0 invert"
+              />
             </Link>
             <p className="text-gray-400 max-w-xs leading-relaxed mb-6">
               Helping newcomers become independent in Canada. Making it easier for Canadians to help.
