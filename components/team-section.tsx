@@ -11,7 +11,7 @@ export function TeamSection() {
               Canada wins when newcomers become independent faster.
             </h2>
             <p className="text-xl text-muted-foreground mb-4 leading-relaxed">
-              We believe Canada should have a system that helps newcomers learn English and French and integrate into their communities, faster than ever before.
+              Our team believes that Canada should have a system that helps newcomers learn English and French and integrate into their communities, faster than ever before.
             </p>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Technology makes that possible at scale, and at a fraction of the current cost. That&apos;s good for refugees, good for Canadians, and good for Canada.
