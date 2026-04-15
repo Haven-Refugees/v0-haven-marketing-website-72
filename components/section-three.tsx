@@ -124,10 +124,10 @@ export function SectionThree() {
             </Button>
           </div>
 
-          {/* Haven Matching Card - Newcomers */}
+          {/* Haven Connect Card - Newcomers */}
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
-              Haven Matching
+              Haven Connect
             </h4>
             <p className="text-muted-foreground mb-4">
               The best way to meet Canadians who want to help.
@@ -149,10 +149,10 @@ export function SectionThree() {
             </Button>
           </div>
 
-          {/* Haven Matching Card - Canadians */}
+          {/* Haven Connect Card - Canadians */}
           <div className="bg-accent/10 border border-accent/20 rounded-2xl p-6 flex flex-col">
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
-              Haven Matching
+              Haven Connect
             </h4>
             <p className="text-muted-foreground mb-4">
               The best way to help newcomers in Canada.
