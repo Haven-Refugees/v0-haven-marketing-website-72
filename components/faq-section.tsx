@@ -37,7 +37,7 @@ export function FaqSection() {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-card border border-border rounded-xl px-6 overflow-hidden data-[state=open]:shadow-lg transition-shadow"
+              className="bg-card border border-border rounded-xl px-6 overflow-hidden data-[state=open]:shadow-lg transition-shadow !border-b"
             >
               <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline py-6">
                 {faq.question}
