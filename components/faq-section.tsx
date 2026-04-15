@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "Is Haven all online?",
-    answer: "Create an account, verify your ID, and reach out to a refugee. That's it! Get started by clicking sign-up on our platform.",
+    answer: "Haven is primarily an online platform. For Haven Connect, all connections start with video calls through the Haven app — but if both people are comfortable and local, many choose to meet in person too. For the Haven Language Program, all classes and learning are fully online.",
   },
 ]
 
