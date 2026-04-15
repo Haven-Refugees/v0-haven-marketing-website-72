@@ -65,7 +65,7 @@ export function SectionThree() {
   ]
 
   const newcomerMatchingFeatures = [
-    { id: "n-matching", title: "Matching", description: "Get help improving your English or French skills through conversation practice." },
+    { id: "n-matching", title: "Matching", description: "Practice your English or French, meet people in your community, and find work in Canada." },
   ]
 
   const canadianMatchingFeatures = [
