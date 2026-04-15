@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ShieldCheck } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -9,11 +8,6 @@ export function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-6 py-2 grid lg:grid-cols-[1fr_1fr] gap-4 items-stretch">
         <div className="space-y-4 flex flex-col justify-center lg:pl-12">
-          <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 rounded-full text-primary text-xs font-medium w-fit">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            Haven is a registered Canadian charity
-          </span>
-          
           <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
             We help refugees become independent in Canada faster.
           </h1>
