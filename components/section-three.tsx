@@ -75,7 +75,7 @@ export function SectionThree() {
   ]
 
   return (
-    <section className="py-20 bg-background">
+    <section className="pt-12 pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">

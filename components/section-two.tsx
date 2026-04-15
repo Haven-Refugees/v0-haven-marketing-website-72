@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react"
 
 export function SectionTwo() {
   return (
-    <section className="pt-8 pb-8 bg-background">
+    <section className="pt-8 pb-4 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[3fr_2fr] gap-8 items-center">
           <div className="relative">
