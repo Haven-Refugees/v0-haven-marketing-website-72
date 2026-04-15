@@ -14,7 +14,6 @@ export function Footer() {
                 alt="Haven" 
                 width={130}
                 height={40}
-                className="brightness-0 invert"
               />
             </Link>
             <p className="text-gray-400 max-w-xs leading-relaxed mb-6">
