@@ -12,20 +12,17 @@ export function SectionTwo() {
           </div>
           <div className="flex flex-col justify-center h-full pt-12">
             <div className="space-y-4">
-              <div className="flex items-center gap-6 py-4">
-                <span className="font-sans font-bold text-3xl md:text-4xl text-foreground min-w-[120px]">20,000+</span>
-                <span className="text-muted-foreground text-lg">Canadians and refugees on the platform</span>
-              </div>
+              <p className="font-sans font-bold text-xl md:text-2xl text-foreground">
+                Over 20,000 Canadians and refugees on our platform.
+              </p>
               
-              <div className="flex items-center gap-6 py-4">
-                <span className="font-sans font-bold text-3xl md:text-4xl text-foreground min-w-[120px]">100+</span>
-                <span className="text-muted-foreground text-lg">Communities active across Canada</span>
-              </div>
+              <p className="font-sans font-bold text-xl md:text-2xl text-accent">
+                More than 1,500 refugees looking for help now.
+              </p>
               
-              <div className="flex items-center gap-6 py-4 bg-accent/10 rounded-lg px-4 -mx-4">
-                <span className="font-sans font-bold text-3xl md:text-4xl text-accent min-w-[120px]">1,476</span>
-                <span className="text-accent text-lg">Newcomers waiting for a connection right now</span>
-              </div>
+              <p className="font-sans text-lg text-muted-foreground">
+                Haven is a registered Canadian charity.
+              </p>
             </div>
           </div>
         </div>
