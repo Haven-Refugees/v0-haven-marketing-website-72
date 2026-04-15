@@ -23,7 +23,7 @@ export function Header() {
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex items-center gap-8">
             <Link href="#for-refugees" className="text-muted-foreground hover:text-foreground transition-colors">
-              For Refugees
+              For Newcomers
             </Link>
             <Link href="#for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">
               For Canadians
@@ -63,7 +63,7 @@ export function Header() {
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              For Refugees
+              For Newcomers
             </Link>
             <Link 
               href="#for-canadians" 
