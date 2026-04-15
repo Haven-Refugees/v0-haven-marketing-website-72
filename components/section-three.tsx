@@ -11,9 +11,10 @@ interface CollapsiblePillProps {
   variant: "secondary" | "accent"
   isExpanded: boolean
   onToggle: () => void
+  number?: number
 }
 
-function CollapsiblePill({ title, description, variant, isExpanded, onToggle }: CollapsiblePillProps) {
+function CollapsiblePill({ title, description, variant, isExpanded, onToggle, number }: CollapsiblePillProps) {
   const bgColor = variant === "secondary" ? "bg-white" : "bg-white"
   const borderColor = variant === "secondary" ? "border-secondary/30" : "border-accent/30"
   const chevronBg = variant === "secondary" ? "bg-secondary/20" : "bg-accent/20"
@@ -25,7 +26,14 @@ function CollapsiblePill({ title, description, variant, isExpanded, onToggle }: 
         onClick={onToggle}
         className="w-full flex items-center justify-between px-4 py-3 text-left"
       >
-        <span className="font-medium text-foreground">{title}</span>
+        <span className="font-medium text-foreground flex items-center gap-2">
+          {number && (
+            <span className="w-5 h-5 rounded-full bg-secondary text-white text-xs font-semibold flex items-center justify-center flex-shrink-0">
+              {number}
+            </span>
+          )}
+          {title}
+        </span>
         <div className={`w-7 h-7 rounded-full ${chevronBg} flex items-center justify-center flex-shrink-0`}>
           {isExpanded ? (
             <ChevronUp className={`w-4 h-4 ${chevronColor}`} />
@@ -108,7 +116,7 @@ export function SectionThree() {
               The best way for a newcomer to improve their English — and soon, French!
             </p>
             <div className="border-t border-secondary/20 pt-4 space-y-2 flex-grow">
-              {languageProgramFeatures.map((feature) => (
+              {languageProgramFeatures.map((feature, index) => (
                 <CollapsiblePill
                   key={feature.id}
                   title={feature.title}
@@ -116,6 +124,7 @@ export function SectionThree() {
                   variant="secondary"
                   isExpanded={expandedPills[feature.id] || false}
                   onToggle={() => togglePill(feature.id)}
+                  number={index + 1}
                 />
               ))}
             </div>
