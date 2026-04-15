@@ -11,10 +11,6 @@ export function SectionTwo() {
             />
           </div>
           <div className="flex flex-col justify-center h-full pt-12">
-            <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight text-balance mb-8">
-              Canada&apos;s fastest growing community of refugees and supporters.
-            </h2>
-            
             <div className="space-y-4">
               <div className="flex items-center gap-6 py-4">
                 <span className="font-sans font-bold text-3xl md:text-4xl text-foreground min-w-[120px]">20,000+</span>
