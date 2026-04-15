@@ -15,11 +15,8 @@ export function Footer() {
               </div>
               <span className="font-bold text-xl text-white">Haven</span>
             </Link>
-            <p className="text-gray-400 max-w-xs leading-relaxed mb-4">
+            <p className="text-gray-400 max-w-xs leading-relaxed mb-6">
               Helping newcomers become independent in Canada. Making it easier for Canadians to help.
-            </p>
-            <p className="text-gray-400 italic mb-6">
-              Independence, together.
             </p>
             <div className="flex items-center gap-3">
               <Link 
