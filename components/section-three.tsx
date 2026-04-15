@@ -101,6 +101,9 @@ export function SectionThree() {
         <div className="grid md:grid-cols-3 gap-6">
           {/* Haven Language Program Card */}
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
+            <span className="inline-block w-fit bg-secondary text-white text-xs font-semibold uppercase tracking-wide px-4 py-1.5 rounded-full mb-3">
+              Full Program
+            </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
               Haven Language Program
             </h4>
@@ -126,6 +129,9 @@ export function SectionThree() {
 
           {/* Haven Matching Card - Newcomers */}
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
+            <span className="inline-block w-fit bg-secondary text-white text-xs font-semibold uppercase tracking-wide px-4 py-1.5 rounded-full mb-3">
+              Matching Only
+            </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
               Haven Matching
             </h4>
