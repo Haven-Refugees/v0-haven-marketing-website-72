@@ -4,7 +4,7 @@ export function SectionTwo() {
   return (
     <section className="pt-8 pb-8 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-[6fr_5fr] gap-8 items-center">
+        <div className="grid lg:grid-cols-[3fr_2fr] gap-8 items-center">
           <div className="relative">
             <img 
               src="/images/platform-mockup.png" 
