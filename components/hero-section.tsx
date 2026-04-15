@@ -19,7 +19,7 @@ export function HeroSection() {
           </h1>
           
           <p className="font-sans font-medium text-xl text-muted-foreground leading-relaxed">
-            Newcomers connect with Canadians to improve their English or French and find their community.
+            Newcomers use Haven to improve their English and French, and connect directly with Canadians who can help.
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3">
