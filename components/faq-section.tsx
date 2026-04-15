@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "How does Haven keep its users safe?",
-    answer: "Yes! Helping on Haven is easy. The best way to help is English conversation practice. That means a 30 minute video call where you are speaking to a refugee who is trying to improve their English. Take a look at our conversation guides to get a sense of what you could talk about.",
+    answer: "All Canadian supporters on Haven verify their identity before reaching out. Newcomers can verify too. We recommend it — and most do.",
   },
   {
     question: "Is Haven all online?",
