@@ -10,7 +10,7 @@ const testimonials = [
     type: "Newcomer",
     variant: "newcomer" as const,
     quote: "I now talk with four Canadians on Haven. I'm so grateful to them for the opportunity to talk and for their patience with my English!",
-    image: null,
+    image: "/images/iryna.jpg",
   },
   {
     name: "Barb",
