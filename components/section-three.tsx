@@ -154,24 +154,10 @@ export function SectionThree() {
             
             {/* Info box */}
             <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5 mt-4 flex-grow">
-              <p className="text-foreground mb-3">
+              <p className="text-foreground">
                 <span className="font-bold text-secondary">No classes. No homework.</span>{" "}
                 Just real conversations with Canadian volunteers.
               </p>
-              <ul className="space-y-2 text-sm text-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
-                  Practice your English or French
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
-                  Meet people in your community
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
-                  Find work in Canada
-                </li>
-              </ul>
             </div>
             
             <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
