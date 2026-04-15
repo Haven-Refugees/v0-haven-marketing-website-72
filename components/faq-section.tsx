@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     question: "Who is eligible to get help on Haven?",
-    answer: "Haven Refugees is a Canadian charity registered with the Canada Revenue Agency. We have already helped thousands of refugees and Canadians match directly. We keep everyone on Haven safe by verifying the IDs of our users. You can do this instantly on the platform, or if you prefer, on a video call with a Haven staff member.",
+    answer: "We help all newcomers fleeing conflict who are now in Canada — including refugees, refugee claimants, and all other Canadian humanitarian programs like CUAET. Unfortunately we are not able to help other immigrants in Canada, or refugees who are not in Canada.",
   },
   {
     question: "How does Haven keep its users safe?",
