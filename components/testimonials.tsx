@@ -1,6 +1,7 @@
 "use client"
 
 import { User } from "lucide-react"
+import Image from "next/image"
 
 const testimonials = [
   {
@@ -9,6 +10,7 @@ const testimonials = [
     type: "Newcomer",
     variant: "newcomer" as const,
     quote: "I now talk with four Canadians on Haven. I'm so grateful to them for the opportunity to talk and for their patience with my English!",
+    image: null,
   },
   {
     name: "Barb",
@@ -16,6 +18,7 @@ const testimonials = [
     type: "Canadian supporter",
     variant: "canadian" as const,
     quote: "I had no expectations at all. I've never dealt with refugees before, so I was totally open. I've been surprised by how easy it is to chat with them — it's truly appreciated.",
+    image: "/images/barb.jpg",
   },
 ]
 
@@ -41,24 +44,38 @@ export function Testimonials() {
                   ? "bg-secondary/10" 
                   : "bg-accent/10"
               }`}>
-                <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-3 ${
-                  testimonial.variant === "newcomer"
-                    ? "bg-secondary/20"
-                    : "bg-accent/20"
-                }`}>
-                  <User className={`w-8 h-8 ${
-                    testimonial.variant === "newcomer"
-                      ? "text-secondary"
-                      : "text-accent"
-                  }`} />
-                </div>
-                <p className={`text-sm ${
-                  testimonial.variant === "newcomer"
-                    ? "text-secondary"
-                    : "text-accent"
-                }`}>
-                  {testimonial.name}&apos;s photo
-                </p>
+                {testimonial.image ? (
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-3">
+                    <Image
+                      src={testimonial.image}
+                      alt={`${testimonial.name}'s photo`}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <>
+                    <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-3 ${
+                      testimonial.variant === "newcomer"
+                        ? "bg-secondary/20"
+                        : "bg-accent/20"
+                    }`}>
+                      <User className={`w-8 h-8 ${
+                        testimonial.variant === "newcomer"
+                          ? "text-secondary"
+                          : "text-accent"
+                      }`} />
+                    </div>
+                    <p className={`text-sm ${
+                      testimonial.variant === "newcomer"
+                        ? "text-secondary"
+                        : "text-accent"
+                    }`}>
+                      {testimonial.name}&apos;s photo
+                    </p>
+                  </>
+                )}
               </div>
               
               {/* Content */}
