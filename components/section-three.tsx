@@ -137,9 +137,9 @@ export function SectionThree() {
               Haven Connect
             </h4>
             <p className="text-muted-foreground mb-4">
-              The best way to meet Canadians who want to help.
+              The best way to meet Canadians who can help.
             </p>
-            <div className="border-t border-secondary/20 pt-4 space-y-2 flex-grow">
+            <div className="border-t border-secondary/20 pt-4 space-y-2">
               {newcomerMatchingFeatures.map((feature) => (
                 <CollapsiblePill
                   key={feature.id}
@@ -151,8 +151,31 @@ export function SectionThree() {
                 />
               ))}
             </div>
+            
+            {/* Info box */}
+            <div className="bg-secondary/20 rounded-2xl p-5 mt-4 flex-grow">
+              <p className="text-foreground mb-3">
+                <span className="font-bold italic">No classes. No homework.</span>{" "}
+                Just real conversations with Canadian volunteers.
+              </p>
+              <ul className="space-y-2 text-sm text-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
+                  Practice your English or French
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
+                  Meet people in your community
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
+                  Find work in Canada
+                </li>
+              </ul>
+            </div>
+            
             <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
-              <Link href="https://app.findhaven.org">Learn more</Link>
+              <Link href="https://app.findhaven.org">Find a Canadian match</Link>
             </Button>
           </div>
 
