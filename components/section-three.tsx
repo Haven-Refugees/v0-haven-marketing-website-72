@@ -53,7 +53,7 @@ export function SectionThree() {
   const languageProgramFeatures = [
     { id: "classes", title: "Classes", description: "Individual and small group online ESL classes with professional teachers." },
     { id: "chats", title: "Matching", description: "Practice conversational English with friendly Canadian volunteers." },
-    { id: "study", title: "Study", description: "Self-paced learning materials and exercises to improve on your own time." },
+    { id: "study", title: "Self-Study", description: "Self-paced learning materials and exercises to improve on your own time." },
   ]
 
   const newcomerMatchingFeatures = [
