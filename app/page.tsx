@@ -6,7 +6,6 @@ import { HowItWorks } from "@/components/how-it-works"
 
 import { Testimonials } from "@/components/testimonials"
 import { TeamSection } from "@/components/team-section"
-import { SupportersSection } from "@/components/supporters-section"
 import { FaqSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
 
@@ -21,7 +20,6 @@ export default function HomePage() {
         <HowItWorks />
         <Testimonials />
         <TeamSection />
-        <SupportersSection />
         <FaqSection />
       </main>
       <Footer />
