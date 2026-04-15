@@ -174,7 +174,7 @@ export function SectionThree() {
 
           {/* Haven Connect Card - Canadians */}
           <div className="bg-accent/10 border border-accent/20 rounded-2xl p-6 flex flex-col">
-            <span className="inline-flex items-center gap-1.5 w-fit bg-secondary text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
+            <span className="inline-flex items-center gap-1.5 w-fit bg-accent text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
               <Clock className="w-3.5 h-3.5" />
               You pick your schedule
             </span>
