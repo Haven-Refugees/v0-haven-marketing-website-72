@@ -56,7 +56,7 @@ function HelpingIllustration() {
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="pt-12 pb-24 bg-card">
+    <section id="how-it-works" className="pt-12 pb-12 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
