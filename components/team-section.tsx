@@ -10,8 +10,11 @@ export function TeamSection() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6 text-balance">
               Canada wins when newcomers become independent faster.
             </h2>
+            <p className="text-xl text-muted-foreground mb-4 leading-relaxed">
+              We believe Canada should have a system that helps newcomers learn English and French and integrate into their communities, faster than ever before.
+            </p>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We believe Canada should have a system that helps newcomers learn English and French and integrate into their communities, faster than ever before. Technology makes that possible at scale, and at a fraction of the current cost. That&apos;s good for refugees, good for Canadians, and good for Canada.
+              Technology makes that possible at scale, and at a fraction of the current cost. That&apos;s good for refugees, good for Canadians, and good for Canada.
             </p>
             <Link href="https://app.findhaven.org" className="text-foreground hover:text-primary inline-flex items-center gap-1 font-medium">
               Read more about our vision and team
