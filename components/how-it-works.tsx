@@ -63,7 +63,7 @@ export function HowItWorks() {
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Getting started with Haven is simple and rewarding
+            Sign up, get verified, start connecting. It takes less than 10 minutes.
           </p>
         </div>
 
