@@ -155,7 +155,7 @@ export function SectionThree() {
             {/* Info box */}
             <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5 mt-4 flex-grow">
               <p className="text-foreground mb-3">
-                <span className="font-bold italic text-secondary">No classes. No homework.</span>{" "}
+                <span className="font-bold text-secondary">No classes. No homework.</span>{" "}
                 Just real conversations with Canadian volunteers.
               </p>
               <ul className="space-y-2 text-sm text-foreground">
