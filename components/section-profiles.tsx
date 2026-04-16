@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { CheckCircle, ArrowRight } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function SectionProfiles() {
@@ -82,7 +82,6 @@ export function SectionProfiles() {
             <Button size="lg" className="mb-6 bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href="https://app.findhaven.org">
                 Visit the platform
-                <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
 
