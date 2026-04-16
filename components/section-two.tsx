@@ -9,7 +9,7 @@ export function SectionTwo() {
           {/* Platform Screenshot */}
           <div className="relative">
             <Image
-              src="/images/haven-platform-mockup.png"
+              src="/images/platform-mockup.png"
               alt="Haven platform showing user profiles and matching interface"
               width={800}
               height={600}
