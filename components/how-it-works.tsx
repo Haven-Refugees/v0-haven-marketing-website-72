@@ -21,7 +21,7 @@ function ProfileIllustration() {
     <img 
       src="/images/meeting-icon.png" 
       alt="Meeting illustration" 
-      width={100} 
+      width={160} 
       height={90}
       className="object-contain"
     />
