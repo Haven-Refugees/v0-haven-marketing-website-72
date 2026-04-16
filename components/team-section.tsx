@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function TeamSection() {
   return (
@@ -16,10 +16,14 @@ export function TeamSection() {
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Technology makes that possible at scale, and at a fraction of the current cost. That&apos;s good for refugees, good for Canadians, and good for Canada.
             </p>
-            <Link href="https://app.findhaven.org" className="text-foreground hover:text-primary inline-flex items-center gap-1 font-medium">
-              Read more about our vision and team
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild className="bg-primary hover:bg-primary/90 text-white">
+                <Link href="https://app.findhaven.org">Our vision</Link>
+              </Button>
+              <Button asChild variant="outline" className="border-foreground/20 hover:bg-foreground/5">
+                <Link href="https://app.findhaven.org">Meet our team</Link>
+              </Button>
+            </div>
           </div>
 
           <div className="relative">
