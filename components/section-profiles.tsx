@@ -79,9 +79,9 @@ export function SectionProfiles() {
             </div>
 
             {/* CTA Button */}
-            <Button variant="outline" size="lg" className="mb-6" asChild>
+            <Button size="lg" className="mb-6 bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href="https://app.findhaven.org">
-                See who needs help
+                Visit the platform
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
