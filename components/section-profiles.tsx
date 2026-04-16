@@ -69,7 +69,7 @@ export function SectionProfiles() {
             {/* Stats */}
             <div className="flex gap-4 mb-6">
               <div className="flex-1 bg-accent/10 rounded-lg p-4">
-                <p className="text-2xl font-bold text-accent">18,500+</p>
+                <p className="text-2xl font-bold text-accent">1,000+</p>
                 <p className="text-sm text-accent">Canadians ready to help</p>
               </div>
               <div className="flex-1 bg-secondary/10 rounded-lg p-4">
