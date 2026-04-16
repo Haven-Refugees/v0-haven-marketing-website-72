@@ -18,10 +18,13 @@ const steps = [
 
 function ProfileIllustration() {
   return (
-    <svg width="100" height="90" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="28" cy="32" rx="24" ry="26" fill="#af77ff"/>
-      <ellipse cx="72" cy="32" rx="24" ry="26" fill="#ff8b75"/>
-    </svg>
+    <img 
+      src="/images/meeting-icon.png" 
+      alt="Meeting illustration" 
+      width={100} 
+      height={90}
+      className="object-contain"
+    />
   )
 }
 
