@@ -68,7 +68,7 @@ export function HowItWorks() {
               key={index}
               className="bg-[#F5F3EE] p-8 rounded-2xl"
             >
-              <div className="mb-6">
+              <div className="mb-6 h-[90px] flex items-end">
                 {step.illustration === "profile" && <ProfileIllustration />}
                 {step.illustration === "match" && <MatchIllustration />}
                 {step.illustration === "helping" && <HelpingIllustration />}
