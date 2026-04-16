@@ -18,13 +18,9 @@ const steps = [
 
 function ProfileIllustration() {
   return (
-    <svg width="100" height="90" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
-      <path d="M32 16C20 14 8 22 8 36C8 50 20 62 34 62C48 66 60 54 58 40C56 26 46 18 32 16Z" fill="#B8AEE8" opacity="0.9"/>
-      <rect x="42" y="2" width="32" height="22" rx="8" fill="#2F54EF"/>
-      <path d="M46 24L40 32L54 24Z" fill="#2F54EF"/>
-      <line x1="76" y1="4" x2="79" y2="2" stroke="#2F54EF" strokeWidth="1.5" strokeLinecap="round"/>
-      <line x1="77" y1="10" x2="80" y2="10" stroke="#2F54EF" strokeWidth="1.5" strokeLinecap="round"/>
-      <line x1="76" y1="16" x2="79" y2="18" stroke="#2F54EF" strokeWidth="1.5" strokeLinecap="round"/>
+    <svg width="100" height="90" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="28" cy="32" rx="24" ry="26" fill="#af77ff"/>
+      <ellipse cx="72" cy="32" rx="24" ry="26" fill="#ff8b75"/>
     </svg>
   )
 }
