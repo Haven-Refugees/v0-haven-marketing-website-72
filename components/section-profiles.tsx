@@ -61,18 +61,18 @@ export function SectionProfiles() {
           </div>
 
           {/* Right Content */}
-          <div>
-            <h2 className="font-sans font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.4rem] text-foreground leading-tight mb-8">
+          <div className="max-w-md">
+            <h2 className="font-sans font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.4rem] text-foreground leading-tight mb-8 max-w-sm">
               Where old Canadians meet new ones.
             </h2>
 
             {/* Stats */}
             <div className="flex gap-4 mb-6">
-              <div className="flex-1 bg-accent/10 rounded-lg p-4">
+              <div className="bg-accent/10 rounded-lg p-4 min-w-[140px]">
                 <p className="text-2xl font-bold text-accent">1,000+</p>
                 <p className="text-sm text-accent">Canadians ready to help</p>
               </div>
-              <div className="flex-1 bg-secondary/10 rounded-lg p-4">
+              <div className="bg-secondary/10 rounded-lg p-4 min-w-[140px]">
                 <p className="text-2xl font-bold text-secondary">1,500+</p>
                 <p className="text-sm text-secondary">Newcomers looking for help</p>
               </div>
