@@ -6,7 +6,7 @@ export function SectionProfiles() {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-[1fr_1fr] gap-12 items-center justify-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-[1fr_1fr] gap-12 items-center justify-center max-w-6xl mx-auto lg:ml-auto lg:mr-16">
           {/* Profile Cards */}
           <div className="flex gap-4">
             {/* Barb A Card */}
