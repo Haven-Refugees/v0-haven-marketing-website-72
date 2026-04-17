@@ -62,7 +62,7 @@ export function SectionProfiles() {
 
           {/* Right Content */}
           <div>
-            <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-8">
+            <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight mb-8">
               Where old Canadians meet new ones.
             </h2>
 
