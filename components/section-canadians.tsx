@@ -5,13 +5,13 @@ export function SectionCanadians() {
   return (
     <section className="py-20 bg-accent/10">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           {/* Left - Image */}
           <div className="rounded-3xl h-[400px] overflow-hidden">
             <img 
               src="/images/canadians-hero.png" 
               alt="Canadian volunteer smiling" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
 

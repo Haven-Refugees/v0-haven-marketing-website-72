@@ -35,11 +35,11 @@ export function SectionNewcomers() {
 
           {/* Right Image */}
           <div className="flex justify-center">
-            <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden">
+            <div className="w-full h-[400px] rounded-3xl overflow-hidden">
               <img 
                 src="/images/newcomers-hero.png" 
                 alt="Happy newcomer celebrating in a city" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
