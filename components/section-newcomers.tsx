@@ -1,0 +1,46 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
+export function SectionNewcomers() {
+  return (
+    <section className="py-20 bg-secondary/10">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="max-w-lg">
+            <p className="text-secondary font-medium uppercase tracking-wide text-sm mb-4">
+              For Newcomers
+            </p>
+            <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground leading-tight mb-6">
+              Real Canadians. Real conversations and classes.
+            </h2>
+            <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
+              Haven matches you with Canadian volunteers to help you practice English or French, meet people in your community, and find work in Canada.
+            </p>
+            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+              You can join for conversations only, or add classes with professional teachers if language is your main focus.
+            </p>
+            <div className="flex items-center gap-6">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
+                <Link href="https://app.findhaven.org">I need help</Link>
+              </Button>
+              <Link 
+                href="https://app.findhaven.org" 
+                className="text-muted-foreground hover:text-foreground underline underline-offset-4"
+              >
+                Learn more
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Image Placeholder */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-md aspect-[4/3] bg-secondary/20 rounded-3xl flex items-center justify-center">
+              <span className="text-secondary/60 text-sm uppercase tracking-wide">Image</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
