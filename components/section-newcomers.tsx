@@ -5,9 +5,9 @@ export function SectionNewcomers() {
   return (
     <section className="py-20 bg-secondary/10">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           {/* Left Content */}
-          <div className="max-w-lg">
+          <div>
             <p className="text-secondary font-medium uppercase tracking-wide text-sm mb-4">
               For Newcomers
             </p>
@@ -34,8 +34,8 @@ export function SectionNewcomers() {
           </div>
 
           {/* Right Image Placeholder */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md aspect-[4/3] bg-secondary/20 rounded-3xl flex items-center justify-center">
+          <div className="flex justify-center">
+            <div className="w-full aspect-[4/3] bg-secondary/20 rounded-3xl flex items-center justify-center">
               <span className="text-secondary/60 text-sm uppercase tracking-wide">Image</span>
             </div>
           </div>
