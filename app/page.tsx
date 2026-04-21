@@ -20,10 +20,10 @@ export default function HomePage() {
         <HeroSection />
         <SectionNewcomers />
         <SectionCanadians />
+        <HowItWorks />
         <SectionTwo />
         <SectionProfiles />
         <SectionThree />
-        <HowItWorks />
         <Testimonials />
         <TeamSection />
         <FaqSection />
