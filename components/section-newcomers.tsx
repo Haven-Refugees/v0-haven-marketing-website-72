@@ -12,7 +12,7 @@ export function SectionNewcomers() {
               For Newcomers
             </p>
             <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground leading-tight mb-6">
-              Speak with volunteers. Study with teachers.
+              Speak with Canadian volunteers. Study with professional teachers.
             </h2>
             <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
               Haven matches you with Canadian volunteers to help you practice English or French, meet people in your community, and find work in Canada.
