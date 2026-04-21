@@ -4,6 +4,7 @@ import { SectionTwo } from "@/components/section-two"
 import { SectionProfiles } from "@/components/section-profiles"
 import { SectionThree } from "@/components/section-three"
 import { SectionNewcomers } from "@/components/section-newcomers"
+import { SectionCanadians } from "@/components/section-canadians"
 import { HowItWorks } from "@/components/how-it-works"
 
 import { Testimonials } from "@/components/testimonials"
@@ -21,6 +22,7 @@ export default function HomePage() {
         <SectionProfiles />
         <SectionThree />
         <SectionNewcomers />
+        <SectionCanadians />
         <HowItWorks />
         <Testimonials />
         <TeamSection />
