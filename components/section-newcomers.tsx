@@ -33,10 +33,14 @@ export function SectionNewcomers() {
             </div>
           </div>
 
-          {/* Right Image Placeholder */}
+          {/* Right Image */}
           <div className="flex justify-center">
-            <div className="w-full aspect-[4/3] bg-secondary/20 rounded-3xl flex items-center justify-center">
-              <span className="text-secondary/60 text-sm uppercase tracking-wide">Image</span>
+            <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden">
+              <img 
+                src="/images/newcomers-hero.png" 
+                alt="Happy newcomer celebrating in a city" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
