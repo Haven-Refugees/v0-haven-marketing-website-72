@@ -18,11 +18,11 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <SectionNewcomers />
+        <SectionCanadians />
         <SectionTwo />
         <SectionProfiles />
         <SectionThree />
-        <SectionNewcomers />
-        <SectionCanadians />
         <HowItWorks />
         <Testimonials />
         <TeamSection />
