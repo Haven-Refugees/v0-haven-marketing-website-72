@@ -21,7 +21,7 @@ export function SectionCanadians() {
               For Canadians
             </span>
             <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-[2.5rem] text-foreground leading-tight mb-6">
-              The easiest way to help refugees in Canada — in just 30 minutes.
+              Help a refugee in just 30 minutes.
             </h2>
             <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
               Haven connects you directly with a refugee. Helping is easy — it&apos;s a conversation to practice their English or French, local tips about life in your city, or advice for navigating the Canadian job market.
