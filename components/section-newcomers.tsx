@@ -18,7 +18,7 @@ export function SectionNewcomers() {
               Haven matches you with Canadian volunteers to help you practice English or French, meet people in your community, and find work in Canada.
             </p>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              You can join for conversations only, or add classes with professional teachers if language is your main focus.
+              Join for conversations only, or add classes with professional teachers if language is your main focus.
             </p>
             <div className="flex items-center gap-6">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
