@@ -6,9 +6,13 @@ export function SectionCanadians() {
     <section className="py-20 bg-accent/10">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Image Placeholder */}
-          <div className="bg-accent/20 rounded-3xl h-[400px] flex items-center justify-center">
-            <span className="text-accent/60 text-sm tracking-wide">IMAGE</span>
+          {/* Left - Image */}
+          <div className="rounded-3xl h-[400px] overflow-hidden">
+            <img 
+              src="/images/canadians-hero.png" 
+              alt="Canadian volunteer smiling" 
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Right - Content */}
