@@ -45,12 +45,12 @@ export function Testimonials() {
                   : "bg-accent/10"
               }`}>
                 {testimonial.image ? (
-                  <div className="w-36 h-36 rounded-2xl overflow-hidden">
+                  <div className="w-44 h-44 rounded-2xl overflow-hidden">
                     <Image
                       src={testimonial.image}
                       alt={`${testimonial.name}'s photo`}
-                      width={144}
-                      height={144}
+                      width={176}
+                      height={176}
                       className="w-full h-full object-cover"
                     />
                   </div>
