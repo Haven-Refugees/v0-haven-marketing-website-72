@@ -6,8 +6,8 @@ function StarburstIcon() {
     <img 
       src="/images/maple-leaf-icon.svg" 
       alt="Maple leaf icon" 
-      width={256} 
-      height={256}
+      width={120} 
+      height={120}
       className="object-contain"
     />
   )
@@ -18,8 +18,8 @@ function IdVerificationIcon() {
     <img 
       src="/images/id-verification-icon.svg" 
       alt="ID verification icon" 
-      width={192} 
-      height={192}
+      width={120} 
+      height={120}
       className="object-contain"
     />
   )
@@ -30,8 +30,8 @@ function CharityBadgeIcon() {
     <img 
       src="/images/charity-badge-icon.svg" 
       alt="Charity badge icon" 
-      width={192} 
-      height={192}
+      width={120} 
+      height={120}
       className="object-contain"
     />
   )
@@ -50,7 +50,7 @@ export function SectionCommunity() {
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Card 1 - Users */}
           <div className="text-center">
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center items-end h-[120px] mb-4">
               <StarburstIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -63,7 +63,7 @@ export function SectionCommunity() {
 
           {/* Card 2 - Verification */}
           <div className="text-center">
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center items-end h-[120px] mb-4">
               <IdVerificationIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -76,7 +76,7 @@ export function SectionCommunity() {
 
           {/* Card 3 - Charity */}
           <div className="text-center">
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center items-end h-[120px] mb-4">
               <CharityBadgeIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
