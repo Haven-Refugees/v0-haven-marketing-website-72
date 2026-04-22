@@ -10,7 +10,7 @@ const steps = [
     illustration: "match",
   },
   {
-    title: "Keep helping",
+    title: "Keep meeting",
     description: "Continue meeting for as long as you want. An old Canadian helps a new Canadian — that's Haven.",
     illustration: "helping",
   },
