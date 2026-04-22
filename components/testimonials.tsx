@@ -39,7 +39,7 @@ export function Testimonials() {
               className="bg-background rounded-2xl border border-border overflow-hidden"
             >
               {/* Header with avatar */}
-              <div className={`py-8 px-6 flex flex-col items-center ${
+              <div className={`py-4 px-6 flex flex-col items-center ${
                 testimonial.variant === "newcomer" 
                   ? "bg-secondary/10" 
                   : "bg-accent/10"
