@@ -7,7 +7,6 @@ import { SectionNewcomers } from "@/components/section-newcomers"
 import { SectionCanadians } from "@/components/section-canadians"
 import { HowItWorks } from "@/components/how-it-works"
 import { SectionCommunity } from "@/components/section-community"
-import { SectionCanadaWins } from "@/components/section-canada-wins"
 import { Testimonials } from "@/components/testimonials"
 import { TeamSection } from "@/components/team-section"
 import { FaqSection } from "@/components/faq-section"
@@ -24,7 +23,6 @@ export default function HomePage() {
         <HowItWorks />
         <SectionCommunity />
         <Testimonials />
-        <SectionCanadaWins />
         <SectionTwo />
         <SectionProfiles />
         <SectionThree />
