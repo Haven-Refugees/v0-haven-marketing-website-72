@@ -26,12 +26,6 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="pt-12 pb-12 bg-background">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground">
-            Normal Canadians helping people who had to leave home.
-          </h2>
-        </div>
-
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
