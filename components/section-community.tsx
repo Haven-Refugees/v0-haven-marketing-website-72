@@ -15,15 +15,13 @@ function StarburstIcon() {
 
 function IdVerificationIcon() {
   return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="4" y="10" width="40" height="28" rx="4" stroke="#2557F1" strokeWidth="2" fill="none"/>
-      <circle cx="16" cy="22" r="5" stroke="#2557F1" strokeWidth="2"/>
-      <rect x="10" y="30" width="12" height="4" rx="2" fill="#2557F1"/>
-      <rect x="26" y="16" width="14" height="2" rx="1" fill="#2557F1"/>
-      <rect x="26" y="22" width="10" height="2" rx="1" fill="#2557F1"/>
-      <circle cx="40" cy="32" r="6" fill="#2557F1"/>
-      <path d="M37 32L39 34L43 30" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <img 
+      src="/images/id-verification-icon.svg" 
+      alt="ID verification icon" 
+      width={256} 
+      height={256}
+      className="object-contain"
+    />
   )
 }
 
