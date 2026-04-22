@@ -28,18 +28,34 @@ export function TeamSection() {
 
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div 
-                  key={i}
-                  className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center"
-                >
-                  <div className="w-16 h-16 bg-card rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-2xl">
-                      {["👩‍💼", "👨‍💻", "👩‍🎓", "👨‍🏫"][i - 1]}
-                    </span>
-                  </div>
-                </div>
-              ))}
+              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
+                <img 
+                  src="/images/team-shihab.jpg" 
+                  alt="Shihab from Bangladesh" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
+                <img 
+                  src="/images/team-verenice.jpg" 
+                  alt="Verenice from Mexico" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
+                <img 
+                  src="/images/team-woman-yellow.jpg" 
+                  alt="Newcomer making peace sign" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
+                <img 
+                  src="/images/team-nasina.jpg" 
+                  alt="Nasina from Afghanistan" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </div>
         </div>
