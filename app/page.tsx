@@ -23,10 +23,10 @@ export default function HomePage() {
         <SectionCanadians />
         <HowItWorks />
         <SectionCommunity />
+        <Testimonials />
         <SectionTwo />
         <SectionProfiles />
         <SectionThree />
-        <Testimonials />
         <TeamSection />
         <FaqSection />
       </main>
