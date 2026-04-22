@@ -6,8 +6,8 @@ function StarburstIcon() {
     <img 
       src="/images/maple-leaf-icon.svg" 
       alt="Maple leaf icon" 
-      width={64} 
-      height={64}
+      width={256} 
+      height={256}
       className="object-contain"
     />
   )
