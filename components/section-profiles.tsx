@@ -62,7 +62,7 @@ export function SectionProfiles() {
           {/* Right Content */}
           <div className="max-w-lg">
             <h2 className="font-sans font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.4rem] text-foreground leading-tight mb-8 max-w-md">
-              Where old Canadians meet new ones.
+              Our platform makes it easier that ever to match.
             </h2>
 
             {/* Stats */}
