@@ -27,13 +27,13 @@ function IdVerificationIcon() {
 
 function CharityBadgeIcon() {
   return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="24" cy="18" r="14" stroke="#2557F1" strokeWidth="2" fill="none"/>
-      <path d="M16 32L12 46L24 40L36 46L32 32" stroke="#2557F1" strokeWidth="2" fill="none"/>
-      <rect x="18" y="12" width="12" height="14" rx="2" stroke="#2557F1" strokeWidth="2" fill="none"/>
-      <circle cx="24" cy="16" r="2" fill="#2557F1"/>
-      <rect x="21" y="20" width="6" height="4" rx="1" fill="#2557F1"/>
-    </svg>
+    <img 
+      src="/images/charity-badge-icon.svg" 
+      alt="Charity badge icon" 
+      width={192} 
+      height={192}
+      className="object-contain"
+    />
   )
 }
 
