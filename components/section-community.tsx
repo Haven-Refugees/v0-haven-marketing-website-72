@@ -39,7 +39,7 @@ function CharityBadgeIcon() {
 
 export function SectionCommunity() {
   return (
-    <section className="py-20 bg-background">
+    <section className="pt-10 pb-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight">
