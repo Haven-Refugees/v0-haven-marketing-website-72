@@ -43,7 +43,7 @@ export function SectionCommunity() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-16 max-w-3xl mx-auto leading-tight">
-          Haven is a community of Canadians helping new Canadians.
+          Haven is where old Canadians meet new ones.
         </h2>
 
         {/* Feature Cards */}
