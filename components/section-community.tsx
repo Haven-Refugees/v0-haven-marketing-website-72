@@ -18,8 +18,8 @@ function IdVerificationIcon() {
     <img 
       src="/images/id-verification-icon.svg" 
       alt="ID verification icon" 
-      width={256} 
-      height={256}
+      width={192} 
+      height={192}
       className="object-contain"
     />
   )
