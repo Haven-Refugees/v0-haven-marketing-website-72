@@ -24,10 +24,10 @@ export default function HomePage() {
         <SectionCommunity />
         <Testimonials />
         <TeamSection />
+        <FaqSection />
         <SectionTwo />
         <SectionProfiles />
         <SectionThree />
-        <FaqSection />
       </main>
       <Footer />
     </>
