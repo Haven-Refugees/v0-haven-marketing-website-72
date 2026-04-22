@@ -23,10 +23,10 @@ export default function HomePage() {
         <HowItWorks />
         <SectionCommunity />
         <Testimonials />
+        <TeamSection />
         <SectionTwo />
         <SectionProfiles />
         <SectionThree />
-        <TeamSection />
         <FaqSection />
       </main>
       <Footer />
