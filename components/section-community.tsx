@@ -83,9 +83,9 @@ export function SectionCommunity() {
               Registered Canadian charity
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Haven is registered with the CRA. Check out our details with{" "}
+              Haven is registered with the CRA. Check us out on{" "}
               <Link href="https://www.canadahelps.org/en/charities/haven-refugees/" className="text-primary underline hover:text-primary/80">
-                CanadaHelps here
+                CanadaHelps
               </Link>.
             </p>
           </div>
