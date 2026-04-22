@@ -70,7 +70,7 @@ export function SectionCommunity() {
               Connect with confidence.
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              We use ID verification so that you always know who you&apos;re connecting with.
+              We use ID verification so you always know who you&apos;re connecting with.
             </p>
           </div>
 
