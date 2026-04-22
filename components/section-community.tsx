@@ -50,7 +50,7 @@ export function SectionCommunity() {
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Card 1 - Users */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[240px] mb-4">
+            <div className="flex justify-center items-end h-[140px] mb-4">
               <StarburstIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -63,7 +63,7 @@ export function SectionCommunity() {
 
           {/* Card 2 - Verification */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[240px] mb-4">
+            <div className="flex justify-center items-end h-[140px] mb-4">
               <IdVerificationIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -76,7 +76,7 @@ export function SectionCommunity() {
 
           {/* Card 3 - Charity */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[240px] mb-4">
+            <div className="flex justify-center items-end h-[140px] mb-4">
               <CharityBadgeIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
