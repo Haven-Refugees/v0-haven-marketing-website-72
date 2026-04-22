@@ -11,7 +11,7 @@ const steps = [
   },
   {
     title: "Continue to meet",
-    description: "Continue meeting for as long as you want. An old Canadian helps a new Canadian — that's Haven.",
+    description: "Some matches meet only once, others meet for years. No pressure, every chat counts!",
     illustration: "helping",
   },
 ]
