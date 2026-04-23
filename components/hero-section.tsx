@@ -13,7 +13,7 @@ export function HeroSection() {
           </h1>
           
           <p className="font-sans font-medium text-xl text-muted-foreground leading-relaxed">
-            Newcomers fleeing conflict use Haven to improve their English and meet Canadians who can help.
+            Newcomers fleeing conflict use Haven to improve their language skills and meet Canadians who can help.
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3">
