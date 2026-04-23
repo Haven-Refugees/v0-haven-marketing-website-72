@@ -21,20 +21,16 @@ export function Header() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <nav className="flex items-center gap-8">
-            <Link href="#for-refugees" className="text-muted-foreground hover:text-foreground transition-colors">
-              For Newcomers
-            </Link>
-            <Link href="#for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">
-              For Canadians
-            </Link>
-            <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About Haven
-            </Link>
-          </nav>
-
-          <div className="flex items-center gap-4">
-          <button className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="Language">
+          <Link href="/for-newcomers" className="text-muted-foreground hover:text-foreground transition-colors">
+            For Newcomers
+          </Link>
+          <Link href="/for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">
+            For Canadians
+          </Link>
+          <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+            About Haven
+          </Link>
+          <button className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Language">
             <Globe className="w-5 h-5" />
           </button>
           <Button variant="ghost" asChild>
@@ -43,7 +39,6 @@ export function Header() {
           <Button asChild>
             <Link href="https://app.findhaven.org">Join Haven</Link>
           </Button>
-          </div>
         </div>
 
         <button
@@ -58,34 +53,27 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col p-6 gap-4">
-            <Link 
-              href="#for-refugees" 
+            <Link
+              href="/for-newcomers" 
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               For Newcomers
             </Link>
             <Link 
-              href="#for-canadians" 
+              href="/for-canadians" 
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               For Canadians
             </Link>
             <Link 
-              href="#about" 
+              href="/about" 
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               About Haven
             </Link>
-            <button 
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <Globe className="w-5 h-5" />
-              Language
-            </button>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">
                 <Link href="https://app.findhaven.org">Log in</Link>
