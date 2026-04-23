@@ -20,7 +20,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           <Link href="/for-newcomers" className="text-muted-foreground hover:text-foreground transition-colors">
             For Newcomers
           </Link>
@@ -30,9 +30,6 @@ export function Header() {
           <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
             About Haven
           </Link>
-        </nav>
-
-        <div className="hidden md:flex items-center gap-4">
           <button className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Language">
             <Globe className="w-5 h-5" />
           </button>
