@@ -39,7 +39,6 @@ export function Header() {
           <Button asChild>
             <Link href="https://app.findhaven.org">Join Haven</Link>
           </Button>
-          </div>
         </div>
 
         <button
