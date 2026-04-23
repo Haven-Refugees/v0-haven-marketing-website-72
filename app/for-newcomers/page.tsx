@@ -1,5 +1,13 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { NewcomersHero } from "@/components/newcomers/hero"
+import { ChooseYourPath } from "@/components/newcomers/choose-your-path"
+import { HavenLanguageProgram } from "@/components/newcomers/haven-language-program"
+import { HavenConnect } from "@/components/newcomers/haven-connect"
+import { Eligibility } from "@/components/newcomers/eligibility"
+import { NewcomersTestimonials } from "@/components/newcomers/testimonials"
+import { NewcomersFaq } from "@/components/newcomers/faq"
+import { NewcomersCta } from "@/components/newcomers/cta"
 
 export const metadata = {
   title: 'For Newcomers | Haven',
@@ -8,22 +16,19 @@ export const metadata = {
 
 export default function ForNewcomersPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <>
       <Header />
-      
-      {/* Page content goes here */}
-      <div className="pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h1 className="font-serif text-4xl md:text-5xl text-foreground">
-            For Newcomers
-          </h1>
-          <p className="text-muted-foreground mt-4 text-lg">
-            Your content starts here.
-          </p>
-        </div>
-      </div>
-
+      <main>
+        <NewcomersHero />
+        <ChooseYourPath />
+        <HavenLanguageProgram />
+        <HavenConnect />
+        <Eligibility />
+        <NewcomersTestimonials />
+        <NewcomersFaq />
+        <NewcomersCta />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
