@@ -39,6 +39,7 @@ export function Header() {
           <Button asChild>
             <Link href="https://app.findhaven.org">Join Haven</Link>
           </Button>
+          </div>
         </div>
 
         <button
@@ -53,7 +54,7 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col p-6 gap-4">
-            <Link 
+            <Link
               href="/for-newcomers" 
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
