@@ -9,22 +9,22 @@ import {
 
 const faqs = [
   {
-    question: "Is Haven safe and trustworthy?",
-    answer: "Haven Refugees is a Canadian charity registered with the Canada Revenue Agency. We have already helped thousands of refugees and Canadians match directly. We keep everyone on Haven safe by verifying the IDs of our users. You can do this instantly on the platform, or if you prefer, on a video call with a Haven staff member.",
+    question: "Who is eligible to get help on Haven?",
+    answer: "We help all newcomers fleeing conflict who are now in Canada — including refugees, refugee claimants, and all other Canadian humanitarian programs like CUAET. Unfortunately we are not able to help other immigrants in Canada, or refugees who are not in Canada.",
   },
   {
-    question: "I've never done this before. Can I help?",
-    answer: "Yes! Helping on Haven is easy. The best way to help is English conversation practice. That means a 30 minute video call where you are speaking to a refugee who is trying to improve their English. Take a look at our conversation guides to get a sense of what you could talk about.",
+    question: "How does Haven keep its users safe?",
+    answer: "All Canadian supporters on Haven verify their identity before reaching out. Newcomers can verify too. We recommend it — and most do.",
   },
   {
-    question: "How do I start to help?",
-    answer: "Create an account, verify your ID, and reach out to a refugee. That's it! Get started by clicking sign-up on our platform.",
+    question: "Is Haven all online?",
+    answer: "Haven is primarily an online platform. For Haven Connect, all connections start with video calls through the Haven app — but if both people are comfortable and local, many choose to meet in person too. For the Haven Language Program, all classes and learning are fully online.",
   },
 ]
 
 export function FaqSection() {
   return (
-    <section id="faq" className="py-24">
+    <section id="faq" className="pt-12 pb-24">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
@@ -37,7 +37,7 @@ export function FaqSection() {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-card border border-border rounded-xl px-6 data-[state=open]:shadow-lg transition-shadow"
+              className="bg-card border border-border rounded-xl px-6 overflow-hidden data-[state=open]:shadow-lg transition-shadow !border-b"
             >
               <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline py-6">
                 {faq.question}
