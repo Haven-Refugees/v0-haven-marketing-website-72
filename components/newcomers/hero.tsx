@@ -11,7 +11,7 @@ export function NewcomersHero() {
             <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
               Speak with volunteers. Study with teachers.
             </h1>
-            <p className="font-sans font-medium text-lg text-muted-foreground leading-relaxed max-w-lg">
+            <p className="font-sans font-medium text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
               Two ways to get help in Canada. Conversations with Canadians, or conversations plus classes. You choose.
             </p>
             <div className="pt-2">
