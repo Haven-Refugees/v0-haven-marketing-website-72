@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function NewcomersHero() {
@@ -23,8 +24,14 @@ export function NewcomersHero() {
           </div>
 
           <div className="relative">
-            <div className="bg-primary/10 rounded-2xl aspect-[4/5] flex items-center justify-center">
-              <span className="text-primary/40 text-sm font-medium uppercase tracking-wider">Image</span>
+            <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+              <Image
+                src="/images/newcomers-hero.png"
+                alt="A joyful woman celebrating with arms raised in a city street"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
