@@ -8,16 +8,19 @@ const programStructure = [
     image: "/images/icon-classes.png",
     title: "Classes with teachers",
     description: "Individual and small group online classes with professional teachers.",
+    scale: "scale-100",
   },
   {
     image: "/images/icon-conversations.png",
     title: "Conversations with Canadians",
     description: "1-on-1 video calls with Canadian volunteers to practice your language and build your confidence.",
+    scale: "scale-100",
   },
   {
     image: "/images/icon-homework.png",
     title: "Personalized homework",
     description: "Materials from your teacher to keep you learning between classes and conversations.",
+    scale: "scale-75",
   },
 ]
 
@@ -84,7 +87,7 @@ export function HavenLanguageProgram() {
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-contain object-center"
+                  className={`object-contain object-center ${item.scale}`}
                 />
               </div>
               <h3 className="font-sans font-medium text-foreground mb-2">{item.title}</h3>
