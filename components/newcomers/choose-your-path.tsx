@@ -11,7 +11,7 @@ export function ChooseYourPath() {
           Join for conversations only, or add classes with professional teachers if language is your main focus.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
           {/* Haven Language Program Card */}
           <Link 
             href="#hlp" 
