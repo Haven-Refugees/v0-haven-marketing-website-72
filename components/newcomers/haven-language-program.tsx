@@ -77,14 +77,14 @@ export function HavenLanguageProgram() {
           {programStructure.map((item, index) => (
             <div 
               key={index}
-              className="bg-muted/50 border border-border rounded-2xl p-7"
+              className="bg-background border border-border rounded-2xl p-7"
             >
-              <div className="w-24 h-24 mb-4">
+              <div className="w-32 h-32 mb-4">
                 <Image
                   src={item.image}
                   alt={item.title}
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={128}
                   className="object-contain"
                 />
               </div>
