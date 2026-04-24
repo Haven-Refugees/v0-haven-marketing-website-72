@@ -17,7 +17,7 @@ export function NewcomersHero() {
             <div className="pt-2">
               <Button size="lg" className="text-base px-7 py-6" asChild>
                 <Link href="https://app.findhaven.org">
-                  Join Haven
+                  Get help now
                 </Link>
               </Button>
             </div>
