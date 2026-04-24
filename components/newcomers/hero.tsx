@@ -29,7 +29,7 @@ export function NewcomersHero() {
                 src="/images/newcomers-hero.png"
                 alt="A joyful woman celebrating with arms raised in a city street"
                 fill
-                className="object-cover"
+                className="object-cover object-[center_60%]"
                 priority
               />
             </div>
