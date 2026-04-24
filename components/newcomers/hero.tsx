@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 
 export function NewcomersHero() {
   return (
-    <section className="relative pt-20 pb-14 bg-primary/5">
+    <section className="relative pt-14 pb-10 bg-primary/5">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
               Speak with volunteers. Study with teachers.
@@ -24,7 +24,7 @@ export function NewcomersHero() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden aspect-[4/4]">
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
                 src="/images/newcomers-hero.png"
                 alt="A joyful woman celebrating with arms raised in a city street"
