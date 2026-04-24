@@ -6,9 +6,9 @@ export function NewcomersHero() {
   return (
     <section className="relative pt-14 pb-10 bg-primary/5">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 lg:pl-12">
-            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight max-w-3xl">
+        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
+          <div className="space-y-6">
+            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
               Speak with volunteers. Study with teachers.
             </h1>
             <p className="font-sans font-medium text-lg text-muted-foreground leading-relaxed max-w-lg">
