@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function NewcomersHero() {
   return (
-    <section className="relative pt-28 pb-20 bg-primary/5">
+    <section className="relative pt-20 pb-14 bg-primary/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
@@ -24,7 +24,7 @@ export function NewcomersHero() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+            <div className="rounded-2xl overflow-hidden aspect-[4/4]">
               <Image
                 src="/images/newcomers-hero.png"
                 alt="A joyful woman celebrating with arms raised in a city street"
