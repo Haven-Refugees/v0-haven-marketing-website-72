@@ -60,7 +60,7 @@ export function HavenLanguageProgram() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <p className="text-secondary text-sm font-medium uppercase tracking-wider mb-4">
+          <p className="text-secondary text-[20px] font-medium uppercase tracking-wider mb-4">
             Haven Language Program
           </p>
           <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
