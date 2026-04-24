@@ -4,10 +4,10 @@ export function ChooseYourPath() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-3">
+        <h2 className="font-sans font-extrabold text-3xl md:text-4xl text-foreground mb-3">
           Choose your path
         </h2>
-        <p className="text-muted-foreground text-lg mb-12">
+        <p className="font-sans font-medium text-muted-foreground text-lg mb-12">
           Both programs are free or nearly free. Start with what feels right.
         </p>
 
@@ -20,7 +20,7 @@ export function ChooseYourPath() {
             <p className="text-primary/60 text-xs font-medium uppercase tracking-wider mb-3">
               Haven Language Program
             </p>
-            <h3 className="font-serif text-2xl text-background mb-3">
+            <h3 className="font-sans font-extrabold text-2xl text-background mb-3">
               Conversations and classes
             </h3>
             <p className="text-background/60 text-sm leading-relaxed mb-5">
@@ -42,7 +42,7 @@ export function ChooseYourPath() {
             <p className="text-primary text-xs font-medium uppercase tracking-wider mb-3">
               Haven Connect
             </p>
-            <h3 className="font-serif text-2xl text-foreground mb-3">
+            <h3 className="font-sans font-extrabold text-2xl text-foreground mb-3">
               Just conversations
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-5">

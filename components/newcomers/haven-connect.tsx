@@ -12,13 +12,13 @@ export function HavenConnect() {
             <p className="text-primary text-xs font-medium uppercase tracking-wider mb-4">
               Haven Connect
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="font-sans font-extrabold text-3xl md:text-4xl text-foreground mb-4">
               Meet a Canadian volunteer who can help you start life in Canada.
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+            <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-4">
               Haven matches you directly with a Canadian volunteer. Once you&apos;re signed up, you can browse profiles and reach out today.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+            <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-6">
               Your Canadian can help you practice English or French, give you tips about life in your city, or help you navigate the Canadian job market. You pick who you talk to and what you need help with.
             </p>
 

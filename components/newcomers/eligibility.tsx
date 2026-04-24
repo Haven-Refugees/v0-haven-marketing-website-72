@@ -10,10 +10,10 @@ export function Eligibility() {
   return (
     <section className="py-20 bg-foreground">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-serif text-3xl md:text-4xl text-background mb-3">
+        <h2 className="font-sans font-extrabold text-3xl md:text-4xl text-background mb-3">
           Are you eligible?
         </h2>
-        <p className="text-background/60 text-lg mb-12">
+        <p className="font-sans font-medium text-background/60 text-lg mb-12">
           Haven is for newcomers fleeing conflict who are living in Canada.
         </p>
 
