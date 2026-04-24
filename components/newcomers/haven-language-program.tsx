@@ -62,7 +62,7 @@ export function HavenLanguageProgram() {
         <p className="text-primary text-xs font-medium uppercase tracking-wider mb-4">
           Haven Language Program
         </p>
-        <h2 className="font-sans font-extrabold text-3xl md:text-4xl text-foreground mb-4">
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
           The fastest way to improve your English in Canada.
         </h2>
         <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed max-w-3xl mb-12">
@@ -85,7 +85,7 @@ export function HavenLanguageProgram() {
 
         {/* What Makes Haven Special */}
         <div className="text-center mb-16">
-          <h3 className="font-sans font-extrabold text-2xl md:text-3xl text-foreground mb-10">
+          <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground mb-10">
             What makes Haven special?
           </h3>
           <div className="grid md:grid-cols-3 gap-10">
@@ -102,7 +102,7 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Commitment Section */}
-        <h3 className="font-sans font-extrabold text-2xl md:text-3xl text-foreground mb-7">
+        <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground mb-7">
           Haven works because our students are committed.
         </h3>
         <div className="grid md:grid-cols-3 gap-4 mb-8">

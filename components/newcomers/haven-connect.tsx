@@ -12,7 +12,7 @@ export function HavenConnect() {
             <p className="text-primary text-xs font-medium uppercase tracking-wider mb-4">
               Haven Connect
             </p>
-            <h2 className="font-sans font-extrabold text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
               Meet a Canadian volunteer who can help you start life in Canada.
             </h2>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-4">

@@ -17,7 +17,7 @@ export function NewcomersTestimonials() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-sans font-extrabold text-3xl md:text-4xl text-foreground mb-12">
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-12">
           What newcomers say
         </h2>
 
