@@ -23,7 +23,7 @@ export function NewcomersHero() {
             </div>
           </div>
 
-          <div className="relative mt-8">
+          <div className="relative mt-8 w-[90%] ml-auto">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
               <Image
                 src="/images/newcomers-hero.png"
