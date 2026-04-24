@@ -5,10 +5,10 @@ export function ChooseYourPath() {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-3">
-          Choose your path
+          Choose the help you need.
         </h2>
         <p className="font-sans font-medium text-muted-foreground text-lg mb-12">
-          Both programs are free or nearly free. Start with what feels right.
+          Join for conversations only, or add classes with professional teachers if language is your main focus.
         </p>
 
         <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
