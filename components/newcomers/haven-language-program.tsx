@@ -59,15 +59,17 @@ export function HavenLanguageProgram() {
     <section id="hlp" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <p className="text-secondary text-xs font-medium uppercase tracking-wider mb-4">
-          Haven Language Program
-        </p>
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-          The fastest way to improve your English in Canada.
-        </h2>
-        <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed max-w-3xl mb-12">
-          A 20-week program combining classes with professional teachers, conversation practice with Canadian volunteers, and personalized homework materials. Classes range from CLB 1 to 8.
-        </p>
+        <div className="text-center mb-12">
+          <p className="text-secondary text-xs font-medium uppercase tracking-wider mb-4">
+            Haven Language Program
+          </p>
+          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
+            The fastest way to improve your English in Canada.
+          </h2>
+          <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+            A 20-week program combining classes with professional teachers, conversation practice with Canadian volunteers, and personalized homework materials. Classes range from CLB 1 to 8.
+          </p>
+        </div>
 
         {/* Program Structure */}
         <div className="grid md:grid-cols-3 gap-4 mb-16">
