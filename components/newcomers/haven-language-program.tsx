@@ -1,20 +1,20 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Calendar, Users, BookOpen } from "lucide-react"
+import { Calendar, Users, BookOpen, GraduationCap, MessageCircle, ClipboardList } from "lucide-react"
 
 const programStructure = [
   {
-    number: "01",
+    icon: GraduationCap,
     title: "Classes with teachers",
     description: "Individual and small group online classes with professional teachers.",
   },
   {
-    number: "02",
+    icon: MessageCircle,
     title: "Conversations with Canadians",
     description: "1-on-1 video calls with Canadian volunteers to practice your language and build your confidence.",
   },
   {
-    number: "03",
+    icon: ClipboardList,
     title: "Personalized homework",
     description: "Materials from your teacher to keep you learning between classes and conversations.",
   },
@@ -73,12 +73,14 @@ export function HavenLanguageProgram() {
 
         {/* Program Structure */}
         <div className="grid md:grid-cols-3 gap-4 mb-16">
-          {programStructure.map((item) => (
+          {programStructure.map((item, index) => (
             <div 
-              key={item.number}
+              key={index}
               className="bg-muted/50 border border-border rounded-2xl p-7"
             >
-              <p className="font-serif text-3xl text-secondary/50 mb-3">{item.number}</p>
+              <div className="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4">
+                <item.icon className="w-6 h-6 text-secondary" />
+              </div>
               <h3 className="font-sans font-medium text-foreground mb-2">{item.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
             </div>
