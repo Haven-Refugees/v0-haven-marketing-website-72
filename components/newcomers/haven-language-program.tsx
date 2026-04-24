@@ -59,7 +59,7 @@ export function HavenLanguageProgram() {
     <section id="hlp" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <p className="text-primary text-xs font-medium uppercase tracking-wider mb-4">
+        <p className="text-secondary text-xs font-medium uppercase tracking-wider mb-4">
           Haven Language Program
         </p>
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
@@ -76,7 +76,7 @@ export function HavenLanguageProgram() {
               key={item.number}
               className="bg-muted/50 border border-border rounded-2xl p-7"
             >
-              <p className="font-serif text-3xl text-primary/30 mb-3">{item.number}</p>
+              <p className="font-serif text-3xl text-secondary/50 mb-3">{item.number}</p>
               <h3 className="font-sans font-medium text-foreground mb-2">{item.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
             </div>
@@ -91,8 +91,8 @@ export function HavenLanguageProgram() {
           <div className="grid md:grid-cols-3 gap-10">
             {specialFeatures.map((feature, index) => (
               <div key={index} className="flex flex-col items-center">
-                <div className="w-20 h-20 bg-primary/5 rounded-xl flex items-center justify-center mb-5">
-                  <feature.icon className="w-8 h-8 text-primary/60" />
+                <div className="w-20 h-20 bg-secondary/10 rounded-xl flex items-center justify-center mb-5">
+                  <feature.icon className="w-8 h-8 text-secondary" />
                 </div>
                 <h4 className="font-sans font-medium text-foreground mb-2">{feature.title}</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed max-w-[220px]">{feature.description}</p>
@@ -111,7 +111,7 @@ export function HavenLanguageProgram() {
               key={index}
               className="bg-muted/50 border border-border rounded-xl p-5"
             >
-              <p className="font-serif text-3xl text-primary mb-1">
+              <p className="font-serif text-3xl text-secondary mb-1">
                 {stat.value}
                 {stat.sublabel && <span className="text-xl ml-1">{stat.sublabel}</span>}
               </p>
@@ -124,7 +124,7 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Note */}
-        <div className="bg-muted/50 border-l-4 border-primary rounded-lg p-5 mb-8">
+        <div className="bg-muted/50 border-l-4 border-secondary rounded-lg p-5 mb-8">
           <p className="text-muted-foreground text-sm leading-relaxed">
             Haven works because its members show up. Please only apply if you can commit to the full program — this is the minimum needed to make real progress in English.
           </p>

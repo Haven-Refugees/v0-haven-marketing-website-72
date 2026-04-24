@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function NewcomersHero() {
   return (
-    <section className="relative pt-14 pb-10 bg-primary/5">
+    <section className="relative pt-14 pb-10 bg-secondary/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div className="space-y-6 lg:pl-16">

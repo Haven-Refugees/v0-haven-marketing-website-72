@@ -5,11 +5,11 @@ const pills = ["Free", "30 min a week", "Start today", "You pick your match"]
 
 export function HavenConnect() {
   return (
-    <section id="connect" className="py-20 bg-primary/5">
+    <section id="connect" className="py-20 bg-secondary/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-primary text-xs font-medium uppercase tracking-wider mb-4">
+            <p className="text-secondary text-xs font-medium uppercase tracking-wider mb-4">
               Haven Connect
             </p>
             <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
@@ -27,7 +27,7 @@ export function HavenConnect() {
               {pills.map((pill) => (
                 <span 
                   key={pill}
-                  className="bg-primary/10 text-primary text-sm font-medium px-4 py-1.5 rounded-full"
+                  className="bg-secondary/20 text-secondary text-sm font-medium px-4 py-1.5 rounded-full"
                 >
                   {pill}
                 </span>
@@ -44,8 +44,8 @@ export function HavenConnect() {
           </div>
 
           <div className="order-first lg:order-last">
-            <div className="bg-primary/10 rounded-2xl aspect-[4/5] flex items-center justify-center">
-              <span className="text-primary/40 text-sm font-medium uppercase tracking-wider">Image</span>
+            <div className="bg-secondary/20 rounded-2xl aspect-[4/5] flex items-center justify-center">
+              <span className="text-secondary/40 text-sm font-medium uppercase tracking-wider">Image</span>
             </div>
           </div>
         </div>
