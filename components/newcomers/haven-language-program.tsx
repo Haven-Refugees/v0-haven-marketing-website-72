@@ -79,13 +79,12 @@ export function HavenLanguageProgram() {
               key={index}
               className="bg-background border border-border rounded-2xl p-4 flex flex-col items-center text-center"
             >
-              <div className="w-44 h-44 mb-2">
+              <div className="w-44 h-44 mb-2 relative">
                 <Image
                   src={item.image}
                   alt={item.title}
-                  width={176}
-                  height={176}
-                  className="object-contain"
+                  fill
+                  className="object-contain object-center"
                 />
               </div>
               <h3 className="font-sans font-medium text-foreground mb-2">{item.title}</h3>
