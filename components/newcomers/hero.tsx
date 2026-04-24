@@ -12,7 +12,7 @@ export function NewcomersHero() {
               Speak with volunteers. Study with teachers.
             </h1>
             <p className="font-sans font-medium text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
-              Two ways to get help in Canada. Conversations with Canadians, or conversations plus classes. You choose.
+              Haven is the best way to improve your language skills and connect with Canadians.
             </p>
             <div className="pt-2">
               <Button size="lg" className="text-base px-7 py-6" asChild>
