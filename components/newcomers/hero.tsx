@@ -8,7 +8,7 @@ export function NewcomersHero() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
+            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
               Speak with volunteers. Study with teachers.
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
