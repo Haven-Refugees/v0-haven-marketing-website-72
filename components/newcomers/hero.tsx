@@ -24,7 +24,7 @@ export function NewcomersHero() {
           </div>
 
           <div className="relative mt-8 w-[112.5%] -ml-8">
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+            <div className="relative rounded-3xl overflow-hidden aspect-[3.6/3]">
               <Image
                 src="/images/newcomers-hero.png"
                 alt="A joyful woman celebrating with arms raised in a city street"
