@@ -13,7 +13,7 @@ const programStructure = [
   {
     image: "/images/icon-conversations.png",
     title: "Conversations with Canadians",
-    description: "1-on-1 video calls with Canadian volunteers to practice your language and build your confidence.",
+    description: "Video calls with Canadian volunteers to practice your language and build confidence.",
     scale: "scale-100",
   },
   {
