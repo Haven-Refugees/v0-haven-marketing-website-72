@@ -45,7 +45,7 @@ export function HavenConnect() {
           </div>
 
           <div className="order-first lg:order-last">
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5]">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
                 src="/images/haven-connect-hero.jpg"
                 alt="Two women high-fiving on a snowy Canadian city street"
