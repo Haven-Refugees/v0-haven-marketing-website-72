@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const pills = ["Free", "30 min a week", "Start today", "You pick your match"]
@@ -44,8 +45,13 @@ export function HavenConnect() {
           </div>
 
           <div className="order-first lg:order-last">
-            <div className="bg-secondary/20 rounded-2xl aspect-[4/5] flex items-center justify-center">
-              <span className="text-secondary/40 text-sm font-medium uppercase tracking-wider">Image</span>
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5]">
+              <Image
+                src="/images/haven-connect-hero.jpg"
+                alt="Two women high-fiving on a snowy Canadian city street"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
