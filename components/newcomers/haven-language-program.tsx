@@ -82,7 +82,7 @@ export function HavenLanguageProgram() {
               key={index}
               className="bg-background border border-border rounded-xl px-2 pb-3 flex flex-col items-center text-center"
             >
-              <div className="w-40 h-36 relative">
+              <div className="w-72 h-56 relative -mb-4">
                 <Image
                   src={item.image}
                   alt={item.title}
