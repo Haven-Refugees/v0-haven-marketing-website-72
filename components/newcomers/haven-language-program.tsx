@@ -19,7 +19,7 @@ const programStructure = [
   {
     image: "/images/icon-homework.png",
     title: "Personalized homework",
-    description: "Materials from your teacher to keep you learning between classes and conversations.",
+    description: "Exercises and materials to keep you learning between classes and conversations.",
     scale: "scale-75",
   },
 ]
