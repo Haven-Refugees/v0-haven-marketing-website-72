@@ -42,21 +42,7 @@ const specialFeatures = [
   },
 ]
 
-const commitmentStats = [
-  {
-    value: "20",
-    label: "weeks in the program",
-  },
-  {
-    value: "6+",
-    label: "hours per week minimum",
-  },
-  {
-    value: "$5–$15",
-    sublabel: "per week",
-    note: "That's just $2.50–$7.50 per class, depending on your situation.",
-  },
-]
+
 
 export function HavenLanguageProgram() {
   return (
@@ -112,35 +98,6 @@ export function HavenLanguageProgram() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Commitment Section */}
-        <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground mb-7">
-          Haven works because our students are committed.
-        </h3>
-        <div className="grid md:grid-cols-3 gap-4 mb-8">
-          {commitmentStats.map((stat, index) => (
-            <div 
-              key={index}
-              className="bg-muted/50 border border-border rounded-xl p-5"
-            >
-              <p className="font-serif text-3xl text-secondary mb-1">
-                {stat.value}
-                {stat.sublabel && <span className="text-xl ml-1">{stat.sublabel}</span>}
-              </p>
-              <p className="text-muted-foreground text-sm">{stat.label}</p>
-              {stat.note && (
-                <p className="text-muted-foreground/60 text-xs mt-2 leading-relaxed">{stat.note}</p>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* Note */}
-        <div className="bg-muted/50 border-l-4 border-secondary rounded-lg p-5 mb-8">
-          <p className="text-muted-foreground text-sm leading-relaxed">
-            Haven works because its members show up. Please only apply if you can commit to the full program — this is the minimum needed to make real progress in English.
-          </p>
         </div>
 
         {/* CTA */}
