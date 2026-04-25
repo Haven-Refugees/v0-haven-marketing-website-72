@@ -57,7 +57,7 @@ export function HavenLanguageProgram() {
             The fastest way to improve your English in Canada.
           </h2>
           <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-            A 20-week program combining classes with professional teachers, conversation practice with Canadian volunteers, and personalized homework materials. Classes range from CLB 1 to 8.
+            An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.
           </p>
         </div>
 
