@@ -76,13 +76,13 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Program Structure */}
-        <div className="grid md:grid-cols-3 gap-4 mb-16">
+        <div className="grid md:grid-cols-3 gap-3 mb-16">
           {programStructure.map((item, index) => (
             <div 
               key={index}
-              className="bg-background border border-border rounded-2xl px-3 pb-4 flex flex-col items-center text-center"
+              className="bg-background border border-border rounded-xl px-2 pb-3 flex flex-col items-center text-center"
             >
-              <div className="w-52 h-52 relative -mt-2">
+              <div className="w-40 h-36 relative">
                 <Image
                   src={item.image}
                   alt={item.title}
