@@ -80,9 +80,9 @@ export function HavenLanguageProgram() {
           {programStructure.map((item, index) => (
             <div 
               key={index}
-              className="bg-background border border-border rounded-2xl p-3 pt-2 flex flex-col items-center text-center"
+              className="bg-background border border-border rounded-2xl px-3 pb-4 flex flex-col items-center text-center"
             >
-              <div className="w-64 h-64 mb-1 relative">
+              <div className="w-52 h-52 relative -mt-2">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -90,7 +90,7 @@ export function HavenLanguageProgram() {
                   className={`object-contain object-center ${item.scale}`}
                 />
               </div>
-              <h3 className="font-sans font-medium text-foreground mb-2">{item.title}</h3>
+              <h3 className="font-sans font-medium text-foreground mb-1">{item.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
             </div>
           ))}
