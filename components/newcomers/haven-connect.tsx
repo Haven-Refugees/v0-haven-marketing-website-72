@@ -8,7 +8,7 @@ export function HavenConnect() {
   return (
     <>
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <p className="text-muted-foreground text-base text-center">
+        <p className="font-sans font-bold text-2xl md:text-3xl text-foreground text-center">
           Not interested in classes? No problem. You can still join Haven to match with Canadian volunteers.
         </p>
       </div>
