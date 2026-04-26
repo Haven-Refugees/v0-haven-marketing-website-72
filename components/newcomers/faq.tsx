@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "Is Haven free?",
-    answer: "Haven Connect is completely free. The Haven Language Program costs between $5–$15 per week (that's $2.50–$7.50 per class), depending on your situation. We work with you to find a price that fits your budget.",
+    answer: "Matching with Canadian volunteers is completely free. The Haven Language Program charges a small participation fee of $2.50–$7.50 per class, depending on your situation — that's about $5–$15 per week. Only the classes are paid, and the other parts of the program are free.\n\nWe have a class fee to make sure that our students are committed. For example, for your individual classes, if you don't show up the teacher will have no one to teach. Haven works best for students who can commit. If you can't commit for now, we recommend joining only for matches with Canadians.",
   },
   {
     question: "Who will I be matched with?",
