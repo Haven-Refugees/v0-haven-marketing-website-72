@@ -17,10 +17,10 @@ export function HavenConnect() {
               Meet a volunteer who can help you start life in Canada.
             </h2>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-4">
-              Haven matches you directly with a Canadian volunteer. Once you&apos;re signed up, you can browse profiles and reach out today.
+              These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.
             </p>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-6">
-              Your Canadian can help you practice English or French, give you tips about life in your city, or help you navigate the Canadian job market. You pick who you talk to and what you need help with.
+              Its free and starts with a 30 minute video call.
             </p>
 
             {/* Pills */}
