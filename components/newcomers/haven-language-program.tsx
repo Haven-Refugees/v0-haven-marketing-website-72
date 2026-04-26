@@ -70,7 +70,7 @@ export function HavenLanguageProgram() {
         <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="font-sans font-bold text-2xl md:text-3xl text-primary leading-snug mb-8">
+              <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
                 A language program designed just for you.
               </h3>
               <div className="space-y-5">
