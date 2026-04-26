@@ -111,8 +111,8 @@ export function HavenLanguageProgram() {
           </div>
 
           {/* Bottom Card - CTA */}
-          <div className="bg-[#af75ff] rounded-3xl p-8 md:p-10 flex flex-col justify-center items-center text-center">
-            <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-8">
+          <div className="bg-[#af75ff] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
+            <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-4">
               Start improving your English today.
             </h3>
             <Button size="lg" className="text-base px-8 py-6 bg-white text-[#af75ff] hover:bg-white/90" asChild>
@@ -120,7 +120,7 @@ export function HavenLanguageProgram() {
             </Button>
             <Link 
               href="#hlp-details" 
-              className="text-white text-sm underline hover:text-white/80 transition-colors mt-4"
+              className="text-white text-sm underline hover:text-white/80 transition-colors mt-3"
             >
               Learn more about the program
             </Link>
