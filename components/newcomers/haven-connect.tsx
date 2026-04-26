@@ -7,12 +7,19 @@ import { Button } from "@/components/ui/button"
 export function HavenConnect() {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <p className="font-sans font-bold text-2xl md:text-3xl text-foreground text-center">
-          Not interested in classes? No problem.
-          <br />
-          You can still join Haven to match with Canadian volunteers.
+      <div className="py-10 flex flex-col items-center">
+        <p className="text-[#888] text-sm font-medium text-center mb-3">
+          Not interested in classes? You can still match with Canadian volunteers.
         </p>
+        <svg 
+          className="w-5 h-5 text-[#534AB7] animate-bounce"
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke="currentColor" 
+          strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
       </div>
       <section id="connect" className="py-20 bg-secondary/10">
       <div className="max-w-7xl mx-auto px-6">
