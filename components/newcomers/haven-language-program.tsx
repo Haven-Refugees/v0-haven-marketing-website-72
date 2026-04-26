@@ -103,8 +103,8 @@ export function HavenLanguageProgram() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-sans font-semibold text-foreground">Practice with Canadians</p>
-                  <p className="text-muted-foreground text-sm">Real immersion with Canadians, not just a textbook.</p>
+                  <p className="font-sans font-semibold text-foreground">Real-world communication</p>
+                  <p className="text-muted-foreground text-sm">Learn by actually speaking with Canadians, not just in the classroom.</p>
                 </div>
               </div>
             </div>
