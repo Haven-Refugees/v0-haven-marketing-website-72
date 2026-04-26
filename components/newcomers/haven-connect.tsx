@@ -10,7 +10,7 @@ export function HavenConnect() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-secondary text-xs font-medium uppercase tracking-wider mb-4">
+            <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
               Haven Connect
             </p>
             <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
