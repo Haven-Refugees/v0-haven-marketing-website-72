@@ -14,7 +14,7 @@ export function HavenConnect() {
               Haven Connect
             </p>
             <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-              Meet a Canadian volunteer who can help you start life in Canada.
+              Meet a volunteer who can help you start life in Canada.
             </h2>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-4">
               Haven matches you directly with a Canadian volunteer. Once you&apos;re signed up, you can browse profiles and reach out today.
