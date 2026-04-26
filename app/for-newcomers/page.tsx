@@ -18,7 +18,7 @@ export default function ForNewcomersPage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="min-h-screen">
         <NewcomersHero />
         <ChooseYourPath />
         <HavenLanguageProgram />
