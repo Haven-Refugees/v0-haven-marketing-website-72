@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     question: "How can Haven help me?",
-    answer: "Haven offers two programs to help you improve your English or French. Haven Connect matches you with Canadian volunteers for free conversation practice. The Haven Language Program provides structured classes with professional teachers, plus weekly conversations with volunteers.",
+    answer: "Haven can help you in two big ways. First, we can help you improve your English or French. Second, we can help you meet Canadians who want to help you build your life in Canada.\n\nWe have two programs. The Haven Language Program combines classes with professional teachers and conversation practice with Canadian volunteers. It's a great way to improve your English in Canada — we're adding French classes soon.\n\nIf you don't have time for classes, you can also just focus on meeting Canadian volunteers. It's free and you can start today.",
   },
   {
     question: "Is Haven free?",
