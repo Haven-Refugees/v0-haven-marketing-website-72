@@ -111,12 +111,12 @@ export function HavenLanguageProgram() {
           </div>
 
           {/* Bottom Card - CTA */}
-          <div className="bg-[#af75ff] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
+          <div className="bg-[#2457F1] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-4">
               Start improving your English today.
             </h3>
             <div className="flex flex-col items-center">
-              <Button size="lg" className="text-base py-6 w-full bg-white text-[#af75ff] hover:bg-white/90" asChild>
+              <Button size="lg" className="text-base py-6 w-full bg-white text-[#2457F1] hover:bg-white/90" asChild>
                 <Link href="https://app.findhaven.org">Join Haven now</Link>
               </Button>
               <Link 
