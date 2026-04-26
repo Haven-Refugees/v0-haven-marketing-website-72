@@ -67,8 +67,8 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Why Haven CTA Cards */}
-        <div className="grid md:grid-cols-2 gap-4">
-          {/* Left Card - Features */}
+        <div className="flex flex-col gap-4">
+          {/* Top Card - Features */}
           <div className="bg-background border-2 border-secondary/30 rounded-3xl p-8 md:p-10">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
               We designed Haven to make learning as easy as possible.
@@ -110,7 +110,7 @@ export function HavenLanguageProgram() {
             </div>
           </div>
 
-          {/* Right Card - CTA */}
+          {/* Bottom Card - CTA */}
           <div className="bg-secondary/10 rounded-3xl p-8 md:p-10 flex flex-col justify-center items-center text-center">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
               Start improving your English today.
