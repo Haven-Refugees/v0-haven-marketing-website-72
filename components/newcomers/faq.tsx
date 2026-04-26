@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "I've never heard of Haven before, who are you?",
-    answer: "Haven is a Canadian nonprofit dedicated to helping newcomers fleeing conflict integrate into Canadian life through language learning and community connection. We've helped thousands of refugees and newcomers improve their English and French skills.",
+    answer: "Haven is a registered Canadian charity. We believe that newcomers fleeing conflict deserve better support than what currently exists in Canada. We're using technology to build a new national system for getting help. We've helped thousands of newcomers across hundreds of communities in Canada. You can learn more about us on our About page.",
   },
 ]
 
