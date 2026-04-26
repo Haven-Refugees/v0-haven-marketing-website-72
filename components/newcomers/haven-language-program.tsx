@@ -115,15 +115,17 @@ export function HavenLanguageProgram() {
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-4">
               Start improving your English today.
             </h3>
-            <Button size="lg" className="text-base px-8 py-6 bg-white text-[#af75ff] hover:bg-white/90" asChild>
-              <Link href="https://app.findhaven.org">Join Haven now</Link>
-            </Button>
-            <Link 
-              href="#hlp-details" 
-              className="text-white text-sm underline hover:text-white/80 transition-colors mt-3"
-            >
-              Learn more about the program
-            </Link>
+            <div className="flex flex-col items-center">
+              <Button size="lg" className="text-base py-6 w-full bg-white text-[#af75ff] hover:bg-white/90" asChild>
+                <Link href="https://app.findhaven.org">Join Haven now</Link>
+              </Button>
+              <Link 
+                href="#hlp-details" 
+                className="text-white text-sm underline hover:text-white/80 transition-colors mt-3"
+              >
+                Learn more about the program
+              </Link>
+            </div>
           </div>
         </div>
       </div>
