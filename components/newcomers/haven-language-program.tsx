@@ -30,7 +30,7 @@ const programStructure = [
 
 export function HavenLanguageProgram() {
   return (
-    <section id="hlp" className="py-20 bg-background">
+    <section id="hlp" className="pt-10 pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
