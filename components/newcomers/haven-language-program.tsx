@@ -73,8 +73,8 @@ export function HavenLanguageProgram() {
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
               We designed Haven to make learning as easy as possible.
             </h3>
-            <div className="space-y-5">
-              <div className="flex items-start gap-4">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="flex items-start gap-3">
                 <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -85,7 +85,7 @@ export function HavenLanguageProgram() {
                   <p className="text-muted-foreground text-sm">Study anytime, including evenings and weekends.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -96,7 +96,7 @@ export function HavenLanguageProgram() {
                   <p className="text-muted-foreground text-sm">Classes of 1 to 4 students, not 30.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
