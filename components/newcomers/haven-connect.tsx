@@ -8,7 +8,7 @@ export function HavenConnect() {
   return (
     <>
       <div className="py-10 flex flex-col items-center">
-        <p className="text-[#888] text-sm font-medium text-center mb-3">
+        <p className="text-[#888] text-[28px] font-medium text-center mb-3">
           Not interested in classes? You can still match with Canadian volunteers.
         </p>
         <svg 
