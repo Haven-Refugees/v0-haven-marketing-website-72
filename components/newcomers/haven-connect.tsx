@@ -10,6 +10,9 @@ export function HavenConnect() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
+            <p className="text-muted-foreground text-base mb-2">
+              Not interested in classes? No problem. You can still join Haven to match with Canadian volunteers.
+            </p>
             <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
               Haven Connect
             </p>
