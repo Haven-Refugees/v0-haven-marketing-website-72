@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 export function HavenConnect() {
   return (
     <>
-      <div className="pt-6 pb-6 flex flex-col items-center">
+      <div className="pt-2 pb-10 flex flex-col items-center">
         <p className="text-[#888] text-2xl font-medium text-center mb-2">
           Not interested in classes? You can still match with Canadian volunteers.
         </p>
