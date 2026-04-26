@@ -26,9 +26,14 @@ export function ChooseYourPath() {
             <p className="text-secondary-foreground/70 text-sm leading-relaxed mb-5">
               Structured classes with professional teachers, plus weekly conversations with Canadian volunteers. The fastest way to improve your English in Canada.
             </p>
-            <span className="inline-block bg-secondary-foreground/20 text-secondary-foreground text-xs font-medium px-3 py-1 rounded-full mb-4">
-              From $2.50/class · 20 weeks
-            </span>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="inline-block bg-secondary-foreground/20 text-secondary-foreground text-xs font-medium px-3 py-1 rounded-full">
+                From $2.50 a class
+              </span>
+              <span className="inline-block bg-secondary-foreground/20 text-secondary-foreground text-xs font-medium px-3 py-1 rounded-full">
+                6+ hours a week
+              </span>
+            </div>
             <span className="block text-secondary-foreground text-sm font-medium">
               Learn more &darr;
             </span>
@@ -48,9 +53,14 @@ export function ChooseYourPath() {
             <p className="text-muted-foreground text-sm leading-relaxed mb-5">
               Meet Canadian volunteers. Practice your English or French, find local and professional connections, and get help rebuilding your life in Canada.
             </p>
-            <span className="inline-block bg-secondary/20 text-secondary text-xs font-medium px-3 py-1 rounded-full mb-4">
-              Free · Start today
-            </span>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="inline-block bg-secondary/20 text-secondary text-xs font-medium px-3 py-1 rounded-full">
+                Free
+              </span>
+              <span className="inline-block bg-secondary/20 text-secondary text-xs font-medium px-3 py-1 rounded-full">
+                30 minutes a week
+              </span>
+            </div>
             <span className="block text-secondary text-sm font-medium">
               Learn more &darr;
             </span>
