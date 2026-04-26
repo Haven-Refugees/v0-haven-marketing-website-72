@@ -116,7 +116,7 @@ export function HavenLanguageProgram() {
               Start improving your English today.
             </h3>
             <Button size="lg" className="text-base px-8 py-6" asChild>
-              <Link href="https://app.findhaven.org">Apply for the program</Link>
+              <Link href="https://app.findhaven.org">Join Haven now</Link>
             </Button>
             <Link 
               href="#hlp-details" 
