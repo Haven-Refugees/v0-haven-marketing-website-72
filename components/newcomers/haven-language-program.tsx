@@ -30,7 +30,7 @@ const programStructure = [
 
 export function HavenLanguageProgram() {
   return (
-    <section id="hlp" className="py-20 bg-background">
+    <section id="hlp" className="pt-10 pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -46,7 +46,7 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Program Structure */}
-        <div className="grid md:grid-cols-3 gap-3 mb-16">
+        <div className="grid md:grid-cols-3 gap-3 mb-10">
           {programStructure.map((item, index) => (
             <div 
               key={index}
@@ -67,7 +67,7 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Why Haven CTA Cards */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           {/* Top Card - Features */}
           <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
@@ -103,20 +103,20 @@ export function HavenLanguageProgram() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-sans font-semibold text-foreground">Real-world communication</p>
-                  <p className="text-muted-foreground text-sm">Learn by actually speaking with Canadians, not just in the classroom.</p>
+                  <p className="font-sans font-semibold text-foreground">English for life in Canada</p>
+                  <p className="text-muted-foreground text-sm">Learn the English you actually need, through our classes and real conversations with Canadians.</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Bottom Card - CTA */}
-          <div className="bg-[#af75ff] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
+          <div className="bg-[#2457F1] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-4">
               Start improving your English today.
             </h3>
             <div className="flex flex-col items-center">
-              <Button size="lg" className="text-base py-6 w-full bg-white text-[#af75ff] hover:bg-white/90" asChild>
+              <Button size="lg" className="text-base py-6 w-full bg-white text-[#2457F1] hover:bg-white/90" asChild>
                 <Link href="https://app.findhaven.org">Join Haven now</Link>
               </Button>
               <Link 

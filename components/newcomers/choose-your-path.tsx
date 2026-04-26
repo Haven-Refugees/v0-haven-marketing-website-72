@@ -24,7 +24,7 @@ export function ChooseYourPath() {
               Conversations and classes
             </h3>
             <p className="text-secondary-foreground/70 text-sm leading-relaxed mb-5">
-              Structured classes with professional teachers, plus weekly conversations with Canadian volunteers. The fastest way to improve your English in Canada.
+              Online classes with professional teachers, plus weekly conversations with Canadian volunteers. The perfect program if you need to improve your English.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="inline-block bg-secondary-foreground/20 text-secondary-foreground text-xs font-medium px-3 py-1 rounded-full">

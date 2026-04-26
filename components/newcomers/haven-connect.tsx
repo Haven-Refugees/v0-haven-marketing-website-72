@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button"
 export function HavenConnect() {
   return (
     <>
-      <div className="py-10 flex flex-col items-center">
-        <p className="text-[#888] text-2xl font-medium text-center mb-3">
+      <div className="pb-10 flex flex-col items-center">
+        <p className="text-[#888] text-2xl font-medium text-center mb-2">
           Not interested in classes? You can still match with Canadian volunteers.
         </p>
         <svg 
-          className="w-5 h-5 text-[#534AB7] animate-bounce"
+          className="w-5 h-5 text-[#2457F1] animate-bounce"
           fill="none" 
           viewBox="0 0 24 24" 
           stroke="currentColor" 
@@ -21,7 +21,7 @@ export function HavenConnect() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
-      <section id="connect" className="py-20 bg-secondary/10">
+      <section id="connect" className="pt-10 pb-20 bg-secondary/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -35,7 +35,7 @@ export function HavenConnect() {
               These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.
             </p>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-6">
-              Its free and starts with a 30 minute video call.
+              It's free and starts with a 30 minute video call.
             </p>
 
             <Button size="lg" className="text-base px-7" asChild>

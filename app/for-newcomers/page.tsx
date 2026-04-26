@@ -5,7 +5,6 @@ import { ChooseYourPath } from "@/components/newcomers/choose-your-path"
 import { HavenLanguageProgram } from "@/components/newcomers/haven-language-program"
 import { HavenConnect } from "@/components/newcomers/haven-connect"
 import { Eligibility } from "@/components/newcomers/eligibility"
-import { NewcomersTestimonials } from "@/components/newcomers/testimonials"
 import { NewcomersFaq } from "@/components/newcomers/faq"
 import { NewcomersCta } from "@/components/newcomers/cta"
 
@@ -18,13 +17,12 @@ export default function ForNewcomersPage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="min-h-screen">
         <NewcomersHero />
         <ChooseYourPath />
         <HavenLanguageProgram />
         <HavenConnect />
         <Eligibility />
-        <NewcomersTestimonials />
         <NewcomersFaq />
         <NewcomersCta />
       </main>
