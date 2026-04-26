@@ -17,7 +17,7 @@ export function NewcomersTestimonials() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12">
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-12">
           What newcomers say
         </h2>
 
@@ -25,16 +25,16 @@ export function NewcomersTestimonials() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-primary/5 rounded-2xl overflow-hidden text-left"
+              className="bg-secondary/10 rounded-2xl overflow-hidden text-left"
             >
               {/* Photo placeholder */}
-              <div className="bg-primary/10 h-48 flex items-center justify-center">
-                <span className="text-primary/40 text-xs font-medium uppercase tracking-wider">Photo</span>
+              <div className="bg-secondary/20 h-48 flex items-center justify-center">
+                <span className="text-secondary/40 text-xs font-medium uppercase tracking-wider">Photo</span>
               </div>
               
               {/* Content */}
               <div className="p-6">
-                <span className="inline-block bg-primary/10 text-primary text-xs font-medium px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-secondary/20 text-secondary text-xs font-medium px-3 py-1 rounded-full mb-4">
                   {testimonial.tag}
                 </span>
                 <p className="text-muted-foreground text-sm leading-relaxed italic mb-4">

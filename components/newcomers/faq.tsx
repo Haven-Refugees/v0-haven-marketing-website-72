@@ -25,7 +25,7 @@ export function NewcomersFaq() {
   return (
     <section className="py-20 bg-muted/50">
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-10 text-center">
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-10 text-center">
           Frequently asked questions
         </h2>
 
