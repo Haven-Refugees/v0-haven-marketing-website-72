@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
-const pills = ["Free", "30 min a week", "Start today", "You pick your match"]
+
 
 export function HavenConnect() {
   return (
@@ -21,22 +21,6 @@ export function HavenConnect() {
             </p>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-6">
               Its free and starts with a 30 minute video call.
-            </p>
-
-            {/* Pills */}
-            <div className="flex flex-wrap gap-2 mb-6">
-              {pills.map((pill) => (
-                <span 
-                  key={pill}
-                  className="bg-secondary/20 text-secondary text-sm font-medium px-4 py-1.5 rounded-full"
-                >
-                  {pill}
-                </span>
-              ))}
-            </div>
-
-            <p className="text-muted-foreground text-sm mb-6">
-              It&apos;s free. There are no classes and no homework. Just show up to your weekly call.
             </p>
 
             <Button size="lg" className="text-base px-7" asChild>
