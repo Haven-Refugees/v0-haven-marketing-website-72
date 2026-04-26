@@ -71,7 +71,7 @@ export function HavenLanguageProgram() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
-                A language program designed just for you.
+                We designed the program to make learning English as easy as possible.
               </h3>
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
