@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Calendar, Users, BookOpen } from "lucide-react"
+
 
 const programStructure = [
   {
@@ -24,23 +24,7 @@ const programStructure = [
   },
 ]
 
-const specialFeatures = [
-  {
-    icon: Calendar,
-    title: "Flexible schedule",
-    description: "Classes run evenings and weekends. Haven fits around your life, not the other way around.",
-  },
-  {
-    icon: Users,
-    title: "Personalized learning",
-    description: "Small groups mean your teacher knows your level and your goals. You're not just a student in a class of 30.",
-  },
-  {
-    icon: BookOpen,
-    title: "Practice with Canadians",
-    description: "Every week you meet a real Canadian volunteer. No textbook can give you that.",
-  },
-]
+
 
 
 
@@ -82,35 +66,61 @@ export function HavenLanguageProgram() {
           ))}
         </div>
 
-        {/* What Makes Haven Special */}
-        <div className="text-center mb-16">
-          <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground mb-10">
-            What makes Haven special?
-          </h3>
-          <div className="grid md:grid-cols-3 gap-10">
-            {specialFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="w-20 h-20 bg-secondary/10 rounded-xl flex items-center justify-center mb-5">
-                  <feature.icon className="w-8 h-8 text-secondary" />
+        {/* Why Haven CTA Card */}
+        <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="font-serif text-2xl md:text-3xl text-primary leading-snug mb-8">
+                We designed the Haven Language Program especially for you.
+              </h3>
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-sans font-semibold text-foreground">Flexible schedule</p>
+                    <p className="text-muted-foreground text-sm">Study anytime, including evenings and weekends.</p>
+                  </div>
                 </div>
-                <h4 className="font-sans font-medium text-foreground mb-2">{feature.title}</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed max-w-[220px]">{feature.description}</p>
+                <div className="flex items-start gap-4">
+                  <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-sans font-semibold text-foreground">Personalized learning</p>
+                    <p className="text-muted-foreground text-sm">Classes of 1 to 4 students, not 30.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-sans font-semibold text-foreground">Practice with Canadians</p>
+                    <p className="text-muted-foreground text-sm">Real communication outside the classroom.</p>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
+            <div className="flex flex-col items-center md:items-start gap-4">
+              <Button size="lg" className="text-base px-8 py-6" asChild>
+                <Link href="https://app.findhaven.org">Apply for the program</Link>
+              </Button>
+              <Link 
+                href="#hlp-details" 
+                className="text-primary text-sm underline hover:text-primary/80 transition-colors"
+              >
+                Learn more about the program details
+              </Link>
+            </div>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="flex flex-wrap items-center gap-6">
-          <Button size="lg" className="text-base px-7" asChild>
-            <Link href="https://app.findhaven.org">Apply for the program</Link>
-          </Button>
-          <Link 
-            href="#hlp-details" 
-            className="text-primary text-sm underline hover:text-primary/80 transition-colors"
-          >
-            Learn more about the program details
-          </Link>
         </div>
       </div>
     </section>
