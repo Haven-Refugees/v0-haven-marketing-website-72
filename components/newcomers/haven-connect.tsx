@@ -35,7 +35,7 @@ export function HavenConnect() {
               These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.
             </p>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-6">
-              Its free and starts with a 30 minute video call.
+              It's free and starts with a 30 minute video call.
             </p>
 
             <Button size="lg" className="text-base px-7" asChild>
