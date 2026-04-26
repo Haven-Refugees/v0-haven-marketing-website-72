@@ -6,13 +6,16 @@ import { Button } from "@/components/ui/button"
 
 export function HavenConnect() {
   return (
-    <section id="connect" className="py-20 bg-secondary/10">
+    <>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <p className="text-muted-foreground text-base text-center">
+          Not interested in classes? No problem. You can still join Haven to match with Canadian volunteers.
+        </p>
+      </div>
+      <section id="connect" className="py-20 bg-secondary/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-muted-foreground text-base mb-2">
-              Not interested in classes? No problem. You can still join Haven to match with Canadian volunteers.
-            </p>
             <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
               Haven Connect
             </p>
@@ -44,5 +47,6 @@ export function HavenConnect() {
         </div>
       </div>
     </section>
+    </>
   )
 }
