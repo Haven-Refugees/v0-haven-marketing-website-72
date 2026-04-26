@@ -69,7 +69,7 @@ export function HavenLanguageProgram() {
         {/* Why Haven CTA Cards */}
         <div className="grid md:grid-cols-2 gap-4">
           {/* Left Card - Features */}
-          <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
+          <div className="bg-background border-2 border-secondary/30 rounded-3xl p-8 md:p-10">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
               We designed Haven to make learning as easy as possible.
             </h3>
@@ -111,16 +111,16 @@ export function HavenLanguageProgram() {
           </div>
 
           {/* Right Card - CTA */}
-          <div className="bg-foreground rounded-3xl p-8 md:p-10 flex flex-col justify-center items-center text-center">
-            <h3 className="font-sans font-bold text-2xl md:text-3xl text-background leading-snug mb-8">
+          <div className="bg-secondary/10 rounded-3xl p-8 md:p-10 flex flex-col justify-center items-center text-center">
+            <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
               Start improving your English today.
             </h3>
-            <Button size="lg" className="text-base px-8 py-6 bg-secondary hover:bg-secondary/90 mb-4" asChild>
+            <Button size="lg" className="text-base px-8 py-6" asChild>
               <Link href="https://app.findhaven.org">Apply for the program</Link>
             </Button>
             <Link 
               href="#hlp-details" 
-              className="text-secondary text-sm underline hover:text-secondary/80 transition-colors"
+              className="text-primary text-sm underline hover:text-primary/80 transition-colors mt-4"
             >
               Learn more about the program details
             </Link>
