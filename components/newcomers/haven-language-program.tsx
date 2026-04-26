@@ -46,7 +46,7 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Program Structure */}
-        <div className="grid md:grid-cols-3 gap-3 mb-16">
+        <div className="grid md:grid-cols-3 gap-3 mb-10">
           {programStructure.map((item, index) => (
             <div 
               key={index}
@@ -67,7 +67,7 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Why Haven CTA Cards */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           {/* Top Card - Features */}
           <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
