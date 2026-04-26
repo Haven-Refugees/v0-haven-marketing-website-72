@@ -122,7 +122,7 @@ export function HavenLanguageProgram() {
               href="#hlp-details" 
               className="text-primary text-sm underline hover:text-primary/80 transition-colors mt-4"
             >
-              Learn more about the program details
+              Learn more about the program
             </Link>
           </div>
         </div>
