@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "What if my English or French is very low?",
-    answer: "That's okay! The Haven Language Program accepts students from CLB 1 to 8. Our teachers are experienced in working with beginners, and our Canadian volunteers are patient and understanding.",
+    answer: "Haven is designed for all levels. If you are a beginner in English, we recommend joining our classes. We will match you with other students at your level, and try to match you with a teacher who speaks your native language. This makes learning English as easy as possible.",
   },
   {
     question: "I've never heard of Haven before, who are you?",
