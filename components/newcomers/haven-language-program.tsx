@@ -70,7 +70,7 @@ export function HavenLanguageProgram() {
         <div className="flex flex-col gap-4">
           {/* Top Card - Features */}
           <div className="bg-background border-2 border-secondary/30 rounded-3xl p-8 md:p-10">
-            <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8">
+            <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
               We designed Haven to make learning as easy as possible.
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
