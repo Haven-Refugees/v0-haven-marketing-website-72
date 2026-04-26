@@ -101,13 +101,16 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* CTA */}
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center gap-6">
           <Button size="lg" className="text-base px-7" asChild>
-            <Link href="/hlp">Apply for the program</Link>
+            <Link href="https://app.findhaven.org">Apply for the program</Link>
           </Button>
-          <button className="text-muted-foreground text-sm underline hover:text-foreground transition-colors">
+          <Link 
+            href="#hlp-details" 
+            className="text-primary text-sm underline hover:text-primary/80 transition-colors"
+          >
             Learn more about the program details
-          </button>
+          </Link>
         </div>
       </div>
     </section>
