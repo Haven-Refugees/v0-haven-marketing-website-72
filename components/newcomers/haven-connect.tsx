@@ -39,7 +39,7 @@ export function HavenConnect() {
             </p>
 
             <Button size="lg" className="text-base px-7" asChild>
-              <Link href="https://app.findhaven.org">Join Haven Connect</Link>
+              <Link href="https://app.findhaven.org">Join Haven</Link>
             </Button>
           </div>
 
