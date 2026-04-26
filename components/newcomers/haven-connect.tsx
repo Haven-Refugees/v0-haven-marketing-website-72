@@ -9,7 +9,9 @@ export function HavenConnect() {
     <>
       <div className="max-w-7xl mx-auto px-6 py-12">
         <p className="font-sans font-bold text-2xl md:text-3xl text-foreground text-center">
-          Not interested in classes? No problem. You can still join Haven to match with Canadian volunteers.
+          Not interested in classes? No problem.
+          <br />
+          You can still join Haven to match with Canadian volunteers.
         </p>
       </div>
       <section id="connect" className="py-20 bg-secondary/10">
