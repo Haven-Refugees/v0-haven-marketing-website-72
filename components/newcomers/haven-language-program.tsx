@@ -120,7 +120,7 @@ export function HavenLanguageProgram() {
                 <Link href="https://app.findhaven.org">Join Haven now</Link>
               </Button>
               <Link 
-                href="#hlp-details" 
+                href="/hlp" 
                 className="text-white text-sm underline hover:text-white/80 transition-colors mt-3"
               >
                 Learn more about the program
