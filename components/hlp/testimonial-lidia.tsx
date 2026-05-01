@@ -15,7 +15,7 @@ export function HLPTestimonialLidia() {
             src="/images/lidia.jpg"
             alt="Lidia, Haven Teacher"
             fill
-            className="object-cover object-top"
+            className="object-cover"
           />
         </div>
 
