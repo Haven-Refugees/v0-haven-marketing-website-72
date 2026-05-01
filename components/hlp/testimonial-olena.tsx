@@ -14,7 +14,7 @@ export function HLPTestimonialOlena() {
           <blockquote className="text-[#26215C] text-xl md:text-2xl lg:text-3xl font-bold leading-snug mb-4">
             &ldquo;{t("This program has truly made a difference for me. It gave me a clear and consistent system for studying English. Most importantly, I overcame my fear of speaking.")}&rdquo;
           </blockquote>
-          <p className="font-sans font-bold text-[#26215C] text-base">
+          <p className="font-sans text-[#26215C] text-base">
             {t("Olena, a Haven student from Ukraine")}
           </p>
         </div>
