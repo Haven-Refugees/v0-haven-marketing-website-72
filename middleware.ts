@@ -4,21 +4,26 @@ import { locales, defaultLocale, isValidLocale } from "@/lib/i18n-config"
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Check if the pathname already starts with a locale
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
-
-  if (pathnameHasLocale) return NextResponse.next()
-
   // Skip static files and API routes
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/images") ||
-    pathname.includes(".") // static files like .png, .svg, etc.
+    pathname.includes(".")
   ) {
     return NextResponse.next()
+  }
+
+  // Check if the pathname already starts with a locale
+  const segments = pathname.split("/")
+  const pathnameLocale = segments[1]
+  const pathnameHasLocale = isValidLocale(pathnameLocale)
+
+  if (pathnameHasLocale) {
+    // Set a header so the root layout can read the current locale
+    const response = NextResponse.next()
+    response.headers.set("x-locale", pathnameLocale)
+    return response
   }
 
   // Detect locale from Accept-Language header

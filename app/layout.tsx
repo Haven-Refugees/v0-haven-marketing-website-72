@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { DM_Sans, DM_Serif_Display, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { headers } from 'next/headers'
-import { locales, defaultLocale, rtlLocales, type Locale } from '@/lib/i18n-config'
+import { defaultLocale, rtlLocales, isValidLocale, type Locale } from '@/lib/i18n-config'
 import './globals.css'
 
 const dmSans = DM_Sans({ 
@@ -44,23 +44,14 @@ export const metadata: Metadata = {
   },
 }
 
-function getLocaleFromHeaders(headersList: Headers): Locale {
-  const pathname = headersList.get("x-next-url") || headersList.get("referer") || ""
-  for (const locale of locales) {
-    if (pathname.includes(`/${locale}/`) || pathname.endsWith(`/${locale}`)) {
-      return locale
-    }
-  }
-  return defaultLocale
-}
-
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   const headersList = await headers()
-  const locale = getLocaleFromHeaders(headersList)
+  const localeHeader = headersList.get("x-locale") || ""
+  const locale: Locale = isValidLocale(localeHeader) ? localeHeader : defaultLocale
   const dir = rtlLocales.includes(locale) ? "rtl" : "ltr"
 
   return (
