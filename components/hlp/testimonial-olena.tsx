@@ -11,9 +11,6 @@ export function HLPTestimonialOlena() {
       <div className="grid md:grid-cols-2">
         {/* Left - Quote */}
         <div className="bg-[#F0EDF9] p-8 md:p-10 lg:p-12 flex flex-col justify-center">
-          <span className="inline-block bg-[#AF75FF]/20 text-[#AF75FF] text-xs font-semibold px-4 py-1.5 rounded-full mb-4 w-fit">
-            {t("Haven student")}
-          </span>
           <blockquote className="text-[#26215C] text-xl md:text-2xl lg:text-3xl font-bold leading-snug mb-4">
             &ldquo;{t("This program has truly made a difference for me. It gave me a clear and consistent system for studying English. Most importantly, I overcame my fear of speaking.")}&rdquo;
           </blockquote>
