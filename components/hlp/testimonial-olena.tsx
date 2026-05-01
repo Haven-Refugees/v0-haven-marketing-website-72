@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
 
 export function HLPTestimonialOlena() {
@@ -23,10 +24,13 @@ export function HLPTestimonialOlena() {
         </div>
 
         {/* Right - Photo */}
-        <div className="bg-[#E0D9F0] flex items-center justify-center min-h-[300px] md:min-h-full">
-          <span className="text-[#AF75FF]/50 text-sm font-medium uppercase tracking-wider">
-            Photo
-          </span>
+        <div className="relative min-h-[300px] md:min-h-full">
+          <Image
+            src="/images/olena.jpg"
+            alt="Olena, Haven student from Ukraine"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
