@@ -1,11 +1,30 @@
 "use client"
 
 import Link from "next/link"
+import { Clock, Users, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 
 export function HLPBenefits() {
   const { t } = useTranslation()
+
+  const benefits = [
+    {
+      icon: Clock,
+      title: t("Flexible schedule"),
+      text: t("Classes run evenings and weekends to fit around your life."),
+    },
+    {
+      icon: Users,
+      title: t("Personalized learning"),
+      text: t("Classes of 1 to 4 students — your teacher knows your goals."),
+    },
+    {
+      icon: MessageCircle,
+      title: t("English for life in Canada"),
+      text: t("Learn practical English through classes and real conversations with Canadians."),
+    },
+  ]
 
   return (
     <section className="py-20 bg-[#F7F6FE]">
@@ -14,38 +33,20 @@ export function HLPBenefits() {
           {t("Why Haven works")}
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
-          <div>
-            <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
-              {t("Flexible schedule")}
-            </h3>
-            <p className="text-[#26215C]/70 leading-relaxed mb-8">
-              {t("Classes are evenings and weekends, designed to fit around your work and life. You pick the times that work for you.")}
-            </p>
-
-            <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
-              {t("Small classes, big progress")}
-            </h3>
-            <p className="text-[#26215C]/70 leading-relaxed mb-8">
-              {t("Individual and small group classes mean your teacher actually knows you. That means faster progress and more speaking time.")}
-            </p>
-
-            <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
-              {t("Real conversations with Canadians")}
-            </h3>
-            <p className="text-[#26215C]/70 leading-relaxed">
-              {t("Weekly video calls with Canadian volunteers give you the confidence to use English in real life. This is the part most programs are missing.")}
-            </p>
-          </div>
-
-          <div className="bg-[#E0D9F0] rounded-2xl p-8">
-            <p className="text-[#26215C] text-lg font-medium leading-relaxed mb-4">
-              {t("Haven is for newcomers who are serious about improving. Classes have a small fee to make sure students are committed.")}
-            </p>
-            <p className="text-[#26215C]/70 leading-relaxed mb-6">
-              {t("The fee is $2.50–$7.50 per class depending on your situation — roughly 90% less than other English programs. The fee exists to make sure that when students show up. If you can't commit right now, Haven Connect is free and always available.")}
-            </p>
-          </div>
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="text-center">
+              <div className="flex justify-center mb-4">
+                <benefit.icon className="w-10 h-10 text-[#AF75FF]" />
+              </div>
+              <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
+                {benefit.title}
+              </h3>
+              <p className="text-[#26215C]/70 leading-relaxed">
+                {benefit.text}
+              </p>
+            </div>
+          ))}
         </div>
 
         <div className="text-center mt-12">
