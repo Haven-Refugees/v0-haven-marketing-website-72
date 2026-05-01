@@ -46,7 +46,8 @@ export function MyComponent() {
 
 | File | Purpose |
 |------|---------|
-| `lib/i18n.tsx` | `useTranslation` hook, `TranslationProvider`, locale config |
+| `lib/i18n.tsx` | `useTranslation` hook, `TranslationProvider` (client-only) |
+| `lib/i18n-config.ts` | Locale constants and helpers (Edge/server-compatible) |
 | `lib/get-dictionary.ts` | Loads the right JSON dictionary for each locale |
 | `messages/fr.json` | French translations |
 | `messages/ar.json` | Arabic translations |
