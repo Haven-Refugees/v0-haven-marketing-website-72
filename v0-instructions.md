@@ -40,7 +40,7 @@ export function MyComponent() {
 
 6. **Add `"use client"`** at the top of any component that uses `useTranslation()`.
 
-7. **After adding new text**, add the same English key to each translation file in `/messages/` (fr.json, ar.json, uk.json, es.json, pt.json) with the translated value.
+7. **After adding new text**, add the same English key to each translation file in `/messages/` (fr.json, ar.json, uk.json, es.json, fa.json) with the translated value.
 
 ## Files
 
@@ -53,9 +53,9 @@ export function MyComponent() {
 | `messages/ar.json` | Arabic translations |
 | `messages/uk.json` | Ukrainian translations |
 | `messages/es.json` | Spanish translations |
-| `messages/pt.json` | Portuguese translations |
+| `messages/fa.json` | Farsi (Persian) translations |
 | `components/language-switcher.tsx` | Globe button for switching languages |
 
 ## Supported locales
 
-`en` (default), `fr`, `ar` (RTL), `uk`, `es`, `pt`
+`en` (default), `fr`, `ar` (RTL), `uk`, `es`, `fa` (RTL)

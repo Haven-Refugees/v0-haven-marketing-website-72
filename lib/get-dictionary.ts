@@ -5,7 +5,7 @@ const dictionaries: Record<string, () => Promise<Record<string, string>>> = {
   ar: () => import("@/messages/ar.json").then((m) => m.default),
   uk: () => import("@/messages/uk.json").then((m) => m.default),
   es: () => import("@/messages/es.json").then((m) => m.default),
-  pt: () => import("@/messages/pt.json").then((m) => m.default),
+  fa: () => import("@/messages/fa.json").then((m) => m.default),
 }
 
 export async function getDictionary(locale: Locale): Promise<Record<string, string>> {
