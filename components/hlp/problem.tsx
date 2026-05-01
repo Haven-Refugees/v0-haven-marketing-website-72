@@ -12,7 +12,7 @@ export function HLPProblem() {
           {t("Most English programs weren't built for you.")}
         </h2>
         <p className="text-[#26215C]/70 text-lg leading-relaxed">
-          {t("Classes of 20–30 students mean your teacher barely knows your name. Schedules are fixed and inconvenient — often during work hours or late at night. And you rarely get to practice with real Canadians, which is the only way to build real confidence.")}
+          {t("Classes of 20–30 students mean your teacher barely knows your name. Schedules conflict with work and family. And you rarely get to practice with real Canadians — the only way to build real confidence.")}
         </p>
       </div>
     </section>
