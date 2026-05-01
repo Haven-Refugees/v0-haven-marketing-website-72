@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { isValidLocale, rtlLocales, type Locale } from "@/lib/i18n"
+import { isValidLocale, type Locale } from "@/lib/i18n-config"
 import { getDictionary } from "@/lib/get-dictionary"
 import { TranslationProvider } from "@/lib/i18n"
 

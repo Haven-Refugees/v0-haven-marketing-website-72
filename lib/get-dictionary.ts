@@ -1,4 +1,4 @@
-import type { Locale } from "./i18n"
+import type { Locale } from "./i18n-config"
 
 const dictionaries: Record<string, () => Promise<Record<string, string>>> = {
   fr: () => import("@/messages/fr.json").then((m) => m.default),

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { DM_Sans, DM_Serif_Display, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { headers } from 'next/headers'
-import { locales, defaultLocale, rtlLocales, type Locale } from '@/lib/i18n'
+import { locales, defaultLocale, rtlLocales, type Locale } from '@/lib/i18n-config'
 import './globals.css'
 
 const dmSans = DM_Sans({ 
