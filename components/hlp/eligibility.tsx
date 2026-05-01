@@ -1,4 +1,7 @@
+"use client"
+
 import { Check } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
 
 const criteria = [
   "In Canada",
@@ -7,14 +10,16 @@ const criteria = [
 ]
 
 export function HLPEligibility() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 bg-[#F7F6FE]">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] mb-4">
-          Are you eligible?
+          {t("Are you eligible?")}
         </h2>
         <p className="text-[#26215C]/70 text-lg mb-12">
-          Haven is for newcomers fleeing conflict who are living in Canada.
+          {t("Haven is for newcomers fleeing conflict who are living in Canada.")}
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 mb-12">
@@ -24,17 +29,17 @@ export function HLPEligibility() {
                 <Check className="w-8 h-8 text-white" strokeWidth={3} />
               </div>
               <span className="font-sans font-semibold text-[#26215C]">
-                {criterion}
+                {t(criterion)}
               </span>
             </div>
           ))}
         </div>
 
         <p className="text-[#26215C]/70 leading-relaxed mb-6">
-          This includes refugees, refugee claimants, arrivals under Canadian humanitarian programs (such as CUAET holders and evacuees from Gaza), and newcomers from other conflict-affected countries.
+          {t("This includes refugees, refugee claimants, arrivals under Canadian humanitarian programs (such as CUAET holders and evacuees from Gaza), and newcomers from other conflict-affected countries.")}
         </p>
         <p className="text-[#26215C]/60 italic">
-          If you&apos;re not sure if you qualify, try signing up — we&apos;ll help you figure it out.
+          {t("If you're not sure if you qualify, try signing up — we'll help you figure it out.")}
         </p>
       </div>
     </section>

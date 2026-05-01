@@ -1,3 +1,7 @@
+"use client"
+
+import { useTranslation } from "@/lib/i18n"
+
 const testimonials = [
   {
     tag: "Haven Connect",
@@ -14,16 +18,18 @@ const testimonials = [
 ]
 
 export function NewcomersTestimonials() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-12">
-          What newcomers say
+          {t("What newcomers say")}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <div
               key={index}
               className="bg-secondary/10 rounded-2xl overflow-hidden text-left"
             >
@@ -31,17 +37,17 @@ export function NewcomersTestimonials() {
               <div className="bg-secondary/20 h-48 flex items-center justify-center">
                 <span className="text-secondary/40 text-xs font-medium uppercase tracking-wider">Photo</span>
               </div>
-              
+
               {/* Content */}
               <div className="p-6">
                 <span className="inline-block bg-secondary/20 text-secondary text-xs font-medium px-3 py-1 rounded-full mb-4">
-                  {testimonial.tag}
+                  {t(testimonial.tag)}
                 </span>
                 <p className="text-muted-foreground text-sm leading-relaxed italic mb-4">
-                  &ldquo;{testimonial.quote}&rdquo;
+                  &ldquo;{t(testimonial.quote)}&rdquo;
                 </p>
                 <p className="font-medium text-foreground text-sm">{testimonial.name}</p>
-                <p className="text-muted-foreground text-xs">{testimonial.from}</p>
+                <p className="text-muted-foreground text-xs">{t(testimonial.from)}</p>
               </div>
             </div>
           ))}

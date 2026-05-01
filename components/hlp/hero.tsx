@@ -1,7 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/lib/i18n"
 
 export function HLPHero() {
+  const { t } = useTranslation()
+
   return (
     <section className="bg-[#F0EDF9] py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -18,17 +23,17 @@ export function HLPHero() {
           {/* Content - Right */}
           <div className="order-1 md:order-2">
             <h1 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-[#26215C] mb-6 leading-tight text-balance">
-              A better way to learn English for newcomers fleeing conflict.
+              {t("A better way to learn English for newcomers fleeing conflict.")}
             </h1>
             <p className="text-[#26215C]/80 text-lg md:text-xl mb-8 leading-relaxed">
-              Classes with professional teachers. Conversations with Canadians. Built around your schedule.
+              {t("Classes with professional teachers. Conversations with Canadians. Built around your schedule.")}
             </p>
-            <Button 
-              asChild 
+            <Button
+              asChild
               size="lg"
               className="bg-[#2457F1] hover:bg-[#2457F1]/90 text-white px-8 py-6 text-base"
             >
-              <Link href="https://app.findhaven.org">Join Haven</Link>
+              <Link href="https://app.findhaven.org">{t("Join Haven")}</Link>
             </Button>
           </div>
         </div>

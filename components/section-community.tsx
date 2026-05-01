@@ -1,5 +1,7 @@
+"use client"
+
 import Link from "next/link"
-import { Shield, Award } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
 
 function StarburstIcon() {
   return (
@@ -38,12 +40,14 @@ function CharityBadgeIcon() {
 }
 
 export function SectionCommunity() {
+  const { t } = useTranslation()
+
   return (
     <section className="pt-10 pb-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight">
-          Haven is where old Canadians meet new ones.
+          {t("Haven is where old Canadians meet new ones.")}
         </h2>
 
         {/* Feature Cards */}
@@ -54,10 +58,10 @@ export function SectionCommunity() {
               <StarburstIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
-              20,000+ users in Canada
+              {t("20,000+ users in Canada")}
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Newcomers from 50+ countries, now in 500+ communities across Canada.
+              {t("Newcomers from 50+ countries, now in 500+ communities across Canada.")}
             </p>
           </div>
 
@@ -67,10 +71,10 @@ export function SectionCommunity() {
               <IdVerificationIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
-              Connect with confidence.
+              {t("Connect with confidence.")}
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              We use ID verification so you always know who you&apos;re connecting with.
+              {t("We use ID verification so you always know who you're connecting with.")}
             </p>
           </div>
 
@@ -80,10 +84,10 @@ export function SectionCommunity() {
               <CharityBadgeIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
-              Registered Canadian charity
+              {t("Registered Canadian charity")}
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Haven is registered with the CRA. Check us out on{" "}
+              {t("Haven is registered with the CRA. Check us out on")}{" "}
               <Link href="https://www.canadahelps.org/en/charities/haven-refugees/" className="text-primary underline hover:text-primary/80">
                 CanadaHelps
               </Link>.

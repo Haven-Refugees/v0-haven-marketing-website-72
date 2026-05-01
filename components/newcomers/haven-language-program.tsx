@@ -1,7 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-
+import { useTranslation } from "@/lib/i18n"
 
 const programStructure = [
   {
@@ -24,44 +26,42 @@ const programStructure = [
   },
 ]
 
-
-
-
-
 export function HavenLanguageProgram() {
+  const { t, link } = useTranslation()
+
   return (
     <section id="hlp" className="pt-10 pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
           <p className="text-secondary text-[20px] font-medium uppercase tracking-wider mb-4">
-            Haven Language Program
+            {t("Haven Language Program")}
           </p>
           <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-            The fastest way to improve your English in Canada.
+            {t("The fastest way to improve your English in Canada.")}
           </h2>
           <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-            An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.
+            {t("An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.")}
           </p>
         </div>
 
         {/* Program Structure */}
         <div className="grid md:grid-cols-3 gap-3 mb-10">
           {programStructure.map((item, index) => (
-            <div 
+            <div
               key={index}
               className="bg-background border border-border rounded-xl px-2 pb-3 flex flex-col items-center text-center overflow-hidden"
             >
               <div className="w-[432px] h-60 relative -mt-10 -mb-10">
                 <Image
                   src={item.image}
-                  alt={item.title}
+                  alt={t(item.title)}
                   fill
                   className={`object-contain object-center ${item.scale}`}
                 />
               </div>
-              <h3 className="font-sans font-medium text-foreground mb-1">{item.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+              <h3 className="font-sans font-medium text-foreground mb-1">{t(item.title)}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{t(item.description)}</p>
             </div>
           ))}
         </div>
@@ -71,7 +71,7 @@ export function HavenLanguageProgram() {
           {/* Top Card - Features */}
           <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
-              We designed Haven to make learning as easy as possible.
+              {t("We designed Haven to make learning as easy as possible.")}
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="flex items-start gap-3">
@@ -81,8 +81,8 @@ export function HavenLanguageProgram() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-sans font-semibold text-foreground">Flexible schedule</p>
-                  <p className="text-muted-foreground text-sm">Study anytime, including evenings and weekends.</p>
+                  <p className="font-sans font-semibold text-foreground">{t("Flexible schedule")}</p>
+                  <p className="text-muted-foreground text-sm">{t("Study anytime, including evenings and weekends.")}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -92,8 +92,8 @@ export function HavenLanguageProgram() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-sans font-semibold text-foreground">Personalized learning</p>
-                  <p className="text-muted-foreground text-sm">Classes of 1 to 4 students, not 30.</p>
+                  <p className="font-sans font-semibold text-foreground">{t("Personalized learning")}</p>
+                  <p className="text-muted-foreground text-sm">{t("Classes of 1 to 4 students, not 30.")}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -103,8 +103,8 @@ export function HavenLanguageProgram() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-sans font-semibold text-foreground">English for life in Canada</p>
-                  <p className="text-muted-foreground text-sm">Learn the English you actually need, through our classes and real conversations with Canadians.</p>
+                  <p className="font-sans font-semibold text-foreground">{t("English for life in Canada")}</p>
+                  <p className="text-muted-foreground text-sm">{t("Learn the English you actually need, through our classes and real conversations with Canadians.")}</p>
                 </div>
               </div>
             </div>
@@ -113,17 +113,17 @@ export function HavenLanguageProgram() {
           {/* Bottom Card - CTA */}
           <div className="bg-[#2457F1] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
             <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-4">
-              Start improving your English today.
+              {t("Start improving your English today.")}
             </h3>
             <div className="flex flex-col items-center">
               <Button size="lg" className="text-base py-6 w-full bg-white text-[#2457F1] hover:bg-white/90" asChild>
-                <Link href="https://app.findhaven.org">Join Haven now</Link>
+                <Link href="https://app.findhaven.org">{t("Join Haven now")}</Link>
               </Button>
-              <Link 
-                href="/hlp" 
+              <Link
+                href={link("/hlp")}
                 className="text-white text-sm underline hover:text-white/80 transition-colors mt-3"
               >
-                Learn more about the program
+                {t("Learn more about the program")}
               </Link>
             </div>
           </div>

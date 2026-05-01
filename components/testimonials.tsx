@@ -1,7 +1,8 @@
 "use client"
 
-import { User } from "lucide-react"
 import Image from "next/image"
+import { User } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
 
 const testimonials = [
   {
@@ -23,6 +24,8 @@ const testimonials = [
 ]
 
 export function Testimonials() {
+  const { t } = useTranslation()
+
   return (
     <section id="testimonials" className="pt-6 pb-12 bg-background">
       <div className="max-w-5xl mx-auto px-6">
@@ -79,16 +82,16 @@ export function Testimonials() {
                     ? "bg-secondary/10 text-secondary"
                     : "bg-accent/10 text-accent"
                 }`}>
-                  {testimonial.type}
+                  {t(testimonial.type)}
                 </span>
                 
                 <p className="text-foreground italic leading-relaxed mb-6">
-                  &ldquo;{testimonial.quote}&rdquo;
+                  &ldquo;{t(testimonial.quote)}&rdquo;
                 </p>
                 
                 <div>
                   <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">From {testimonial.location}</p>
+                  <p className="text-sm text-muted-foreground">{t("From")} {testimonial.location}</p>
                 </div>
               </div>
             </div>
