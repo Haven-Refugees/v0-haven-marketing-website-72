@@ -25,7 +25,7 @@ export function HLPTestimonialOlena() {
             src="/images/olena.jpg"
             alt="Olena, Haven student from Ukraine"
             fill
-            className="object-cover object-bottom"
+            className="object-cover object-top"
           />
         </div>
       </div>
