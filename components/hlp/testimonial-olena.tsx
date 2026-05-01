@@ -8,7 +8,7 @@ export function HLPTestimonialOlena() {
 
   return (
     <section className="relative">
-      <div className="grid md:grid-cols-2 min-h-[400px]">
+      <div className="grid md:grid-cols-2 min-h-[300px]">
         {/* Left - Quote */}
         <div className="bg-[#F0EDF9] p-12 md:p-16 lg:p-20 flex flex-col justify-center">
           <span className="inline-block bg-[#AF75FF]/20 text-[#AF75FF] text-xs font-semibold px-4 py-1.5 rounded-full mb-6 w-fit">
@@ -24,7 +24,7 @@ export function HLPTestimonialOlena() {
         </div>
 
         {/* Right - Photo */}
-        <div className="relative min-h-[250px] md:min-h-full">
+        <div className="relative min-h-[190px] md:min-h-full">
           <Image
             src="/images/olena.jpg"
             alt="Olena, Haven student from Ukraine"
