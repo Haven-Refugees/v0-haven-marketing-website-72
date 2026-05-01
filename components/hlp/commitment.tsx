@@ -10,11 +10,11 @@ const checkpoints = [
     description: "With your professional teacher, online.",
   },
   {
-    title: "2 hours of conversation practice",
+    title: "2+ hours of conversation practice",
     description: "With your Canadian volunteer.",
   },
   {
-    title: "2 hours of homework",
+    title: "2+ hours of homework",
     description: "Personalized materials from your teacher.",
   },
 ]
