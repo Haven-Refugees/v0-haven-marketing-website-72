@@ -20,12 +20,13 @@ export function HLPTestimonialOlena() {
         </div>
 
         {/* Right - Photo */}
-        <div className="relative min-h-[200px] md:min-h-[350px]">
+        <div className="relative min-h-[280px]">
           <Image
             src="/images/olena.jpg"
             alt="Olena, Haven student from Ukraine"
             fill
-            className="object-cover object-top"
+            className="object-cover"
+            style={{ objectPosition: "center 15%" }}
           />
         </div>
       </div>
