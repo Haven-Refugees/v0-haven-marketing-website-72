@@ -4,6 +4,7 @@ import { useState } from "react"
 import { ChevronDown, ChevronUp, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useTranslation } from "@/lib/i18n"
 
 interface CollapsiblePillProps {
   title: string
@@ -53,25 +54,26 @@ function CollapsiblePill({ title, description, variant, isExpanded, onToggle, nu
 
 export function SectionThree() {
   const [expandedPills, setExpandedPills] = useState<Record<string, boolean>>({})
+  const { t } = useTranslation()
 
   const togglePill = (id: string) => {
     setExpandedPills(prev => ({ ...prev, [id]: !prev[id] }))
   }
 
   const languageProgramFeatures = [
-    { id: "chats", title: "Matching", description: "Practice conversational English with friendly Canadian volunteers." },
-    { id: "classes", title: "Classes", description: "Individual and small group online ESL classes with professional teachers." },
-    { id: "study", title: "Homework", description: "Self-paced learning materials and exercises to improve on your own time." },
+    { id: "chats", title: t("Matching"), description: t("Practice conversational English with friendly Canadian volunteers.") },
+    { id: "classes", title: t("Classes"), description: t("Individual and small group online ESL classes with professional teachers.") },
+    { id: "study", title: t("Homework"), description: t("Self-paced learning materials and exercises to improve on your own time.") },
   ]
 
   const newcomerMatchingFeatures = [
-    { id: "n-matching", title: "Matching", description: "Practice your English or French, meet people in your community, and find work in Canada." },
+    { id: "n-matching", title: t("Matching"), description: t("Practice your English or French, meet people in your community, and find work in Canada.") },
   ]
 
   const canadianMatchingFeatures = [
-    { id: "c-language", title: "Language", description: "Help newcomers practice their English or French conversation skills." },
-    { id: "c-community", title: "Community", description: "Welcome newcomers into your community and share Canadian culture." },
-    { id: "c-network", title: "Network", description: "Share your professional network and career advice with newcomers." },
+    { id: "c-language", title: t("Language"), description: t("Help newcomers practice their English or French conversation skills.") },
+    { id: "c-community", title: t("Community"), description: t("Welcome newcomers into your community and share Canadian culture.") },
+    { id: "c-network", title: t("Network"), description: t("Share your professional network and career advice with newcomers.") },
   ]
 
   return (
@@ -80,10 +82,10 @@ export function SectionThree() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
-            How Haven helps
+            {t("How Haven helps")}
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            We have two programs: Haven Language Program and Haven Connect. Both help newcomers improve their English and meet Canadians. The difference is commitment - and results.
+            {t("We have two programs: Haven Language Program and Haven Connect. Both help newcomers improve their English and meet Canadians. The difference is commitment - and results.")}
           </p>
         </div>
 
@@ -91,13 +93,13 @@ export function SectionThree() {
         <div className="grid md:grid-cols-3 gap-6 mb-4">
           <div>
             <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide">
-              For Newcomers
+              {t("For Newcomers")}
             </h3>
           </div>
           <div></div>
           <div>
             <h3 className="text-sm font-semibold text-accent uppercase tracking-wide">
-              For Canadians
+              {t("For Canadians")}
             </h3>
           </div>
         </div>
@@ -108,13 +110,13 @@ export function SectionThree() {
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
             <span className="inline-flex items-center gap-1.5 w-fit bg-secondary text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
               <Clock className="w-3.5 h-3.5" />
-              6+ hours per week
+              {t("6+ hours per week")}
             </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
-              Haven Language Program
+              {t("Haven Language Program")}
             </h4>
             <p className="text-muted-foreground mb-4">
-              The best way for a newcomer to improve their English — and soon, French!
+              {t("The best way for a newcomer to improve their English — and soon, French!")}
             </p>
             <div className="border-t border-secondary/20 pt-4 space-y-2 flex-grow">
               {languageProgramFeatures.map((feature, index) => (
@@ -130,7 +132,7 @@ export function SectionThree() {
               ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
-              <Link href="https://app.findhaven.org">Learn more</Link>
+              <Link href="https://app.findhaven.org">{t("Learn more")}</Link>
             </Button>
           </div>
 
@@ -138,13 +140,13 @@ export function SectionThree() {
           <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-6 flex flex-col">
             <span className="inline-flex items-center gap-1.5 w-fit bg-secondary text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
               <Clock className="w-3.5 h-3.5" />
-              As little as 30 minutes a week
+              {t("As little as 30 minutes a week")}
             </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
-              Haven Connect
+              {t("Haven Connect")}
             </h4>
             <p className="text-muted-foreground mb-4">
-              The best way to meet Canadians who can help.
+              {t("The best way to meet Canadians who can help.")}
             </p>
             <div className="border-t border-secondary/20 pt-4 space-y-2">
               {newcomerMatchingFeatures.map((feature) => (
@@ -162,13 +164,13 @@ export function SectionThree() {
             {/* Info box */}
             <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5 mt-4 flex-grow">
               <p className="text-foreground">
-                <span className="font-bold text-secondary">No classes. No homework.</span>{" "}
-                Just real conversations with Canadian volunteers.
+                <span className="font-bold text-secondary">{t("No classes. No homework.")}</span>{" "}
+                {t("Just real conversations with Canadian volunteers.")}
               </p>
             </div>
             
             <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
-              <Link href="https://app.findhaven.org">Learn more</Link>
+              <Link href="https://app.findhaven.org">{t("Learn more")}</Link>
             </Button>
           </div>
 
@@ -176,13 +178,13 @@ export function SectionThree() {
           <div className="bg-accent/10 border border-accent/20 rounded-2xl p-6 flex flex-col">
             <span className="inline-flex items-center gap-1.5 w-fit bg-accent text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-3">
               <Clock className="w-3.5 h-3.5" />
-              You pick your schedule
+              {t("You pick your schedule")}
             </span>
             <h4 className="font-sans font-bold text-xl text-foreground mb-2">
-              Haven Connect
+              {t("Haven Connect")}
             </h4>
             <p className="text-muted-foreground mb-4">
-              The best way to help newcomers in Canada.
+              {t("The best way to help newcomers in Canada.")}
             </p>
             <div className="border-t border-accent/20 pt-4 space-y-2 flex-grow">
               {canadianMatchingFeatures.map((feature) => (
@@ -197,7 +199,7 @@ export function SectionThree() {
               ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit hover:bg-accent/10 hover:text-accent hover:border-accent" asChild>
-              <Link href="https://app.findhaven.org">Learn more</Link>
+              <Link href="https://app.findhaven.org">{t("Learn more")}</Link>
             </Button>
           </div>
         </div>

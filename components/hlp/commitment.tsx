@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/lib/i18n"
 
 const checkpoints = [
   {
@@ -17,15 +20,17 @@ const checkpoints = [
 ]
 
 export function HLPCommitment() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] mb-4">
-            Give us 20 weeks. We&apos;ll change your English.
+            {t("Give us 20 weeks. We'll change your English.")}
           </h2>
           <p className="text-[#26215C]/70 text-lg max-w-3xl mx-auto">
-            Most Haven students see a measurable improvement in their English — at least one CLB level in Speaking or Listening — after completing the 20-week program.
+            {t("Most Haven students see a measurable improvement in their English — at least one CLB level in Speaking or Listening — after completing the 20-week program.")}
           </p>
         </div>
 
@@ -33,7 +38,7 @@ export function HLPCommitment() {
           {/* Left - Checkpoints */}
           <div>
             <h3 className="font-sans font-bold text-xl text-[#26215C] mb-8">
-              Here&apos;s what 20 weeks looks like:
+              {t("Here's what 20 weeks looks like:")}
             </h3>
             <div className="space-y-6">
               {checkpoints.map((checkpoint, index) => (
@@ -43,17 +48,17 @@ export function HLPCommitment() {
                   </div>
                   <div>
                     <p className="font-sans font-bold text-[#26215C]">
-                      {checkpoint.title}
+                      {t(checkpoint.title)}
                     </p>
                     <p className="text-[#26215C]/70">
-                      {checkpoint.description}
+                      {t(checkpoint.description)}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
             <p className="text-[#AF75FF] font-semibold mt-8">
-              That&apos;s 6 hours a week. Less than an hour a day.
+              {t("That's 6 hours a week. Less than an hour a day.")}
             </p>
           </div>
 
@@ -62,12 +67,12 @@ export function HLPCommitment() {
             <p className="text-4xl md:text-5xl font-bold text-[#26215C] mb-2">
               $2.50–$7.50
             </p>
-            <p className="text-[#26215C]/70 text-lg mb-4">per class</p>
+            <p className="text-[#26215C]/70 text-lg mb-4">{t("per class")}</p>
             <p className="text-[#26215C] mb-6">
-              That&apos;s $5–$15 per week depending on your situation.
+              {t("That's $5–$15 per week depending on your situation.")}
             </p>
             <p className="text-[#26215C]/60 text-sm leading-relaxed">
-              We charge a small fee to ensure commitment — our program works best when students show up. If you can&apos;t commit right now, Haven Connect is free and always available.
+              {t("We charge a small fee to ensure commitment — our program works best when students show up. If you can't commit right now, Haven Connect is free and always available.")}
             </p>
           </div>
         </div>
@@ -78,7 +83,7 @@ export function HLPCommitment() {
             size="lg"
             className="bg-[#AF75FF] hover:bg-[#AF75FF]/90 text-white px-8 py-6 text-base"
           >
-            <Link href="https://app.findhaven.org">Apply for the program</Link>
+            <Link href="https://app.findhaven.org">{t("Apply for the program")}</Link>
           </Button>
         </div>
       </div>

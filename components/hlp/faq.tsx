@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { useTranslation } from "@/lib/i18n"
 
 const faqs = [
   {
@@ -31,25 +32,27 @@ const faqs = [
 ]
 
 export function HLPFaq() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] text-center mb-12">
-          Frequently asked questions
+          {t("Frequently asked questions")}
         </h2>
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem 
-              key={index} 
+            <AccordionItem
+              key={index}
               value={`item-${index}`}
               className="bg-white border border-[#E0D9F0] rounded-xl px-6 overflow-hidden data-[state=open]:shadow-lg transition-shadow !border-b"
             >
               <AccordionTrigger className="text-left font-sans font-semibold text-[#26215C] hover:no-underline py-6">
-                {faq.question}
+                {t(faq.question)}
               </AccordionTrigger>
               <AccordionContent className="text-[#26215C]/70 pb-6 leading-relaxed">
-                {faq.answer}
+                {t(faq.answer)}
               </AccordionContent>
             </AccordionItem>
           ))}

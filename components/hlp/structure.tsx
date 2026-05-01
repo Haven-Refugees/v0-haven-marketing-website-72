@@ -1,4 +1,7 @@
+"use client"
+
 import { BookOpen, Users, FileText } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
 
 const features = [
   {
@@ -19,22 +22,24 @@ const features = [
 ]
 
 export function HLPStructure() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <p className="text-[#AF75FF] text-sm font-semibold uppercase tracking-wider mb-4">
-          HAVEN LANGUAGE PROGRAM
+          {t("HAVEN LANGUAGE PROGRAM")}
         </p>
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] mb-4">
-          The fastest way to improve your English in Canada.
+          {t("The fastest way to improve your English in Canada.")}
         </h2>
         <p className="text-[#26215C]/70 text-lg max-w-3xl mx-auto mb-16">
-          An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.
+          {t("An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.")}
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white border border-[#E0D9F0] rounded-2xl p-8 text-center"
             >
@@ -42,10 +47,10 @@ export function HLPStructure() {
                 <feature.icon className="w-8 h-8 text-[#AF75FF]" />
               </div>
               <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
-                {feature.title}
+                {t(feature.title)}
               </h3>
               <p className="text-[#26215C]/70 leading-relaxed">
-                {feature.description}
+                {t(feature.description)}
               </p>
             </div>
           ))}

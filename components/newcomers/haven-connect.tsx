@@ -1,21 +1,24 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-
-
+import { useTranslation } from "@/lib/i18n"
 
 export function HavenConnect() {
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="pb-10 flex flex-col items-center">
         <p className="text-[#888] text-2xl font-medium text-center mb-2">
-          Not interested in classes? You can still match with Canadian volunteers.
+          {t("Not interested in classes? You can still match with Canadian volunteers.")}
         </p>
-        <svg 
+        <svg
           className="w-5 h-5 text-[#2457F1] animate-bounce"
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke="currentColor" 
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
           strokeWidth={2}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -26,20 +29,20 @@ export function HavenConnect() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
-              Haven Connect
+              {t("Haven Connect")}
             </p>
             <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-              Meet Canadians who can help you start life in Canada.
+              {t("Meet Canadians who can help you start life in Canada.")}
             </h2>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-4">
-              These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.
+              {t("These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.")}
             </p>
             <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed mb-6">
-              It's free and starts with a 30 minute video call.
+              {t("It's free and starts with a 30 minute video call.")}
             </p>
 
             <Button size="lg" className="text-base px-7" asChild>
-              <Link href="https://app.findhaven.org">Join Haven</Link>
+              <Link href="https://app.findhaven.org">{t("Join Haven")}</Link>
             </Button>
           </div>
 
@@ -47,7 +50,7 @@ export function HavenConnect() {
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
                 src="/images/haven-connect-hero.jpg"
-                alt="Two women high-fiving on a snowy Canadian city street"
+                alt={t("Two women high-fiving on a snowy Canadian city street")}
                 fill
                 className="object-cover"
               />

@@ -1,7 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/lib/i18n"
 
 export function SectionProfiles() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -17,17 +22,17 @@ export function SectionProfiles() {
                 <h4 className="font-bold text-lg text-foreground">Barb A</h4>
                 <p className="text-sm text-muted-foreground mb-2">Toronto</p>
                 <span className="inline-block px-2 py-0.5 text-xs font-medium border border-border rounded-full mb-3">
-                  Community
+                  {t("Community")}
                 </span>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Wants to welcome newcomers in Toronto
+                  {t("Wants to welcome newcomers in Toronto")}
                 </p>
                 <div className="space-y-2">
                   <Button variant="outline" className="w-full justify-center">
-                    Ask for Help
+                    {t("Ask for Help")}
                   </Button>
                   <Button variant="outline" className="w-full justify-center">
-                    See Profile
+                    {t("See Profile")}
                   </Button>
                 </div>
               </div>
@@ -42,17 +47,17 @@ export function SectionProfiles() {
                 <h4 className="font-bold text-lg text-foreground">Oksana K</h4>
                 <p className="text-sm text-muted-foreground mb-2">Ottawa</p>
                 <span className="inline-block px-2 py-0.5 text-xs font-medium border border-border rounded-full mb-3">
-                  Language
+                  {t("Language")}
                 </span>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Needs help practicing her English
+                  {t("Needs help practicing her English")}
                 </p>
                 <div className="space-y-2">
                   <Button variant="outline" className="w-full justify-center">
-                    Offer Help
+                    {t("Offer Help")}
                   </Button>
                   <Button variant="outline" className="w-full justify-center">
-                    See Profile
+                    {t("See Profile")}
                   </Button>
                 </div>
               </div>
@@ -62,25 +67,25 @@ export function SectionProfiles() {
           {/* Right Content */}
           <div className="max-w-lg">
             <h2 className="font-sans font-bold text-[1.6rem] md:text-[2rem] lg:text-[2.4rem] text-foreground leading-tight mb-8 max-w-md">
-              Our platform makes it easier that ever to match.
+              {t("Our platform makes it easier that ever to match.")}
             </h2>
 
             {/* Stats */}
             <div className="flex gap-4 mb-6">
               <div className="bg-accent/10 rounded-lg p-4 min-w-[140px]">
                 <p className="text-2xl font-bold text-accent">1,000+</p>
-                <p className="text-sm text-accent">Canadians ready to help</p>
+                <p className="text-sm text-accent">{t("Canadians ready to help")}</p>
               </div>
               <div className="bg-secondary/10 rounded-lg p-4 min-w-[140px]">
                 <p className="text-2xl font-bold text-secondary">1,500+</p>
-                <p className="text-sm text-secondary">Newcomers looking for help</p>
+                <p className="text-sm text-secondary">{t("Newcomers looking for help")}</p>
               </div>
             </div>
 
             {/* CTA Button */}
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href="https://app.findhaven.org">
-                Visit the platform
+                {t("Visit the platform")}
               </Link>
             </Button>
           </div>

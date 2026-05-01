@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import {
@@ -6,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { useTranslation } from "@/lib/i18n"
 
 const faqs = [
   {
@@ -23,27 +26,29 @@ const faqs = [
 ]
 
 export function FaqSection() {
+  const { t } = useTranslation()
+
   return (
     <section id="faq" className="pt-12 pb-24">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
-            Frequently Asked Questions
+            {t("Frequently Asked Questions")}
           </h2>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem 
-              key={index} 
+            <AccordionItem
+              key={index}
               value={`item-${index}`}
               className="bg-card border border-border rounded-xl px-6 overflow-hidden data-[state=open]:shadow-lg transition-shadow !border-b"
             >
               <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline py-6">
-                {faq.question}
+                {t(faq.question)}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
-                {faq.answer}
+                {t(faq.answer)}
               </AccordionContent>
             </AccordionItem>
           ))}
@@ -51,7 +56,7 @@ export function FaqSection() {
 
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <Link href="https://app.findhaven.org">See our full FAQ</Link>
+            <Link href="https://app.findhaven.org">{t("See our full FAQ")}</Link>
           </Button>
         </div>
       </div>

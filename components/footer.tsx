@@ -1,14 +1,19 @@
+"use client"
+
 import Link from "next/link"
 import { Instagram, Linkedin, Facebook } from "lucide-react"
+import { useTranslation } from "@/lib/i18n"
 
 export function Footer() {
+  const { t, link } = useTranslation()
+
   return (
     <footer className="bg-[#1e2a3a] text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-5 gap-12 mb-12">
           {/* Logo and tagline */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center mb-4">
+            <Link href={link("/")} className="flex items-center mb-4">
               <img 
                 src="/images/haven-logo.png" 
                 alt="Haven" 
@@ -17,7 +22,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-gray-400 max-w-xs leading-relaxed mb-6">
-              Helping newcomers become independent in Canada. Making it easier for Canadians to help.
+              {t("Helping newcomers become independent in Canada. Making it easier for Canadians to help.")}
             </p>
             <div className="flex items-center gap-3">
               <Link 
@@ -46,45 +51,45 @@ export function Footer() {
 
           {/* For Newcomers */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">For Newcomers</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("For Newcomers")}</h4>
             <nav className="flex flex-col gap-3">
               <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                How we help
+                {t("How we help")}
               </Link>
               <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                Haven Language Program
+                {t("Haven Language Program")}
               </Link>
               <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                Haven Connect
+                {t("Haven Connect")}
               </Link>
             </nav>
           </div>
 
           {/* For Canadians */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">For Canadians</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("For Canadians")}</h4>
             <nav className="flex flex-col gap-3">
               <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                How you can help
+                {t("How you can help")}
               </Link>
             </nav>
           </div>
 
           {/* About Haven */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">About Haven</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("About Haven")}</h4>
             <nav className="flex flex-col gap-3">
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-                Our vision
+                {t("Our vision")}
               </Link>
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-                Our team
+                {t("Our team")}
               </Link>
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-                User agreement
+                {t("User agreement")}
               </Link>
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-                Privacy policy
+                {t("Privacy policy")}
               </Link>
             </nav>
           </div>
@@ -93,14 +98,14 @@ export function Footer() {
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Haven Refugees. All rights reserved.
+              © {new Date().getFullYear()} Haven Refugees. {t("All rights reserved.")}
             </p>
             <p className="text-gray-400 text-sm">
-              Registered Canadian charity · CRA #758177547 RR 0001
+              {t("Registered Canadian charity")} · CRA #758177547 RR 0001
             </p>
           </div>
           <p className="text-gray-400 text-sm">
-            Questions?{" "}
+            {t("Questions?")}{" "}
             <Link href="mailto:info@findhaven.org" className="text-white hover:underline">
               info@findhaven.org
             </Link>
