@@ -13,6 +13,7 @@ export function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-6 py-2 grid lg:grid-cols-[1fr_1fr] gap-4 items-stretch">
         <div className="space-y-4 flex flex-col justify-center lg:pl-12">
+          <p className="text-lg font-medium text-accent">yes</p>
           <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
             {t("We help refugees become independent in Canada faster.")}
           </h1>
