@@ -20,10 +20,11 @@ export function middleware(request: NextRequest) {
   const pathnameHasLocale = isValidLocale(pathnameLocale)
 
   if (pathnameHasLocale) {
-    // Set a header so the root layout can read the current locale
-    const response = NextResponse.next()
-    response.headers.set("x-locale", pathnameLocale)
-    return response
+    const requestHeaders = new Headers(request.headers)
+    requestHeaders.set("x-locale", pathnameLocale)
+    return NextResponse.next({
+      request: { headers: requestHeaders },
+    })
   }
 
   // Detect locale from Accept-Language header

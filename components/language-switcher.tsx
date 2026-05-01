@@ -22,7 +22,7 @@ export function LanguageSwitcher() {
   }, [])
 
   function switchLocale(newLocale: Locale) {
-    const pathWithoutLocale = pathname.replace(`/${locale}`, "") || "/"
+    const pathWithoutLocale = pathname.replace(new RegExp(`^/${locale}(?=/|$)`), "") || "/"
     window.location.href = `/${newLocale}${pathWithoutLocale}`
   }
 
