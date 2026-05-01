@@ -25,10 +25,9 @@ export function HLPTestimonialLidia() {
           <blockquote className="text-[#26215C] text-xl md:text-2xl lg:text-3xl font-bold leading-snug mb-4">
             &ldquo;{t("My classes are focused on topics that actually matter to newcomers. I love to see the big improvements students make after 20 weeks.")}&rdquo;
           </blockquote>
-          <div>
-            <p className="font-sans font-bold text-[#26215C] text-base">Lidia</p>
-            <p className="text-[#26215C]/60 text-sm">{t("Haven Teacher")}</p>
-          </div>
+          <p className="font-sans text-[#26215C] text-base">
+            {t("Lidia, a Haven teacher in Montreal")}
+          </p>
         </div>
       </div>
     </section>
