@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 
@@ -35,10 +36,14 @@ export function CanadiansHero() {
           </div>
 
           <div className="relative">
-            <div className="bg-[#d4a896] rounded-2xl aspect-[4/3] flex items-center justify-center">
-              <span className="text-[#8b6b5c] text-sm font-medium">
-                [ Photo of Canadian volunteer ]
-              </span>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1%20%286%29-YiOe9xHdauvK3n9GFiEV6cKiQ6B3Cl.png"
+                alt="Canadian volunteer ready to help newcomers"
+                fill
+                className="object-cover object-top"
+                priority
+              />
             </div>
           </div>
         </div>
