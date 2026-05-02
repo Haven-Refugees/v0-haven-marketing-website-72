@@ -30,7 +30,7 @@ export function HLPBenefits() {
     <section className="py-20 bg-[#F7F6FE]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] text-center mb-16">
-          {t("Why Haven works")}
+          {t("We designed Haven to make learning as easy as possible.")}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
