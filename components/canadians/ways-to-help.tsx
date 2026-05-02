@@ -39,7 +39,7 @@ export function WaysToHelp() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start pt-4">
           {ways.map((way, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ export function WaysToHelp() {
                 </span>
               )}
               
-              <div className={`${way.popular ? "mt-2" : "mt-7"}`}>
+              <div>
                 <div className="w-10 h-10 bg-[#FDF0EB] rounded-lg flex items-center justify-center mb-4">
                   <way.icon className="w-5 h-5 text-[#E8725A]" />
                 </div>
