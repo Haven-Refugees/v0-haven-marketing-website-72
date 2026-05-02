@@ -111,18 +111,16 @@ export function HavenLanguageProgram() {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-[rgba(107,78,255,0.15)] mb-6" />
+          <div className="h-px bg-[rgba(107,78,255,0.15)] mb-4" />
 
-          {/* CTA Row */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <p className="font-sans font-semibold text-[20px] text-foreground">
-                {t("Start improving your English today.")}
-              </p>
-              <p className="text-muted-foreground text-[15px]">
-                {t("Classes start from only $2.50 each.")}
-              </p>
-            </div>
+          {/* CTA Block - Centered */}
+          <div className="flex flex-col items-center text-center">
+            <p className="font-sans font-semibold text-[20px] text-foreground">
+              {t("Start improving your English today.")}
+            </p>
+            <p className="text-muted-foreground text-[15px] mb-4">
+              {t("Classes start from only $2.50 each.")}
+            </p>
             <div className="flex items-center gap-4">
               <Link
                 href={link("/hlp")}
@@ -130,7 +128,7 @@ export function HavenLanguageProgram() {
               >
                 {t("Learn more")}
               </Link>
-              <Button size="lg" className="text-base bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[28px]" asChild>
+              <Button size="lg" className="text-[17px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[16px] px-[28px]" asChild>
                 <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
               </Button>
             </div>
