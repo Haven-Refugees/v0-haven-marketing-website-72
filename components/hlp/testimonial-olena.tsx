@@ -7,8 +7,8 @@ export function HLPTestimonialOlena() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative">
-      <div className="grid md:grid-cols-[60%_40%]">
+    <section className="relative min-h-[500px]">
+      <div className="grid md:grid-cols-2 h-full min-h-[500px]">
         {/* Left - Quote */}
         <div className="bg-[#F0EDF9] p-8 md:p-10 lg:p-12 flex flex-col justify-center">
           <blockquote className="text-[#26215C] text-xl md:text-2xl lg:text-3xl font-bold leading-snug mb-4">
@@ -20,13 +20,12 @@ export function HLPTestimonialOlena() {
         </div>
 
         {/* Right - Photo */}
-        <div className="relative min-h-[280px]">
+        <div className="relative min-h-[500px] md:min-h-full">
           <Image
             src="/images/olena.jpg"
             alt="Olena, Haven student from Ukraine"
             fill
-            className="object-cover"
-            style={{ objectPosition: "center 15%" }}
+            className="object-cover object-top"
           />
         </div>
       </div>
