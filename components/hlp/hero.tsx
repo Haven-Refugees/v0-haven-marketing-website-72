@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 
@@ -13,10 +14,15 @@ export function HLPHero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - Left */}
           <div className="order-2 md:order-1">
-            <div className="bg-[#E0D9F0] rounded-2xl aspect-[4/5] flex items-center justify-center">
-              <span className="text-[#AF75FF]/50 text-sm font-medium uppercase tracking-wider">
-                Photo
-              </span>
+            <div className="rounded-2xl aspect-[4/5] overflow-hidden">
+              <Image
+                src="/images/hlp-hero.jpg"
+                alt="Haven Language Program participant"
+                width={600}
+                height={750}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
           </div>
 
