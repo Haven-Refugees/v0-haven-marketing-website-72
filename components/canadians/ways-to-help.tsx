@@ -13,7 +13,7 @@ const ways = [
   {
     icon: Clock,
     title: "Be their local connection",
-    description: "Share more about your city. The things you take for granted are exactly what newcomers need to know to feel at home.",
+    description: "Imagine moving to a new city without knowing anyone. Where to go, what to do, how things work — things you take for granted can be a gamechanger for a newcomer.",
     popular: false,
   },
   {
