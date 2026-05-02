@@ -42,7 +42,7 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-foreground font-normal text-base">
+                <NavigationMenuTrigger className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-normal text-base">
                   {t("About Haven")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
