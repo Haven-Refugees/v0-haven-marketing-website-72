@@ -18,7 +18,7 @@ const ways = [
   },
   {
     icon: FileText,
-    title: "Help navigate the Canadian job market",
+    title: "Offer Canadian career advice",
     description: "The things that feel obvious to you — how resumes work, what interviews are like — can be exactly what a newcomer needs.",
     popular: false,
   },
