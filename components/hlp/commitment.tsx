@@ -65,14 +65,14 @@ export function HLPCommitment() {
           {/* Right - Pricing Card */}
           <div className="bg-[#F7F6FE] rounded-2xl p-8">
             <p className="text-4xl md:text-5xl font-bold text-[#26215C] mb-2">
-              $2.50–$7.50
+              $2.50 - $7.50
             </p>
-            <p className="text-[#26215C]/70 text-lg mb-4">{t("per class")}</p>
-            <p className="text-[#26215C] mb-6">
-              {t("That's $5–$15 per week depending on your situation.")}
+            <p className="text-[#26215C]/70 text-lg mb-4">{t("per class, depending on your situation.")}</p>
+            <p className="text-[#26215C] font-semibold mb-6">
+              {t("That's only $5 to $15 per week.")}
             </p>
             <p className="text-[#26215C]/60 text-sm leading-relaxed">
-              {t("We charge a small fee to ensure commitment — our program works best when students show up. If you can't commit right now, Haven Connect is free and always available.")}
+              {t("We charge a small fee to ensure commitment — our program works best when students show up. If you can't commit right now, you can still practice your English with volunteers for free.")}
             </p>
           </div>
         </div>
