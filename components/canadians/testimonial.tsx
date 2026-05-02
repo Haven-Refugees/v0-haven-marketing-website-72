@@ -28,7 +28,7 @@ export function CanadiansTestimonial() {
               </blockquote>
               <p className="font-sans">
                 <span className="font-bold text-foreground">{t("Camila")}</span>
-                <span className="text-muted-foreground">, {t("from Mississauga")}</span>
+                <span className="text-muted-foreground">, {t("a Haven volunteer in Mississauga, originally from Brazil")}</span>
               </p>
             </div>
           </div>
