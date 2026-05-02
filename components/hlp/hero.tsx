@@ -9,17 +9,17 @@ export function HLPHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-[#F0EDF9] py-16 md:py-24">
+    <section className="relative pt-14 pb-10 bg-[#F0EDF9]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - Left */}
           <div className="order-2 md:order-1">
-            <div className="rounded-2xl aspect-[4/5] overflow-hidden">
+            <div className="rounded-2xl overflow-hidden aspect-[3.24/3]">
               <Image
                 src="/images/hlp-hero.jpg"
                 alt="Haven Language Program participant"
                 width={600}
-                height={750}
+                height={556}
                 className="w-full h-full object-cover"
                 priority
               />
