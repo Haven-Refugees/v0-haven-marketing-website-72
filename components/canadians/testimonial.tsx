@@ -23,7 +23,7 @@ export function CanadiansTestimonial() {
           {/* Quote */}
           <div className="flex items-center p-10 lg:p-16">
             <div>
-              <blockquote className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-6">
+              <blockquote className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-relaxed mb-6">
                 {t("\"As someone who struggled to learn English myself, I know what a difference it makes to have someone patient to practice with.\"")}
               </blockquote>
               <p className="font-sans">

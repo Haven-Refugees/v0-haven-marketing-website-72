@@ -7,19 +7,19 @@ const ways = [
   {
     icon: MessageCircle,
     title: "Practice English or French",
-    description: "Have a casual conversation with a newcomer. Some are also taking professional classes on Haven, so your conversations are part of a bigger learning journey.",
+    description: "Classroom learning only goes so far. What really builds confidence is conversation — and that's something you can offer just by showing up.",
     popular: true,
   },
   {
     icon: Clock,
     title: "Be their local connection",
-    description: "Share more about your city. The things you take for granted are exactly what newcomers need to know to feel at home.",
+    description: "Imagine moving to a new city without knowing a single person. Where to go, what to do, how things work — you already know it all.",
     popular: false,
   },
   {
     icon: FileText,
-    title: "Help with their job search",
-    description: "Share advice about your industry or how hiring works in Canada. Your professional experience is incredibly valuable to someone starting over.",
+    title: "Offer career advice",
+    description: "The things that feel obvious to you — how resumes work, what interviews are like — can be exactly what a newcomer needs.",
     popular: false,
   },
 ]
@@ -39,7 +39,7 @@ export function WaysToHelp() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start pt-4">
           {ways.map((way, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ export function WaysToHelp() {
                 </span>
               )}
               
-              <div className={`${way.popular ? "mt-2" : "mt-7"}`}>
+              <div>
                 <div className="w-10 h-10 bg-[#FDF0EB] rounded-lg flex items-center justify-center mb-4">
                   <way.icon className="w-5 h-5 text-[#E8725A]" />
                 </div>
