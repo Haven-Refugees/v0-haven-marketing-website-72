@@ -7,7 +7,7 @@ const ways = [
   {
     icon: MessageCircle,
     title: "Practice English or French",
-    description: "Have a casual conversation with a newcomer. Some are also taking professional classes on Haven, so your conversations are part of a bigger learning journey.",
+    description: "Have a conversation with a newcomer. Some are also taking professional classes on Haven, so your conversations are part of a bigger learning journey.",
     popular: true,
   },
   {
