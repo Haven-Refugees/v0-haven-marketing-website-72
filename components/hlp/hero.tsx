@@ -20,7 +20,8 @@ export function HLPHero() {
                 alt="Haven Language Program participant"
                 width={600}
                 height={500}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "center 15%" }}
                 priority
               />
             </div>
