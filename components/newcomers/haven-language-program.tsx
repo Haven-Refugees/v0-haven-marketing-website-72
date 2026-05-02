@@ -105,7 +105,7 @@ export function HavenLanguageProgram() {
               </div>
               <div>
                 <p className="font-sans font-bold text-foreground">{t("English for life in Canada")}</p>
-                <p className="text-muted-foreground text-sm">{t("Learn the English you actually need, through classes and real conversations with Canadians.")}</p>
+                <p className="text-muted-foreground text-sm">{t("Learn the English you will actually use in your day-to-day life.")}</p>
               </div>
             </div>
           </div>
