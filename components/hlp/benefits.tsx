@@ -53,7 +53,7 @@ export function HLPBenefits() {
           <Button
             asChild
             size="lg"
-            className="bg-[#AF75FF] hover:bg-[#AF75FF]/90 text-white px-8 py-6 text-base"
+            className="bg-[#2563EB] hover:bg-[#2563EB]/90 text-white px-8 py-6 text-base"
           >
             <Link href="https://app.findhaven.org">{t("Apply for the program")}</Link>
           </Button>
