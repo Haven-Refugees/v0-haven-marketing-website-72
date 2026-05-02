@@ -12,7 +12,7 @@ export function HavenConnect() {
     <>
       <div className="pb-10 flex flex-col items-center">
         <p className="text-[#888] text-2xl font-medium text-center mb-2">
-          {t("Not interested in classes? You can still match with Canadian volunteers.")}
+          {t("Just want to meet Canadians? It's free and takes 30 minutes a week.")}
         </p>
         <svg
           className="w-5 h-5 text-[#2457F1] animate-bounce"
