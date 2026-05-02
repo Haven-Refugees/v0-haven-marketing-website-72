@@ -36,12 +36,12 @@ export function CanadiansHero() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+            <div className="rounded-3xl overflow-hidden aspect-[4/3]">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1%20%286%29-YiOe9xHdauvK3n9GFiEV6cKiQ6B3Cl.png"
                 alt="Canadian volunteer ready to help newcomers"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-top rounded-3xl"
                 priority
               />
             </div>
