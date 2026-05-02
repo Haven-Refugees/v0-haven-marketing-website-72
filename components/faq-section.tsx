@@ -20,6 +20,10 @@ const faqs = [
     answer: "newcomer-help",
   },
   {
+    question: "I'm an interested Canadian, how much time does volunteering take?",
+    answer: "As little as 30 minutes. Haven matches you with a newcomer for a video conversation — you might help them practice their English, share what life is like in your city, or offer advice about finding work in Canada. No training, no commitment, no expertise required. Just show up and have a conversation.",
+  },
+  {
     question: "How does Haven keep its users safe?",
     answer: "All Canadian supporters on Haven verify their identity before reaching out. Newcomers can verify too. We recommend it — and most do.",
   },
