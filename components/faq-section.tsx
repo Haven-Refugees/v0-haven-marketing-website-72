@@ -16,6 +16,10 @@ const faqs = [
     answer: "We help all newcomers fleeing conflict who are now in Canada — including refugees, refugee claimants, and all other Canadian humanitarian programs like CUAET. Unfortunately we are not able to help other immigrants in Canada, or refugees who are not in Canada.",
   },
   {
+    question: "I'm an eligible newcomer, how can Haven help me?",
+    answer: "newcomer-help",
+  },
+  {
     question: "How does Haven keep its users safe?",
     answer: "All Canadian supporters on Haven verify their identity before reaching out. Newcomers can verify too. We recommend it — and most do.",
   },
@@ -25,8 +29,37 @@ const faqs = [
   },
 ]
 
+function NewcomerHelpAnswer() {
+  const { t } = useTranslation()
+  
+  return (
+    <>
+      <p className="mb-4">
+        {t("Haven can help you in two big ways. First, we can help you improve your English or French. Second, we can help you meet Canadians who want to help you build your life in Canada.")}
+      </p>
+      <p className="mb-4">
+        {t("We have two programs. The Haven Language Program combines classes with professional teachers and conversation practice with Canadian volunteers. It's a great way to improve your English in Canada — we're adding French classes soon.")}{" "}
+        <Link href="/hlp" className="text-primary underline hover:text-primary/80">
+          {t("Learn more here")}
+        </Link>
+        {"."}
+      </p>
+      <p>
+        {t("If you don't have time for classes, you can also just focus on meeting Canadian volunteers. It's free and you can start today.")}
+      </p>
+    </>
+  )
+}
+
 export function FaqSection() {
   const { t } = useTranslation()
+
+  const renderAnswer = (answer: string) => {
+    if (answer === "newcomer-help") {
+      return <NewcomerHelpAnswer />
+    }
+    return t(answer)
+  }
 
   return (
     <section id="faq" className="pt-12 pb-24">
@@ -48,7 +81,7 @@ export function FaqSection() {
                 {t(faq.question)}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
-                {t(faq.answer)}
+                {renderAnswer(faq.answer)}
               </AccordionContent>
             </AccordionItem>
           ))}
