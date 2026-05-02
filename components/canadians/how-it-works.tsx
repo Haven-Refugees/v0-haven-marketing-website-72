@@ -24,7 +24,7 @@ export function HowItWorks() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-[#F0EEFE]">
+    <section className="py-20 md:py-24 bg-[#FDF0EB]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
@@ -38,7 +38,7 @@ export function HowItWorks() {
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col items-center">
-              <div className="w-12 h-12 bg-[#6B4EFF] rounded-full flex items-center justify-center mb-5">
+              <div className="w-12 h-12 bg-[#E8725A] rounded-full flex items-center justify-center mb-5">
                 <span className="text-white font-bold text-lg">{step.number}</span>
               </div>
               <h3 className="font-sans font-bold text-lg text-foreground mb-3">

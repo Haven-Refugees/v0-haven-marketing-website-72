@@ -6,12 +6,12 @@ export function CanadiansTestimonial() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-[#F0EEFE]">
+    <section className="bg-[#FDF0EB]">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2">
           {/* Photo placeholder */}
-          <div className="bg-[#d4c8f0] min-h-[300px] lg:min-h-[400px] flex items-center justify-center">
-            <span className="text-[#8b7eb8] text-sm font-medium">
+          <div className="bg-[#e8c4b8] min-h-[300px] lg:min-h-[400px] flex items-center justify-center">
+            <span className="text-[#b08070] text-sm font-medium">
               [ Photo of Camila ]
             </span>
           </div>
