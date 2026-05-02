@@ -7,7 +7,7 @@ const ways = [
   {
     icon: MessageCircle,
     title: "Practice English or French",
-    description: "Have a conversation with a newcomer. Some are also taking professional classes on Haven, so your conversations are part of a bigger learning journey.",
+    description: "Classroom learning only goes so far. What really builds confidence is conversation — and that's something you can offer just by showing up.",
     popular: true,
   },
   {
