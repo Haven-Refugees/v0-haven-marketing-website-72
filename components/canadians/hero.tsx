@@ -13,9 +13,6 @@ export function CanadiansHero() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 lg:pl-8">
-            <span className="text-[#E8725A] text-sm font-semibold uppercase tracking-wide">
-              {t("For Canadians")}
-            </span>
             <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
               {t("Help a refugee in Canada. It takes 30 minutes.")}
             </h1>

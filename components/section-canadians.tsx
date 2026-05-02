@@ -22,6 +22,9 @@ export function SectionCanadians() {
 
           {/* Right - Content */}
           <div className="max-w-lg">
+            <span className="text-accent font-medium text-sm tracking-wider uppercase mb-4 block">
+              {t("For Canadians")}
+            </span>
             <h2 className="font-sans font-bold text-3xl md:text-4xl lg:text-[2.5rem] text-foreground leading-tight mb-6">
               {t("Help a refugee in just 30 minutes.")}
             </h2>
