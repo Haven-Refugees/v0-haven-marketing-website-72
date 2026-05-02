@@ -18,8 +18,8 @@ const ways = [
   },
   {
     icon: FileText,
-    title: "Help with their job search",
-    description: "Share advice about your industry or how hiring works in Canada. Your professional experience is incredibly valuable to someone starting over.",
+    title: "Help navigate the Canadian job market",
+    description: "The things that feel obvious to you — how resumes work, what interviews are like — can be exactly what a newcomer needs.",
     popular: false,
   },
 ]
