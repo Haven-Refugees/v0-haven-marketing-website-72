@@ -74,7 +74,7 @@ export function HavenLanguageProgram() {
           </h3>
           
           {/* Features Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-6">
             <div className="flex items-start gap-3">
               <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -110,20 +110,14 @@ export function HavenLanguageProgram() {
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="h-px bg-[rgba(107,78,255,0.15)] my-5" />
-
-          {/* Centered CTA */}
-          <div className="flex flex-col items-center">
-            <Button size="lg" className="text-[17px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[16px] px-[40px]" asChild>
+          {/* Centered CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button size="lg" className="text-[15px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
               <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
             </Button>
-            <Link
-              href={link("/hlp")}
-              className="text-muted-foreground text-sm underline hover:text-muted-foreground/80 transition-colors mt-3"
-            >
-              {t("Learn more about the program")}
-            </Link>
+            <Button size="lg" variant="outline" className="text-[15px] bg-transparent border-foreground/30 text-foreground hover:bg-foreground/5 rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
+              <Link href={link("/hlp")}>{t("Learn more")}</Link>
+            </Button>
           </div>
         </div>
       </div>
