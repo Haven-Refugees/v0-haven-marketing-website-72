@@ -47,7 +47,7 @@ export function SectionCommunity() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight">
-          {t("Haven is where old Canadians meet new ones.")}
+          {t("Where newcomers and Canadians meet.")}
         </h2>
 
         {/* Feature Cards */}
