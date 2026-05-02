@@ -6,7 +6,7 @@ export function HLPProblem() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-white">
+    <section className="pt-20 pb-12 bg-white">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] mb-6">
           {t("Most English programs weren't built for you.")}
