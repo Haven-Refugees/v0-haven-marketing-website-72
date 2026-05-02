@@ -11,7 +11,7 @@ const checkpoints = [
   },
   {
     title: "2+ hours of conversation practice",
-    description: "With your Canadian volunteer.",
+    description: "With your Canadian volunteers.",
   },
   {
     title: "2+ hours of homework",
