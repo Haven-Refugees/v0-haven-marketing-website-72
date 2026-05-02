@@ -39,7 +39,7 @@ export function Header() {
           <Link href={link("/for-canadians")} className="text-muted-foreground hover:text-foreground transition-colors">
             {t("For Canadians")}
           </Link>
-          <NavigationMenu>
+          <NavigationMenu className="z-50">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger 
@@ -49,29 +49,23 @@ export function Header() {
                     {t("About Haven")}
                   </Link>
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="w-48 p-2 bg-popover border border-border rounded-md shadow-md">
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={link("/our-vision")}
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          <div className="text-sm font-medium leading-none">{t("Our Vision")}</div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={link("/meet-the-team")}
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          <div className="text-sm font-medium leading-none">{t("Meet the Team")}</div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
+                <NavigationMenuContent className="min-w-48">
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={link("/our-vision")}
+                      className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                    >
+                      <div className="text-sm font-medium leading-none">{t("Our Vision")}</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={link("/meet-the-team")}
+                      className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                    >
+                      <div className="text-sm font-medium leading-none">{t("Meet the Team")}</div>
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
