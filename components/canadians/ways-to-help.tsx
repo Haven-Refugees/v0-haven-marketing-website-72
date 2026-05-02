@@ -13,7 +13,7 @@ const ways = [
   {
     icon: Clock,
     title: "Be their local connection",
-    description: "Imagine moving to a new city without knowing anyone. Where to go, what to do, how things work — things you take for granted can be a gamechanger for a newcomer.",
+    description: "Imagine moving to a new city without knowing a single person. Where to go, what to do, how things work — you already know it all.",
     popular: false,
   },
   {
