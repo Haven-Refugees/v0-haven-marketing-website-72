@@ -3,19 +3,23 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { Monitor, MessageSquare, BookOpen } from "lucide-react"
 
 const checkpoints = [
   {
     title: "2 hours of classes",
     description: "With your professional teacher, online.",
+    icon: Monitor,
   },
   {
     title: "2 hours of conversation practice",
     description: "With your Canadian volunteers.",
+    icon: MessageSquare,
   },
   {
     title: "2+ hours of homework",
     description: "Personalized materials from your teacher.",
+    icon: BookOpen,
   },
 ]
 
@@ -41,21 +45,24 @@ export function HLPCommitment() {
               {t("Here's what 20 weeks looks like:")}
             </h3>
             <div className="space-y-6">
-              {checkpoints.map((checkpoint, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="w-8 h-8 bg-[#AF75FF] rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                    <div className="w-2 h-2 bg-white rounded-full" />
+              {checkpoints.map((checkpoint, index) => {
+                const Icon = checkpoint.icon
+                return (
+                  <div key={index} className="flex gap-4">
+                    <div className="w-10 h-10 bg-[#F0EDF9] rounded-lg flex items-center justify-center shrink-0">
+                      <Icon className="w-5 h-5 text-[#AF75FF]" />
+                    </div>
+                    <div>
+                      <p className="font-sans font-bold text-[#26215C]">
+                        {t(checkpoint.title)}
+                      </p>
+                      <p className="text-[#26215C]/70">
+                        {t(checkpoint.description)}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-sans font-bold text-[#26215C]">
-                      {t(checkpoint.title)}
-                    </p>
-                    <p className="text-[#26215C]/70">
-                      {t(checkpoint.description)}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
             <p className="text-[#AF75FF] font-semibold mt-8">
               {t("That's 6 hours a week. Less than an hour a day.")}
