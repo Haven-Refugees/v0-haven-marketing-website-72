@@ -62,9 +62,9 @@ export function HowItWorks() {
   }
 
   return (
-    <section id="how-it-works" className="py-24 bg-background">
+    <section id="how-it-works" className="pt-16 pb-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
             {t("How it works")}
           </h2>

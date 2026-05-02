@@ -6,10 +6,10 @@ import { useTranslation } from "@/lib/i18n"
 function StarburstIcon() {
   return (
     <img 
-      src="/images/maple-leaf-icon.svg" 
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%2810%29-MGkBOB05hRHs0TI5KYQ64IPFwVzQlt.png" 
       alt="Maple leaf icon" 
-      width={240} 
-      height={240}
+      width={96} 
+      height={96}
       className="object-contain"
     />
   )
@@ -18,10 +18,10 @@ function StarburstIcon() {
 function IdVerificationIcon() {
   return (
     <img 
-      src="/images/id-verification-icon.svg" 
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%288%29-FVSuJq2OCO1rrilUDKSucMSj97sQRQ.png" 
       alt="ID verification icon" 
-      width={240} 
-      height={240}
+      width={112} 
+      height={96}
       className="object-contain"
     />
   )
@@ -30,10 +30,10 @@ function IdVerificationIcon() {
 function CharityBadgeIcon() {
   return (
     <img 
-      src="/images/charity-badge-icon.svg" 
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%289%29-bBvvvDBRCn130yH2QWsY5IdAxtkuci.png" 
       alt="Charity badge icon" 
-      width={240} 
-      height={240}
+      width={96} 
+      height={96}
       className="object-contain"
     />
   )
@@ -43,18 +43,18 @@ export function SectionCommunity() {
   const { t } = useTranslation()
 
   return (
-    <section className="pt-10 pb-20 bg-background">
+    <section className="pt-4 pb-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight">
-          {t("Haven is where old Canadians meet new ones.")}
+          {t("Where newcomers and Canadians meet.")}
         </h2>
 
         {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Card 1 - Users */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[140px] mb-4">
+            <div className="flex justify-center items-center h-[120px] mb-4">
               <StarburstIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -67,7 +67,7 @@ export function SectionCommunity() {
 
           {/* Card 2 - Verification */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[140px] mb-4">
+            <div className="flex justify-center items-center h-[120px] mb-4">
               <IdVerificationIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -80,7 +80,7 @@ export function SectionCommunity() {
 
           {/* Card 3 - Charity */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[140px] mb-4">
+            <div className="flex justify-center items-center h-[120px] mb-4">
               <CharityBadgeIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
