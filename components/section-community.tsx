@@ -6,10 +6,10 @@ import { useTranslation } from "@/lib/i18n"
 function StarburstIcon() {
   return (
     <img 
-      src="/images/maple-leaf-icon.svg" 
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%2810%29-MGkBOB05hRHs0TI5KYQ64IPFwVzQlt.png" 
       alt="Maple leaf icon" 
-      width={240} 
-      height={240}
+      width={120} 
+      height={120}
       className="object-contain"
     />
   )
@@ -18,10 +18,10 @@ function StarburstIcon() {
 function IdVerificationIcon() {
   return (
     <img 
-      src="/images/id-verification-icon.svg" 
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%288%29-FVSuJq2OCO1rrilUDKSucMSj97sQRQ.png" 
       alt="ID verification icon" 
-      width={240} 
-      height={240}
+      width={140} 
+      height={120}
       className="object-contain"
     />
   )
@@ -30,10 +30,10 @@ function IdVerificationIcon() {
 function CharityBadgeIcon() {
   return (
     <img 
-      src="/images/charity-badge-icon.svg" 
+      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%289%29-bBvvvDBRCn130yH2QWsY5IdAxtkuci.png" 
       alt="Charity badge icon" 
-      width={240} 
-      height={240}
+      width={120} 
+      height={120}
       className="object-contain"
     />
   )
