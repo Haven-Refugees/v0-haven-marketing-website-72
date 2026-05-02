@@ -50,12 +50,12 @@ export function Header() {
                   </Link>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="w-48 p-2">
+                  <ul className="w-48 p-2 bg-popover border border-border rounded-md shadow-md">
                     <li>
                       <NavigationMenuLink asChild>
                         <Link
                           href={link("/our-vision")}
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
                           <div className="text-sm font-medium leading-none">{t("Our Vision")}</div>
                         </Link>
@@ -65,7 +65,7 @@ export function Header() {
                       <NavigationMenuLink asChild>
                         <Link
                           href={link("/meet-the-team")}
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
                           <div className="text-sm font-medium leading-none">{t("Meet the Team")}</div>
                         </Link>
