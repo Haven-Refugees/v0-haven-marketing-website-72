@@ -9,7 +9,7 @@ export function HLPCtaBand() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-2xl md:text-3xl text-[#26215C] mb-6">
           {t("Start improving your English today.")}

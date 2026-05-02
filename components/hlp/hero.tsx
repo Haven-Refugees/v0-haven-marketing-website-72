@@ -9,7 +9,7 @@ export function HLPHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative pt-6 pb-10 bg-[#F0EDF9]">
+    <section className="relative py-20 bg-[#F0EDF9]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - Left */}
