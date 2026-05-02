@@ -30,7 +30,7 @@ export function HavenLanguageProgram() {
   const { t, link } = useTranslation()
 
   return (
-    <section id="hlp" className="pt-10 pb-20 bg-background">
+    <section id="hlp" className="pt-10 pb-10 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
