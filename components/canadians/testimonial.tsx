@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
 
 export function CanadiansTestimonial() {
@@ -9,11 +10,14 @@ export function CanadiansTestimonial() {
     <section className="bg-[#FDF0EB]">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2">
-          {/* Photo placeholder */}
-          <div className="bg-[#e8c4b8] min-h-[300px] lg:min-h-[400px] flex items-center justify-center">
-            <span className="text-[#b08070] text-sm font-medium">
-              [ Photo of Camila ]
-            </span>
+          {/* Photo */}
+          <div className="relative min-h-[300px] lg:min-h-[400px]">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Camila%20Gargantini%20-%20outside_edited-D0tGW1FjpZzqx9HiiGPCjBv3e9OiNY.jpg"
+              alt="Camila, a Haven volunteer from Mississauga"
+              fill
+              className="object-cover"
+            />
           </div>
 
           {/* Quote */}
