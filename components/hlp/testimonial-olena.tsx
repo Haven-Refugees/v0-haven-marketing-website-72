@@ -8,7 +8,7 @@ export function HLPTestimonialOlena() {
 
   return (
     <section className="relative min-h-[500px]">
-      <div className="grid md:grid-cols-2 h-full min-h-[500px]">
+      <div className="grid md:grid-cols-[60%_40%] h-full min-h-[500px]">
         {/* Left - Quote */}
         <div className="bg-[#F0EDF9] p-8 md:p-10 lg:p-12 flex flex-col justify-center">
           <blockquote className="text-[#26215C] text-xl md:text-2xl lg:text-3xl font-bold leading-snug mb-4">

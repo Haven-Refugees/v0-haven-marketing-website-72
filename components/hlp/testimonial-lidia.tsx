@@ -8,7 +8,7 @@ export function HLPTestimonialLidia() {
 
   return (
     <section className="relative min-h-[500px]">
-      <div className="grid md:grid-cols-2 h-full min-h-[500px]">
+      <div className="grid md:grid-cols-[40%_60%] h-full min-h-[500px]">
         {/* Left - Photo */}
         <div className="relative min-h-[500px] md:min-h-full order-2 md:order-1">
           <Image
