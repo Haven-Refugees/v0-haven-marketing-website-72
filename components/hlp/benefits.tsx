@@ -27,10 +27,10 @@ export function HLPBenefits() {
   ]
 
   return (
-    <section className="py-20 bg-[#F7F6FE]">
+    <section className="pt-12 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] text-center mb-16">
-          {t("Why Haven works")}
+          {t("We designed Haven to make learning as easy as possible.")}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -53,7 +53,7 @@ export function HLPBenefits() {
           <Button
             asChild
             size="lg"
-            className="bg-[#AF75FF] hover:bg-[#AF75FF]/90 text-white px-8 py-6 text-base"
+            className="bg-[#2563EB] hover:bg-[#2563EB]/90 text-white px-8 py-6 text-base"
           >
             <Link href="https://app.findhaven.org">{t("Apply for the program")}</Link>
           </Button>

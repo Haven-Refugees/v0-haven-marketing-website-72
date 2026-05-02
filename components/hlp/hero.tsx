@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 
@@ -8,15 +9,21 @@ export function HLPHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-[#F0EDF9] py-16 md:py-24">
+    <section className="relative pt-4 pb-10 bg-[#F0EDF9]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - Left */}
           <div className="order-2 md:order-1">
-            <div className="bg-[#E0D9F0] rounded-2xl aspect-[4/5] flex items-center justify-center">
-              <span className="text-[#AF75FF]/50 text-sm font-medium uppercase tracking-wider">
-                Photo
-              </span>
+            <div className="rounded-2xl overflow-hidden aspect-[3.3/3]">
+              <Image
+                src="/images/hlp-hero.jpg"
+                alt="Haven Language Program participant"
+                width={600}
+                height={500}
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "center 15%" }}
+                priority
+              />
             </div>
           </div>
 
