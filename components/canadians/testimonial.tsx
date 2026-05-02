@@ -16,7 +16,7 @@ export function CanadiansTestimonial() {
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Camila%20Gargantini%20-%20outside_edited-D0tGW1FjpZzqx9HiiGPCjBv3e9OiNY.jpg"
               alt="Camila, a Haven volunteer from Mississauga"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
 
