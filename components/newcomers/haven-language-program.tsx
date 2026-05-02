@@ -113,27 +113,17 @@ export function HavenLanguageProgram() {
           {/* Divider */}
           <div className="h-px bg-[rgba(107,78,255,0.15)] my-5" />
 
-          {/* CTA Row - Left/Right Split */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <p className="font-sans font-semibold text-[20px] text-foreground">
-                {t("Start improving your English today.")}
-              </p>
-              <p className="text-muted-foreground text-[15px]">
-                {t("Classes start from only $2.50 each.")}
-              </p>
-            </div>
-            <div className="flex flex-col items-center md:items-stretch md:min-w-[200px]">
-              <Button size="lg" className="w-full text-[17px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[16px] px-[28px]" asChild>
-                <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
-              </Button>
-              <Link
-                href={link("/hlp")}
-                className="text-muted-foreground text-sm underline hover:text-muted-foreground/80 transition-colors mt-2 text-center"
-              >
-                {t("Learn more")}
-              </Link>
-            </div>
+          {/* Centered CTA */}
+          <div className="flex flex-col items-center">
+            <Button size="lg" className="text-[17px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[16px] px-[40px]" asChild>
+              <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
+            </Button>
+            <Link
+              href={link("/hlp")}
+              className="text-muted-foreground text-sm underline hover:text-muted-foreground/80 transition-colors mt-3"
+            >
+              {t("Learn more about the program")}
+            </Link>
           </div>
         </div>
       </div>
