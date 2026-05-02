@@ -2,13 +2,22 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
 import { useTranslation } from "@/lib/i18n"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
 
   return (
@@ -30,9 +39,37 @@ export function Header() {
           <Link href={link("/for-canadians")} className="text-muted-foreground hover:text-foreground transition-colors">
             {t("For Canadians")}
           </Link>
-          <Link href={link("/about")} className="text-muted-foreground hover:text-foreground transition-colors">
-            {t("About Haven")}
-          </Link>
+          <NavigationMenu className="z-50">
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger 
+                  className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-normal text-base cursor-pointer"
+                >
+                  <Link href={link("/our-vision")} className="hover:text-foreground">
+                    {t("About Haven")}
+                  </Link>
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="min-w-48">
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={link("/our-vision")}
+                      className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                    >
+                      <div className="text-sm font-medium leading-none">{t("Our Vision")}</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={link("/meet-the-team")}
+                      className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                    >
+                      <div className="text-sm font-medium leading-none">{t("Meet the Team")}</div>
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
           <LanguageSwitcher />
           <Button variant="ghost" asChild>
             <Link href="https://app.findhaven.org">{t("Log in")}</Link>
@@ -54,7 +91,7 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col p-6 gap-4">
-            <Link
+            <Link 
               href={link("/for-newcomers")} 
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
@@ -68,13 +105,33 @@ export function Header() {
             >
               {t("For Canadians")}
             </Link>
-            <Link 
-              href={link("/about")} 
-              className="text-muted-foreground hover:text-foreground transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {t("About Haven")}
-            </Link>
+            <div>
+              <button
+                onClick={() => setAboutOpen(!aboutOpen)}
+                className="flex items-center justify-between w-full text-muted-foreground hover:text-foreground transition-colors py-2"
+              >
+                {t("About Haven")}
+                <ChevronDown className={`w-4 h-4 transition-transform ${aboutOpen ? "rotate-180" : ""}`} />
+              </button>
+              {aboutOpen && (
+                <div className="pl-4 flex flex-col gap-2 mt-2">
+                  <Link
+                    href={link("/our-vision")}
+                    className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t("Our Vision")}
+                  </Link>
+                  <Link
+                    href={link("/meet-the-team")}
+                    className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t("Meet the Team")}
+                  </Link>
+                </div>
+              )}
+            </div>
             <div className="py-2">
               <LanguageSwitcher />
             </div>
