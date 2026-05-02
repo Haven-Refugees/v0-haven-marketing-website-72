@@ -1,8 +1,8 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { SectionThree } from "@/components/section-three"
 import { SectionNewcomers } from "@/components/section-newcomers"
 import { SectionCanadians } from "@/components/section-canadians"
+import { HowItWorks } from "@/components/how-it-works"
 import { SectionCommunity } from "@/components/section-community"
 import { Testimonials } from "@/components/testimonials"
 import { TeamSection } from "@/components/team-section"
@@ -17,11 +17,11 @@ export default function HomePage() {
         <HeroSection />
         <SectionNewcomers />
         <SectionCanadians />
+        <HowItWorks />
         <SectionCommunity />
         <Testimonials />
         <TeamSection />
         <FaqSection />
-        <SectionThree />
       </main>
       <Footer />
     </>
