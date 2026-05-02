@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
-import { useRouter } from "next/navigation"
 import { useTranslation } from "@/lib/i18n"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import {
@@ -20,7 +19,6 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
-  const router = useRouter()
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -45,10 +43,11 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger 
-                  onClick={() => router.push(link("/our-vision"))}
                   className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-normal text-base cursor-pointer"
                 >
-                  {t("About Haven")}
+                  <Link href={link("/our-vision")} className="hover:text-foreground">
+                    {t("About Haven")}
+                  </Link>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="w-48 p-2">
