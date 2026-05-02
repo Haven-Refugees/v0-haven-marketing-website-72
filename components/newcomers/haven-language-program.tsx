@@ -67,9 +67,9 @@ export function HavenLanguageProgram() {
         </div>
 
         {/* Unified Features & CTA Card */}
-        <div className="bg-[#F0EEFE] rounded-[16px] p-8 md:p-10">
+        <div className="bg-[#EEEAFE] rounded-[16px] p-8 md:p-10">
           {/* Heading */}
-          <h3 className="font-sans font-medium text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
+          <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
             {t("We designed Haven to make learning as easy as possible.")}
           </h3>
           
@@ -116,10 +116,10 @@ export function HavenLanguageProgram() {
           {/* CTA Row */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <p className="font-sans font-medium text-lg text-foreground">
+              <p className="font-sans font-semibold text-[20px] text-foreground">
                 {t("Start improving your English today.")}
               </p>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-[15px]">
                 {t("Classes start from only $2.50 each.")}
               </p>
             </div>
@@ -130,7 +130,7 @@ export function HavenLanguageProgram() {
               >
                 {t("Learn more")}
               </Link>
-              <Button size="lg" className="text-base bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] px-6" asChild>
+              <Button size="lg" className="text-base bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[28px]" asChild>
                 <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
               </Button>
             </div>
