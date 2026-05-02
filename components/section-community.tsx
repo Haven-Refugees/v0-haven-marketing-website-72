@@ -8,8 +8,8 @@ function StarburstIcon() {
     <img 
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%2810%29-MGkBOB05hRHs0TI5KYQ64IPFwVzQlt.png" 
       alt="Maple leaf icon" 
-      width={120} 
-      height={120}
+      width={96} 
+      height={96}
       className="object-contain"
     />
   )
@@ -20,8 +20,8 @@ function IdVerificationIcon() {
     <img 
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%288%29-FVSuJq2OCO1rrilUDKSucMSj97sQRQ.png" 
       alt="ID verification icon" 
-      width={140} 
-      height={120}
+      width={112} 
+      height={96}
       className="object-contain"
     />
   )
@@ -32,8 +32,8 @@ function CharityBadgeIcon() {
     <img 
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%289%29-bBvvvDBRCn130yH2QWsY5IdAxtkuci.png" 
       alt="Charity badge icon" 
-      width={120} 
-      height={120}
+      width={96} 
+      height={96}
       className="object-contain"
     />
   )
@@ -54,7 +54,7 @@ export function SectionCommunity() {
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Card 1 - Users */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[140px] mb-4">
+            <div className="flex justify-center items-center h-[120px] mb-4">
               <StarburstIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -67,7 +67,7 @@ export function SectionCommunity() {
 
           {/* Card 2 - Verification */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[140px] mb-4">
+            <div className="flex justify-center items-center h-[120px] mb-4">
               <IdVerificationIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -80,7 +80,7 @@ export function SectionCommunity() {
 
           {/* Card 3 - Charity */}
           <div className="text-center">
-            <div className="flex justify-center items-end h-[140px] mb-4">
+            <div className="flex justify-center items-center h-[120px] mb-4">
               <CharityBadgeIcon />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
