@@ -30,7 +30,7 @@ export function HavenLanguageProgram() {
   const { t, link } = useTranslation()
 
   return (
-    <section id="hlp" className="pt-10 pb-20 bg-background">
+    <section id="hlp" className="pt-10 pb-10 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -66,66 +66,58 @@ export function HavenLanguageProgram() {
           ))}
         </div>
 
-        {/* Why Haven CTA Cards */}
-        <div className="flex flex-col gap-6">
-          {/* Top Card - Features */}
-          <div className="bg-secondary/10 rounded-3xl p-8 md:p-10">
-            <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
-              {t("We designed Haven to make learning as easy as possible.")}
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="flex items-start gap-3">
-                <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-sans font-semibold text-foreground">{t("Flexible schedule")}</p>
-                  <p className="text-muted-foreground text-sm">{t("Study anytime, including evenings and weekends.")}</p>
-                </div>
+        {/* Unified Features & CTA Card */}
+        <div className="bg-[#EEEAFE] rounded-[16px] p-8 md:p-10">
+          {/* Heading */}
+          <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
+            {t("We designed Haven to make learning as easy as possible.")}
+          </h3>
+          
+          {/* Features Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mb-4">
+            <div className="flex items-start gap-3">
+              <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-sans font-semibold text-foreground">{t("Personalized learning")}</p>
-                  <p className="text-muted-foreground text-sm">{t("Classes of 1 to 4 students, not 30.")}</p>
-                </div>
+              <div>
+                <p className="font-sans font-bold text-foreground">{t("Flexible schedule")}</p>
+                <p className="text-muted-foreground text-sm">{t("Study anytime, including evenings and weekends.")}</p>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-7 h-7 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-sans font-semibold text-foreground">{t("English for life in Canada")}</p>
-                  <p className="text-muted-foreground text-sm">{t("Learn the English you actually need, through our classes and real conversations with Canadians.")}</p>
-                </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold text-foreground">{t("Personalized learning")}</p>
+                <p className="text-muted-foreground text-sm">{t("Classes of 1 to 4 students, not 30.")}</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold text-foreground">{t("English for life in Canada")}</p>
+                <p className="text-muted-foreground text-sm">{t("Learn the English you will actually use in your day-to-day life.")}</p>
               </div>
             </div>
           </div>
 
-          {/* Bottom Card - CTA */}
-          <div className="bg-[#2457F1] rounded-3xl py-6 px-8 flex flex-col justify-center items-center text-center">
-            <h3 className="font-sans font-bold text-2xl md:text-3xl text-white leading-snug mb-4">
-              {t("Start improving your English today.")}
-            </h3>
-            <div className="flex flex-col items-center">
-              <Button size="lg" className="text-base py-6 w-full bg-white text-[#2457F1] hover:bg-white/90" asChild>
-                <Link href="https://app.findhaven.org">{t("Join Haven now")}</Link>
-              </Button>
-              <Link
-                href={link("/hlp")}
-                className="text-white text-sm underline hover:text-white/80 transition-colors mt-3"
-              >
-                {t("Learn more about the program")}
-              </Link>
-            </div>
+          {/* Centered CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button size="lg" className="text-[15px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
+              <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="text-[15px] !bg-transparent border-foreground/30 text-foreground hover:!bg-foreground/5 rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
+              <Link href={link("/hlp")}>{t("Learn more")}</Link>
+            </Button>
           </div>
         </div>
       </div>
