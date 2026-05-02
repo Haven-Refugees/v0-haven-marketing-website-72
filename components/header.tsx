@@ -18,7 +18,6 @@ import {
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
-  const [newcomersOpen, setNewcomersOpen] = useState(false)
   const { t, link } = useTranslation()
 
   return (
@@ -34,39 +33,9 @@ export function Header() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-foreground">
-                  {t("For Newcomers")}
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="w-52 p-2">
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={link("/how-we-help")}
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          <div className="text-sm font-medium leading-none">{t("How We Help")}</div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={link("/language-program")}
-                          className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          <div className="text-sm font-medium leading-none">{t("Haven Language Program")}</div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+          <Link href={link("/for-newcomers")} className="text-muted-foreground hover:text-foreground transition-colors">
+            {t("For Newcomers")}
+          </Link>
           <Link href={link("/for-canadians")} className="text-muted-foreground hover:text-foreground transition-colors">
             {t("For Canadians")}
           </Link>
@@ -124,33 +93,13 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col p-6 gap-4">
-            <div>
-              <button
-                onClick={() => setNewcomersOpen(!newcomersOpen)}
-                className="flex items-center justify-between w-full text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                {t("For Newcomers")}
-                <ChevronDown className={`w-4 h-4 transition-transform ${newcomersOpen ? "rotate-180" : ""}`} />
-              </button>
-              {newcomersOpen && (
-                <div className="pl-4 flex flex-col gap-2 mt-2">
-                  <Link
-                    href={link("/how-we-help")}
-                    className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {t("How We Help")}
-                  </Link>
-                  <Link
-                    href={link("/language-program")}
-                    className="text-muted-foreground hover:text-foreground transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {t("Haven Language Program")}
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link 
+              href={link("/for-newcomers")} 
+              className="text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t("For Newcomers")}
+            </Link>
             <Link 
               href={link("/for-canadians")} 
               className="text-muted-foreground hover:text-foreground transition-colors py-2"
