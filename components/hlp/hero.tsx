@@ -14,7 +14,7 @@ export function HLPHero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - Left */}
           <div className="order-2 md:order-1">
-            <div className="rounded-2xl overflow-hidden aspect-[3.6/3]">
+            <div className="rounded-2xl overflow-hidden aspect-[3.3/3]">
               <Image
                 src="/images/hlp-hero.jpg"
                 alt="Haven Language Program participant"
