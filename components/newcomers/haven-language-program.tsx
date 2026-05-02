@@ -74,7 +74,7 @@ export function HavenLanguageProgram() {
           </h3>
           
           {/* Features Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-6">
+          <div className="grid md:grid-cols-3 gap-8 mb-4">
             <div className="flex items-start gap-3">
               <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -115,7 +115,7 @@ export function HavenLanguageProgram() {
             <Button size="lg" className="text-[15px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
               <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
             </Button>
-            <Button size="lg" variant="outline" className="text-[15px] bg-transparent border-foreground/30 text-foreground hover:bg-foreground/5 rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
+            <Button size="lg" variant="outline" className="text-[15px] !bg-transparent border-foreground/30 text-foreground hover:!bg-foreground/5 rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
               <Link href={link("/hlp")}>{t("Learn more")}</Link>
             </Button>
           </div>
