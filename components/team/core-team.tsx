@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
 
 const teamMembers = [
@@ -9,6 +10,7 @@ const teamMembers = [
     initials: "VL",
     role: "Founder, Executive Director",
     linkedin: "https://www.linkedin.com/in/victorlal/",
+    image: "/images/team/victor-lal.jpg",
   },
   {
     name: "Alexis Buisson",
@@ -64,11 +66,23 @@ export function CoreTeam() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center">
-              <div className="w-[120px] h-[120px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
-                <span className="text-[#6B4EFF] text-3xl font-medium">
-                  {member.initials}
-                </span>
-              </div>
+              {member.image ? (
+                <div className="w-[120px] h-[120px] rounded-full overflow-hidden mb-4">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={120}
+                    height={120}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="w-[120px] h-[120px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
+                  <span className="text-[#6B4EFF] text-3xl font-medium">
+                    {member.initials}
+                  </span>
+                </div>
+              )}
               <h3 className="text-base font-medium text-foreground mb-1">
                 {member.name}
               </h3>
