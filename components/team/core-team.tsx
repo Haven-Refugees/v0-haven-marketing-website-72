@@ -37,6 +37,7 @@ const teamMembers = [
     initials: "JI",
     role: "Head of Product",
     linkedin: "https://www.linkedin.com/in/julianilson/",
+    image: "/images/team/julian-ilson.jpg",
   },
   {
     name: "Sofi Galuza",
