@@ -12,10 +12,10 @@ export function VisionFounder() {
         {/* Image Column */}
         <div className="relative h-[400px] md:h-auto">
           <Image
-            src="/images/victor-founder.jpg"
-            alt="Victor Lal, founder of Haven"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Victor%20with%20Refugee-rkCImXc8fjnSAFlbtwYPVDjZmZlwCT.jpg"
+            alt="Victor Lal helping a newcomer at a Haven outreach event"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center"
           />
         </div>
         
