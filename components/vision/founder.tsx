@@ -44,7 +44,7 @@ export function VisionFounder() {
               {t(". He organized grassroots humanitarian aid while larger organizations were still mobilizing. As more Ukrainians began arriving in Canada, Victor started a Google Sheet — connecting Ukrainian refugees with his friends who could help.")}
             </p>
             <p className="text-[15px] leading-[1.8] text-foreground/80 font-medium">
-              {t("That Google Sheet became Haven.")}
+              {t("That Google Sheet became Haven. Since 2022, our team has been helping refugees from across the world become independent in Canada — and making it easier for Canadians to help.")}
             </p>
           </div>
         </div>
