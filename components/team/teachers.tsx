@@ -18,7 +18,7 @@ export function Teachers() {
   return (
     <section className="py-16 md:py-20 bg-[#F0EEFE]">
       <div className="max-w-[900px] mx-auto px-6">
-        <h2 className="font-sans font-medium text-[32px] text-foreground mb-4">
+        <h2 className="font-sans font-bold text-[32px] text-foreground mb-4">
           {t("Our teachers.")}
         </h2>
         <p className="text-[17px] text-muted-foreground max-w-[700px] mb-12">

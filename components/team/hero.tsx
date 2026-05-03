@@ -11,7 +11,7 @@ export function TeamHero() {
         <p className="text-[#6B4EFF] uppercase tracking-wider text-sm font-medium mb-4">
           {t("MEET THE TEAM")}
         </p>
-        <h1 className="font-sans font-medium text-[40px] leading-tight text-foreground mb-6 text-balance">
+        <h1 className="font-sans font-bold text-[40px] leading-tight text-foreground mb-6 text-balance">
           {t("The people building Haven.")}
         </h1>
         <p className="text-[17px] text-muted-foreground max-w-[600px] mx-auto">

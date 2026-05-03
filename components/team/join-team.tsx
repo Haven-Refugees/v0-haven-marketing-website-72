@@ -19,7 +19,7 @@ export function JoinTeam() {
   return (
     <section className="py-16 md:py-20 bg-[#F0EEFE]">
       <div className="max-w-[900px] mx-auto px-6">
-        <h2 className="font-serif font-normal italic text-[32px] text-foreground mb-4">
+        <h2 className="font-sans font-bold italic text-[32px] text-foreground mb-4">
           {t("Join our team.")}
         </h2>
         <p className="text-[17px] text-muted-foreground max-w-[600px] mb-10">

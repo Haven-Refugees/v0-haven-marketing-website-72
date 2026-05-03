@@ -27,7 +27,7 @@ export function Supporters() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-[900px] mx-auto px-6 text-center">
-        <h2 className="font-serif font-normal italic text-[32px] text-foreground mb-4">
+        <h2 className="font-sans font-bold italic text-[32px] text-foreground mb-4">
           {t("Our supporters.")}
         </h2>
         <p className="text-[17px] text-muted-foreground max-w-[600px] mx-auto mb-12">
