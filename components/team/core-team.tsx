@@ -66,7 +66,7 @@ export function CoreTeam() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="pt-8 pb-16 md:pt-10 md:pb-20 bg-white">
       <div className="max-w-[1100px] mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10">
           {teamMembers.map((member) => (
