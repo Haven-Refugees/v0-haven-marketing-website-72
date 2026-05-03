@@ -53,7 +53,7 @@ export function Supporters() {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          {t("And generous donors across Canada.")}
+          {t("And other generous donors across Canada.")}
         </p>
       </div>
     </section>
