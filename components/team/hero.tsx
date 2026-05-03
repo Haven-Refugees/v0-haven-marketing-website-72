@@ -6,7 +6,7 @@ export function TeamHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-12 md:py-16 bg-white">
+    <section className="pt-12 pb-6 md:pt-16 md:pb-8 bg-white">
       <div className="max-w-[760px] mx-auto px-6 text-center">
         <p className="text-[#6B4EFF] uppercase tracking-wider text-sm font-medium mb-4">
           {t("MEET THE TEAM")}
