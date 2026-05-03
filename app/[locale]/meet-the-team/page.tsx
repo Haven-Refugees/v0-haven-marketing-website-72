@@ -7,6 +7,8 @@ import { Supporters } from "@/components/team/supporters"
 import { JoinTeam } from "@/components/team/join-team"
 import { TeamCta } from "@/components/team/cta"
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'Meet the Team | Haven',
   description: 'Meet the passionate team behind Haven, dedicated to connecting newcomers with welcoming Canadians.',

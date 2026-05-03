@@ -7,17 +7,17 @@ const supporters = [
   {
     name: "Northpine Foundation",
     logo: "/images/supporters/northpine.png",
-    url: "https://northpine.ca",
+    url: "https://northpinefoundation.ca/",
   },
   {
     name: "Calgary Foundation",
     logo: "/images/supporters/calgary-foundation.png",
-    url: "https://calgaryfoundation.org",
+    url: "https://calgaryfoundation.org/",
   },
   {
     name: "Metcalf Foundation",
     logo: "/images/supporters/metcalf.png",
-    url: "https://metcalffoundation.com",
+    url: "https://metcalffoundation.com/",
   },
 ]
 
@@ -53,7 +53,7 @@ export function Supporters() {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          {t("And generous donors across Canada.")}
+          {t("And other generous donors across Canada.")}
         </p>
       </div>
     </section>

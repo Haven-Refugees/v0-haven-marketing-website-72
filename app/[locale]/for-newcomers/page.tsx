@@ -8,6 +8,8 @@ import { Eligibility } from "@/components/newcomers/eligibility"
 import { NewcomersFaq } from "@/components/newcomers/faq"
 import { NewcomersCta } from "@/components/newcomers/cta"
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'For Newcomers | Haven',
   description: 'Haven helps newcomers and refugees in Canada practice English and French, build professional networks, and connect with welcoming Canadians.',

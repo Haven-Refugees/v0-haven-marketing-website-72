@@ -22,7 +22,7 @@ export function Teachers() {
           {t("Our teachers.")}
         </h2>
         <p className="text-[17px] text-muted-foreground max-w-[700px] mx-auto mb-12 text-center">
-          {t("Haven's language program is supported by 30+ professional ESL teachers across Canada — experienced educators who understand what it means to learn a language in a new country.")}
+          {t("Haven's language program is supported by 30+ professional ESL teachers across Canada. Many are refugees themselves — a special advantage for lower-level students who benefit from learning with a teacher from their community who speaks their language.")}
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">

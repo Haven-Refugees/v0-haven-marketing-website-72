@@ -8,6 +8,8 @@ import { VisionFounder } from "@/components/vision/founder"
 import { VisionFuture } from "@/components/vision/future"
 import { VisionCta } from "@/components/vision/cta"
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'Our Vision | Haven',
   description: 'Canada wins when newcomers become independent faster. Haven is building the system that makes that possible — and proving it works.',

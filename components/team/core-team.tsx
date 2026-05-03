@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
 
 const teamMembers = [
@@ -9,36 +10,42 @@ const teamMembers = [
     initials: "VL",
     role: "Founder, Executive Director",
     linkedin: "https://www.linkedin.com/in/victorlal/",
+    image: "/images/team/victor-lal.jpg",
   },
   {
     name: "Alexis Buisson",
     initials: "AB",
     role: "Senior Backend Engineer",
     linkedin: "https://www.linkedin.com/in/alexis-buisson-84b57213b/",
+    image: "/images/team/alexis-buisson.jpg",
   },
   {
     name: "Catherine Goncalves",
     initials: "CG",
     role: "Growth Lead",
     linkedin: "https://www.linkedin.com/in/catherine-goncalves/",
+    image: "/images/team/catherine-goncalves.jpg",
   },
   {
     name: "Gagan Sandhu",
     initials: "GS",
     role: "Content Creator",
     linkedin: "https://www.linkedin.com/in/gagan-sandhu-9603792b8/",
+    image: "/images/team/gagan-sandhu.jpg",
   },
   {
     name: "Julian Ilson",
     initials: "JI",
     role: "Head of Product",
     linkedin: "https://www.linkedin.com/in/julianilson/",
+    image: "/images/team/julian-ilson.jpg",
   },
   {
     name: "Sofi Galuza",
     initials: "SG",
     role: "Language Program Coordinator",
     linkedin: "https://www.linkedin.com/in/sofi-galuza/",
+    image: "/images/team/sofi-galuza.jpg",
   },
 ]
 
@@ -59,16 +66,28 @@ export function CoreTeam() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-16 md:py-20 bg-white">
-      <div className="max-w-[900px] mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
+    <section className="pt-8 pb-16 md:pt-10 md:pb-20 bg-white">
+      <div className="max-w-[1100px] mx-auto px-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center">
-              <div className="w-[120px] h-[120px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
-                <span className="text-[#6B4EFF] text-3xl font-medium">
-                  {member.initials}
-                </span>
-              </div>
+              {member.image ? (
+                <div className="w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={180}
+                    height={180}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="w-[180px] h-[180px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
+                  <span className="text-[#6B4EFF] text-4xl font-medium">
+                    {member.initials}
+                  </span>
+                </div>
+              )}
               <h3 className="text-base font-medium text-foreground mb-1">
                 {member.name}
               </h3>
