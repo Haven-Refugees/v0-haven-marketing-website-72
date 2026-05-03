@@ -8,7 +8,7 @@ export function VisionFuture() {
   return (
     <section className="py-20 md:py-24 bg-[#F0EEFE]">
       <div className="max-w-[760px] mx-auto px-6">
-        <h2 className="font-sans font-medium text-[28px] leading-tight text-foreground mb-6">
+        <h2 className="font-sans font-bold text-[28px] leading-tight text-foreground mb-6">
           {t("Canada can be the world's best country at refugee resettlement. We're building that system.")}
         </h2>
         <p className="text-[15px] leading-[1.8] text-foreground/80">

@@ -22,7 +22,7 @@ export function VisionFounder() {
         {/* Content Column */}
         <div className="flex items-center p-8 md:p-14">
           <div className="max-w-lg">
-            <h2 className="font-sans font-medium text-[28px] leading-tight text-foreground mb-6">
+            <h2 className="font-sans font-bold text-[28px] leading-tight text-foreground mb-6">
               {t("Haven was built out of necessity.")}
             </h2>
             <p className="text-[15px] leading-[1.8] text-foreground/80 mb-6">

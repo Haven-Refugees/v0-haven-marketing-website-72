@@ -11,7 +11,7 @@ export function VisionHero() {
         <p className="text-[#6B4EFF] uppercase tracking-wider text-sm font-medium mb-4">
           {t("OUR VISION")}
         </p>
-        <h1 className="font-sans font-medium text-[40px] leading-tight text-foreground mb-6 text-balance">
+        <h1 className="font-sans font-bold text-[40px] leading-tight text-foreground mb-6 text-balance">
           {t("Canada wins when newcomers become independent faster.")}
         </h1>
         <p className="text-[17px] text-muted-foreground">
