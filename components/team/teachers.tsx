@@ -21,8 +21,11 @@ export function Teachers() {
         <h2 className="font-sans font-bold text-[32px] text-foreground mb-4 text-center">
           {t("Our teachers.")}
         </h2>
-        <p className="text-[17px] text-muted-foreground max-w-[700px] mx-auto mb-12 text-center">
+        <p className="text-[17px] text-muted-foreground max-w-[700px] mx-auto mb-4 text-center">
           {t("Haven's language program is supported by 30+ professional ESL teachers across Canada — experienced educators who understand what it means to learn a language in a new country.")}
+        </p>
+        <p className="text-[17px] text-muted-foreground max-w-[700px] mx-auto mb-12 text-center">
+          {t("Many of our teachers are refugees themselves, which is especially valuable for beginners — they can explain concepts in students' native languages when needed, making the learning journey smoother and more supportive.")}
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">
