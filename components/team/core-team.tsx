@@ -17,6 +17,7 @@ const teamMembers = [
     initials: "AB",
     role: "Senior Backend Engineer",
     linkedin: "https://www.linkedin.com/in/alexis-buisson-84b57213b/",
+    image: "/images/team/alexis-buisson.jpg",
   },
   {
     name: "Catherine Goncalves",
