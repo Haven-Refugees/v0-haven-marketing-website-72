@@ -31,6 +31,7 @@ const teamMembers = [
     initials: "GS",
     role: "Content Creator",
     linkedin: "https://www.linkedin.com/in/gagan-sandhu-9603792b8/",
+    image: "/images/team/gagan-sandhu.jpg",
   },
   {
     name: "Julian Ilson",
