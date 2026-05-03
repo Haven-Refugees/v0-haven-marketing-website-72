@@ -6,17 +6,17 @@ import { useTranslation } from "@/lib/i18n"
 const supporters = [
   {
     name: "Northpine Foundation",
-    logo: "/images/supporters/northpine.jpg",
+    logo: "/images/supporters/northpine.png",
     url: "https://northpine.ca",
   },
   {
     name: "Calgary Foundation",
-    logo: "/images/supporters/calgary-foundation.jpg",
+    logo: "/images/supporters/calgary-foundation.png",
     url: "https://calgaryfoundation.org",
   },
   {
     name: "Metcalf Foundation",
-    logo: "/images/supporters/metcalf.jpg",
+    logo: "/images/supporters/metcalf.png",
     url: "https://metcalffoundation.com",
   },
 ]
