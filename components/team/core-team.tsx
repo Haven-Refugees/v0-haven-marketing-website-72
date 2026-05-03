@@ -45,6 +45,7 @@ const teamMembers = [
     initials: "SG",
     role: "Language Program Coordinator",
     linkedin: "https://www.linkedin.com/in/sofi-galuza/",
+    image: "/images/team/sofi-galuza.jpg",
   },
 ]
 
