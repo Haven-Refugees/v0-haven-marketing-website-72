@@ -24,6 +24,7 @@ const teamMembers = [
     initials: "CG",
     role: "Growth Lead",
     linkedin: "https://www.linkedin.com/in/catherine-goncalves/",
+    image: "/images/team/catherine-goncalves.jpg",
   },
   {
     name: "Gagan Sandhu",
