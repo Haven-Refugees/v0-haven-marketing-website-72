@@ -67,23 +67,23 @@ export function CoreTeam() {
 
   return (
     <section className="py-16 md:py-20 bg-white">
-      <div className="max-w-[900px] mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
+      <div className="max-w-[1100px] mx-auto px-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center">
               {member.image ? (
-                <div className="w-[120px] h-[120px] rounded-full overflow-hidden mb-4">
+                <div className="w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
                   <Image
                     src={member.image}
                     alt={member.name}
-                    width={120}
-                    height={120}
+                    width={180}
+                    height={180}
                     className="w-full h-full object-cover"
                   />
                 </div>
               ) : (
-                <div className="w-[120px] h-[120px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
-                  <span className="text-[#6B4EFF] text-3xl font-medium">
+                <div className="w-[180px] h-[180px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
+                  <span className="text-[#6B4EFF] text-4xl font-medium">
                     {member.initials}
                   </span>
                 </div>
