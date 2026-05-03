@@ -36,7 +36,7 @@ export function VisionResults() {
               key={index}
               className="bg-white rounded-xl p-6"
             >
-              <p className="font-sans font-medium text-[32px] text-[#E8725A] mb-2">
+              <p className="font-sans font-bold text-[32px] text-[#E8725A] mb-2">
                 {stat.number}
               </p>
               <p className="text-[14px] leading-relaxed text-muted-foreground">
