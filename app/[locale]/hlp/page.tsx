@@ -12,6 +12,8 @@ import { HLPEligibility } from "@/components/hlp/eligibility"
 import { HLPFaq } from "@/components/hlp/faq"
 import { HLPFinalCta } from "@/components/hlp/final-cta"
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'Haven Language Program | Haven',
   description: 'A better way to learn English for newcomers fleeing conflict. Classes with professional teachers. Conversations with Canadians. Built around your schedule.',

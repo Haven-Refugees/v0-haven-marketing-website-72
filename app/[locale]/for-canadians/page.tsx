@@ -8,6 +8,8 @@ import { CanadiansTestimonial } from "@/components/canadians/testimonial"
 import { Trust } from "@/components/canadians/trust"
 import { CanadiansFinalCta } from "@/components/canadians/final-cta"
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'For Canadians | Haven',
   description: 'Help a refugee in Canada. Haven matches you directly with a newcomer for a video call. It takes just 30 minutes to make a difference.',
