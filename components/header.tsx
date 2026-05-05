@@ -32,18 +32,18 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
-          <Link href={link("/for-newcomers")} className="text-muted-foreground hover:text-foreground transition-colors">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
+          <Link href={link("/for-newcomers")} className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
             {t("For Newcomers")}
           </Link>
-          <Link href={link("/for-canadians")} className="text-muted-foreground hover:text-foreground transition-colors">
+          <Link href={link("/for-canadians")} className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
             {t("For Canadians")}
           </Link>
           <NavigationMenu className="z-50">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger 
-                  className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-normal text-base cursor-pointer"
+                  className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-normal text-sm lg:text-base cursor-pointer whitespace-nowrap"
                 >
                   <Link href={link("/our-vision")} className="hover:text-foreground">
                     {t("About Haven")}
@@ -71,12 +71,14 @@ export function Header() {
             </NavigationMenuList>
           </NavigationMenu>
           <LanguageSwitcher />
-          <Button variant="outline" asChild>
-            <Link href="https://app.findhaven.org">{t("Log In")}</Link>
-          </Button>
-          <Button variant="primary" asChild>
-            <Link href="https://app.findhaven.org">{t("Join Haven")}</Link>
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button variant="outline" size="sm" asChild className="lg:size-default">
+              <Link href="https://app.findhaven.org">{t("Log In")}</Link>
+            </Button>
+            <Button variant="primary" size="sm" asChild className="lg:size-default">
+              <Link href="https://app.findhaven.org">{t("Join Haven")}</Link>
+            </Button>
+          </div>
         </div>
 
         <button
