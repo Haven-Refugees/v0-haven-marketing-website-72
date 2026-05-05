@@ -27,7 +27,7 @@ export function SectionNewcomers() {
             </p>
             <div className="flex items-center gap-6">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
-                <Link href="https://app.findhaven.org/signup">{t("I need help")}</Link>
+                <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
               </Button>
               <Link 
                 href="https://v0-haven-marketing-website.vercel.app/en/for-newcomers" 
