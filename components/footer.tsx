@@ -59,9 +59,7 @@ export function Footer() {
               <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
                 {t("Haven Language Program")}
               </Link>
-              <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                {t("Haven Connect")}
-              </Link>
+              
             </nav>
           </div>
 
