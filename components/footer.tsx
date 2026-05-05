@@ -22,7 +22,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-gray-400 max-w-xs leading-relaxed mb-6">
-              {t("Helping newcomers become independent in Canada. Making it easier for Canadians to help.")}
+              {t("We help refugees become independent in Canada faster.")}
             </p>
             <div className="flex items-center gap-3">
               <Link 
