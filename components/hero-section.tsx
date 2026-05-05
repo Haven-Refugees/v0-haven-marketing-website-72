@@ -17,7 +17,7 @@ export function HeroSection() {
             {t("We help refugees become independent in Canada faster.")}
           </h1>
           
-          <p className="font-body font-medium text-xl text-muted-foreground leading-relaxed">
+          <p className="font-body font-normal text-xl text-muted-foreground leading-relaxed">
             {t("Newcomers fleeing conflict use Haven to improve their language and connect with Canadians.")}
           </p>
 
