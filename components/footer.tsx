@@ -8,7 +8,7 @@ export function Footer() {
   const { t, link } = useTranslation()
 
   return (
-    <footer className="bg-[#1e2a3a] text-white py-16">
+    <footer className="bg-ink text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-5 gap-12 mb-12">
           {/* Logo and tagline */}
@@ -21,27 +21,27 @@ export function Footer() {
                 height={40}
               />
             </Link>
-            <p className="text-white max-w-xs leading-relaxed mb-6">
+            <p className="font-body text-white/80 max-w-xs leading-relaxed mb-6">
               {t("We help refugees become independent in Canada faster.")}
             </p>
             <div className="flex items-center gap-3">
               <Link 
                 href="https://instagram.com/havenrefugees" 
-                className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-white" />
               </Link>
               <Link 
                 href="https://linkedin.com/company/havenrefugees" 
-                className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 text-white" />
               </Link>
               <Link 
                 href="https://facebook.com/havenrefugees" 
-                className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5 text-white" />
@@ -51,12 +51,12 @@ export function Footer() {
 
           {/* For Newcomers */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("For Newcomers")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-4">{t("For Newcomers")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                {t("How we help")}
+              <Link href="#how-haven-helps" className="font-body text-white/80 hover:text-white transition-colors">
+                {t("How We Help")}
               </Link>
-              <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="#how-haven-helps" className="font-body text-white/80 hover:text-white transition-colors">
                 {t("Haven Language Program")}
               </Link>
               
@@ -65,44 +65,44 @@ export function Footer() {
 
           {/* For Canadians */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("For Canadians")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-4">{t("For Canadians")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                {t("How you can help")}
+              <Link href="#how-haven-helps" className="font-body text-white/80 hover:text-white transition-colors">
+                {t("How You Can Help")}
               </Link>
             </nav>
           </div>
 
           {/* About Haven */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("About Haven")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-4">{t("About Haven")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision" className="text-white hover:text-gray-300 transition-colors">
-                {t("Our vision")}
+              <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision" className="font-body text-white/80 hover:text-white transition-colors">
+                {t("Our Vision")}
               </Link>
-              <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team" className="text-white hover:text-gray-300 transition-colors">
-                {t("Our team")}
+              <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team" className="font-body text-white/80 hover:text-white transition-colors">
+                {t("Our Team")}
               </Link>
-              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-                {t("User agreement")}
+              <Link href="#" className="font-body text-white/80 hover:text-white transition-colors">
+                {t("User Agreement")}
               </Link>
-              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-                {t("Privacy policy")}
+              <Link href="#" className="font-body text-white/80 hover:text-white transition-colors">
+                {t("Privacy Policy")}
               </Link>
             </nav>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <p className="text-gray-400 text-sm">
+            <p className="font-body text-white/50 text-sm">
               © {new Date().getFullYear()} Haven Refugees. {t("All rights reserved.")}
             </p>
-            <p className="text-gray-400 text-sm">
+            <p className="font-body text-white/50 text-sm">
               {t("Registered Canadian charity")} · CRA #758177547 RR 0001
             </p>
           </div>
-          <p className="text-gray-400 text-sm">
+          <p className="font-body text-white/50 text-sm">
             {t("Questions?")}{" "}
             <Link href="mailto:info@findhaven.org" className="text-white hover:underline">
               info@findhaven.org

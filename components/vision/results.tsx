@@ -21,12 +21,12 @@ export function VisionResults() {
   ]
 
   return (
-    <section className="py-20 md:py-24 bg-[#FDF0EB]">
+    <section className="py-20 md:py-24 bg-haven-coral/10">
       <div className="max-w-[760px] mx-auto px-6">
-        <h2 className="font-sans font-bold text-[28px] leading-tight text-foreground mb-6">
+        <h2 className="font-sans font-bold text-[28px] leading-tight text-foreground mb-6 tracking-tight">
           {t("It works.")}
         </h2>
-        <p className="text-[15px] leading-[1.8] text-foreground/80 mb-10">
+        <p className="font-body text-[15px] leading-[1.8] text-foreground/80 mb-10">
           {t("Haven students improve their language skills faster and at a fraction of the cost of traditional programs. And Haven makes it easier for Canadians to help than any system before it — just a conversation, and a connection that can last a lifetime.")}
         </p>
         
@@ -34,12 +34,12 @@ export function VisionResults() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6"
+              className="bg-card rounded-2xl p-6 shadow-[var(--shadow-flat)]"
             >
-              <p className="font-sans font-bold text-[32px] text-[#E8725A] mb-2">
+              <p className="font-sans font-bold text-[32px] text-haven-coral mb-2">
                 {stat.number}
               </p>
-              <p className="text-[14px] leading-relaxed text-muted-foreground">
+              <p className="font-body text-[14px] leading-relaxed text-muted-foreground">
                 {stat.description}
               </p>
             </div>

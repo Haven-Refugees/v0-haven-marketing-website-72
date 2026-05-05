@@ -9,18 +9,18 @@ export function NewcomersHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative pt-14 pb-10 bg-secondary/10">
+    <section className="relative pt-14 pb-10 bg-haven-purple/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div className="space-y-6 lg:pl-16">
-            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight">
+            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight tracking-tight">
               {t("Speak with volunteers. Study with teachers.")}
             </h1>
-            <p className="font-sans font-medium text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
+            <p className="font-body font-normal text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
               {t("Haven is the best way to improve your language skills and connect with Canadians.")}
             </p>
             <div className="pt-2">
-              <Button size="lg" className="text-base px-7 py-6" asChild>
+              <Button size="lg" variant="secondary" asChild>
                 <Link href="https://app.findhaven.org">
                   {t("Join Haven")}
                 </Link>
@@ -29,12 +29,12 @@ export function NewcomersHero() {
           </div>
 
           <div className="relative mt-8 w-[101%] -ml-8">
-            <div className="relative rounded-3xl overflow-hidden aspect-[3.24/3]">
+            <div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)]">
               <Image
                 src="/images/newcomers-hero.png"
                 alt={t("A joyful woman celebrating with arms raised in a city street")}
                 fill
-                className="object-cover object-[center_60%] rounded-3xl"
+                className="object-cover object-[center_60%] rounded-2xl"
                 priority
               />
             </div>

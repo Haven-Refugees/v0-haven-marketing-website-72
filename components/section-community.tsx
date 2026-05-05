@@ -46,7 +46,7 @@ export function SectionCommunity() {
     <section className="pt-4 pb-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight tracking-tight">
           {t("Where newcomers and Canadians meet.")}
         </h2>
 
@@ -57,10 +57,10 @@ export function SectionCommunity() {
             <div className="flex justify-center items-center h-[120px] mb-4">
               <StarburstIcon />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              {t("20,000+ users in Canada")}
+            <h3 className="text-xl font-bold text-foreground mb-2 tracking-tight">
+              {t("20,000+ Users in Canada")}
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="font-body text-muted-foreground leading-relaxed">
               {t("Newcomers from 50+ countries, now in 500+ communities across Canada.")}
             </p>
           </div>
@@ -70,10 +70,10 @@ export function SectionCommunity() {
             <div className="flex justify-center items-center h-[120px] mb-4">
               <IdVerificationIcon />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              {t("Connect with confidence.")}
+            <h3 className="text-xl font-bold text-foreground mb-2 tracking-tight">
+              {t("Connect With Confidence")}
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="font-body text-muted-foreground leading-relaxed">
               {t("We use ID verification so you always know who you're connecting with.")}
             </p>
           </div>
@@ -83,12 +83,12 @@ export function SectionCommunity() {
             <div className="flex justify-center items-center h-[120px] mb-4">
               <CharityBadgeIcon />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              {t("Registered Canadian charity")}
+            <h3 className="text-xl font-bold text-foreground mb-2 tracking-tight">
+              {t("Registered Canadian Charity")}
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="font-body text-muted-foreground leading-relaxed">
               {t("Haven is registered with the CRA. Check us out on")}{" "}
-              <Link href="https://www.canadahelps.org/en/charities/haven-refugees/" className="text-primary underline hover:text-primary/80">
+              <Link href="https://www.canadahelps.org/en/charities/haven-refugees/" className="text-haven-blue underline hover:text-haven-blue/80">
                 CanadaHelps
               </Link>.
             </p>

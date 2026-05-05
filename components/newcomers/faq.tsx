@@ -40,7 +40,7 @@ export function NewcomersFaq() {
     <section className="pt-12 pb-24">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
+          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4 tracking-tight">
             {t("Frequently Asked Questions")}
           </h2>
         </div>
@@ -50,12 +50,12 @@ export function NewcomersFaq() {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-card border border-border rounded-xl px-6 overflow-hidden data-[state=open]:shadow-lg transition-shadow !border-b"
+              className="bg-card border border-border rounded-2xl px-6 overflow-hidden data-[state=open]:shadow-[var(--shadow-card)] transition-shadow !border-b"
             >
-              <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline py-6">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-6">
                 {t(faq.question)}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
+              <AccordionContent className="font-body text-muted-foreground pb-6 leading-relaxed">
                 {t(faq.answer)}
               </AccordionContent>
             </AccordionItem>
@@ -64,7 +64,7 @@ export function NewcomersFaq() {
 
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <Link href="https://findhaven.gorgias.help/en-US">{t("See our full FAQ")}</Link>
+            <Link href="https://findhaven.gorgias.help/en-US">{t("See Our Full FAQ")}</Link>
           </Button>
         </div>
       </div>

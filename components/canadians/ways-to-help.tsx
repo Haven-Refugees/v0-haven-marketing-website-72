@@ -28,13 +28,13 @@ export function WaysToHelp() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-white">
+    <section className="py-20 md:py-24 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
-            {t("Helping is easier than you think.")}
+          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4 tracking-tight">
+            {t("Helping Is Easier Than You Think")}
           </h2>
-          <p className="font-sans text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
             {t("You don't need any special skills or experience. Here are three ways Canadians help on Haven.")}
           </p>
         </div>
@@ -43,25 +43,25 @@ export function WaysToHelp() {
           {ways.map((way, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-2xl p-6 border-2 ${
-                way.popular ? "border-[#E8725A]" : "border-gray-200"
+              className={`relative bg-card rounded-2xl p-6 border-2 shadow-[var(--shadow-flat)] ${
+                way.popular ? "border-haven-coral" : "border-border"
               }`}
             >
               {way.popular && (
-                <span className="absolute -top-0 left-6 -translate-y-1/2 bg-[#FDF0EB] text-[#E8725A] text-xs font-medium px-3 py-1 rounded-full">
-                  {t("Most popular")}
+                <span className="absolute -top-0 left-6 -translate-y-1/2 z-10 bg-[#FCEAE6] text-haven-coral text-xs font-semibold px-3 py-1 rounded-[100px]">
+                  {t("Most Popular")}
                 </span>
               )}
               
               <div>
-                <div className="w-10 h-10 bg-[#FDF0EB] rounded-lg flex items-center justify-center mb-4">
-                  <way.icon className="w-5 h-5 text-[#E8725A]" />
+                <div className="w-10 h-10 bg-haven-coral/10 rounded-xl flex items-center justify-center mb-4">
+                  <way.icon className="w-5 h-5 text-haven-coral" />
                 </div>
                 
-                <h3 className="font-sans font-bold text-lg text-foreground mb-3">
+                <h3 className="font-sans font-bold text-lg text-foreground mb-3 tracking-tight">
                   {t(way.title)}
                 </h3>
-                <p className="font-sans text-muted-foreground text-sm leading-relaxed">
+                <p className="font-body text-muted-foreground text-sm leading-relaxed">
                   {t(way.description)}
                 </p>
               </div>

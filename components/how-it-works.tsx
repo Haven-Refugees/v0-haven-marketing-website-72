@@ -65,8 +65,8 @@ export function HowItWorks() {
     <section id="how-it-works" className="pt-16 pb-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-10">
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
-            {t("How it works")}
+          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4 tracking-tight">
+            {t("How It Works")}
           </h2>
         </div>
 
@@ -78,10 +78,10 @@ export function HowItWorks() {
                 <div className="flex items-center justify-center mb-6 h-[100px]">
                   {Illustration && <Illustration />}
                 </div>
-                <h3 className="font-sans font-bold text-2xl text-foreground mb-3">
+                <h3 className="font-sans font-bold text-2xl text-foreground mb-3 tracking-tight">
                   {t(step.title)}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="font-body text-muted-foreground leading-relaxed">
                   {t(step.description)}
                 </p>
               </div>

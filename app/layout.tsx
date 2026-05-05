@@ -1,24 +1,23 @@
 import type { Metadata } from 'next'
-import { DM_Sans, DM_Serif_Display, Montserrat } from 'next/font/google'
+import { Inter, Montserrat, Roboto_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { headers } from 'next/headers'
 import { defaultLocale, rtlLocales, isValidLocale, type Locale } from '@/lib/i18n-config'
 import './globals.css'
 
-const dmSans = DM_Sans({ 
+const inter = Inter({ 
   subsets: ["latin"],
-  variable: '--font-dm-sans',
-});
-
-const dmSerif = DM_Serif_Display({ 
-  weight: '400',
-  subsets: ["latin"],
-  variable: '--font-dm-serif',
+  variable: '--font-inter',
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: '--font-montserrat',
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  variable: '--font-roboto-mono',
 });
 
 export const metadata: Metadata = {
@@ -56,7 +55,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir} className="bg-background">
-      <body className={`${dmSans.variable} ${dmSerif.variable} ${montserrat.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${montserrat.variable} ${robotoMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
