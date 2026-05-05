@@ -48,7 +48,7 @@ export function WaysToHelp() {
               }`}
             >
               {way.popular && (
-                <span className="absolute -top-0 left-6 -translate-y-1/2 z-10 bg-haven-coral/10 text-haven-coral text-xs font-semibold px-3 py-1 rounded-[100px]">
+                <span className="absolute -top-0 left-6 -translate-y-1/2 z-10 bg-[#FCEAE6] text-haven-coral text-xs font-semibold px-3 py-1 rounded-[100px]">
                   {t("Most Popular")}
                 </span>
               )}
