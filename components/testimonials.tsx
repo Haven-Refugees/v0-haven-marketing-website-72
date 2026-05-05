@@ -85,7 +85,7 @@ export function Testimonials() {
                   {t(testimonial.type)}
                 </span>
                 
-                <p className="text-foreground italic leading-relaxed mb-6">
+                <p className="text-foreground leading-relaxed mb-6">
                   &ldquo;{t(testimonial.quote)}&rdquo;
                 </p>
                 
