@@ -113,7 +113,7 @@ export function HavenLanguageProgram() {
           {/* Centered CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button size="lg" className="text-[15px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
-              <Link href="https://app.findhaven.org">{t("Join the program")}</Link>
+              <Link href="https://app.findhaven.org/signup">{t("Join the program")}</Link>
             </Button>
             <Button size="lg" variant="outline" className="text-[15px] !bg-transparent border-foreground/30 text-foreground hover:!bg-foreground/5 rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
               <Link href={link("/hlp")}>{t("Learn more")}</Link>
