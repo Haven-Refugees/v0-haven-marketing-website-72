@@ -77,10 +77,10 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("About Haven")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision" className="text-white hover:text-gray-300 transition-colors">
                 {t("Our vision")}
               </Link>
-              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team" className="text-white hover:text-gray-300 transition-colors">
                 {t("Our team")}
               </Link>
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">
