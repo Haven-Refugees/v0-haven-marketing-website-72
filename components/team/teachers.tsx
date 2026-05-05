@@ -7,6 +7,7 @@ const teachers = [
   { name: "Areej Alasadi", city: "Montreal, Quebec", image: "/team/areej-alasadi.png" },
   { name: "Horia Sardarzada", city: "Toronto, Ontario", image: "/team/horia-sardarzada.jpg" },
   { name: "Lidia Castro", city: "Montreal, Quebec", image: "/team/lidia-castro.png" },
+  { name: "Olga Kasyan", city: "Winnipeg, Manitoba", image: "/team/olga-kasyan.png" },
 ]
 
 export function Teachers() {
