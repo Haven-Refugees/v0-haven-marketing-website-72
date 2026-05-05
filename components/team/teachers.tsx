@@ -3,13 +3,7 @@
 import { useTranslation } from "@/lib/i18n"
 
 const teachers = [
-  { initials: "T1", name: "Teacher Name", city: "City, Canada" },
-  { initials: "T2", name: "Teacher Name", city: "City, Canada" },
-  { initials: "T3", name: "Teacher Name", city: "City, Canada" },
-  { initials: "T4", name: "Teacher Name", city: "City, Canada" },
-  { initials: "T5", name: "Teacher Name", city: "City, Canada" },
-  { initials: "T6", name: "Teacher Name", city: "City, Canada" },
-  { initials: "T7", name: "Teacher Name", city: "City, Canada" },
+  { name: "Larysa Sokolovska", city: "Ottawa, Ontario", image: "/team/larysa-sokolovska.jpg" },
 ]
 
 export function Teachers() {
@@ -28,10 +22,12 @@ export function Teachers() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">
           {teachers.map((teacher, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              <div className="w-[90px] h-[90px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-3">
-                <span className="text-[#6B4EFF] text-xl font-medium">
-                  {teacher.initials}
-                </span>
+              <div className="w-[90px] h-[90px] rounded-full bg-[#D4CCF9] overflow-hidden mb-3">
+                <img
+                  src={teacher.image}
+                  alt={teacher.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="text-sm font-medium text-foreground">
                 {teacher.name}
