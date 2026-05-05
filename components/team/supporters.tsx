@@ -25,12 +25,12 @@ export function Supporters() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-16 md:py-20 bg-card">
       <div className="max-w-[900px] mx-auto px-6 text-center">
-        <h2 className="font-sans font-bold text-[32px] text-foreground mb-4">
-          {t("Our supporters.")}
+        <h2 className="font-sans font-bold text-[32px] text-foreground mb-4 tracking-tight">
+          {t("Our Supporters")}
         </h2>
-        <p className="text-[17px] text-muted-foreground max-w-[600px] mx-auto mb-12">
+        <p className="font-body text-[17px] text-muted-foreground max-w-[600px] mx-auto mb-12">
           {t("Haven is funded by Canadian foundations who believe in building a better system for refugees.")}
         </p>
 
@@ -41,7 +41,7 @@ export function Supporters() {
               href={supporter.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-8 border border-border rounded-xl hover:border-[#6B4EFF]/30 transition-colors min-h-[100px]"
+              className="flex items-center justify-center p-8 border border-border rounded-2xl hover:border-haven-blue/30 transition-colors min-h-[100px] shadow-[var(--shadow-flat)]"
             >
               <img
                 src={supporter.logo}
@@ -52,7 +52,7 @@ export function Supporters() {
           ))}
         </div>
 
-        <p className="text-sm text-muted-foreground">
+        <p className="font-body text-sm text-muted-foreground">
           {t("And other generous donors across Canada.")}
         </p>
       </div>

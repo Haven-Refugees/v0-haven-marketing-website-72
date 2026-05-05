@@ -66,13 +66,13 @@ export function CoreTeam() {
   const { t } = useTranslation()
 
   return (
-    <section className="pt-8 pb-16 md:pt-10 md:pb-20 bg-white">
+    <section className="pt-8 pb-16 md:pt-10 md:pb-20 bg-card">
       <div className="max-w-[1100px] mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center">
               {member.image ? (
-                <div className="w-[180px] h-[180px] rounded-full overflow-hidden mb-4">
+                <div className="w-[180px] h-[180px] rounded-full overflow-hidden mb-4 shadow-[var(--shadow-flat)]">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -82,26 +82,26 @@ export function CoreTeam() {
                   />
                 </div>
               ) : (
-                <div className="w-[180px] h-[180px] rounded-full bg-[#D4CCF9] flex items-center justify-center mb-4">
-                  <span className="text-[#6B4EFF] text-4xl font-medium">
+                <div className="w-[180px] h-[180px] rounded-full bg-haven-purple/20 flex items-center justify-center mb-4">
+                  <span className="text-haven-purple text-4xl font-medium">
                     {member.initials}
                   </span>
                 </div>
               )}
-              <h3 className="text-base font-medium text-foreground mb-1">
+              <h3 className="text-base font-semibold text-foreground mb-1">
                 {member.name}
               </h3>
-              <p className="text-sm text-muted-foreground mb-3">
+              <p className="font-body text-sm text-muted-foreground mb-3">
                 {t(member.role)}
               </p>
               <Link
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[26px] h-[26px] rounded-full bg-[#F5F5F5] flex items-center justify-center hover:bg-[#EBEBEB] transition-colors"
+                className="w-[26px] h-[26px] rounded-full bg-muted flex items-center justify-center hover:bg-muted/80 transition-colors"
                 aria-label={`${member.name}'s LinkedIn`}
               >
-                <LinkedInIcon className="w-3 h-3 text-[#666666]" />
+                <LinkedInIcon className="w-3 h-3 text-muted-foreground" />
               </Link>
             </div>
           ))}
