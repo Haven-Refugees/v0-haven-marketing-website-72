@@ -8,8 +8,8 @@ function StarburstIcon() {
     <img 
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%2810%29-MGkBOB05hRHs0TI5KYQ64IPFwVzQlt.png" 
       alt="Maple leaf icon" 
-      width={48} 
-      height={48}
+      width={72} 
+      height={72}
       className="object-contain"
     />
   )
@@ -20,8 +20,8 @@ function IdVerificationIcon() {
     <img 
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%288%29-FVSuJq2OCO1rrilUDKSucMSj97sQRQ.png" 
       alt="ID verification icon" 
-      width={56} 
-      height={48}
+      width={84} 
+      height={72}
       className="object-contain"
     />
   )
@@ -32,8 +32,8 @@ function CharityBadgeIcon() {
     <img 
       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/March%202026%20Website%20Work%20%289%29-bBvvvDBRCn130yH2QWsY5IdAxtkuci.png" 
       alt="Charity badge icon" 
-      width={48} 
-      height={48}
+      width={72} 
+      height={72}
       className="object-contain"
     />
   )
