@@ -11,7 +11,7 @@ export function VisionCta() {
     <section className="py-20 md:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-[32px] text-foreground mb-4">
-          {t("Join us.")}
+          {t("Be part of Haven.")}
         </h2>
         <p className="text-foreground/70 text-base mb-8">
           {t("Whether you're a newcomer looking for support or a Canadian ready to help, Haven is for you.")}
