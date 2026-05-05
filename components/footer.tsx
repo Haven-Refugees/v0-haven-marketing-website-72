@@ -21,8 +21,8 @@ export function Footer() {
                 height={40}
               />
             </Link>
-            <p className="text-gray-400 max-w-xs leading-relaxed mb-6">
-              {t("Helping newcomers become independent in Canada. Making it easier for Canadians to help.")}
+            <p className="text-white max-w-xs leading-relaxed mb-6">
+              {t("We help refugees become independent in Canada faster.")}
             </p>
             <div className="flex items-center gap-3">
               <Link 
@@ -59,9 +59,7 @@ export function Footer() {
               <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
                 {t("Haven Language Program")}
               </Link>
-              <Link href="#how-haven-helps" className="text-white hover:text-gray-300 transition-colors">
-                {t("Haven Connect")}
-              </Link>
+              
             </nav>
           </div>
 
@@ -79,10 +77,10 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">{t("About Haven")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision" className="text-white hover:text-gray-300 transition-colors">
                 {t("Our vision")}
               </Link>
-              <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+              <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team" className="text-white hover:text-gray-300 transition-colors">
                 {t("Our team")}
               </Link>
               <Link href="#" className="text-white hover:text-gray-300 transition-colors">

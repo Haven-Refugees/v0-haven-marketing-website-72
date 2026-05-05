@@ -23,10 +23,10 @@ export function TeamSection() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-primary hover:bg-primary/90 text-white">
-                <Link href="https://app.findhaven.org">{t("Our vision")}</Link>
+                <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision">{t("Our vision")}</Link>
               </Button>
               <Button asChild variant="outline" className="border-foreground/20 hover:bg-foreground/5">
-                <Link href="https://app.findhaven.org">{t("Meet our team")}</Link>
+                <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team">{t("Meet our team")}</Link>
               </Button>
             </div>
           </div>
