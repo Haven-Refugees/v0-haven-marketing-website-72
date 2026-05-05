@@ -56,7 +56,7 @@ export function WaysToHelp() {
 
         <div className="text-center mt-12">
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white" asChild>
-            <Link href="https://app.findhaven.org">{t("I want to help")}</Link>
+            <Link href="https://app.findhaven.org/?usertype=local">{t("I want to help")}</Link>
           </Button>
         </div>
       </div>

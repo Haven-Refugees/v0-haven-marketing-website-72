@@ -27,7 +27,7 @@ export function SectionNewcomers() {
             </p>
             <div className="flex items-center gap-6">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
-                <Link href="https://app.findhaven.org">{t("I need help")}</Link>
+                <Link href="https://app.findhaven.org/?usertype=newcomer">{t("I need help")}</Link>
               </Button>
               <Link 
                 href="https://app.findhaven.org" 

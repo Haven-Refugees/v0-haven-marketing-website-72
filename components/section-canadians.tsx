@@ -36,7 +36,7 @@ export function SectionCanadians() {
             </p>
             <div className="flex items-center gap-6">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-white" asChild>
-                <Link href="https://app.findhaven.org">{t("I want to help")}</Link>
+                <Link href="https://app.findhaven.org/?usertype=local">{t("I want to help")}</Link>
               </Button>
               <Link href="https://app.findhaven.org" className="text-accent hover:underline font-medium underline">
                 {t("Learn more")}

@@ -23,12 +23,12 @@ export function HeroSection() {
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3">
             <Button size="lg" className="text-base px-8 py-6 bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-              <Link href="https://app.findhaven.org">
+              <Link href="https://app.findhaven.org/?usertype=local">
                 {t("I want to help")}
               </Link>
             </Button>
             <Button size="lg" className="text-base px-8 py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground" asChild>
-              <Link href="https://app.findhaven.org">
+              <Link href="https://app.findhaven.org/?usertype=newcomer">
                 {t("I need help")}
               </Link>
             </Button>
