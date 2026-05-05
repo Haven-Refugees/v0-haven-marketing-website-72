@@ -8,7 +8,7 @@ export function TeamCta() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-[#FDF0EB]">
+    <section className="py-20 md:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-[32px] text-foreground mb-4">
           {t("Be part of Haven.")}
