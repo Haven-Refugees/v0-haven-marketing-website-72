@@ -11,7 +11,7 @@ export function HavenConnect() {
   return (
     <>
       <div className="pb-10 flex flex-col items-center">
-        <p className="font-body text-muted-foreground text-2xl font-normal text-center mb-2">
+        <p className="font-body text-muted-foreground text-2xl font-semibold text-center mb-2">
           {t("Just want to meet Canadians? It's free and takes 30 minutes a week.")}
         </p>
         <svg
