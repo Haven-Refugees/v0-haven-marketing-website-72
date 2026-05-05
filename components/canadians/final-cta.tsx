@@ -19,16 +19,12 @@ export function CanadiansFinalCta() {
         <Button 
           size="lg" 
           variant="coral"
-          className="mb-6"
           asChild
         >
           <Link href="https://app.findhaven.org/signup">
             {t("Start Helping")}
           </Link>
         </Button>
-        <p className="font-body text-muted-foreground text-sm">
-          {t("Haven is a registered Canadian charity")} · {t("Check us out on CanadaHelps")}
-        </p>
       </div>
     </section>
   )
