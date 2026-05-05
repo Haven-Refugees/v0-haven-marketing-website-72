@@ -13,23 +13,23 @@ export function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-6 py-2 grid lg:grid-cols-[1fr_1fr] gap-4 items-stretch">
         <div className="space-y-4 flex flex-col justify-center lg:pl-12">
-          <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance">
+          <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance tracking-tight">
             {t("We help refugees become independent in Canada faster.")}
           </h1>
           
-          <p className="font-sans font-medium text-xl text-muted-foreground leading-relaxed">
+          <p className="font-body font-medium text-xl text-muted-foreground leading-relaxed">
             {t("Newcomers fleeing conflict use Haven to improve their language and connect with Canadians.")}
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3">
-            <Button size="lg" className="text-base px-8 py-6 bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+            <Button size="lg" variant="coral" asChild>
               <Link href="https://app.findhaven.org/?usertype=local">
-                {t("I want to help")}
+                {t("I Want to Help")}
               </Link>
             </Button>
-            <Button size="lg" className="text-base px-8 py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground" asChild>
+            <Button size="lg" variant="secondary" asChild>
               <Link href="https://app.findhaven.org/?usertype=newcomer">
-                {t("I need help")}
+                {t("I Need Help")}
               </Link>
             </Button>
           </div>

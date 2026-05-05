@@ -33,13 +33,13 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-background rounded-2xl border border-border overflow-hidden"
+              className="bg-card rounded-2xl border border-border overflow-hidden shadow-[var(--shadow-flat)]"
             >
               {/* Header with avatar */}
               <div className={`py-4 px-6 flex flex-col items-center ${
                 testimonial.variant === "newcomer" 
-                  ? "bg-secondary/10" 
-                  : "bg-accent/10"
+                  ? "bg-haven-purple/10" 
+                  : "bg-haven-coral/10"
               }`}>
                 {testimonial.image ? (
                   <div className="w-44 h-44 rounded-2xl overflow-hidden">
@@ -55,19 +55,19 @@ export function Testimonials() {
                   <>
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-3 ${
                       testimonial.variant === "newcomer"
-                        ? "bg-secondary/20"
-                        : "bg-accent/20"
+                        ? "bg-haven-purple/20"
+                        : "bg-haven-coral/20"
                     }`}>
                       <User className={`w-8 h-8 ${
                         testimonial.variant === "newcomer"
-                          ? "text-secondary"
-                          : "text-accent"
+                          ? "text-haven-purple"
+                          : "text-haven-coral"
                       }`} />
                     </div>
                     <p className={`text-sm ${
                       testimonial.variant === "newcomer"
-                        ? "text-secondary"
-                        : "text-accent"
+                        ? "text-haven-purple"
+                        : "text-haven-coral"
                     }`}>
                       {testimonial.name}&apos;s photo
                     </p>
@@ -77,21 +77,21 @@ export function Testimonials() {
               
               {/* Content */}
               <div className="p-6">
-                <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-4 ${
+                <span className={`inline-block px-3 py-1 rounded-[100px] text-xs font-semibold mb-4 ${
                   testimonial.variant === "newcomer"
-                    ? "bg-secondary/10 text-secondary"
-                    : "bg-accent/10 text-accent"
+                    ? "bg-haven-purple/10 text-haven-purple"
+                    : "bg-haven-coral/10 text-haven-coral"
                 }`}>
                   {t(testimonial.type)}
                 </span>
                 
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="font-body text-foreground leading-relaxed mb-6">
                   &ldquo;{t(testimonial.quote)}&rdquo;
                 </p>
                 
                 <div>
-                  <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{t("From")} {testimonial.location}</p>
+                  <p className="font-semibold text-foreground">{testimonial.name}</p>
+                  <p className="font-body text-sm text-muted-foreground">{t("From")} {testimonial.location}</p>
                 </div>
               </div>
             </div>
