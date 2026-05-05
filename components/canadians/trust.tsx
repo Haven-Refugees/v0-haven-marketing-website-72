@@ -29,11 +29,11 @@ export function Trust() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-white">
+    <section className="py-20 md:py-24 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground">
-            {t("Connect with confidence.")}
+          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground tracking-tight">
+            {t("Connect With Confidence")}
           </h2>
         </div>
 
@@ -49,17 +49,17 @@ export function Trust() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="font-sans font-bold text-base text-foreground mb-3">
+              <h3 className="font-sans font-semibold text-base text-foreground mb-3 tracking-tight">
                 {t(item.title)}
               </h3>
-              <p className="font-sans text-muted-foreground text-sm leading-relaxed max-w-xs">
+              <p className="font-body text-muted-foreground text-sm leading-relaxed max-w-xs">
                 {t(item.description)}
                 {item.link && (
                   <>
                     {" "}
                     <Link 
                       href={item.link.href} 
-                      className="text-[#E8725A] underline hover:text-[#d4654f]"
+                      className="text-haven-blue underline hover:text-haven-blue/80"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
