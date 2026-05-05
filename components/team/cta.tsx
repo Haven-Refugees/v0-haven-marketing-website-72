@@ -8,10 +8,10 @@ export function TeamCta() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-[#FDF0EB]">
+    <section className="py-20 md:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-sans font-bold text-[32px] text-foreground mb-4">
-          {t("Join us.")}
+          {t("Be part of Haven.")}
         </h2>
         <p className="text-foreground/70 text-base mb-8">
           {t("Whether you're a newcomer looking for support or a Canadian ready to help, Haven is for you.")}
@@ -21,13 +21,13 @@ export function TeamCta() {
             asChild
             className="bg-[#E8725A] hover:bg-[#d4654f] text-white px-7 py-3.5 text-base rounded-[10px]"
           >
-            <Link href="https://app.findhaven.org/?usertype=local">{t("I want to help")}</Link>
+            <Link href="https://app.findhaven.org/signup">{t("I want to help")}</Link>
           </Button>
           <Button
             asChild
             className="bg-[#6B4EFF] hover:bg-[#5a3ee6] text-white px-7 py-3.5 text-base rounded-[10px]"
           >
-            <Link href="https://app.findhaven.org/?usertype=newcomer">{t("I need help")}</Link>
+            <Link href="https://app.findhaven.org/signup">{t("I need help")}</Link>
           </Button>
         </div>
       </div>
