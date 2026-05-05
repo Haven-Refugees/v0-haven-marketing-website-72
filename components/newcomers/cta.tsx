@@ -17,7 +17,7 @@ export function NewcomersCta() {
           {t("Sign up in less than 10 minutes.")}
         </p>
         <Button size="lg" className="text-base px-10 py-6" asChild>
-          <Link href="https://app.findhaven.org">
+          <Link href="https://app.findhaven.org/signup">
             {t("Join Haven")}
           </Link>
         </Button>
