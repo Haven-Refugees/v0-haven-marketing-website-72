@@ -40,12 +40,12 @@ export function Trust() {
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
           {trustItems.map((item, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="w-14 h-14 flex items-center justify-center mb-5">
+              <div className="w-[84px] h-[84px] flex items-center justify-center mb-5">
                 <Image 
                   src={item.iconSrc} 
                   alt={item.title} 
-                  width={56} 
-                  height={56} 
+                  width={84} 
+                  height={84} 
                   className="object-contain"
                 />
               </div>
