@@ -25,7 +25,7 @@ export function CanadiansHero() {
                 className="text-base px-7 py-6 bg-[#E8725A] hover:bg-[#d4654f] text-white rounded-lg"
                 asChild
               >
-                <Link href="https://app.findhaven.org">
+                <Link href="https://app.findhaven.org/signup">
                   {t("Start helping")}
                 </Link>
               </Button>

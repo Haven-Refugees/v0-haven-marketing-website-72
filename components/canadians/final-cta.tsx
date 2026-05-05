@@ -21,7 +21,7 @@ export function CanadiansFinalCta() {
           className="text-base px-10 py-6 bg-[#E8725A] hover:bg-[#d4654f] text-white rounded-lg mb-6"
           asChild
         >
-          <Link href="https://app.findhaven.org">
+          <Link href="https://app.findhaven.org/signup">
             {t("Start helping")}
           </Link>
         </Button>
