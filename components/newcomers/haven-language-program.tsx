@@ -34,13 +34,13 @@ export function HavenLanguageProgram() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <p className="text-secondary text-[20px] font-medium uppercase tracking-wider mb-4">
+          <p className="text-haven-purple text-[20px] font-semibold uppercase tracking-wider mb-4">
             {t("Haven Language Program")}
           </p>
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4">
+          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4 tracking-tight">
             {t("The fastest way to improve your English in Canada.")}
           </h2>
-          <p className="font-sans font-medium text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+          <p className="font-body font-normal text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
             {t("An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.")}
           </p>
         </div>
@@ -50,7 +50,7 @@ export function HavenLanguageProgram() {
           {programStructure.map((item, index) => (
             <div
               key={index}
-              className="bg-background border border-border rounded-xl px-2 pb-3 flex flex-col items-center text-center overflow-hidden"
+              className="bg-card border border-border rounded-2xl px-2 pb-3 flex flex-col items-center text-center overflow-hidden shadow-[var(--shadow-flat)]"
             >
               <div className="w-[432px] h-60 relative -mt-10 -mb-10">
                 <Image
@@ -60,63 +60,63 @@ export function HavenLanguageProgram() {
                   className={`object-contain object-center ${item.scale}`}
                 />
               </div>
-              <h3 className="font-sans font-medium text-foreground mb-1">{t(item.title)}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{t(item.description)}</p>
+              <h3 className="font-sans font-semibold text-foreground mb-1">{t(item.title)}</h3>
+              <p className="font-body text-muted-foreground text-sm leading-relaxed">{t(item.description)}</p>
             </div>
           ))}
         </div>
 
         {/* Unified Features & CTA Card */}
-        <div className="bg-[#EEEAFE] rounded-[16px] p-8 md:p-10">
+        <div className="bg-haven-purple/10 rounded-2xl p-8 md:p-10">
           {/* Heading */}
-          <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center">
+          <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground leading-snug mb-8 text-center tracking-tight">
             {t("We designed Haven to make learning as easy as possible.")}
           </h3>
           
           {/* Features Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-4">
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="w-7 h-7 bg-haven-purple rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div>
-                <p className="font-sans font-bold text-foreground">{t("Flexible schedule")}</p>
-                <p className="text-muted-foreground text-sm">{t("Study anytime, including evenings and weekends.")}</p>
+                <p className="font-sans font-semibold text-foreground">{t("Flexible Schedule")}</p>
+                <p className="font-body text-muted-foreground text-sm">{t("Study anytime, including evenings and weekends.")}</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="w-7 h-7 bg-haven-purple rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div>
-                <p className="font-sans font-bold text-foreground">{t("Personalized learning")}</p>
-                <p className="text-muted-foreground text-sm">{t("Classes of 1 to 4 students, not 30.")}</p>
+                <p className="font-sans font-semibold text-foreground">{t("Personalized Learning")}</p>
+                <p className="font-body text-muted-foreground text-sm">{t("Classes of 1 to 4 students, not 30.")}</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="w-7 h-7 bg-[#6B4EFF] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="w-7 h-7 bg-haven-purple rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div>
-                <p className="font-sans font-bold text-foreground">{t("English for life in Canada")}</p>
-                <p className="text-muted-foreground text-sm">{t("Learn the English you will actually use in your day-to-day life.")}</p>
+                <p className="font-sans font-semibold text-foreground">{t("English for Life in Canada")}</p>
+                <p className="font-body text-muted-foreground text-sm">{t("Learn the English you will actually use in your day-to-day life.")}</p>
               </div>
             </div>
           </div>
 
           {/* Centered CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Button size="lg" className="text-[15px] bg-[#1A56DB] hover:bg-[#1A56DB]/90 text-white rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
-              <Link href="https://app.findhaven.org/signup">{t("Join the program")}</Link>
+            <Button size="lg" variant="primary" asChild>
+              <Link href="https://app.findhaven.org/signup">{t("Join the Program")}</Link>
             </Button>
-            <Button size="lg" variant="outline" className="text-[15px] !bg-transparent border-foreground/30 text-foreground hover:!bg-foreground/5 rounded-[10px] py-[14px] px-[32px] min-w-[180px]" asChild>
-              <Link href={link("/hlp")}>{t("Learn more")}</Link>
+            <Button size="lg" variant="outline" asChild>
+              <Link href={link("/hlp")}>{t("Learn More")}</Link>
             </Button>
           </div>
         </div>

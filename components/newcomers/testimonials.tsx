@@ -23,31 +23,31 @@ export function NewcomersTestimonials() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-12">
-          {t("What newcomers say")}
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-12 tracking-tight">
+          {t("What Newcomers Say")}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-secondary/10 rounded-2xl overflow-hidden text-left"
+              className="bg-haven-purple/10 rounded-2xl overflow-hidden text-left shadow-[var(--shadow-flat)]"
             >
               {/* Photo placeholder */}
-              <div className="bg-secondary/20 h-48 flex items-center justify-center">
-                <span className="text-secondary/40 text-xs font-medium uppercase tracking-wider">Photo</span>
+              <div className="bg-haven-purple/20 h-48 flex items-center justify-center">
+                <span className="text-haven-purple/40 text-xs font-semibold uppercase tracking-wider">Photo</span>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <span className="inline-block bg-secondary/20 text-secondary text-xs font-medium px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-haven-purple/20 text-haven-purple text-xs font-semibold px-3 py-1 rounded-[100px] mb-4">
                   {t(testimonial.tag)}
                 </span>
-                <p className="text-muted-foreground text-sm leading-relaxed italic mb-4">
+                <p className="font-body text-muted-foreground text-sm leading-relaxed italic mb-4">
                   &ldquo;{t(testimonial.quote)}&rdquo;
                 </p>
-                <p className="font-medium text-foreground text-sm">{testimonial.name}</p>
-                <p className="text-muted-foreground text-xs">{t(testimonial.from)}</p>
+                <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
+                <p className="font-body text-muted-foreground text-xs">{t(testimonial.from)}</p>
               </div>
             </div>
           ))}
