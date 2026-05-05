@@ -64,7 +64,7 @@ export function NewcomersFaq() {
 
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <Link href="https://app.findhaven.org">{t("See our full FAQ")}</Link>
+            <Link href="https://findhaven.gorgias.help/en-US">{t("See our full FAQ")}</Link>
           </Button>
         </div>
       </div>
