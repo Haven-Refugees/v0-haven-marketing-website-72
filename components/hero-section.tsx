@@ -29,7 +29,7 @@ export function HeroSection() {
             </Button>
             <Button size="lg" className="text-base px-8 py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground" asChild>
               <Link href="https://app.findhaven.org/?usertype=newcomer">
-                {t("I need help")}
+                {t("Join Haven")}
               </Link>
             </Button>
           </div>
