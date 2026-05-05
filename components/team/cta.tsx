@@ -21,7 +21,7 @@ export function TeamCta() {
             asChild
             className="bg-[#E8725A] hover:bg-[#d4654f] text-white px-7 py-3.5 text-base rounded-[10px]"
           >
-            <Link href="https://app.findhaven.org/?usertype=local">{t("I want to help")}</Link>
+            <Link href="https://app.findhaven.org/signup">{t("I want to help")}</Link>
           </Button>
           <Button
             asChild
