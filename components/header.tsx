@@ -71,7 +71,7 @@ export function Header() {
             </NavigationMenuList>
           </NavigationMenu>
           <LanguageSwitcher />
-          <Button variant="ghost" asChild>
+          <Button variant="outline" asChild>
             <Link href="https://app.findhaven.org">{t("Log In")}</Link>
           </Button>
           <Button variant="primary" asChild>
