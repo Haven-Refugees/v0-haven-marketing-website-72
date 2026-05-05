@@ -5,6 +5,7 @@ import { useTranslation } from "@/lib/i18n"
 const teachers = [
   { name: "Larysa Sokolovska", city: "Ottawa, Ontario", image: "/team/larysa-sokolovska.jpg" },
   { name: "Areej Alasadi", city: "Montreal, Quebec", image: "/team/areej-alasadi.png" },
+  { name: "Horia Sardarzada", city: "Toronto, Ontario", image: "/team/horia-sardarzada.jpg" },
 ]
 
 export function Teachers() {
