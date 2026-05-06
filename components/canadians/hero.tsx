@@ -14,7 +14,7 @@ export function CanadiansHero() {
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div className="space-y-6 lg:pl-16">
             <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-[32px] text-foreground leading-tight tracking-tight">
-              {t("Help a refugee in Canada. It takes 30 minutes.")}
+              {t("Help a refugee in Canada.")}<br />{t("It takes 30 minutes.")}
             </h1>
             <p className="font-body font-normal text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
               {t("Haven matches you directly with a newcomer for a video call. It's the easiest way to help.")}
