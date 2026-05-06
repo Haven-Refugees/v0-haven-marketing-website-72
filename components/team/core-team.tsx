@@ -67,12 +67,12 @@ export function CoreTeam() {
 
   return (
     <section className="pt-8 pb-16 md:pt-10 md:pb-20 bg-card">
-      <div className="max-w-[1100px] mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10">
+      <div className="max-w-[1100px] mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 md:gap-x-4 gap-y-8 md:gap-y-10">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center">
               {member.image ? (
-                <div className="w-[180px] h-[180px] rounded-full overflow-hidden mb-4 shadow-[var(--shadow-flat)]">
+                <div className="w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full overflow-hidden mb-3 md:mb-4 shadow-[var(--shadow-flat)]">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -82,26 +82,26 @@ export function CoreTeam() {
                   />
                 </div>
               ) : (
-                <div className="w-[180px] h-[180px] rounded-full bg-haven-purple/20 flex items-center justify-center mb-4">
-                  <span className="text-haven-purple text-4xl font-medium">
+                <div className="w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full bg-haven-purple/20 flex items-center justify-center mb-3 md:mb-4">
+                  <span className="text-haven-purple text-2xl md:text-4xl font-medium">
                     {member.initials}
                   </span>
                 </div>
               )}
-              <h3 className="text-base font-semibold text-foreground mb-1">
+              <h3 className="text-sm md:text-base font-semibold text-foreground mb-1">
                 {member.name}
               </h3>
-              <p className="font-body text-sm text-muted-foreground mb-3">
+              <p className="font-body text-xs md:text-sm text-muted-foreground mb-2 md:mb-3">
                 {t(member.role)}
               </p>
               <Link
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[26px] h-[26px] rounded-full bg-muted flex items-center justify-center hover:bg-muted/80 transition-colors"
+                className="w-[24px] h-[24px] md:w-[26px] md:h-[26px] rounded-full bg-muted flex items-center justify-center hover:bg-muted/80 transition-colors"
                 aria-label={`${member.name}'s LinkedIn`}
               >
-                <LinkedInIcon className="w-3 h-3 text-muted-foreground" />
+                <LinkedInIcon className="w-2.5 h-2.5 md:w-3 md:h-3 text-muted-foreground" />
               </Link>
             </div>
           ))}
