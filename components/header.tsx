@@ -55,7 +55,7 @@ export function Header() {
                       href="https://v0-haven-marketing-website.vercel.app/en/our-vision"
                       className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
-                      <div className="text-sm font-medium leading-none">{t("Our Vision")}</div>
+                      <div className="text-sm font-body font-medium leading-none">{t("Our Vision")}</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
@@ -63,7 +63,7 @@ export function Header() {
                       href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team"
                       className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
-                      <div className="text-sm font-medium leading-none">{t("Meet the Team")}</div>
+                      <div className="text-sm font-body font-medium leading-none">{t("Meet the Team")}</div>
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuContent>
