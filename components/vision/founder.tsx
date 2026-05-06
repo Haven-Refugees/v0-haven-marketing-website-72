@@ -27,18 +27,18 @@ export function VisionFounder() {
             </h2>
             <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 mb-4 md:mb-6">
               {t("Haven's founder Victor started helping refugees in 2016 with the Syrian crisis — with a")}{" "}
-              <a href="https://www.cbc.ca/news/canada/toronto/bike-ride-1.3183839" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
+              <a href="https://westerngazette.ca/culture/victor-lal-determined-to-aid-syrian-refugees/article_8e8df4c6-b9f2-11e8-a196-73e10aea4393.html" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
                 {t("2,600 km bike ride from Toronto to St. John's")}
               </a>{" "}
               {t("and a")}{" "}
-              <a href="https://www.thestar.com/news/gta/swim-across-lake-ontario-aims-to-raise-funds-for-syrian-refugees/article_f8b0f39c-5df8-524c-ba12-0df21e3b99b8.html" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
+              <a href="https://globalnews.ca/news/4303199/western-university-student-to-take-on-lake-ontario-in-fundraising-effort-for-syrian-refugees/" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
                 {t("52 km swim across Lake Ontario")}
               </a>{" "}
               {t("to sponsor Syrian families.")}
             </p>
             <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 mb-4 md:mb-6">
               {t("When Russia launched its full-scale invasion of Ukraine in February 2022, Victor was")}{" "}
-              <a href="https://www.cbc.ca/news/canada/toronto/canadian-man-in-lviv-describes-chaos-in-ukraine-1.6367269" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
+              <a href="https://www.cbc.ca/news/canada/toronto/toronto-victor-lal-ukraine-poland-1.6396963" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
                 {t("on the ground on day four")}
               </a>
               {t(". As Ukrainians began arriving in Canada, he started connecting them with Canadians who could help — in the big ways and the small ones. He set up a Google Sheet to do it.")}
