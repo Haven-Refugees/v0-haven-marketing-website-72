@@ -33,7 +33,7 @@ export function HLPStructure() {
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-4">
           {t("The fastest way to improve your English in Canada.")}
         </h2>
-        <p className="text-[var(--fg-4)] text-lg max-w-3xl mx-auto mb-16">
+        <p className="font-body text-[var(--fg-4)] text-lg max-w-3xl mx-auto mb-16">
           {t("An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.")}
         </p>
 
@@ -49,7 +49,7 @@ export function HLPStructure() {
               <h3 className="font-sans font-bold text-xl text-[var(--fg-1)] mb-3">
                 {t(feature.title)}
               </h3>
-              <p className="text-[var(--fg-4)] leading-relaxed">
+              <p className="font-body text-[var(--fg-4)] leading-relaxed">
                 {t(feature.description)}
               </p>
             </div>

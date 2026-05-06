@@ -42,7 +42,7 @@ export function HLPBenefits() {
               <h3 className="font-sans font-bold text-xl text-[var(--fg-1)] mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-[var(--fg-4)] leading-relaxed">
+              <p className="font-body text-[var(--fg-4)] leading-relaxed">
                 {benefit.text}
               </p>
             </div>

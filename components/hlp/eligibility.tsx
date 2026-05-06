@@ -18,7 +18,7 @@ export function HLPEligibility() {
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-4">
           {t("Are you eligible?")}
         </h2>
-        <p className="text-[var(--fg-4)] text-lg mb-12">
+        <p className="font-body text-[var(--fg-4)] text-lg mb-12">
           {t("Haven is for newcomers fleeing conflict who are living in Canada.")}
         </p>
 
@@ -35,10 +35,10 @@ export function HLPEligibility() {
           ))}
         </div>
 
-        <p className="text-[var(--fg-4)] leading-relaxed mb-6">
+        <p className="font-body text-[var(--fg-4)] leading-relaxed mb-6">
           {t("This includes refugees, refugee claimants, arrivals under Canadian humanitarian programs (such as CUAET holders and evacuees from Gaza), and newcomers from other conflict-affected countries.")}
         </p>
-        <p className="text-[var(--fg-5)] italic">
+        <p className="font-body text-[var(--fg-5)] italic">
           {t("If you're not sure if you qualify, try signing up — we'll help you figure it out.")}
         </p>
       </div>

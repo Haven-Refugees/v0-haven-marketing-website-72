@@ -11,7 +11,7 @@ export function HLPProblem() {
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-6">
           {t("Most English programs weren't built for you.")}
         </h2>
-        <p className="text-[var(--fg-4)] text-lg leading-relaxed">
+        <p className="font-body text-[var(--fg-4)] text-lg leading-relaxed">
           {t("Classes of 20–30 students mean your teacher barely knows your name. Schedules conflict with work and family. And you rarely get to practice with real Canadians — the only way to build real confidence.")}
         </p>
       </div>

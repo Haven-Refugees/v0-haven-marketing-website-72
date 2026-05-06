@@ -21,7 +21,7 @@ export function HLPCtaBand() {
         >
           <Link href="https://app.findhaven.org">{t("Join Haven now")}</Link>
         </Button>
-        <div className="flex items-center justify-center gap-2 text-[var(--fg-4)] text-sm">
+        <div className="flex items-center justify-center gap-2 font-body text-[var(--fg-4)] text-sm">
           <ShieldCheck className="w-4 h-4" />
           <span>
             {t("Haven is a registered Canadian charity · Check us out on")}{" "}

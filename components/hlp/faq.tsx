@@ -51,7 +51,7 @@ export function HLPFaq() {
               <AccordionTrigger className="text-left font-sans font-semibold text-[var(--fg-1)] hover:no-underline py-6">
                 {t(faq.question)}
               </AccordionTrigger>
-              <AccordionContent className="text-[var(--fg-4)] pb-6 leading-relaxed">
+              <AccordionContent className="font-body text-[var(--fg-4)] pb-6 leading-relaxed">
                 {t(faq.answer)}
               </AccordionContent>
             </AccordionItem>

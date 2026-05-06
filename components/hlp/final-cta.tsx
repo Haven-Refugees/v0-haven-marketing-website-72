@@ -13,7 +13,7 @@ export function HLPFinalCta() {
         <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-4">
           {t("Start improving your English today.")}
         </h2>
-        <p className="text-[var(--fg-4)] text-lg mb-8">
+        <p className="font-body text-[var(--fg-4)] text-lg mb-8">
           {t("Sign up in less than 10 minutes.")}
         </p>
         <Button

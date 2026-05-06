@@ -32,7 +32,7 @@ export function HLPHero() {
             <h1 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-[var(--fg-1)] mb-6 leading-tight text-balance">
               {t("A better way to learn English for newcomers fleeing conflict.")}
             </h1>
-            <p className="text-[var(--fg-4)] text-lg md:text-xl mb-8 leading-relaxed">
+            <p className="font-body text-[var(--fg-4)] text-lg md:text-xl mb-8 leading-relaxed">
               {t("Classes with professional teachers. Conversations with Canadians. Built around your schedule.")}
             </p>
             <Button

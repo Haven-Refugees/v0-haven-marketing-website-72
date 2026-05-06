@@ -33,7 +33,7 @@ export function HLPCommitment() {
           <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-4">
             {t("Give us 20 weeks. We'll change your English.")}
           </h2>
-          <p className="text-[var(--fg-4)] text-lg max-w-3xl mx-auto">
+          <p className="font-body text-[var(--fg-4)] text-lg max-w-3xl mx-auto">
             {t("Most Haven students see a measurable improvement in their English — at least one CLB level in Speaking or Listening — after completing the 20-week program.")}
           </p>
         </div>
@@ -56,7 +56,7 @@ export function HLPCommitment() {
                       <p className="font-sans font-bold text-[var(--fg-1)]">
                         {t(checkpoint.title)}
                       </p>
-                      <p className="text-[var(--fg-4)]">
+                      <p className="font-body text-[var(--fg-4)]">
                         {t(checkpoint.description)}
                       </p>
                     </div>
@@ -74,11 +74,11 @@ export function HLPCommitment() {
             <p className="text-4xl md:text-5xl font-bold text-[var(--fg-1)] mb-2">
               $2.50 - $7.50
             </p>
-            <p className="text-[var(--fg-4)] text-lg mb-4">{t("per class, depending on your situation.")}</p>
+            <p className="font-body text-[var(--fg-4)] text-lg mb-4">{t("per class, depending on your situation.")}</p>
             <p className="text-[var(--fg-1)] font-semibold mb-6">
               {t("That's only $5 to $15 per week.")}
             </p>
-            <p className="text-[var(--fg-5)] text-sm leading-relaxed">
+            <p className="font-body text-[var(--fg-5)] text-sm leading-relaxed">
               {t("We charge a small fee to ensure commitment — our program works best when students show up. If you can't commit right now, you can still practice your English with volunteers for free.")}
             </p>
           </div>
