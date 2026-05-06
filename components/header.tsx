@@ -73,7 +73,7 @@ export function Header() {
           <LanguageSwitcher />
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" asChild className="lg:size-default">
-              <Link href="https://app.findhaven.org">{t("Log In")}</Link>
+              <Link href="https://app.findhaven.org/login">{t("Log In")}</Link>
             </Button>
             <Button variant="primary" size="sm" asChild className="lg:size-default">
               <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
@@ -139,7 +139,7 @@ export function Header() {
             </div>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">
-                <Link href="https://app.findhaven.org">{t("Log In")}</Link>
+                <Link href="https://app.findhaven.org/login">{t("Log In")}</Link>
               </Button>
               <Button variant="primary" asChild className="w-full">
                 <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
