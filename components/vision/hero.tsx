@@ -6,7 +6,7 @@ export function VisionHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-12 md:py-24 bg-card">
+    <section className="pt-24 pb-12 md:py-24 bg-card">
       <div className="max-w-[760px] mx-auto px-4 md:px-6 text-center">
         <p className="text-haven-blue uppercase tracking-wider text-xs md:text-sm font-semibold mb-3 md:mb-4">
           {t("Our Vision")}
