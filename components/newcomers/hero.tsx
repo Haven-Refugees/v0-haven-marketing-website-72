@@ -14,7 +14,8 @@ export function NewcomersHero() {
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div className="space-y-6 lg:pl-16">
             <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight tracking-tight">
-              {t("Improve your English or French. Build your life in Canada.")}
+              <span className="block">{t("Improve your English or French.")}</span>
+              <span className="block">{t("Build your life in Canada.")}
             </h1>
             <p className="font-body font-normal text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
               {t("Haven connects you with volunteers and teachers who are here to help.")}
