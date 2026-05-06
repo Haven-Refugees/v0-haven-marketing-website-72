@@ -13,11 +13,11 @@ export function NewcomersHero() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div className="space-y-6 lg:pl-16">
-            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight tracking-tight">
-              {t("Speak with volunteers. Study with teachers.")}
+            <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-[38px] text-foreground leading-tight tracking-tight">
+              {t("Better English or French.")} {t("Build your life in Canada.")}
             </h1>
             <p className="font-body font-normal text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
-              {t("Haven is the best way to improve your language skills and connect with Canadians.")}
+              {t("Haven connects you with Canadian volunteers and teachers who are here to help.")}
             </p>
             <div className="pt-2">
               <Button size="lg" variant="secondary" asChild>
@@ -28,7 +28,7 @@ export function NewcomersHero() {
             </div>
           </div>
 
-          <div className="relative mt-8 w-[101%] -ml-8">
+          <div className="relative mt-8 w-[101%] ml-0">
             <div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)]">
               <Image
                 src="/images/newcomers-hero.png"
