@@ -53,10 +53,10 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-4">{t("For Newcomers")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="#how-haven-helps" className="font-body text-white/80 hover:text-white transition-colors">
+              <Link href={link("/newcomers")} className="font-body text-white/80 hover:text-white transition-colors">
                 {t("How We Help")}
               </Link>
-              <Link href="#how-haven-helps" className="font-body text-white/80 hover:text-white transition-colors">
+              <Link href={link("/hlp")} className="font-body text-white/80 hover:text-white transition-colors">
                 {t("Haven Language Program")}
               </Link>
               
@@ -67,7 +67,7 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-4">{t("For Canadians")}</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="#how-haven-helps" className="font-body text-white/80 hover:text-white transition-colors">
+              <Link href={link("/canadians")} className="font-body text-white/80 hover:text-white transition-colors">
                 {t("How You Can Help")}
               </Link>
             </nav>
