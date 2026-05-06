@@ -19,7 +19,7 @@ export default function OurVisionPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24">
+      <main className="min-h-screen">
         <VisionHero />
         <VisionProblem />
         <VisionApproach />
