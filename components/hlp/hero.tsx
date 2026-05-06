@@ -29,7 +29,7 @@ export function HLPHero() {
 
           {/* Content - Right */}
           <div className="order-1 md:order-2">
-            <h1 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-[var(--fg-1)] mb-6 leading-tight text-balance">
+            <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-[38px] text-[var(--fg-1)] mb-6 leading-tight tracking-tight text-balance">
               {t("A better way to learn English for newcomers fleeing conflict.")}
             </h1>
             <p className="font-body text-[var(--fg-4)] text-lg md:text-xl mb-8 leading-relaxed">
