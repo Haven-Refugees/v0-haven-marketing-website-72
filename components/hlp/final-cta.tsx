@@ -8,12 +8,12 @@ export function HLPFinalCta() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-[var(--bg-4)]">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-4">
+    <section className="py-12 md:py-20 bg-[var(--bg-4)]">
+      <div className="max-w-3xl mx-auto px-4 md:px-6 text-center">
+        <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--fg-1)] mb-3 md:mb-4">
           {t("Start improving your English today.")}
         </h2>
-        <p className="font-body text-[var(--fg-4)] text-lg mb-8">
+        <p className="font-body text-[var(--fg-4)] text-base md:text-lg mb-6 md:mb-8">
           {t("Sign up in less than 10 minutes.")}
         </p>
         <Button

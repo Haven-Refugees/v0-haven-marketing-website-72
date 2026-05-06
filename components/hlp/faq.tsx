@@ -35,23 +35,23 @@ export function HLPFaq() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-[var(--bg-1)]">
-      <div className="max-w-3xl mx-auto px-6">
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] text-center mb-12">
+    <section className="py-12 md:py-20 bg-[var(--bg-1)]">
+      <div className="max-w-3xl mx-auto px-4 md:px-6">
+        <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--fg-1)] text-center mb-8 md:mb-12">
           {t("Frequently asked questions")}
         </h2>
 
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-[var(--bg-2)] border border-[var(--border)] rounded-[16px] px-6 overflow-hidden data-[state=open]:shadow-[var(--shadow-card)] transition-shadow !border-b"
+              className="bg-[var(--bg-2)] border border-[var(--border)] rounded-xl md:rounded-[16px] px-4 md:px-6 overflow-hidden data-[state=open]:shadow-[var(--shadow-card)] transition-shadow !border-b"
             >
-              <AccordionTrigger className="text-left font-sans font-semibold text-[var(--fg-1)] hover:no-underline py-6">
+              <AccordionTrigger className="text-left font-sans font-semibold text-[var(--fg-1)] hover:no-underline py-4 md:py-6 text-sm md:text-base">
                 {t(faq.question)}
               </AccordionTrigger>
-              <AccordionContent className="font-body text-[var(--fg-4)] pb-6 leading-relaxed">
+              <AccordionContent className="font-body text-[var(--fg-4)] pb-4 md:pb-6 leading-relaxed text-sm md:text-base">
                 {t(faq.answer)}
               </AccordionContent>
             </AccordionItem>
