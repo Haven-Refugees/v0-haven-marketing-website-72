@@ -76,7 +76,7 @@ export function Header() {
               <Link href="https://app.findhaven.org">{t("Log In")}</Link>
             </Button>
             <Button variant="primary" size="sm" asChild className="lg:size-default">
-              <Link href="https://app.findhaven.org">{t("Join Haven")}</Link>
+              <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
             </Button>
           </div>
         </div>
@@ -142,7 +142,7 @@ export function Header() {
                 <Link href="https://app.findhaven.org">{t("Log In")}</Link>
               </Button>
               <Button variant="primary" asChild className="w-full">
-                <Link href="https://app.findhaven.org">{t("Join Haven")}</Link>
+                <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
               </Button>
             </div>
           </nav>
