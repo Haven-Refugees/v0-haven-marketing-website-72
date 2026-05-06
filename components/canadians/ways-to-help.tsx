@@ -28,37 +28,37 @@ export function WaysToHelp() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-card">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4 tracking-tight">
+    <section className="py-12 md:py-24 bg-card">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 md:mb-4 tracking-tight">
             {t("Helping Is Easier Than You Think")}
           </h2>
-          <p className="font-body text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto px-2">
             {t("You don't need any special skills or experience. Here are three ways Canadians help on Haven.")}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 max-w-5xl mx-auto items-start pt-2 md:pt-4">
           {ways.map((way, index) => (
             <div
               key={index}
-              className={`relative bg-card rounded-2xl p-6 border-2 shadow-[var(--shadow-flat)] ${
+              className={`relative bg-card rounded-xl md:rounded-2xl p-5 md:p-6 border-2 shadow-[var(--shadow-flat)] ${
                 way.popular ? "border-haven-coral" : "border-border"
               }`}
             >
               {way.popular && (
-                <span className="absolute -top-0 left-6 -translate-y-1/2 z-10 bg-[#FCEAE6] text-haven-coral text-xs font-semibold px-3 py-1 rounded-[100px]">
+                <span className="absolute -top-0 left-5 md:left-6 -translate-y-1/2 z-10 bg-[#FCEAE6] text-haven-coral text-xs font-semibold px-3 py-1 rounded-[100px]">
                   {t("Most Popular")}
                 </span>
               )}
               
               <div>
-                <div className="w-10 h-10 bg-haven-coral/10 rounded-xl flex items-center justify-center mb-4">
-                  <way.icon className="w-5 h-5 text-haven-coral" />
+                <div className="w-9 h-9 md:w-10 md:h-10 bg-haven-coral/10 rounded-lg md:rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                  <way.icon className="w-4 h-4 md:w-5 md:h-5 text-haven-coral" />
                 </div>
                 
-                <h3 className="font-sans font-bold text-lg text-foreground mb-3 tracking-tight">
+                <h3 className="font-sans font-bold text-base md:text-lg text-foreground mb-2 md:mb-3 tracking-tight">
                   {t(way.title)}
                 </h3>
                 <p className="font-body text-muted-foreground text-sm leading-relaxed">

@@ -29,30 +29,30 @@ export function Trust() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-card">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground tracking-tight">
+    <section className="py-12 md:py-24 bg-card">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-14">
+          <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground tracking-tight">
             {t("Connect With Confidence")}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 max-w-5xl mx-auto text-center">
           {trustItems.map((item, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="w-[84px] h-[84px] flex items-center justify-center mb-5">
+              <div className="w-[60px] h-[60px] md:w-[84px] md:h-[84px] flex items-center justify-center mb-4 md:mb-5">
                 <Image 
                   src={item.iconSrc} 
                   alt={item.title} 
                   width={84} 
                   height={84} 
-                  className="object-contain"
+                  className="object-contain w-full h-full"
                 />
               </div>
-              <h3 className="font-sans font-semibold text-base text-foreground mb-3 tracking-tight">
+              <h3 className="font-sans font-semibold text-sm md:text-base text-foreground mb-2 md:mb-3 tracking-tight">
                 {t(item.title)}
               </h3>
-              <p className="font-body text-muted-foreground text-sm leading-relaxed max-w-xs">
+              <p className="font-body text-muted-foreground text-xs md:text-sm leading-relaxed max-w-xs">
                 {t(item.description)}
                 {item.link && (
                   <>
