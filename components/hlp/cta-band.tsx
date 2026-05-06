@@ -26,7 +26,7 @@ export function HLPCtaBand() {
           <span className="text-center">
             {t("Haven is a registered Canadian charity · Check us out on")}{" "}
             <Link
-              href="https://canadahelps.org"
+              href="https://www.canadahelps.org/en/charities/haven-refugees/"
               className="underline hover:text-[var(--fg-1)]"
               target="_blank"
               rel="noopener noreferrer"
