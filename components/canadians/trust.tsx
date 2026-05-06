@@ -19,7 +19,7 @@ const trustItems = [
   },
   {
     iconSrc: "/images/icons/members.png",
-    title: "20,000+ members",
+    title: "20,000+ users",
     description: "Newcomers from 50+ countries, now in 500+ communities across Canada.",
     link: null,
   },
