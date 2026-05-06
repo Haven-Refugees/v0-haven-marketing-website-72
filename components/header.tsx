@@ -33,17 +33,17 @@ export function Header() {
         </Link>
 
         <div className="hidden md:flex items-center gap-4 lg:gap-6">
-          <Link href={link("/for-newcomers")} className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
+          <Link href={link("/for-newcomers")} className="font-body text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
             {t("For Newcomers")}
           </Link>
-          <Link href={link("/for-canadians")} className="text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
+          <Link href={link("/for-canadians")} className="font-body text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
             {t("For Canadians")}
           </Link>
           <NavigationMenu className="z-50">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger 
-                  className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-normal text-sm lg:text-base cursor-pointer whitespace-nowrap"
+                  className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-body font-normal text-sm lg:text-base cursor-pointer whitespace-nowrap"
                 >
                   <Link href={link("/our-vision")} className="hover:text-foreground">
                     {t("About Haven")}
@@ -95,14 +95,14 @@ export function Header() {
           <nav className="flex flex-col p-6 gap-4">
             <Link 
               href={link("/for-newcomers")} 
-              className="text-muted-foreground hover:text-foreground transition-colors py-2"
+              className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t("For Newcomers")}
             </Link>
             <Link 
               href={link("/for-canadians")} 
-              className="text-muted-foreground hover:text-foreground transition-colors py-2"
+              className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t("For Canadians")}
@@ -110,7 +110,7 @@ export function Header() {
             <div>
               <button
                 onClick={() => setAboutOpen(!aboutOpen)}
-                className="flex items-center justify-between w-full text-muted-foreground hover:text-foreground transition-colors py-2"
+                className="flex items-center justify-between w-full font-body text-muted-foreground hover:text-foreground transition-colors py-2"
               >
                 {t("About Haven")}
                 <ChevronDown className={`w-4 h-4 transition-transform ${aboutOpen ? "rotate-180" : ""}`} />
@@ -119,14 +119,14 @@ export function Header() {
                 <div className="pl-4 flex flex-col gap-2 mt-2">
                   <Link
                     href="https://v0-haven-marketing-website.vercel.app/en/our-vision"
-                    className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                    className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {t("Our Vision")}
                   </Link>
                   <Link
                     href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team"
-                    className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                    className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {t("Meet the Team")}
