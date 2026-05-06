@@ -21,29 +21,29 @@ export function NewcomersTestimonials() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-12 tracking-tight">
+    <section className="py-12 md:py-20 bg-background">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
+        <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-8 md:mb-12 tracking-tight">
           {t("What Newcomers Say")}
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-haven-purple/10 rounded-2xl overflow-hidden text-left shadow-[var(--shadow-flat)]"
+              className="bg-haven-purple/10 rounded-xl md:rounded-2xl overflow-hidden text-left shadow-[var(--shadow-flat)]"
             >
               {/* Photo placeholder */}
-              <div className="bg-haven-purple/20 h-48 flex items-center justify-center">
+              <div className="bg-haven-purple/20 h-36 md:h-48 flex items-center justify-center">
                 <span className="text-haven-purple/40 text-xs font-semibold uppercase tracking-wider">Photo</span>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <span className="inline-block bg-haven-purple/20 text-haven-purple text-xs font-semibold px-3 py-1 rounded-[100px] mb-4">
+              <div className="p-4 md:p-6">
+                <span className="inline-block bg-haven-purple/20 text-haven-purple text-xs font-semibold px-3 py-1 rounded-[100px] mb-3 md:mb-4">
                   {t(testimonial.tag)}
                 </span>
-                <p className="font-body text-muted-foreground text-sm leading-relaxed italic mb-4">
+                <p className="font-body text-muted-foreground text-sm leading-relaxed italic mb-3 md:mb-4">
                   &ldquo;{t(testimonial.quote)}&rdquo;
                 </p>
                 <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
