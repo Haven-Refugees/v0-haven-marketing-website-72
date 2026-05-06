@@ -9,12 +9,12 @@ export function HLPHero() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative pt-4 pb-10 bg-[#F0EDF9]">
+    <section className="relative pt-4 pb-10 bg-[var(--bg-4)]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - Left */}
           <div className="order-2 md:order-1">
-            <div className="rounded-2xl overflow-hidden aspect-[3.3/3]">
+            <div className="rounded-[16px] overflow-hidden aspect-[3.3/3]">
               <Image
                 src="/images/hlp-hero.jpg"
                 alt="Haven Language Program participant"
@@ -29,16 +29,16 @@ export function HLPHero() {
 
           {/* Content - Right */}
           <div className="order-1 md:order-2">
-            <h1 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-[#26215C] mb-6 leading-tight text-balance">
+            <h1 className="font-sans font-bold text-3xl md:text-4xl lg:text-5xl text-[var(--fg-1)] mb-6 leading-tight text-balance">
               {t("A better way to learn English for newcomers fleeing conflict.")}
             </h1>
-            <p className="text-[#26215C]/80 text-lg md:text-xl mb-8 leading-relaxed">
+            <p className="text-[var(--fg-4)] text-lg md:text-xl mb-8 leading-relaxed">
               {t("Classes with professional teachers. Conversations with Canadians. Built around your schedule.")}
             </p>
             <Button
               asChild
               size="lg"
-              className="bg-[#2457F1] hover:bg-[#2457F1]/90 text-white px-8 py-6 text-base"
+              className="bg-[var(--haven-blue)] hover:bg-[var(--haven-blue)]/90 text-white px-8 py-6 text-base rounded-[100px]"
             >
               <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
             </Button>

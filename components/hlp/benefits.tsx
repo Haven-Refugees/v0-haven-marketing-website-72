@@ -27,9 +27,9 @@ export function HLPBenefits() {
   ]
 
   return (
-    <section className="pt-12 pb-20 bg-white">
+    <section className="pt-12 pb-20 bg-[var(--bg-1)]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] text-center mb-16">
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] text-center mb-16">
           {t("We designed Haven to make learning as easy as possible.")}
         </h2>
 
@@ -37,12 +37,12 @@ export function HLPBenefits() {
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center">
               <div className="flex justify-center mb-4">
-                <benefit.icon className="w-10 h-10 text-[#AF75FF]" />
+                <benefit.icon className="w-10 h-10 text-[var(--haven-purple)]" />
               </div>
-              <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
+              <h3 className="font-sans font-bold text-xl text-[var(--fg-1)] mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-[#26215C]/70 leading-relaxed">
+              <p className="text-[var(--fg-4)] leading-relaxed">
                 {benefit.text}
               </p>
             </div>
@@ -53,7 +53,7 @@ export function HLPBenefits() {
           <Button
             asChild
             size="lg"
-            className="bg-[#2563EB] hover:bg-[#2563EB]/90 text-white px-8 py-6 text-base"
+            className="bg-[var(--haven-blue)] hover:bg-[var(--haven-blue)]/90 text-white px-8 py-6 text-base rounded-[100px]"
           >
             <Link href="https://app.findhaven.org">{t("Apply for the program")}</Link>
           </Button>

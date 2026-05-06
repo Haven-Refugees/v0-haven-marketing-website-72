@@ -25,15 +25,15 @@ export function HLPStructure() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[var(--bg-1)]">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <p className="text-[#AF75FF] text-sm font-semibold uppercase tracking-wider mb-4">
+        <p className="text-[var(--haven-purple)] text-sm font-semibold uppercase tracking-wider mb-4">
           {t("HAVEN LANGUAGE PROGRAM")}
         </p>
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[#26215C] mb-4">
+        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] mb-4">
           {t("The fastest way to improve your English in Canada.")}
         </h2>
-        <p className="text-[#26215C]/70 text-lg max-w-3xl mx-auto mb-16">
+        <p className="text-[var(--fg-4)] text-lg max-w-3xl mx-auto mb-16">
           {t("An online, 20-week program combining classes, conversation practice and homework. Classes range from CLB 1 to 8.")}
         </p>
 
@@ -41,15 +41,15 @@ export function HLPStructure() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white border border-[#E0D9F0] rounded-2xl p-8 text-center"
+              className="bg-[var(--bg-2)] border border-[var(--border)] rounded-[16px] p-8 text-center shadow-[var(--shadow-flat)]"
             >
-              <div className="w-16 h-16 bg-[#F0EDF9] rounded-full flex items-center justify-center mx-auto mb-6">
-                <feature.icon className="w-8 h-8 text-[#AF75FF]" />
+              <div className="w-16 h-16 bg-[var(--bg-4)] rounded-full flex items-center justify-center mx-auto mb-6">
+                <feature.icon className="w-8 h-8 text-[var(--haven-purple)]" />
               </div>
-              <h3 className="font-sans font-bold text-xl text-[#26215C] mb-3">
+              <h3 className="font-sans font-bold text-xl text-[var(--fg-1)] mb-3">
                 {t(feature.title)}
               </h3>
-              <p className="text-[#26215C]/70 leading-relaxed">
+              <p className="text-[var(--fg-4)] leading-relaxed">
                 {t(feature.description)}
               </p>
             </div>
