@@ -28,7 +28,7 @@ export function NewcomersHero() {
             </div>
           </div>
 
-          <div className="relative mt-8 w-[101%] -ml-8">
+          <div className="relative mt-8 w-[101%] ml-4">
             <div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)]">
               <Image
                 src="/images/newcomers-hero.png"
