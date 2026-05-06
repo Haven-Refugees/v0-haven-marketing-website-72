@@ -24,24 +24,24 @@ export function HowItWorks() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-haven-coral/10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <h2 className="font-sans font-bold text-3xl md:text-4xl text-foreground mb-4 tracking-tight">
+    <section className="py-12 md:py-24 bg-haven-coral/10">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-14">
+          <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 md:mb-4 tracking-tight">
             {t("Three Steps to Your First Conversation")}
           </h2>
-          <p className="font-body text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             {t("From sign-up to your first match in under 10 minutes.")}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 max-w-4xl mx-auto text-center">
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col items-center">
-              <div className="w-12 h-12 bg-haven-coral rounded-full flex items-center justify-center mb-5">
-                <span className="text-white font-bold text-lg">{step.number}</span>
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-haven-coral rounded-full flex items-center justify-center mb-4 md:mb-5">
+                <span className="text-white font-bold text-base md:text-lg">{step.number}</span>
               </div>
-              <h3 className="font-sans font-bold text-lg text-foreground mb-3 tracking-tight">
+              <h3 className="font-sans font-bold text-base md:text-lg text-foreground mb-2 md:mb-3 tracking-tight">
                 {t(step.title)}
               </h3>
               <p className="font-body text-muted-foreground text-sm leading-relaxed">

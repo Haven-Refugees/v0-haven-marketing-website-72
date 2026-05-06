@@ -66,32 +66,32 @@ export function FaqSection() {
   }
 
   return (
-    <section id="faq" className="pt-12 pb-24">
-      <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4 tracking-tight">
+    <section id="faq" className="pt-12 pb-16 md:pb-24">
+      <div className="max-w-3xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 tracking-tight">
             {t("Frequently Asked Questions")}
           </h2>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-card border border-border rounded-2xl px-6 overflow-hidden data-[state=open]:shadow-[var(--shadow-card)] transition-shadow !border-b"
+              className="bg-card border border-border rounded-xl md:rounded-2xl px-4 md:px-6 overflow-hidden data-[state=open]:shadow-[var(--shadow-card)] transition-shadow !border-b"
             >
-              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-6">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-4 md:py-6 text-sm md:text-base">
                 {t(faq.question)}
               </AccordionTrigger>
-              <AccordionContent className="font-body text-muted-foreground pb-6 leading-relaxed">
+              <AccordionContent className="font-body text-muted-foreground pb-4 md:pb-6 leading-relaxed text-sm md:text-base">
                 {renderAnswer(faq.answer)}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 md:mt-12">
           <Button variant="outline" size="lg" asChild>
             <Link href="https://findhaven.gorgias.help/en-US">{t("See Our Full FAQ")}</Link>
           </Button>

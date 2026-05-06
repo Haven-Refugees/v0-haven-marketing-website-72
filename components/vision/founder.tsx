@@ -8,9 +8,9 @@ export function VisionFounder() {
 
   return (
     <section className="bg-card">
-      <div className="grid md:grid-cols-2 min-h-[520px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[520px]">
         {/* Image Column */}
-        <div className="relative h-[400px] md:h-auto">
+        <div className="relative h-[250px] sm:h-[300px] md:h-auto">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Victor%20with%20Refugee-rkCImXc8fjnSAFlbtwYPVDjZmZlwCT.jpg"
             alt="Victor Lal helping a newcomer at a Haven outreach event"
@@ -20,12 +20,12 @@ export function VisionFounder() {
         </div>
         
         {/* Content Column */}
-        <div className="flex items-center p-8 md:p-14">
+        <div className="flex items-center p-5 sm:p-6 md:p-14">
           <div className="max-w-lg">
-            <h2 className="font-sans font-bold text-[28px] leading-tight text-foreground mb-6 tracking-tight">
+            <h2 className="font-sans font-bold text-xl sm:text-2xl md:text-[28px] leading-tight text-foreground mb-4 md:mb-6 tracking-tight">
               {t("Haven was built out of necessity.")}
             </h2>
-            <p className="font-body text-[15px] leading-[1.8] text-foreground/80 mb-6">
+            <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 mb-4 md:mb-6">
               {t("Haven's founder Victor started helping refugees in 2016 with the Syrian crisis — with a")}{" "}
               <a href="https://www.cbc.ca/news/canada/toronto/bike-ride-1.3183839" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
                 {t("2,600 km bike ride from Toronto to St. John's")}
@@ -36,14 +36,14 @@ export function VisionFounder() {
               </a>{" "}
               {t("to sponsor Syrian families.")}
             </p>
-            <p className="font-body text-[15px] leading-[1.8] text-foreground/80 mb-6">
+            <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 mb-4 md:mb-6">
               {t("When Russia launched its full-scale invasion of Ukraine in February 2022, Victor was")}{" "}
               <a href="https://www.cbc.ca/news/canada/toronto/canadian-man-in-lviv-describes-chaos-in-ukraine-1.6367269" target="_blank" rel="noopener noreferrer" className="text-haven-blue underline hover:no-underline">
                 {t("on the ground on day four")}
               </a>
               {t(". As Ukrainians began arriving in Canada, he started connecting them with Canadians who could help — in the big ways and the small ones. He set up a Google Sheet to do it.")}
             </p>
-            <p className="font-body text-[15px] leading-[1.8] text-foreground/80 font-medium">
+            <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 font-medium">
               {t("That Google Sheet became Haven. Since 2022, our team has been helping refugees from across the world become independent in Canada — and making it easier for Canadians to help.")}
             </p>
           </div>

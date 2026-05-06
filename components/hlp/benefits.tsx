@@ -27,29 +27,29 @@ export function HLPBenefits() {
   ]
 
   return (
-    <section className="pt-12 pb-20 bg-[var(--bg-1)]">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-sans font-bold text-3xl md:text-4xl text-[var(--fg-1)] text-center mb-16">
+    <section className="pt-10 md:pt-12 pb-12 md:pb-20 bg-[var(--bg-1)]">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-[var(--fg-1)] text-center mb-10 md:mb-16">
           {t("We designed Haven to make learning as easy as possible.")}
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 max-w-5xl mx-auto">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center">
-              <div className="flex justify-center mb-4">
-                <benefit.icon className="w-10 h-10 text-[var(--haven-purple)]" />
+              <div className="flex justify-center mb-3 md:mb-4">
+                <benefit.icon className="w-8 h-8 md:w-10 md:h-10 text-[var(--haven-purple)]" />
               </div>
-              <h3 className="font-sans font-bold text-xl text-[var(--fg-1)] mb-3">
+              <h3 className="font-sans font-bold text-lg md:text-xl text-[var(--fg-1)] mb-2 md:mb-3">
                 {benefit.title}
               </h3>
-              <p className="font-body text-[var(--fg-4)] leading-relaxed">
+              <p className="font-body text-[var(--fg-4)] leading-relaxed text-sm md:text-base">
                 {benefit.text}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-10 md:mt-12">
           <Button
             asChild
             size="lg"

@@ -8,15 +8,15 @@ export function VisionCta() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-24 bg-card">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="font-sans font-bold text-[32px] text-foreground mb-4 tracking-tight">
+    <section className="py-12 md:py-24 bg-card">
+      <div className="max-w-3xl mx-auto px-4 md:px-6 text-center">
+        <h2 className="font-sans font-bold text-2xl sm:text-[28px] md:text-[32px] text-foreground mb-3 md:mb-4 tracking-tight">
           {t("Be Part of Haven")}
         </h2>
-        <p className="font-body text-muted-foreground text-base mb-8">
+        <p className="font-body text-muted-foreground text-sm md:text-base mb-6 md:mb-8">
           {t("Whether you're a newcomer looking for support or a Canadian ready to help, Haven is for you.")}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
           <Button
             asChild
             size="lg"

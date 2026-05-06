@@ -62,26 +62,26 @@ export function HowItWorks() {
   }
 
   return (
-    <section id="how-it-works" className="pt-16 pb-24 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-10">
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4 tracking-tight">
+    <section id="how-it-works" className="pt-12 md:pt-16 pb-16 md:pb-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-10">
+          <h2 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4 tracking-tight">
             {t("How It Works")}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 max-w-5xl mx-auto">
           {steps.map((step, index) => {
             const Illustration = illustrations[step.illustration]
             return (
               <div key={index} className="text-center">
-                <div className="flex items-center justify-center mb-6 h-[100px]">
+                <div className="flex items-center justify-center mb-4 md:mb-6 h-[80px] md:h-[100px]">
                   {Illustration && <Illustration />}
                 </div>
-                <h3 className="font-sans font-bold text-2xl text-foreground mb-3 tracking-tight">
+                <h3 className="font-sans font-bold text-xl md:text-2xl text-foreground mb-2 md:mb-3 tracking-tight">
                   {t(step.title)}
                 </h3>
-                <p className="font-body text-muted-foreground leading-relaxed">
+                <p className="font-body text-muted-foreground leading-relaxed text-sm md:text-base">
                   {t(step.description)}
                 </p>
               </div>
