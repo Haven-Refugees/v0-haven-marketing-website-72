@@ -32,7 +32,7 @@ export function CanadiansHero() {
             </div>
           </div>
 
-          <div className="relative mt-8 w-[101%] -ml-8">
+          <div className="relative mt-8 w-[101%] ml-4">
             <div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)]">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1%20%286%29-YiOe9xHdauvK3n9GFiEV6cKiQ6B3Cl.png"
