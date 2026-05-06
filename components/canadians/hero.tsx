@@ -13,7 +13,7 @@ export function CanadiansHero() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div className="space-y-6 lg:pl-16">
-            <h1 className="font-sans font-extrabold text-4xl md:text-5xl lg:text-[44px] text-foreground leading-tight tracking-tight">
+            <h1 className="font-sans font-extrabold text-3xl md:text-4xl lg:text-[36px] text-foreground leading-tight tracking-tight">
               {t("Help a refugee in Canada. It takes 30 minutes.")}
             </h1>
             <p className="font-body font-normal text-xl md:text-[22px] text-muted-foreground leading-relaxed max-w-lg">
