@@ -28,8 +28,8 @@ export function Testimonials() {
 
   return (
     <section id="testimonials" className="pt-6 pb-12 bg-background">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8">
+      <div className="max-w-5xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
@@ -42,7 +42,7 @@ export function Testimonials() {
                   : "bg-haven-coral/10"
               }`}>
                 {testimonial.image ? (
-                  <div className="w-44 h-44 rounded-2xl overflow-hidden">
+                  <div className="w-32 h-32 md:w-44 md:h-44 rounded-2xl overflow-hidden">
                     <Image
                       src={testimonial.image}
                       alt={`${testimonial.name}'s photo`}
