@@ -24,7 +24,7 @@ export function VisionResults() {
     <section className="py-12 md:py-24 bg-haven-coral/10">
       <div className="max-w-[760px] mx-auto px-4 md:px-6">
         <h2 className="font-sans font-bold text-xl sm:text-2xl md:text-[28px] leading-tight text-foreground mb-4 md:mb-6 tracking-tight">
-          {t("It works.")}
+          {t("Haven's model works.")}
         </h2>
         <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 mb-6 md:mb-10">
           {t("Haven students improve their language skills faster and at a fraction of the cost of traditional programs. And Haven makes it easier for Canadians to help than any system before it — just a conversation, and a connection that can last a lifetime.")}
