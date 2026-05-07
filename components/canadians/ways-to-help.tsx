@@ -32,7 +32,7 @@ export function WaysToHelp() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 md:mb-4 tracking-tight">
-            {t("Helping Is Easier Than You Think")}
+            {t("Helping is easier than you think")}
           </h2>
           <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto px-2">
             {t("You don't need any special skills or experience. Here are three ways Canadians help on Haven.")}
