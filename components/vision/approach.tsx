@@ -21,7 +21,7 @@ export function VisionApproach() {
           </div>
           <div className="md:flex-1">
             <h2 className="font-sans font-bold text-xl sm:text-2xl md:text-[28px] leading-tight text-foreground mb-4 md:mb-6 tracking-tight">
-              {t("Refugees don't just need charity. They need opportunity, language, and community.")}
+              {t("Refugees don't just need charity. They need opportunity.")}
             </h2>
             <p className="font-body text-sm md:text-[15px] leading-[1.8] text-foreground/80 mb-4 md:mb-6">
               {t("Haven bridges two unmet needs at once: refugees who want to become independent Canadians, and Canadians who want to do something meaningful about global crises but don't know where to start. By focusing on language as the path to independence and direct human connection as the path to belonging, Haven consistently outperforms larger, better-funded programs.")}
