@@ -40,7 +40,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5 text-white" />
               </Link>
               <Link 
-                href="https://facebook.com/havenrefugees" 
+                href="https://www.facebook.com/people/Haven-Refugees/100091991002682/" 
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Facebook"
               >
