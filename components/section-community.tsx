@@ -71,7 +71,7 @@ export function SectionCommunity() {
               <IdVerificationIcon />
             </div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 tracking-tight">
-              {t("Connect with confidence")}
+              {t("Connect With Confidence")}
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed text-sm md:text-base">
               {t("We use ID verification so you always know who you're connecting with.")}
