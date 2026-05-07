@@ -58,7 +58,7 @@ export function SectionCommunity() {
               <StarburstIcon />
             </div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 tracking-tight">
-              {t("20,000+ Users in Canada")}
+              {t("20,000+ users in Canada")}
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed text-sm md:text-base">
               {t("Newcomers from 50+ countries, now in 500+ communities across Canada.")}
@@ -71,7 +71,7 @@ export function SectionCommunity() {
               <IdVerificationIcon />
             </div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 tracking-tight">
-              {t("Connect With Confidence")}
+              {t("Connect with confidence")}
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed text-sm md:text-base">
               {t("We use ID verification so you always know who you're connecting with.")}
@@ -84,7 +84,7 @@ export function SectionCommunity() {
               <CharityBadgeIcon />
             </div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 tracking-tight">
-              {t("Registered Canadian Charity")}
+              {t("Registered Canadian charity")}
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed text-sm md:text-base">
               {t("Haven is registered with the CRA. Check us out on")}{" "}
