@@ -15,7 +15,7 @@ export function UserAgreementContent() {
         <div className="prose prose-lg max-w-none text-foreground/80">
           <p className="text-lg font-medium mb-4">{t("English Version")}</p>
           <p className="mb-8">
-            <a href="#french-version" className="text-primary hover:underline">
+            <a href="/user-agreement-fr" className="text-primary hover:underline">
               {t("Click here to see the French Version")}
             </a>
           </p>
