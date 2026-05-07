@@ -28,7 +28,7 @@ export function Supporters() {
     <section className="py-12 md:py-20 bg-card">
       <div className="max-w-[900px] mx-auto px-4 md:px-6 text-center">
         <h2 className="font-sans font-bold text-2xl sm:text-[28px] md:text-[32px] text-foreground mb-3 md:mb-4 tracking-tight">
-          {t("Our supporters")}
+          {t("Our Supporters")}
         </h2>
         <p className="font-body text-sm md:text-[17px] text-muted-foreground max-w-[600px] mx-auto mb-8 md:mb-12">
           {t("Haven is funded by Canadian foundations who believe in building a better system for refugees.")}
