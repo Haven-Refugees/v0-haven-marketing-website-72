@@ -47,14 +47,19 @@ export function JoinTeam() {
                   <span>{position.type}</span>
                 </div>
               </div>
-              <Link
-                href={position.applyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-haven-purple hover:bg-haven-purple/90 text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-[100px] transition-colors whitespace-nowrap"
-              >
-                {t("Apply on LinkedIn")}
-              </Link>
+              <div className="flex flex-col items-center md:items-end gap-2">
+                <Link
+                  href={position.applyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-haven-purple hover:bg-haven-purple/90 text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-[100px] transition-colors whitespace-nowrap"
+                >
+                  {t("Apply on LinkedIn")}
+                </Link>
+                <p className="font-body text-xs text-muted-foreground text-center md:text-right max-w-[200px]">
+                  {t("Ignore the \"No longer accepting applications\" flag on LinkedIn")}
+                </p>
+              </div>
             </div>
           ))}
         </div>
