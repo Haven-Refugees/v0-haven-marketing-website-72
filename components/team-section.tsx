@@ -26,7 +26,7 @@ export function TeamSection() {
                 <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision">{t("Our Vision")}</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team">{t("Meet Our Team")}</Link>
+                <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team">{t("Meet our team")}</Link>
               </Button>
             </div>
           </div>
