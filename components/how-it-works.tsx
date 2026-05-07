@@ -66,7 +66,7 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4 tracking-tight">
-            {t("How It Works")}
+            {t("How it works")}
           </h2>
         </div>
 
