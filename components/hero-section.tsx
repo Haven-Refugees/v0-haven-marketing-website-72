@@ -11,7 +11,7 @@ export function HeroSection() {
     <section className="relative flex items-center justify-center min-h-[85vh] md:min-h-[95vh] pt-24 md:pt-32 pb-12 md:pb-20 overflow-hidden bg-white">
       
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 grid lg:grid-cols-[1fr_1fr] gap-6 md:gap-4 items-stretch">
+      <div className="max-w-[1600px] mx-auto px-4 md:px-6 py-2 grid lg:grid-cols-[1fr_1.3fr] gap-6 md:gap-4 items-stretch">
         <div className="space-y-4 flex flex-col justify-center lg:pl-12 text-center lg:text-left order-2 lg:order-1">
           <h1 className="font-sans font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-balance tracking-tight">
             {t("We help refugees become independent in Canada faster.")}
@@ -39,7 +39,7 @@ export function HeroSection() {
           <img 
             src="/images/hero-image.svg" 
             alt={t("Stephanie from Calgary and Olena from Ukraine - a Haven connection")} 
-            className="w-full max-w-[480px] sm:max-w-[580px] md:max-w-[700px] lg:max-w-[1000px] h-auto object-contain"
+            className="w-full max-w-none lg:max-w-[1100px] h-auto object-contain"
           />
         </div>
       </div>
