@@ -47,7 +47,7 @@ export function JoinTeam() {
                   <span>{position.type}</span>
                 </div>
               </div>
-              <div className="flex flex-col items-center md:items-end gap-2">
+              <div className="flex flex-col items-center gap-2">
                 <Link
                   href={position.applyUrl}
                   target="_blank"
@@ -56,7 +56,7 @@ export function JoinTeam() {
                 >
                   {t("Apply on LinkedIn")}
                 </Link>
-                <p className="font-body text-xs text-muted-foreground text-center md:text-right max-w-[200px]">
+                <p className="font-body text-xs text-muted-foreground text-center max-w-[200px]">
                   {t("Ignore the \"No longer accepting applications\" flag on LinkedIn")}
                 </p>
               </div>
