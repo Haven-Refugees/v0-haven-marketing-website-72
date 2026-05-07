@@ -37,7 +37,7 @@ export function HeroSection() {
 
         <div className="relative flex items-center justify-center lg:justify-end h-full order-1 lg:order-2">
           <img 
-            src="/images/hero-stephanie-olena.png" 
+            src="/images/hero-image.svg" 
             alt={t("Stephanie from Calgary and Olena from Ukraine - a Haven connection")} 
             className="w-full max-w-[340px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[800px] h-auto object-contain"
           />
