@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 
 const steps = [
@@ -24,7 +26,7 @@ export function HowItWorks() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-12 md:py-24 bg-haven-coral/10">
+    <section className="pt-12 pb-8 md:pt-24 md:pb-14 bg-haven-coral/10">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-14">
           <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 md:mb-4 tracking-tight">
@@ -49,6 +51,18 @@ export function HowItWorks() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 md:mt-14 flex justify-center">
+          <Button 
+            size="lg" 
+            variant="coral"
+            asChild
+          >
+            <Link href="https://app.findhaven.org/signup">
+              {t("Get Started")}
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
