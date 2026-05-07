@@ -11,10 +11,7 @@ export default function UserAgreementFrPage() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1 container mx-auto px-4 py-12 md:py-16">
-        <h1 className="text-3xl md:text-4xl font-heading font-bold mb-8">
-          Contrat de licence d&apos;utilisation - Haven Refugees
-        </h1>
+      <main className="flex-1">
         <UserAgreementContentFr />
       </main>
       <Footer />
