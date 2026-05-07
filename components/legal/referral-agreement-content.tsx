@@ -1,9 +1,9 @@
 "use client"
 
-import { useTranslations } from "next-intl"
+import { useTranslation } from "@/lib/i18n"
 
 export function ReferralAgreementContent() {
-  const t = useTranslations()
+  const { t } = useTranslation()
 
   return (
     <div className="bg-background py-16 md:py-24">
