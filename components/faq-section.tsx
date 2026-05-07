@@ -93,7 +93,7 @@ export function FaqSection() {
 
         <div className="text-center mt-8 md:mt-12">
           <Button variant="outline" size="lg" asChild>
-            <Link href="https://findhaven.gorgias.help/en-US">{t("See Our Full FAQ")}</Link>
+            <Link href="https://findhaven.gorgias.help/en-US">{t("See our full FAQ")}</Link>
           </Button>
         </div>
       </div>

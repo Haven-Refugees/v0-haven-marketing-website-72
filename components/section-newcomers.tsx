@@ -33,7 +33,7 @@ export function SectionNewcomers() {
                 href="https://v0-haven-marketing-website.vercel.app/en/for-newcomers" 
                 className="font-body text-muted-foreground hover:text-foreground underline underline-offset-4"
               >
-                {t("Learn More")}
+                {t("Learn more")}
               </Link>
             </div>
           </div>

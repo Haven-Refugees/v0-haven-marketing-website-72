@@ -18,7 +18,7 @@ export function HeroSection() {
           </h1>
           
           <p className="font-body font-normal text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
-            {t("Newcomers fleeing conflict use Haven to improve their language skills and connect with Canadians.")}
+            {t("Newcomers fleeing conflict use Haven to improve their language and connect with Canadians.")}
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
