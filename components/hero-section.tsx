@@ -39,7 +39,7 @@ export function HeroSection() {
           <img 
             src="/images/hero-image.svg" 
             alt={t("Stephanie from Calgary and Olena from Ukraine - a Haven connection")} 
-            className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[900px] h-auto object-contain"
+            className="w-full max-w-[480px] sm:max-w-[580px] md:max-w-[700px] lg:max-w-[1000px] h-auto object-contain"
           />
         </div>
       </div>
