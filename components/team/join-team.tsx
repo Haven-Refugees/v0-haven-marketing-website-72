@@ -52,7 +52,7 @@ export function JoinTeam() {
                   href={position.applyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-haven-purple hover:bg-haven-purple/90 text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-[100px] transition-colors whitespace-nowrap"
+                  className="inline-flex items-center justify-center bg-haven-blue hover:bg-haven-blue/90 text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-[100px] transition-colors whitespace-nowrap"
                 >
                   {t("Apply on LinkedIn")}
                 </Link>
