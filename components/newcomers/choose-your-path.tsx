@@ -10,7 +10,7 @@ export function ChooseYourPath() {
     <section className="py-12 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
         <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
-          {t("Choose the Help You Need")}
+          {t("Choose the help you need")}
         </h2>
         <p className="font-body font-normal text-muted-foreground text-base md:text-lg mb-8 md:mb-12 px-2">
           {t("Join for conversations only, or add classes with professional teachers if language is your main focus.")}
@@ -26,7 +26,7 @@ export function ChooseYourPath() {
               {t("Haven Language Program")}
             </p>
             <h3 className="font-sans font-bold text-xl md:text-2xl text-white mb-2 md:mb-3 tracking-tight">
-              {t("Conversations and Classes")}
+              {t("Conversations and classes")}
             </h3>
             <p className="font-body text-white/70 text-sm leading-relaxed mb-4 md:mb-5">
               {t("Online classes with professional teachers, plus weekly conversations with Canadian volunteers. The perfect program if you need to improve your English.")}
@@ -53,7 +53,7 @@ export function ChooseYourPath() {
               {t("Haven Connect")}
             </p>
             <h3 className="font-sans font-bold text-xl md:text-2xl text-foreground mb-2 md:mb-3 tracking-tight">
-              {t("Just Conversations")}
+              {t("Just conversations")}
             </h3>
             <p className="font-body text-muted-foreground text-sm leading-relaxed mb-4 md:mb-5">
               {t("Meet Canadian volunteers. Practice your English or French, find local and professional connections, and get help rebuilding your life in Canada.")}
