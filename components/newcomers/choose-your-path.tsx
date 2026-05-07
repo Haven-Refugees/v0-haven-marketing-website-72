@@ -10,7 +10,7 @@ export function ChooseYourPath() {
     <section className="py-12 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
         <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
-          {t("Choose the help you need")}
+          {t("Choose the Help You Need")}
         </h2>
         <p className="font-body font-normal text-muted-foreground text-base md:text-lg mb-8 md:mb-12 px-2">
           {t("Join for conversations only, or add classes with professional teachers if language is your main focus.")}
@@ -26,21 +26,21 @@ export function ChooseYourPath() {
               {t("Haven Language Program")}
             </p>
             <h3 className="font-sans font-bold text-xl md:text-2xl text-white mb-2 md:mb-3 tracking-tight">
-              {t("Conversations and classes")}
+              {t("Conversations and Classes")}
             </h3>
             <p className="font-body text-white/70 text-sm leading-relaxed mb-4 md:mb-5">
               {t("Online classes with professional teachers, plus weekly conversations with Canadian volunteers. The perfect program if you need to improve your English.")}
             </p>
             <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
               <span className="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-[100px]">
-                {t("From $2.50 a Class")}
+                {t("From $2.50 a class")}
               </span>
               <span className="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-[100px]">
-                {t("6+ Hours a Week")}
+                {t("6+ hours a week")}
               </span>
             </div>
             <span className="block text-white text-sm font-semibold">
-              {t("Learn More")} &darr;
+              {t("Learn more")} &darr;
             </span>
           </Link>
 
@@ -53,7 +53,7 @@ export function ChooseYourPath() {
               {t("Haven Connect")}
             </p>
             <h3 className="font-sans font-bold text-xl md:text-2xl text-foreground mb-2 md:mb-3 tracking-tight">
-              {t("Just conversations")}
+              {t("Just Conversations")}
             </h3>
             <p className="font-body text-muted-foreground text-sm leading-relaxed mb-4 md:mb-5">
               {t("Meet Canadian volunteers. Practice your English or French, find local and professional connections, and get help rebuilding your life in Canada.")}
@@ -63,11 +63,11 @@ export function ChooseYourPath() {
                 {t("Free")}
               </span>
               <span className="inline-block bg-haven-purple/20 text-haven-purple text-xs font-semibold px-3 py-1 rounded-[100px]">
-                {t("30 Minutes a Week")}
+                {t("30 minutes a week")}
               </span>
             </div>
             <span className="block text-haven-purple text-sm font-semibold">
-              {t("Learn More")} &darr;
+              {t("Learn more")} &darr;
             </span>
           </Link>
         </div>

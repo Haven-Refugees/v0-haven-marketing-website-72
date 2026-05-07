@@ -39,7 +39,7 @@ export function SectionCanadians() {
                 <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
               </Button>
               <Link href="https://v0-haven-marketing-website.vercel.app/en/for-canadians" className="font-body text-muted-foreground hover:text-foreground underline underline-offset-4">
-                {t("Learn More")}
+                {t("Learn more")}
               </Link>
             </div>
           </div>

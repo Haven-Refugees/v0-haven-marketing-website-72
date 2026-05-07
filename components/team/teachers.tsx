@@ -19,7 +19,7 @@ export function Teachers() {
     <section className="py-12 md:py-20 bg-haven-purple/10">
       <div className="max-w-[900px] mx-auto px-4 md:px-6">
         <h2 className="font-sans font-bold text-2xl sm:text-[28px] md:text-[32px] text-foreground mb-3 md:mb-4 text-center tracking-tight">
-          {t("Our teachers")}
+          {t("Our Teachers")}
         </h2>
         <p className="font-body text-sm md:text-[17px] text-muted-foreground max-w-[700px] mx-auto mb-8 md:mb-12 text-center">
           {t("Haven's language program is supported by 30+ professional ESL teachers across Canada. Many are refugees themselves — a special advantage for lower-level students who benefit from learning with a teacher from their community who speaks their language.")}

@@ -30,7 +30,7 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-14">
           <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 md:mb-4 tracking-tight">
-            {t("Three steps to your first conversation")}
+            {t("Three Steps to Your First Conversation")}
           </h2>
           <p className="font-body text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl mx-auto">
             {t("From sign-up to your first match in under 10 minutes.")}

@@ -116,7 +116,7 @@ export function HavenLanguageProgram() {
               <Link href="https://app.findhaven.org/signup">{t("Join the Program")}</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href={link("/hlp")}>{t("Learn More")}</Link>
+              <Link href={link("/hlp")}>{t("Learn more")}</Link>
             </Button>
           </div>
         </div>
