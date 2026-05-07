@@ -1,9 +1,9 @@
 "use client"
 
-import { useTranslations } from "next-intl"
+import { useTranslation } from "@/lib/i18n"
 
 export function PrivacyPolicyContent() {
-  const t = useTranslations()
+  const { t } = useTranslation()
 
   return (
     <article className="prose prose-lg max-w-none">
