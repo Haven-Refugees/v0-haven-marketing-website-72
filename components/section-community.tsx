@@ -43,7 +43,7 @@ export function SectionCommunity() {
   const { t } = useTranslation()
 
   return (
-    <section className="pt-4 pb-12 md:pb-20 bg-background">
+    <section className="pt-4 pb-12 md:pb-20 bg-muted">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2 max-w-3xl mx-auto leading-tight tracking-tight px-2">
