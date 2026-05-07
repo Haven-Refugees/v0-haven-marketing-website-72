@@ -86,7 +86,7 @@ export function Footer() {
               <Link href={link("/user-agreement")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("User Agreement")}
               </Link>
-              <Link href="#" className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
+              <Link href={link("/privacy-policy")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("Privacy Policy")}
               </Link>
               <Link href="#" className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
