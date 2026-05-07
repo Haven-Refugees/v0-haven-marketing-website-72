@@ -1,9 +1,9 @@
 "use client"
 
-import { useTranslations } from "next-intl"
+import { useTranslation } from "@/lib/i18n"
 
 export function RefundPolicyContent() {
-  const t = useTranslations()
+  const { t } = useTranslation()
 
   return (
     <section className="py-16 md:py-24 bg-white">
