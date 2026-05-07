@@ -20,7 +20,7 @@ export function JoinTeam() {
     <section className="py-12 md:py-20 bg-haven-purple/10">
       <div className="max-w-[900px] mx-auto px-4 md:px-6">
         <h2 className="font-sans font-bold text-2xl sm:text-[28px] md:text-[32px] text-foreground mb-3 md:mb-4 text-center tracking-tight">
-          {t("Join Our Team")}
+          {t("Join our team")}
         </h2>
         <p className="font-body text-sm md:text-[17px] text-muted-foreground max-w-[600px] mx-auto mb-6 md:mb-10 text-center">
           {t("We're a small team doing meaningful work. If you believe in what we're building, we'd love to hear from you.")}
