@@ -35,7 +35,7 @@ export function HavenConnect() {
               {t("Meet Canadians who can help you start life in Canada.")}
             </h2>
             <p className="font-body font-normal text-muted-foreground text-base md:text-lg leading-relaxed mb-3 md:mb-4">
-              {t("These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.")}
+              {t("These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you find work in Canada.")}
             </p>
             <p className="font-body font-normal text-muted-foreground text-base md:text-lg leading-relaxed mb-5 md:mb-6">
               {t("It's free and starts with a 30 minute video call.")}
