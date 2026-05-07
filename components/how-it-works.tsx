@@ -4,17 +4,17 @@ import { useTranslation } from "@/lib/i18n"
 
 const steps = [
   {
-    title: "Create your profile",
+    title: "Create your Profile",
     description: "Tell us who you are and how you want to give or receive help. Takes less than 10 minutes.",
     illustration: "profile",
   },
   {
-    title: "Find your match",
+    title: "Find your Match",
     description: "Browse verified profiles and reach out. Your first conversation is just 30 minutes on a video call.",
     illustration: "match",
   },
   {
-    title: "Continue to meet",
+    title: "Continue to Meet",
     description: "Some matches meet once. Others meet for years. Match and meet for as long as you want.",
     illustration: "helping",
   },
