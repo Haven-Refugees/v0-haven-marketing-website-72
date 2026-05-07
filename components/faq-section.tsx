@@ -70,7 +70,7 @@ export function FaqSection() {
       <div className="max-w-3xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 tracking-tight">
-            {t("Frequently Asked Questions")}
+            {t("Frequently asked questions")}
           </h2>
         </div>
 

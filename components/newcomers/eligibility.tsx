@@ -16,7 +16,7 @@ export function Eligibility() {
     <section className="py-12 md:py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
         <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
-          {t("Are You Eligible?")}
+          {t("Are you eligible?")}
         </h2>
         <p className="font-body font-normal text-muted-foreground text-base md:text-lg mb-8 md:mb-12">
           {t("Haven is for newcomers fleeing conflict who are living in Canada.")}

@@ -33,7 +33,7 @@ export function Trust() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-14">
           <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground tracking-tight">
-            {t("Connect With Confidence")}
+            {t("Connect with confidence")}
           </h2>
         </div>
 
