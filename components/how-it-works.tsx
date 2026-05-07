@@ -62,7 +62,7 @@ export function HowItWorks() {
   }
 
   return (
-    <section id="how-it-works" className="pt-12 md:pt-16 pb-16 md:pb-24 bg-background">
+    <section id="how-it-works" className="pt-12 md:pt-16 pb-12 md:pb-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4 tracking-tight">
