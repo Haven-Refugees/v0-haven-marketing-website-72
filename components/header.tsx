@@ -45,14 +45,14 @@ export function Header() {
                 <NavigationMenuTrigger 
                   className="h-auto p-0 bg-transparent text-muted-foreground hover:text-foreground hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:text-foreground font-body font-normal text-sm lg:text-base cursor-pointer whitespace-nowrap"
                 >
-                  <Link href={link("/our-vision")} className="hover:text-foreground">
+                  <Link href={link("/about")} className="hover:text-foreground">
                     {t("About Haven")}
                   </Link>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="min-w-48">
                   <NavigationMenuLink asChild>
                     <Link
-                      href="https://v0-haven-marketing-website.vercel.app/en/our-vision"
+                      href={link("/about")}
                       className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div className="text-sm font-body font-medium leading-none">{t("Our Vision")}</div>
@@ -60,7 +60,7 @@ export function Header() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team"
+                      href={link("/about")}
                       className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div className="text-sm font-body font-medium leading-none">{t("Meet the Team")}</div>
@@ -118,14 +118,14 @@ export function Header() {
               {aboutOpen && (
                 <div className="pl-4 flex flex-col gap-2 mt-2">
                   <Link
-                    href="https://v0-haven-marketing-website.vercel.app/en/our-vision"
+                    href={link("/about")}
                     className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {t("Our Vision")}
                   </Link>
                   <Link
-                    href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team"
+                    href={link("/about")}
                     className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
