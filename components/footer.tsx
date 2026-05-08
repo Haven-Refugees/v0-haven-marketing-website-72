@@ -53,10 +53,10 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-3 md:mb-4">{t("For Newcomers")}</h4>
             <nav className="flex flex-col gap-2 md:gap-3">
-              <Link href={link("/newcomers")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
+              <Link href={link("/for-newcomers")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("How We Help")}
               </Link>
-              <Link href={link("/hlp")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
+              <Link href={link("/language-refugees")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("Haven Language Program")}
               </Link>
               
@@ -67,7 +67,7 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-3 md:mb-4">{t("For Canadians")}</h4>
             <nav className="flex flex-col gap-2 md:gap-3">
-              <Link href={link("/canadians")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
+              <Link href={link("/for-canadians")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("How You Can Help")}
               </Link>
             </nav>
@@ -80,7 +80,7 @@ export function Footer() {
               <Link href={link("/about")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("Our Vision")}
               </Link>
-              <Link href={link("/about")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
+              <Link href={link("/meet-the-team")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
                 {t("Our Team")}
               </Link>
               <Link href={link("/user-agreement")} className="font-body text-white/80 hover:text-white transition-colors text-sm md:text-base">
