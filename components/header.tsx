@@ -60,7 +60,7 @@ export function Header() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href={link("/about")}
+                      href={link("/meet-the-team")}
                       className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div className="text-sm font-body font-medium leading-none">{t("Meet the Team")}</div>
@@ -125,7 +125,7 @@ export function Header() {
                     {t("Our Vision")}
                   </Link>
                   <Link
-                    href={link("/about")}
+                    href={link("/meet-the-team")}
                     className="font-body text-muted-foreground hover:text-foreground transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
