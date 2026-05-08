@@ -13,6 +13,11 @@ const nextConfig = {
         destination: '/language-refugees',
         permanent: true,
       },
+      {
+        source: '/donate',
+        destination: '/for-canadians',
+        permanent: true,
+      },
     ]
   },
 }
