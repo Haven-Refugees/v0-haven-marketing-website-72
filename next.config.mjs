@@ -18,6 +18,11 @@ const nextConfig = {
         destination: '/for-canadians',
         permanent: true,
       },
+      {
+        source: '/success',
+        destination: '/for-canadians',
+        permanent: true,
+      },
     ]
   },
 }
