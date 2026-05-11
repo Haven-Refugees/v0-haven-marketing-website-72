@@ -8,7 +8,7 @@ export function HeroSection() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative pt-24 md:pt-28 pb-12 md:pb-20 overflow-hidden bg-white">
+    <section className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden bg-white">
       
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 grid lg:grid-cols-[1fr_1fr] gap-6 md:gap-4 items-stretch">
