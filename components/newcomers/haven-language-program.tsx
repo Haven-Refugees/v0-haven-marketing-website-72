@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 const programStructure = [
   {
@@ -28,6 +29,7 @@ const programStructure = [
 
 export function HavenLanguageProgram() {
   const { t, link } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section id="hlp" className="pt-10 pb-10 bg-background">
@@ -113,7 +115,7 @@ export function HavenLanguageProgram() {
           {/* Centered CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button size="lg" variant="primary" asChild>
-              <Link href="https://app.findhaven.org/signup">{t("Join the Program")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join the Program")}</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href={link("/language-refugees")}>{t("Learn more")}</Link>

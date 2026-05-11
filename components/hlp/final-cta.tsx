@@ -3,9 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function HLPFinalCta() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="py-12 md:py-20 bg-[var(--bg-4)]">
@@ -21,7 +23,7 @@ export function HLPFinalCta() {
           size="lg"
           className="bg-[var(--haven-blue)] hover:bg-[var(--haven-blue)]/90 text-white px-8 py-6 text-base rounded-[100px]"
         >
-          <Link href="https://app.findhaven.org">{t("Apply for the program")}</Link>
+          <Link href={withTracking("https://app.findhaven.org")}>{t("Apply for the program")}</Link>
         </Button>
       </div>
     </section>

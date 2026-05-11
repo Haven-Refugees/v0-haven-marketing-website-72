@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import { headers } from 'next/headers'
 import { defaultLocale, rtlLocales, isValidLocale, type Locale } from '@/lib/i18n-config'
+import { TrackingProvider } from '@/components/tracking-provider'
 import './globals.css'
 
 const inter = Inter({ 
@@ -76,11 +77,6 @@ export default async function RootLayout({
           />
         </noscript>
 
-        {/* GrowSurf - Campaign 8c83nl */}
-        <Script id="growsurf-8c83nl" strategy="afterInteractive">{`
-          (function(g,r,s,f){g.grsfSettings={campaignId:"8c83nl",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
-        `}</Script>
-
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -101,7 +97,9 @@ export default async function RootLayout({
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BPLZSV"
             height="0" width="0" style={{display: 'none', visibility: 'hidden'}} />
         </noscript>
-        {children}
+        <TrackingProvider>
+          {children}
+        </TrackingProvider>
         <Analytics />
       </body>
     </html>

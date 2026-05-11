@@ -5,6 +5,7 @@ import { ChevronDown, ChevronUp, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 interface CollapsiblePillProps {
   title: string
@@ -55,6 +56,7 @@ function CollapsiblePill({ title, description, variant, isExpanded, onToggle, nu
 export function SectionThree() {
   const [expandedPills, setExpandedPills] = useState<Record<string, boolean>>({})
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   const togglePill = (id: string) => {
     setExpandedPills(prev => ({ ...prev, [id]: !prev[id] }))
@@ -132,7 +134,7 @@ export function SectionThree() {
               ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
-              <Link href="https://app.findhaven.org">{t("Learn more")}</Link>
+              <Link href={withTracking("https://app.findhaven.org")}>{t("Learn more")}</Link>
             </Button>
           </div>
 
@@ -170,7 +172,7 @@ export function SectionThree() {
             </div>
             
             <Button variant="outline" className="mt-6 w-fit hover:bg-secondary/10 hover:text-secondary hover:border-secondary" asChild>
-              <Link href="https://app.findhaven.org">{t("Learn more")}</Link>
+              <Link href={withTracking("https://app.findhaven.org")}>{t("Learn more")}</Link>
             </Button>
           </div>
 
@@ -199,7 +201,7 @@ export function SectionThree() {
               ))}
             </div>
             <Button variant="outline" className="mt-6 w-fit hover:bg-accent/10 hover:text-accent hover:border-accent" asChild>
-              <Link href="https://app.findhaven.org">{t("Learn more")}</Link>
+              <Link href={withTracking("https://app.findhaven.org")}>{t("Learn more")}</Link>
             </Button>
           </div>
         </div>

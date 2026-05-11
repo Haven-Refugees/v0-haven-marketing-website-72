@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { MessageSquare, Globe, Briefcase } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 const helpOptions = [
   {
@@ -25,6 +26,7 @@ const helpOptions = [
 
 export function WaysToHelp() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="py-20 bg-background">
@@ -56,7 +58,7 @@ export function WaysToHelp() {
 
         <div className="text-center mt-12">
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white" asChild>
-            <Link href="https://app.findhaven.org/?usertype=local">{t("I want to help")}</Link>
+            <Link href={withTracking("https://app.findhaven.org/?usertype=local")}>{t("I want to help")}</Link>
           </Button>
         </div>
       </div>

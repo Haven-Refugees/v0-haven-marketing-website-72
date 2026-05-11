@@ -4,9 +4,11 @@ import Link from "next/link"
 import { Clock, Users, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function HLPBenefits() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   const benefits = [
     {
@@ -55,7 +57,7 @@ export function HLPBenefits() {
             size="lg"
             className="bg-[var(--haven-blue)] hover:bg-[var(--haven-blue)]/90 text-white px-8 py-6 text-base rounded-[100px]"
           >
-            <Link href="https://app.findhaven.org">{t("Apply for the program")}</Link>
+            <Link href={withTracking("https://app.findhaven.org")}>{t("Apply for the program")}</Link>
           </Button>
         </div>
       </div>

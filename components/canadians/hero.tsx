@@ -4,9 +4,11 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function CanadiansHero() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="relative pt-24 md:pt-14 pb-10 bg-haven-coral/10">
@@ -25,7 +27,7 @@ export function CanadiansHero() {
                 variant="coral"
                 asChild
               >
-                <Link href="https://app.findhaven.org/signup">
+                <Link href={withTracking("https://app.findhaven.org/signup")}>
                   {t("Start Helping")}
                 </Link>
               </Button>

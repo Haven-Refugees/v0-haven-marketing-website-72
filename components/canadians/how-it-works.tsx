@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 const steps = [
   {
@@ -24,6 +25,7 @@ const steps = [
 
 export function HowItWorks() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="pt-12 pb-8 md:pt-24 md:pb-14 bg-haven-coral/10">
@@ -59,7 +61,7 @@ export function HowItWorks() {
             variant="coral"
             asChild
           >
-            <Link href="https://app.findhaven.org/signup">
+            <Link href={withTracking("https://app.findhaven.org/signup")}>
               {t("Get Started")}
             </Link>
           </Button>

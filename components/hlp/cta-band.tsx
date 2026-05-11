@@ -4,9 +4,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ShieldCheck } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function HLPCtaBand() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="pb-12 md:pb-20 bg-[var(--bg-1)]">
@@ -19,7 +21,7 @@ export function HLPCtaBand() {
           size="lg"
           className="bg-[var(--haven-blue)] hover:bg-[var(--haven-blue)]/90 text-white px-8 py-6 text-base mb-5 md:mb-6 rounded-[100px]"
         >
-          <Link href="https://app.findhaven.org">{t("Join Haven now")}</Link>
+          <Link href={withTracking("https://app.findhaven.org")}>{t("Join Haven now")}</Link>
         </Button>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 font-body text-[var(--fg-4)] text-xs md:text-sm px-4">
           <ShieldCheck className="w-4 h-4 shrink-0" />
