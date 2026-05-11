@@ -4,9 +4,11 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function HavenConnect() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <>
@@ -43,7 +45,7 @@ export function HavenConnect() {
 
             <div className="flex justify-center lg:justify-start">
               <Button size="lg" variant="secondary" asChild>
-                <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
               </Button>
             </div>
           </div>

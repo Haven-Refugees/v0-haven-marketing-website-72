@@ -4,9 +4,11 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function HLPHero() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="relative pt-4 pb-10 bg-white -mt-[73px] pt-[calc(73px+1rem)]">
@@ -41,7 +43,7 @@ export function HLPHero() {
                 size="lg"
                 className="bg-[var(--haven-blue)] hover:bg-[var(--haven-blue)]/90 text-white px-8 py-6 text-base rounded-[100px]"
               >
-                <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
               </Button>
             </div>
           </div>

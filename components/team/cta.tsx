@@ -3,9 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function TeamCta() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="py-12 md:py-24 bg-card">
@@ -22,14 +24,14 @@ export function TeamCta() {
             size="lg"
             variant="coral"
           >
-            <Link href="https://app.findhaven.org/signup">{t("I Want to Help")}</Link>
+            <Link href={withTracking("https://app.findhaven.org/signup")}>{t("I Want to Help")}</Link>
           </Button>
           <Button
             asChild
             size="lg"
             variant="secondary"
           >
-            <Link href="https://app.findhaven.org/signup">{t("I Need Help")}</Link>
+            <Link href={withTracking("https://app.findhaven.org/signup")}>{t("I Need Help")}</Link>
           </Button>
         </div>
       </div>

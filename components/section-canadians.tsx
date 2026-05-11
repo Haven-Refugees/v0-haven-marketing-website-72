@@ -3,9 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function SectionCanadians() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="py-12 md:py-20 bg-haven-coral/10">
@@ -36,7 +38,7 @@ export function SectionCanadians() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
               <Button size="lg" variant="coral" asChild>
-                <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
               </Button>
               <Link href="https://v0-haven-marketing-website.vercel.app/en/for-canadians" className="font-body text-muted-foreground hover:text-foreground underline underline-offset-4">
                 {t("Learn more")}

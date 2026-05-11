@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import {
   NavigationMenu,
@@ -19,6 +20,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-border">
@@ -73,10 +75,10 @@ export function Header() {
           <LanguageSwitcher />
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" asChild className="lg:size-default">
-              <Link href="https://app.findhaven.org/login">{t("Log In")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/login")}>{t("Log In")}</Link>
             </Button>
             <Button variant="primary" size="sm" asChild className="lg:size-default">
-              <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
             </Button>
           </div>
         </div>
@@ -139,10 +141,10 @@ export function Header() {
             </div>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">
-                <Link href="https://app.findhaven.org/login">{t("Log In")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/login")}>{t("Log In")}</Link>
               </Button>
               <Button variant="primary" asChild className="w-full">
-                <Link href="https://app.findhaven.org/signup">{t("Join Haven")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
               </Button>
             </div>
           </nav>

@@ -3,9 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function CanadiansFinalCta() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="py-12 md:py-24 bg-haven-coral/10">
@@ -21,7 +23,7 @@ export function CanadiansFinalCta() {
           variant="coral"
           asChild
         >
-          <Link href="https://app.findhaven.org/signup">
+          <Link href={withTracking("https://app.findhaven.org/signup")}>
             {t("Start Helping")}
           </Link>
         </Button>

@@ -3,9 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { useTrackingLink } from "@/components/tracking-provider"
 
 export function SectionProfiles() {
   const { t } = useTranslation()
+  const withTracking = useTrackingLink()
 
   return (
     <section className="py-16 bg-background">
@@ -84,7 +86,7 @@ export function SectionProfiles() {
 
             {/* CTA Button */}
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
-              <Link href="https://app.findhaven.org">
+              <Link href={withTracking("https://app.findhaven.org")}>
                 {t("Visit the platform")}
               </Link>
             </Button>
