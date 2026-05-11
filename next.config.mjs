@@ -23,6 +23,11 @@ const nextConfig = {
         destination: '/for-canadians',
         permanent: true,
       },
+      {
+        source: '/ukrainian-hlp',
+        destination: '/uk/language-refugees',
+        permanent: true,
+      },
     ]
   },
 }
