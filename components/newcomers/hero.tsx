@@ -23,7 +23,7 @@ export function NewcomersHero() {
             </p>
             <div className="pt-2 flex justify-center lg:justify-start">
               <Button size="lg" variant="secondary" asChild>
-                <Link href={withTracking("https://app.findhaven.org")}>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>
                   {t("Join Haven")}
                 </Link>
               </Button>
