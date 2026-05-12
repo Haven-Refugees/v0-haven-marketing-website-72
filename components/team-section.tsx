@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 
 export function TeamSection() {
-  const { t } = useTranslation()
+  const { t, link } = useTranslation()
 
   return (
     <section className="pt-12 pb-16 md:pb-24">
@@ -23,10 +23,10 @@ export function TeamSection() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3 md:gap-4">
               <Button asChild variant="primary">
-                <Link href="https://v0-haven-marketing-website.vercel.app/en/our-vision">{t("Our Vision")}</Link>
+                <Link href={link("/about")}>{t("Our Vision")}</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="https://v0-haven-marketing-website.vercel.app/en/meet-the-team">{t("Meet our team")}</Link>
+                <Link href={link("/meet-the-team")}>{t("Meet our team")}</Link>
               </Button>
             </div>
           </div>
