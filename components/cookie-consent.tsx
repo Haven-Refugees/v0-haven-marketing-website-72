@@ -63,10 +63,7 @@ export function CookieConsent() {
                   {t("We use cookies")}
                 </h3>
                 <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                  {t("We use essential cookies to make this website work. With your consent, we'd also like to use analytics cookies to understand how visitors use our site and improve the experience.")}
-                </p>
-                <p className="font-body text-sm text-muted-foreground leading-relaxed mt-2">
-                  {t("You can accept all cookies, reject non-essential cookies, or manage your preferences at any time.")}
+                  {t("We use essential cookies to run this site. With your consent, we also use analytics cookies to improve your experience.")}
                 </p>
               </div>
             </div>
