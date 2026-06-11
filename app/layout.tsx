@@ -5,6 +5,7 @@ import Script from 'next/script'
 import { headers } from 'next/headers'
 import { defaultLocale, rtlLocales, isValidLocale, type Locale } from '@/lib/i18n-config'
 import { TrackingProvider } from '@/components/tracking-provider'
+import { CookieConsent } from '@/components/cookie-consent'
 import './globals.css'
 
 const inter = Inter({ 
@@ -86,6 +87,7 @@ export default async function RootLayout({
         </noscript>
         <TrackingProvider>
           {children}
+          <CookieConsent />
         </TrackingProvider>
         <Analytics />
       </body>

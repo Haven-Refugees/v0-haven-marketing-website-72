@@ -380,5 +380,17 @@
   "No long-term commitment": "Без довгострокових зобов'язань",
   "Some matches meet once. Others meet for years. You decide what works.": "Деякі пари зустрічаються один раз. Інші зустрічаються роками. Ви вирішуєте, що підходить.",
   "Ignore the \"No longer accepting applications\" flag on LinkedIn": "Ігноруйте повідомлення «Більше не приймає заявки» на LinkedIn",
-  "Be part of Haven": "Станьте частиною Haven"
+  "Be part of Haven": "Станьте частиною Haven",
+  "We use cookies": "Ми використовуємо файли cookie",
+  "We use essential cookies to make this website work. With your consent, we'd also like to use analytics cookies to understand how visitors use our site and improve the experience.": "Ми використовуємо основні файли cookie для роботи цього сайту. За вашою згодою ми також хотіли б використовувати аналітичні файли cookie, щоб зрозуміти, як відвідувачі користуються нашим сайтом, і покращити досвід.",
+  "You can accept all cookies, reject non-essential cookies, or manage your preferences at any time.": "Ви можете прийняти всі файли cookie, відхилити необов'язкові або керувати своїми налаштуваннями в будь-який час.",
+  "Accept all": "Прийняти всі",
+  "Reject non-essential": "Відхилити необов'язкові",
+  "Manage preferences": "Керувати налаштуваннями",
+  "Essential cookies": "Основні файли cookie",
+  "Required for the website to function properly.": "Необхідні для правильної роботи сайту.",
+  "Always on": "Завжди увімкнені",
+  "Analytics cookies": "Аналітичні файли cookie",
+  "Help us understand how visitors use our site.": "Допомагають нам зрозуміти, як відвідувачі користуються нашим сайтом.",
+  "Save preferences": "Зберегти налаштування"
 }
