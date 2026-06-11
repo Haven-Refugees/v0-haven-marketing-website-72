@@ -35,6 +35,7 @@ export function CookieConsent() {
     localStorage.setItem(CONSENT_KEY, value!)
     setConsent(value)
     setVisible(false)
+    window.dispatchEvent(new Event("cookie-consent-change"))
   }, [])
 
   const handleAcceptAll = useCallback(() => accept("all"), [accept])
