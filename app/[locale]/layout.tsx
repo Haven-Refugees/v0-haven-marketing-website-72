@@ -2,6 +2,7 @@ import { notFound } from "next/navigation"
 import { isValidLocale, type Locale } from "@/lib/i18n-config"
 import { getDictionary } from "@/lib/get-dictionary"
 import { TranslationProvider } from "@/lib/i18n"
+import { CookieConsent } from "@/components/cookie-consent"
 
 export default async function LocaleLayout({
   children,
@@ -21,6 +22,7 @@ export default async function LocaleLayout({
   return (
     <TranslationProvider locale={locale as Locale} dictionary={dictionary}>
       {children}
+      <CookieConsent />
     </TranslationProvider>
   )
 }
