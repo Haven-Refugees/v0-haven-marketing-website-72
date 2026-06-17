@@ -15,6 +15,13 @@ if (posthogKey) {
     api_host: '/ingest',
     ui_host: 'https://us.posthog.com',
     defaults: '2025-05-24',
+    // Explicit pageview capture on every load. The '2025-05-24' preset sets
+    // capture_pageview to 'history_change', which was NOT emitting $pageview on
+    // this (largely multi-page) marketing site — only $pageleave was landing.
+    // `true` guarantees a $pageview per load, which Step 1 of the activation
+    // funnel (website visitor -> signup) depends on.
+    capture_pageview: true,
+    capture_pageleave: true,
     capture_exceptions: true,
     cross_subdomain_cookie: true,
     persistence: 'localStorage+cookie',
