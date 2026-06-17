@@ -4,10 +4,14 @@ import { locales, defaultLocale, isValidLocale } from "@/lib/i18n-config"
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Skip static files and API routes
+  // Skip static files, API routes, and the PostHog reverse proxy.
+  // /ingest/* must NOT get a locale prefix — posthog-js posts events to
+  // /ingest/i/v0/e/ (no file extension), and a locale redirect would send
+  // them to /en/ingest/... which never reaches PostHog.
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
+    pathname.startsWith("/ingest") ||
     pathname.startsWith("/images") ||
     pathname.includes(".")
   ) {
@@ -43,5 +47,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|images|.*\\..*).*)"],
+  matcher: ["/((?!_next|api|ingest|images|.*\\..*).*)"],
 }
