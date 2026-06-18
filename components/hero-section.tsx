@@ -4,12 +4,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 import { useTrackingLink } from "@/components/tracking-provider"
-import { useHeroCtaFlow, heroCtaDestination } from "@/lib/heroCtaFlow"
+import { useHeroDirectSignup, heroCtaDestination } from "@/lib/heroCtaFlow"
 
 export function HeroSection() {
   const { t } = useTranslation()
   const withTracking = useTrackingLink()
-  const heroCtaFlow = useHeroCtaFlow()
+  const directSignup = useHeroDirectSignup()
 
   return (
     <section className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden bg-white">
@@ -27,12 +27,12 @@ export function HeroSection() {
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
             <Button size="lg" variant="coral" asChild>
-              <Link href={withTracking(heroCtaDestination(heroCtaFlow, "local"))}>
+              <Link href={withTracking(heroCtaDestination(directSignup, "local"))}>
                 {t("I Want to Help")}
               </Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href={withTracking(heroCtaDestination(heroCtaFlow, "newcomer"))}>
+              <Link href={withTracking(heroCtaDestination(directSignup, "newcomer"))}>
                 {t("I Need Help")}
               </Link>
             </Button>

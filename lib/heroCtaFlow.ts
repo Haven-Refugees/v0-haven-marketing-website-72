@@ -3,29 +3,26 @@
 import { useEffect, useState } from "react"
 import posthog from "posthog-js"
 
-export type HeroCtaFlow = "browse-first" | "direct-signup"
-
 export type HeroUserType = "local" | "newcomer"
 
 /**
- * A/B experiment flag for where the landing-page hero CTAs send users:
- *  - "browse-first" (control): app.findhaven.org/?usertype=...  (browse profiles,
- *    sign-up popup appears on "Meet")
- *  - "direct-signup" (variant): app.findhaven.org/signup?usertype=...
+ * A/B experiment flag `hero-cta-flow` for where the landing-page hero CTAs send
+ * users. Standard experiment variant keys:
+ *  - "control" (browse-first, current behavior): app.findhaven.org/?usertype=...
+ *    (browse profiles; signup popup appears on "Meet")
+ *  - "test" (direct-signup): app.findhaven.org/signup?usertype=...
  *
- * Defaults to "browse-first" (current behavior) until flags load, or if PostHog
- * isn't initialized (e.g. NEXT_PUBLIC_POSTHOG_KEY unset) — so the CTA never breaks.
+ * Returns true when the user is in the "test" (direct-signup) arm. Defaults to
+ * false (control / current behavior) until flags load, or if PostHog isn't
+ * initialized (e.g. NEXT_PUBLIC_POSTHOG_KEY unset) — so the CTA never breaks.
  * Calling getFeatureFlag also logs the experiment exposure ($feature_flag_called).
  */
-export function useHeroCtaFlow(): HeroCtaFlow {
-  const [flow, setFlow] = useState<HeroCtaFlow>("browse-first")
+export function useHeroDirectSignup(): boolean {
+  const [directSignup, setDirectSignup] = useState(false)
 
   useEffect(() => {
     const apply = () => {
-      const variant = posthog.getFeatureFlag("hero-cta-flow")
-      if (variant === "direct-signup" || variant === "browse-first") {
-        setFlow(variant)
-      }
+      setDirectSignup(posthog.getFeatureFlag("hero-cta-flow") === "test")
     }
     // Flags may not be ready on first render; re-apply when they load.
     const unsubscribe = posthog.onFeatureFlags(apply)
@@ -35,13 +32,13 @@ export function useHeroCtaFlow(): HeroCtaFlow {
     }
   }, [])
 
-  return flow
+  return directSignup
 }
 
-/** Builds the app destination for a given hero CTA under the active flow. */
-export function heroCtaDestination(flow: HeroCtaFlow, usertype: HeroUserType): string {
+/** Builds the app destination for a hero CTA given the active arm. */
+export function heroCtaDestination(directSignup: boolean, usertype: HeroUserType): string {
   const base = "https://app.findhaven.org"
-  return flow === "direct-signup"
+  return directSignup
     ? `${base}/signup?usertype=${usertype}`
     : `${base}/?usertype=${usertype}`
 }
