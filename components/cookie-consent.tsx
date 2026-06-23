@@ -16,6 +16,28 @@ function getStoredConsent(): ConsentValue {
   return null
 }
 
+function pushConsentUpdate(value: ConsentValue) {
+  const granted = value === "all"
+
+  // Google Consent Mode v2
+  window.dataLayer = window.dataLayer || []
+  function gtag(...args: unknown[]) {
+    window.dataLayer.push(args)
+  }
+  const state = granted ? "granted" : "denied"
+  gtag("consent", "update", {
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+    analytics_storage: state,
+  })
+
+  // Facebook Pixel consent
+  if (typeof window.fbq === "function") {
+    window.fbq("consent", granted ? "grant" : "revoke")
+  }
+}
+
 export function CookieConsent() {
   const { t } = useTranslation()
   const [consent, setConsent] = useState<ConsentValue>(null)
@@ -26,7 +48,9 @@ export function CookieConsent() {
   useEffect(() => {
     const stored = getStoredConsent()
     setConsent(stored)
-    if (!stored) {
+    if (stored) {
+      pushConsentUpdate(stored)
+    } else {
       setVisible(true)
     }
   }, [])
@@ -35,6 +59,7 @@ export function CookieConsent() {
     localStorage.setItem(CONSENT_KEY, value!)
     setConsent(value)
     setVisible(false)
+    pushConsentUpdate(value)
     window.dispatchEvent(new Event("cookie-consent-change"))
   }, [])
 
