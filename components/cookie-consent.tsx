@@ -16,18 +16,26 @@ function getStoredConsent(): ConsentValue {
   return null
 }
 
-function pushConsentToGTM(value: ConsentValue) {
+function pushConsentUpdate(value: ConsentValue) {
+  const granted = value === "all"
+
+  // Google Consent Mode v2
   window.dataLayer = window.dataLayer || []
   function gtag(...args: unknown[]) {
     window.dataLayer.push(args)
   }
-  const granted = value === "all" ? "granted" : "denied"
+  const state = granted ? "granted" : "denied"
   gtag("consent", "update", {
-    ad_storage: granted,
-    ad_user_data: granted,
-    ad_personalization: granted,
-    analytics_storage: granted,
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+    analytics_storage: state,
   })
+
+  // Facebook Pixel consent
+  if (typeof window.fbq === "function") {
+    window.fbq("consent", granted ? "grant" : "revoke")
+  }
 }
 
 export function CookieConsent() {
@@ -41,7 +49,7 @@ export function CookieConsent() {
     const stored = getStoredConsent()
     setConsent(stored)
     if (stored) {
-      pushConsentToGTM(stored)
+      pushConsentUpdate(stored)
     } else {
       setVisible(true)
     }
@@ -51,7 +59,7 @@ export function CookieConsent() {
     localStorage.setItem(CONSENT_KEY, value!)
     setConsent(value)
     setVisible(false)
-    pushConsentToGTM(value)
+    pushConsentUpdate(value)
     window.dispatchEvent(new Event("cookie-consent-change"))
   }, [])
 
