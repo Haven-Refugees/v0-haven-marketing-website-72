@@ -5,7 +5,47 @@ import { useEffect, useState } from "react"
 
 const CONSENT_KEY = "haven-cookie-consent"
 
-export function AnalyticsScripts() {
+/**
+ * GTM + Google Consent Mode v2 — always rendered so GA/Ads tags are
+ * detected by Google's tag validator regardless of cookie consent.
+ * Actual data collection only starts after the visitor grants consent.
+ */
+export function GoogleTagManager() {
+  return (
+    <>
+      {/* Consent-mode defaults (must run before gtm.js) */}
+      <Script id="gtm-consent-defaults" strategy="beforeInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+          ad_storage:        'denied',
+          ad_user_data:      'denied',
+          ad_personalization: 'denied',
+          analytics_storage: 'denied',
+          wait_for_update:   500
+        });
+      `}</Script>
+
+      {/* Google Tag Manager */}
+      <Script id="gtm" strategy="afterInteractive">{`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5BPLZSV');
+      `}</Script>
+
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BPLZSV"
+          height="0" width="0" style={{display: "none", visibility: "hidden"}} />
+      </noscript>
+    </>
+  )
+}
+
+/** Scripts that do NOT support Google Consent Mode — loaded only after consent. */
+export function ConsentGatedScripts() {
   const [allowed, setAllowed] = useState(false)
 
   useEffect(() => {
@@ -42,25 +82,10 @@ export function AnalyticsScripts() {
         />
       </noscript>
 
-      {/* Google Tag Manager */}
-      <Script id="gtm" strategy="afterInteractive">{`
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5BPLZSV');
-      `}</Script>
-
       {/* GrowSurf - Campaign kstoaf */}
       <Script id="growsurf-kstoaf" strategy="afterInteractive">{`
         (function(g,r,s,f){g.grsfSettings={campaignId:"kstoaf",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
       `}</Script>
-
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BPLZSV"
-          height="0" width="0" style={{display: "none", visibility: "hidden"}} />
-      </noscript>
     </>
   )
 }

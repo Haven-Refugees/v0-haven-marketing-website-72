@@ -3,7 +3,7 @@ import { Inter, Montserrat, Roboto_Mono } from 'next/font/google'
 import { headers } from 'next/headers'
 import { defaultLocale, rtlLocales, isValidLocale, type Locale } from '@/lib/i18n-config'
 import { TrackingProvider } from '@/components/tracking-provider'
-import { AnalyticsScripts } from '@/components/analytics-scripts'
+import { GoogleTagManager, ConsentGatedScripts } from '@/components/analytics-scripts'
 import './globals.css'
 
 const inter = Inter({ 
@@ -47,7 +47,8 @@ export default async function RootLayout({
         <TrackingProvider>
           {children}
         </TrackingProvider>
-        <AnalyticsScripts />
+        <GoogleTagManager />
+        <ConsentGatedScripts />
       </body>
     </html>
   )

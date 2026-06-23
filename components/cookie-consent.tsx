@@ -16,6 +16,20 @@ function getStoredConsent(): ConsentValue {
   return null
 }
 
+function pushConsentToGTM(value: ConsentValue) {
+  window.dataLayer = window.dataLayer || []
+  function gtag(...args: unknown[]) {
+    window.dataLayer.push(args)
+  }
+  const granted = value === "all" ? "granted" : "denied"
+  gtag("consent", "update", {
+    ad_storage: granted,
+    ad_user_data: granted,
+    ad_personalization: granted,
+    analytics_storage: granted,
+  })
+}
+
 export function CookieConsent() {
   const { t } = useTranslation()
   const [consent, setConsent] = useState<ConsentValue>(null)
@@ -26,7 +40,9 @@ export function CookieConsent() {
   useEffect(() => {
     const stored = getStoredConsent()
     setConsent(stored)
-    if (!stored) {
+    if (stored) {
+      pushConsentToGTM(stored)
+    } else {
       setVisible(true)
     }
   }, [])
@@ -35,6 +51,7 @@ export function CookieConsent() {
     localStorage.setItem(CONSENT_KEY, value!)
     setConsent(value)
     setVisible(false)
+    pushConsentToGTM(value)
     window.dispatchEvent(new Event("cookie-consent-change"))
   }, [])
 
