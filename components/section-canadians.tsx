@@ -6,7 +6,7 @@ import { useTranslation } from "@/lib/i18n"
 import { useTrackingLink } from "@/components/tracking-provider"
 
 export function SectionCanadians() {
-  const { t } = useTranslation()
+  const { t, link } = useTranslation()
   const withTracking = useTrackingLink()
 
   return (
@@ -40,7 +40,7 @@ export function SectionCanadians() {
               <Button size="lg" variant="coral" asChild>
                 <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
               </Button>
-              <Link href="https://v0-haven-marketing-website.vercel.app/en/for-canadians" className="font-body text-muted-foreground hover:text-foreground underline underline-offset-4">
+              <Link href={link("/for-canadians")} className="font-body text-muted-foreground hover:text-foreground underline underline-offset-4">
                 {t("Learn more")}
               </Link>
             </div>
