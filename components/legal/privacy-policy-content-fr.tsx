@@ -67,7 +67,7 @@ export function PrivacyPolicyContentFr() {
   return (
     <article className="prose prose-lg max-w-none [&>section]:scroll-mt-28">
       <h1 className="text-3xl font-bold text-foreground md:text-4xl">Politique de confidentialité</h1>
-      <p className="mb-8 text-muted-foreground">
+      <p className="mt-4 mb-8 text-muted-foreground">
         <strong>En vigueur le :</strong> 24 août 2026 (remplace la version en vigueur le 2 février 2023)
         <br />
         This policy is also available in English. <a href="/privacy-policy" className="text-primary hover:underline">See the English version</a>
