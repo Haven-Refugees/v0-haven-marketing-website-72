@@ -20,6 +20,8 @@ export function PrivacyPolicyContent() {
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("Privacy Policy")}</h1>
       <p className="text-muted-foreground mb-8">
         <strong>{t("Effective")}: </strong>{t("August 24, 2026 (replaces the version effective February 2, 2023)")}
+        <br />
+        <span>{"Cette politique est aussi offerte en français. "}</span><a href="/fr/privacy-policy" className="text-primary hover:underline">{"Voir la version française"}</a>
       </p>
 
       <p className="mb-6">{t('Haven Refugees ("Haven", "we", "our", "us") is a registered Canadian charity and a not-for-profit corporation incorporated under the Canada Not-for-profit Corporations Act, headquartered in Toronto, Canada. Haven provides resettlement services in Canada to refugees by connecting them with local supporters who can help.')}</p>
