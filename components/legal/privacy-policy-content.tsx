@@ -32,7 +32,7 @@ export function PrivacyPolicyContent() {
         <h2 className="text-xl font-semibold mb-4">{t("Table of Contents")}</h2>
         <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
           {['What is "personal information"?', 'What Personal Information Does Haven Collect?', 'How Does Haven Use Personal Information?', 'Message Safety Screening', 'Under What Circumstances May Haven Disclose Personal Information?', 'How Does Haven Secure Personal Information?', 'How Long Does Haven Keep Personal Information?', 'Cross-Border Data Transfer And Data Retention', 'What Are Your Choices?', 'What Are Your Rights?', "Children's Privacy", 'Changes To This Privacy Policy', 'Contact Us'].map((title, index) => (
-            <li key={title}><a href={`#section-${index + 1}`} className="hover:text-primary">{t(`${index + 1}. ${title}`)}</a></li>
+            <li key={title}><a href={`#section-${index + 1}`} className="hover:text-primary">{t(title)}</a></li>
           ))}
         </ol>
       </div>
