@@ -30,14 +30,10 @@ export function UserAgreementContent() {
                 'Haven Refugees (referred to as "Haven", "us" or "we") asks that you review the terms and conditions in this end-user license agreement which governs the use of our application (as described below). Please note that in order to use our application, you must agree to the terms and conditions below. If you have any questions, please contact us at: info@findhaven.org. Although we cannot reply to all comments, we will certainly consider your input and use it to make the Haven application even better.',
               )}
             </p>
-            <p className="mb-4 leading-relaxed">
+            <p className="leading-relaxed">
               {t(
                 "Haven is a registered Canadian charity and a not-for-profit corporation incorporated under the Canada Not-for-profit Corporations Act. Haven is headquartered in Toronto, Canada. Haven provides resettlement services to refugees by connecting them with Canadian supporters who can help. Our services are delivered through findhaven.org.",
               )}
-            </p>
-            <p className="leading-relaxed">
-              {"Ce contrat est offert en français et en anglais. "}
-              {t("This Agreement is available in French and English.")}
             </p>
           </section>
 
