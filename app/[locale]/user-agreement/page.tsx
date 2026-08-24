@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {
       title: "Contrat de licence d'utilisation | Haven",
       description:
-        "Contrat de licence d'utilisateur final de Haven Refugees - Modalités régissant l'utilisation de la plateforme Haven.",
+        "Contrat de licence d'utilisateur final de Haven Refugies - Modalités régissant l'utilisation de la plateforme Haven.",
     }
   }
 
