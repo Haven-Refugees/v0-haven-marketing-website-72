@@ -16,7 +16,7 @@ export function UserAgreementContent() {
           <strong>{t("Effective")}: </strong>
           {t("August 24, 2026 (replaces the prior version)")}
           <br />
-          <span>{"Cette politique est aussi offerte en français. "}</span>
+          <span>{"Ce contrat est aussi offert en français. "}</span>
           <a href="/fr/user-agreement" className="text-primary hover:underline">
             {"Voir la version française"}
           </a>
