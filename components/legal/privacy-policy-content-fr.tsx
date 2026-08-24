@@ -417,7 +417,7 @@ function renderBlock(block: Block, index: number) {
     case "contact":
       return (
         <p key={index} className="mb-4">
-          {"Responsable de la protection des renseignements personnels, Haven Refugees / Haven Refugies: "}
+          {"Responsable de la protection des renseignements personnels, Haven Refugees: "}
           <a href="mailto:privacy@findhaven.org" className="text-primary hover:underline">
             privacy@findhaven.org
           </a>
@@ -448,7 +448,7 @@ export function PrivacyPolicyContentFr() {
 
       <p className="mb-6">
         {
-          "Haven Refugees / Haven Refugies (« Haven », « nous », « notre ») est un organisme de bienfaisance enregistré au Canada et une personne morale sans but lucratif constituée en vertu de la Loi canadienne sur les organisations à but non lucratif, dont le siège social est situé à Toronto, au Canada. Haven offre des services d'établissement au Canada aux personnes réfugiées en les mettant en relation avec des accompagnateurs locaux qui peuvent les aider."
+          "Haven Refugees (« Haven », « nous », « notre ») est un organisme de bienfaisance enregistré au Canada et une personne morale sans but lucratif constituée en vertu de la Loi canadienne sur les organisations à but non lucratif, dont le siège social est situé à Toronto, au Canada. Haven offre des services d'établissement au Canada aux personnes réfugiées en les mettant en relation avec des accompagnateurs locaux qui peuvent les aider."
         }
       </p>
       <p className="mb-6">

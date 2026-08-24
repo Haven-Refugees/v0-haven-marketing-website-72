@@ -9,7 +9,7 @@ export function UserAgreementContentFr() {
     <div className="py-16 md:py-24">
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-          {t("Contrat de licence d'utilisateur final de Haven Refugees / Haven Refugies")}
+          {t("Contrat de licence d'utilisateur final de Haven Refugees")}
         </h1>
 
         <p className="text-muted-foreground mb-8">
@@ -27,7 +27,7 @@ export function UserAgreementContentFr() {
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("Introduction")}</h2>
             <p className="mb-4 leading-relaxed">
               {t(
-                "Haven Refugees / Haven Refugies (« Haven », « nous » ou « notre ») vous invite à prendre connaissance des modalités du présent contrat de licence d'utilisateur final, qui régit l'utilisation de notre application (telle que décrite ci-dessous). Veuillez noter que pour utiliser notre application, vous devez accepter les modalités énoncées ci-dessous. Pour toute question, écrivez-nous à : info@findhaven.org. Bien que nous ne puissions répondre à tous les commentaires, nous en tiendrons certainement compte pour améliorer l'application Haven.",
+                "Haven Refugees (« Haven », « nous » ou « notre ») vous invite à prendre connaissance des modalités du présent contrat de licence d'utilisateur final, qui régit l'utilisation de notre application (telle que décrite ci-dessous). Veuillez noter que pour utiliser notre application, vous devez accepter les modalités énoncées ci-dessous. Pour toute question, écrivez-nous à : info@findhaven.org. Bien que nous ne puissions répondre à tous les commentaires, nous en tiendrons certainement compte pour améliorer l'application Haven.",
               )}
             </p>
             <p className="leading-relaxed">
@@ -320,12 +320,12 @@ export function UserAgreementContentFr() {
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
-                "Haven peut, à son entière et seule discrétion, rendre accessibles ou fournir des mises à jour, des mises à niveau, de l'entretien et du soutien relativement à la Plateforme ou de nouvelles versions de celle-ci, ce qui peut comprendre des correctifs, des améliorations, de nouvelles fonctionnalités, des fonctionnalités supprim��es, des modifications ou d'autres améliorations (collectivement, les « Mises à jour »). Les Mises à jour peuvent entraîner le retrait de certaines fonctionnalités. Si Haven publie une Mise à jour de la Plateforme, vous convenez de cesser d'utiliser la version antérieure. Malgré ce qui précède, vous comprenez et convenez que Haven n'a aucune obligation de fournir ou de rendre accessibles des Mises à jour ni de conserver les fonctionnalités offertes dans la Plateforme ou dans une Mise à jour subséquente, et que Haven ne saurait être tenue responsable des dommages, coûts, responsabilités, frais ou dépenses que vous subiriez en raison du retrait d'une fonctionnalité de la Plateforme ou d'une Mise à jour subséquente.",
+                "Haven peut, à son entière et seule discrétion, rendre accessibles ou fournir des mises à jour, des mises à niveau, de l'entretien et du soutien relativement à la Plateforme ou de nouvelles versions de celle-ci, ce qui peut comprendre des correctifs, des améliorations, de nouvelles fonctionnalités, des fonctionnalités supprimées, des modifications ou d'autres améliorations (collectivement, les « Mises à jour »). Les Mises à jour peuvent entraîner le retrait de certaines fonctionnalités. Si Haven publie une Mise à jour de la Plateforme, vous convenez de cesser d'utiliser la version antérieure. Malgré ce qui précède, vous comprenez et convenez que Haven n'a aucune obligation de fournir ou de rendre accessibles des Mises à jour ni de conserver les fonctionnalités offertes dans la Plateforme ou dans une Mise à jour subséquente, et que Haven ne saurait être tenue responsable des dommages, coûts, responsabilités, frais ou dépenses que vous subiriez en raison du retrait d'une fonctionnalité de la Plateforme ou d'une Mise à jour subséquente.",
               )}
             </p>
             <p className="leading-relaxed">
               {t(
-                "Il vous incombe uniquement de déterminer si la Plateforme et votre utilisation de celle-ci permettront d'atteindre les résultats souhaités, ainsi que d'obtenir, de configurer et de protéger l'ensemble de l'équipement et des services n��cessaires à l'installation et à l'utilisation de la Plateforme et de toutes les Mises à jour, données, programmes ou plateformes tierces utilisés en lien avec celle-ci. Haven ne saurait en aucun cas être responsable de ce qui précède.",
+                "Il vous incombe uniquement de déterminer si la Plateforme et votre utilisation de celle-ci permettront d'atteindre les résultats souhaités, ainsi que d'obtenir, de configurer et de protéger l'ensemble de l'équipement et des services nécessaires à l'installation et à l'utilisation de la Plateforme et de toutes les Mises à jour, données, programmes ou plateformes tierces utilisés en lien avec celle-ci. Haven ne saurait en aucun cas être responsable de ce qui précède.",
               )}
             </p>
           </section>
