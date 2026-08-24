@@ -28,8 +28,6 @@ export function PrivacyPolicyContent() {
       <p className="mb-6">{t('When you visit and/or use www.findhaven.org or Haven\'s mobile application (together, the "Website"), you will share some personal information with us and we will collect personal information about you. Haven\'s services are intended for adults aged 18 and over.')}</p>
       <p className="mb-6">{t('We want to be transparent about the information we collect, how we use it, whom we share it with, and the controls we give you to your personal information. This Privacy Policy describes the way in which Haven collects, uses, and discloses personal information about you and how you can exercise your privacy rights.')}</p>
       <p className="mb-8">{t('Where the law requires your consent to a collection, use or disclosure of your personal information, Haven asks for that consent separately, at or before the time of collection. We do not treat your continued use of the Website as consent.')}</p>
-      <p className="mb-8">{t('This Privacy Policy is available in French and English. Cette politique est offerte en français et en anglais.')}</p>
-
       <div className="bg-muted/50 p-6 rounded-lg mb-8">
         <h2 className="text-xl font-semibold mb-4">{t("Table of Contents")}</h2>
         <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
