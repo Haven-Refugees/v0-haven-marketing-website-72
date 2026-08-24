@@ -70,7 +70,7 @@ export function PrivacyPolicyContentFr() {
       <p className="mb-8 text-muted-foreground">
         <strong>En vigueur le :</strong> 24 août 2026 (remplace la version en vigueur le 2 février 2023)
         <br />
-        Cette politique est aussi disponible en anglais. <a href="/privacy-policy" className="text-primary hover:underline">Voir la version anglaise</a>
+        This policy is also available in English. <a href="/privacy-policy" className="text-primary hover:underline">See the English version</a>
       </p>
       <p className="mb-6">Haven Refugees (« Haven », « nous », « notre ») est un organisme de bienfaisance enregistré au Canada et une personne morale sans but lucratif constituée en vertu de la Loi canadienne sur les organisations à but non lucratif, dont le siège social est situé à Toronto, au Canada. Haven offre des services d'établissement au Canada aux personnes réfugiées en les mettant en relation avec des accompagnateurs locaux qui peuvent les aider.</p>
       <p className="mb-6">Lorsque vous consultez ou utilisez le www.findhaven.org ou l'application mobile de Haven (ensemble, le « Site Web »), vous nous communiquez certains renseignements personnels et nous recueillons des renseignements personnels à votre sujet. Les services de Haven s'adressent aux adultes âgés de 18 ans et plus.</p>
