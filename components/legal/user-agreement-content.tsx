@@ -142,8 +142,8 @@ export function UserAgreementContent() {
             </h2>
             <p className="leading-relaxed">
               {t("Haven takes your privacy very seriously. The collection, storage, disclosure and permitted uses of your information are governed by Haven's Privacy Policy which can be found at")}{" "}
-              <a href="/privacy-policy" className="text-primary hover:underline">
-                https://findhaven.org/en/privacy-policy
+              <a href="https://www.findhaven.org/en/privacy-policy" className="text-primary hover:underline">
+                https://www.findhaven.org/en/privacy-policy
               </a>
               {". "}
               {t(
