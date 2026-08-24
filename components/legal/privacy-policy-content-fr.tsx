@@ -417,7 +417,7 @@ function renderBlock(block: Block, index: number) {
     case "contact":
       return (
         <p key={index} className="mb-4">
-          {"Responsable de la protection des renseignements personnels, Haven Refugees / Haven Refugies: "}
+          {"Responsable de la protection des renseignements personnels, Haven Refugees: "}
           <a href="mailto:privacy@findhaven.org" className="text-primary hover:underline">
             privacy@findhaven.org
           </a>
