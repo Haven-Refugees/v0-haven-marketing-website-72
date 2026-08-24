@@ -142,7 +142,14 @@ export function UserAgreementContentFr() {
             </h2>
             <p className="leading-relaxed">
               {t(
-                "Haven prend votre vie privée très au sérieux. La collecte, le stockage, la communication et les utilisations permises de vos renseignements sont régis par la Politique de confidentialité de Haven, accessible au https://findhaven.org/fr/privacy-policy. La Politique de confidentialité et ses modalités sont intégrées au présent Contrat par renvoi. En acceptant les modalités du présent Contrat, vous acceptez également les modalités de la Politique de confidentialité. Haven peut mettre à jour la Politique de confidentialité de la manière qui y est décrite : les modifications importantes vous sont communiquées et, lorsque la loi exige votre consentement à une modification, Haven vous le demandera. Vous comprenez que des tiers peuvent en tout temps recueillir, stocker, communiquer ou utiliser vos renseignements dans le cadre de votre utilisation de la Plateforme, et que cette collecte, ce stockage, cette communication ou cette utilisation par des tiers sont régis par les modalités applicables de ces tiers.",
+                "Haven prend votre vie privée très au sérieux. La collecte, le stockage, la communication et les utilisations permises de vos renseignements sont régis par la Politique de confidentialité de Haven, accessible au",
+              )}{" "}
+              <a href="https://www.findhaven.org/fr/privacy-policy" className="text-primary hover:underline">
+                https://www.findhaven.org/fr/privacy-policy
+              </a>
+              {". "}
+              {t(
+                "La Politique de confidentialité et ses modalités sont intégrées au présent Contrat par renvoi. En acceptant les modalités du présent Contrat, vous acceptez également les modalités de la Politique de confidentialité. Haven peut mettre à jour la Politique de confidentialité de la manière qui y est décrite : les modifications importantes vous sont communiquées et, lorsque la loi exige votre consentement à une modification, Haven vous le demandera. Vous comprenez que des tiers peuvent en tout temps recueillir, stocker, communiquer ou utiliser vos renseignements dans le cadre de votre utilisation de la Plateforme, et que cette collecte, ce stockage, cette communication ou cette utilisation par des tiers sont régis par les modalités applicables de ces tiers.",
               )}
             </p>
           </section>
