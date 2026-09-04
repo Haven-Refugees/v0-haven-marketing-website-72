@@ -15,17 +15,22 @@ const sections = [
 ]
 
 const retentionRows: [string, string][] = [
+  ['Call recordings (video and audio)', '7 days from the call, then deleted'],
   [
-    'Material used to make a decision about a person (for example, in a safety review)',
-    'Up to 24 months from the decision, then deleted (the law requires at least 12 months)',
+    'Call transcripts and text posted in the call chat',
+    '12 months from the call, then deleted',
+  ],
+  [
+    'Call material used to make a decision about a person',
+    '18 months from the decision, then deleted (12 months is the minimum period the law requires)',
   ],
   [
     'Messages sent on Haven',
-    'Kept as your conversation history while your account exists, so you and the person you are talking with can refer back to what you discussed',
+    'Kept as your chat history while your account exists; if your account is deleted, 12 months from your deletion request, then deleted',
   ],
   [
-    'Safety screening and review records (date, outcome, reviewer where applicable — no conversation content)',
-    'Up to 24 months from the decision',
+    'Safety review records (date, reviewer, outcome — no conversation content)',
+    'Up to 18 months from the decision',
   ],
   ['Eligibility documents', 'Deleted when a staff member confirms validity'],
   [
@@ -34,8 +39,12 @@ const retentionRows: [string, string][] = [
   ],
   ['Account and profile information', 'Life of your account, then deleted or de-identified'],
   [
-    'Marketing consent and opt-out records (what you agreed to or opted out of, and when)',
-    'Kept as long as necessary to demonstrate consent and to honour your opt-out requests',
+    'Record that a person was permanently removed for a safety violation (email address, phone number, device identifier and removal status)',
+    'For as long as needed to keep that person off the platform',
+  ],
+  [
+    'Identity verification result',
+    'For as long as your account exists. The document and photo stay with Stripe and are deleted when your account is deleted, unless a safety review is underway',
   ],
 ]
 
