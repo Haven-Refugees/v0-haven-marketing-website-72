@@ -14,7 +14,7 @@ export function UserAgreementContent() {
 
         <p className="text-muted-foreground mb-8">
           <strong>{t("Effective")}: </strong>
-          {t("August 24, 2026 (replaces the prior version)")}
+          {t("September 4, 2026 (replaces the prior version)")}
           <br />
           <span>{"Ce contrat est aussi offert en français. "}</span>
           <a href="/fr/user-agreement" className="text-primary hover:underline">
@@ -142,8 +142,8 @@ export function UserAgreementContent() {
             </h2>
             <p className="leading-relaxed">
               {t("Haven takes your privacy very seriously. The collection, storage, disclosure and permitted uses of your information are governed by Haven's Privacy Policy which can be found at")}{" "}
-              <a href="https://www.findhaven.org/en/privacy-policy" className="text-primary hover:underline">
-                https://www.findhaven.org/en/privacy-policy
+              <a href="https://findhaven.org/en/privacy-policy" className="text-primary hover:underline">
+                https://findhaven.org/en/privacy-policy
               </a>
               {". "}
               {t(
@@ -195,14 +195,43 @@ export function UserAgreementContent() {
             <p className="leading-relaxed">
               <strong>{t("Exceptions.")}</strong>{" "}
               {t(
-                "If you have a genuine difficulty with a program requirement, you may ask Haven for an exception by writing to info@findhaven.org and explaining your situation. Haven considers each request individually and may, at its discretion, allow a student to remain in the program with modified requirements. An exception is not guaranteed.",
+                "If you have a genuine difficulty with a program requirement — including the safety monitoring described in Section 8 — you may ask Haven for an exception by writing to info@findhaven.org and explaining your situation. Haven considers each request individually and may, at its discretion, allow a student to remain in the program with modified requirements. An exception is not guaranteed.",
               )}
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("8. Acceptable Conduct and Safety Measures")}
+              {t("8. Call and Message Safety Monitoring")}
+            </h2>
+            <p className="mb-4 leading-relaxed">
+              {t(
+                "Monitoring is a requirement of the call service. Every one-to-one video call arranged through Haven is recorded (video and audio) and automatically transcribed, and software analyses the transcript — together with any text messages posted in the call's chat — for signs of harm to participants: requests for money or financial information, sexual messages or solicitation, threats or intimidation, and pressure to move the conversation outside Haven. Software also screens messages sent through Haven's messaging for the same signs. Haven does not offer unmonitored calls.",
+              )}
+            </p>
+            <p className="mb-4 leading-relaxed">
+              <strong>{t("How it works.")}</strong>{" "}
+              {t(
+                "No one at Haven reads a transcript, call-chat message or message, or watches or listens to a recording, unless the software flags a possible problem or someone raises a safety concern. Flagged material is reviewed by trained staff, and no decision affecting you is ever made by software alone. The Privacy Policy describes what is collected, who can access it, and how long it is kept — including that call recordings (video and audio) are kept for 7 days, transcripts and call-chat text for 12 months, and material used to make a safety decision for 18 months from that decision.",
+              )}
+            </p>
+            <p className="mb-4 leading-relaxed">
+              <strong>{t("Improving detection.")}</strong>{" "}
+              {t(
+                "Haven uses what it learns from reviewing flagged material to improve its ability to detect these harms, and may test improvements against call material it already holds within the retention periods described in the Privacy Policy. This never adds to what Haven keeps or extends how long anything is kept.",
+              )}
+            </p>
+            <p className="leading-relaxed">
+              <strong>{t("Your acknowledgement.")}</strong>{" "}
+              {t(
+                "Before your first call, you will be shown a notice describing this monitoring and asked to confirm that you understand it. You cannot join calls without confirming. Choosing not to confirm does not affect your Account, your courses (subject to Section 7) or your messaging.",
+              )}
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
+              {t("9. Acceptable Conduct and Safety Measures")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -250,7 +279,7 @@ export function UserAgreementContent() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("9. Third Party Services and Third Party Materials")}
+              {t("10. Third Party Services and Third Party Materials")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -291,7 +320,7 @@ export function UserAgreementContent() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("10. Termination and Modification")}
+              {t("11. Termination and Modification")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -305,14 +334,20 @@ export function UserAgreementContent() {
             </p>
             <p className="leading-relaxed">
               {t(
-                "In the event that this Agreement is terminated pursuant to this Section 10, you must immediately cease to use the Platform and destroy all copies of content from the Platform under your control or in your possession. Notwithstanding the termination of this Agreement or anything herein to the contrary, Sections 4, 9, 10, 12, 13, 14, 15, 16 and 18 of this Agreement will survive the expiration or termination of this Agreement and will remain in full force and effect and be binding upon the parties.",
+                "In the event that this Agreement is terminated pursuant to this Section 11, you must immediately cease to use the Platform and destroy all copies of content from the Platform under your control or in your possession. Notwithstanding the termination of this Agreement or anything herein to the contrary, Sections 4, 10, 11, 13, 14, 15, 16, 17 and 19 of this Agreement will survive the expiration or termination of this Agreement and will remain in full force and effect and be binding upon the parties.",
+              )}
+            </p>
+            <p className="leading-relaxed">
+              <strong>{t("Account deletion.")}</strong>{" "}
+              {t(
+                "You may ask Haven to delete your account at any time, as described in the Privacy Policy; deletion requests are completed within 14 days. Some information is kept after deletion for the periods and reasons the Privacy Policy sets out — including material connected to a safety decision or an open safety review for its scheduled retention periods, and, where an Account was removed for a safety violation, the minimum information needed to prevent the person's return to the Platform.",
               )}
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("11. Updates, Maintenance and Technical Requirements")}
+              {t("12. Updates, Maintenance and Technical Requirements")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -328,7 +363,7 @@ export function UserAgreementContent() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("12. Disclaimer of Warranties")}
+              {t("13. Disclaimer of Warranties")}
             </h2>
             <p className="mb-4 leading-relaxed uppercase text-sm">
               {t(
@@ -344,7 +379,7 @@ export function UserAgreementContent() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("13. Limitation of Liability")}
+              {t("14. Limitation of Liability")}
             </h2>
             <p className="mb-4 leading-relaxed uppercase text-sm">
               {t(
@@ -364,7 +399,7 @@ export function UserAgreementContent() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("14. Exclusive Remedy")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("15. Exclusive Remedy")}</h2>
             <p className="leading-relaxed">
               {t(
                 "To the fullest extent permitted by applicable law, your exclusive remedy in connection with the use of the Platform shall be to terminate this Agreement and the license granted hereunder and to cease using the Platform.",
@@ -373,7 +408,7 @@ export function UserAgreementContent() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("15. Release and Discharge")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("16. Release and Discharge")}</h2>
             <p className="leading-relaxed">
               {t(
                 "You are solely responsible for the use of the Platform and your interactions with merchants and other sites. To the extent permitted under applicable law, you hereby release Haven from any and all claims, demands, proceedings or liability related to any Third Party Services or Third Party Materials including in respect of any offers, products or services.",
@@ -382,7 +417,7 @@ export function UserAgreementContent() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("16. Indemnification")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("17. Indemnification")}</h2>
             <p className="leading-relaxed">
               {t(
                 "You and anyone you represent who makes use of the Platform, will indemnify, defend and hold harmless Haven and any of its officers, employers, employees, contractors, staff, sponsors, manager, agents, parents, subsidiaries, affiliates representatives, and other partners from any direct, indirect, incidental, special, consequential or exemplary damages from and against any and all claims, demands, suits, proceedings, whatsoever, threatened or pending, directly or indirectly, arising from, connected with or relating to, your use of the Platform, any other matter relating to the Platform and/or any negligence, misconduct, or breach of this Agreement by you.",
@@ -392,7 +427,7 @@ export function UserAgreementContent() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("17. Compliance with Applicable Laws")}
+              {t("18. Compliance with Applicable Laws")}
             </h2>
             <p className="leading-relaxed">
               {t(
@@ -402,7 +437,7 @@ export function UserAgreementContent() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("18. Applicable Laws")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("19. Applicable Laws")}</h2>
             <p className="leading-relaxed">
               {t(
                 "This Agreement, the Platform and the use thereof are governed by the laws of the Province of Ontario and the federal laws of Canada applicable therein. Each of the parties hereto irrevocably attorns and submits to the exclusive jurisdiction of the courts of the Province of Ontario and further agrees to commence any litigation which may arise hereunder in the courts located in the judicial district of Toronto, Province of Ontario.",
@@ -411,17 +446,17 @@ export function UserAgreementContent() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("19. General")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("20. General")}</h2>
             <p className="leading-relaxed">
               {t(
-                'This Agreement is the entire Agreement between you and Haven and supersedes any other communications or advertising with respect to the Platform. Haven may amend or change the terms of this Agreement from time to time as described in Section 10. You may not assign this Agreement without Haven\'s consent, which consent may be withheld at Haven\'s sole discretion. Haven may assign this Agreement in its sole discretion without the need to obtain your consent. No consent or waiver in respect of your obligations hereunder will be effective unless in writing and signed by Haven. If any provisions of this Agreement are held to be invalid or unenforceable, the remaining provisions of this Agreement will remain in full force and effect without impairment or invalidation in any way. In this Agreement: (a) headings are for reference only; (b) "person" includes a legal entity; (c) words importing the singular number only include the plural, and vice versa; (d) words importing a gender include both genders; and (e) "including" or "includes" means including or includes (as applicable) without limitation or restriction.',
+                'This Agreement is the entire Agreement between you and Haven and supersedes any other communications or advertising with respect to the Platform. Haven may amend or change the terms of this Agreement from time to time as described in Section 11. You may not assign this Agreement without Haven\'s consent, which consent may be withheld at Haven\'s sole discretion. Haven may assign this Agreement in its sole discretion without the need to obtain your consent. No consent or waiver in respect of your obligations hereunder will be effective unless in writing and signed by Haven. If any provisions of this Agreement are held to be invalid or unenforceable, the remaining provisions of this Agreement will remain in full force and effect without impairment or invalidation in any way. In this Agreement: (a) headings are for reference only; (b) "person" includes a legal entity; (c) words importing the singular number only include the plural, and vice versa; (d) words importing a gender include both genders; and (e) "including" or "includes" means including or includes (as applicable) without limitation or restriction.',
               )}
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("20. Haven SMS Messaging Program")}
+              {t("21. Haven SMS Messaging Program")}
             </h2>
             <p className="mb-4 leading-relaxed">{t("Haven sends two kinds of text messages.")}</p>
             <p className="mb-4 leading-relaxed">
