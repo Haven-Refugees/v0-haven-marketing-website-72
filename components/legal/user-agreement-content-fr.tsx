@@ -14,7 +14,7 @@ export function UserAgreementContentFr() {
 
         <p className="text-muted-foreground mb-8">
           <strong>{t("En vigueur le")} : </strong>
-          {t("24 août 2026 (remplace la version antérieure)")}
+          {t("4 septembre 2026 (remplace la version antérieure)")}
           <br />
           <span>{"This Agreement is also available in English. "}</span>
           <a href="/en/user-agreement" className="text-primary hover:underline">
@@ -144,8 +144,8 @@ export function UserAgreementContentFr() {
               {t(
                 "Haven prend votre vie privée très au sérieux. La collecte, le stockage, la communication et les utilisations permises de vos renseignements sont régis par la Politique de confidentialité de Haven, accessible au",
               )}{" "}
-              <a href="https://www.findhaven.org/fr/privacy-policy" className="text-primary hover:underline">
-                https://www.findhaven.org/fr/privacy-policy
+              <a href="https://findhaven.org/fr/privacy-policy" className="text-primary hover:underline">
+                https://findhaven.org/fr/privacy-policy
               </a>
               {". "}
               {t(
@@ -197,14 +197,43 @@ export function UserAgreementContentFr() {
             <p className="leading-relaxed">
               <strong>{t("Exceptions.")}</strong>{" "}
               {t(
-                "Si vous éprouvez une difficulté réelle à l'égard d'une exigence du programme, vous pouvez demander une exception à Haven en écrivant à info@findhaven.org et en expliquant votre situation. Haven examine chaque demande individuellement et peut, à sa discrétion, permettre à un étudiant de demeurer dans le programme selon des exigences modifiées. L'octroi d'une exception n'est pas garanti.",
+                "Si vous éprouvez une difficulté réelle à l'égard d'une exigence du programme — y compris la surveillance à des fins de sécurité décrite à la section 8 —, vous pouvez demander une exception à Haven en écrivant à info@findhaven.org et en expliquant votre situation. Haven examine chaque demande individuellement et peut, à sa discrétion, permettre à un étudiant de demeurer dans le programme selon des exigences modifiées. L'octroi d'une exception n'est pas garanti.",
               )}
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("8. Conduite acceptable et mesures de sécurité")}
+              {t("8. Surveillance des appels et des messages à des fins de sécurité")}
+            </h2>
+            <p className="mb-4 leading-relaxed">
+              {t(
+                "La surveillance est une condition du service d'appels. Chaque appel vidéo individuel organisé par l'entremise de Haven est enregistré (vidéo et audio) et transcrit automatiquement, et un logiciel analyse la transcription — de même que tout message texte publié dans le clavardage de l'appel — afin d'y déceler des signes de préjudice envers les participants : demandes d'argent ou de renseignements financiers, messages ou sollicitations à caractère sexuel, menaces ou intimidation, et pressions visant à poursuivre la conversation à l'extérieur de Haven. Un logiciel filtre également les messages envoyés au moyen de la messagerie de Haven à la recherche des mêmes signes. Haven n'offre pas d'appels non surveillés.",
+              )}
+            </p>
+            <p className="mb-4 leading-relaxed">
+              <strong>{t("Comment cela fonctionne.")}</strong>{" "}
+              {t(
+                "Personne chez Haven ne lit une transcription, un message de clavardage d'appel ou un message, ni ne visionne ou n'écoute un enregistrement, à moins que le logiciel ne signale un problème possible ou que quelqu'un ne soulève une préoccupation en matière de sécurité. Le contenu signalé est examiné par des membres du personnel formés, et aucune décision vous concernant n'est jamais prise par un logiciel seul. La Politique de confidentialité décrit ce qui est recueilli, qui peut y accéder et combien de temps cela est conservé — y compris le fait que les enregistrements d'appels (vidéo et audio) sont conservés pendant 7 jours, les transcriptions et le texte du clavardage des appels pendant 12 mois, et le contenu ayant servi à prendre une décision en matière de sécurité pendant 18 mois à compter de cette décision.",
+              )}
+            </p>
+            <p className="mb-4 leading-relaxed">
+              <strong>{t("Amélioration de la détection.")}</strong>{" "}
+              {t(
+                "Haven utilise ce qu'elle apprend en examinant le contenu signalé afin d'améliorer sa capacité à déceler ces préjudices, et peut mettre les améliorations à l'essai à partir du contenu d'appels qu'elle détient déjà, à l'intérieur des périodes de conservation décrites dans la Politique de confidentialité. Cela n'ajoute jamais à ce que Haven conserve ni ne prolonge la durée de conservation de quoi que ce soit.",
+              )}
+            </p>
+            <p className="leading-relaxed">
+              <strong>{t("Votre reconnaissance.")}</strong>{" "}
+              {t(
+                "Avant votre premier appel, un avis décrivant cette surveillance vous sera présenté et il vous sera demandé de confirmer que vous le comprenez. Vous ne pouvez pas participer à des appels sans cette confirmation. Le fait de ne pas confirmer n'a aucune incidence sur votre Compte, vos cours (sous réserve de la section 7) ni votre messagerie.",
+              )}
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
+              {t("9. Conduite acceptable et mesures de sécurité")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -254,7 +283,7 @@ export function UserAgreementContentFr() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("9. Services et contenus de tiers")}
+              {t("10. Services et contenus de tiers")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -295,7 +324,7 @@ export function UserAgreementContentFr() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("10. Résiliation et modification")}
+              {t("11. Résiliation et modification")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -309,14 +338,20 @@ export function UserAgreementContentFr() {
             </p>
             <p className="leading-relaxed">
               {t(
-                "En cas de résiliation du présent Contrat conformément à la présente section 10, vous devez immédiatement cesser d'utiliser la Plateforme et détruire toutes les copies du contenu de la Plateforme sous votre contrôle ou en votre possession. Malgré la résiliation du présent Contrat ou toute disposition contraire aux présentes, les sections 4, 9, 10, 12, 13, 14, 15, 16 et 18 du présent Contrat survivront à l'expiration ou à la résiliation du Contrat, demeureront pleinement en vigueur et lieront les parties.",
+                "En cas de résiliation du présent Contrat conformément à la présente section 11, vous devez immédiatement cesser d'utiliser la Plateforme et détruire toutes les copies du contenu de la Plateforme sous votre contrôle ou en votre possession. Malgré la résiliation du présent Contrat ou toute disposition contraire aux présentes, les sections 4, 10, 11, 13, 14, 15, 16, 17 et 19 du présent Contrat survivront à l'expiration ou à la résiliation du Contrat, demeureront pleinement en vigueur et lieront les parties.",
+              )}
+            </p>
+            <p className="leading-relaxed">
+              <strong>{t("Suppression du compte.")}</strong>{" "}
+              {t(
+                "Vous pouvez demander à Haven de supprimer votre compte en tout temps, de la manière décrite dans la Politique de confidentialité; les demandes de suppression sont traitées dans un délai de 14 jours. Certains renseignements sont conservés après la suppression, pendant les périodes et pour les motifs énoncés dans la Politique de confidentialité — y compris le contenu lié à une décision en matière de sécurité ou à un examen de sécurité en cours, pendant les périodes de conservation prévues, et, lorsqu'un Compte a été retiré pour un manquement à la sécurité, les renseignements minimaux nécessaires pour empêcher le retour de la personne sur la Plateforme.",
               )}
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("11. Mises à jour, entretien et exigences techniques")}
+              {t("12. Mises à jour, entretien et exigences techniques")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -331,7 +366,7 @@ export function UserAgreementContentFr() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("12. Exclusion de garanties")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("13. Exclusion de garanties")}</h2>
             <p className="mb-4 leading-relaxed">
               {t(
                 "VOUS RECONNAISSEZ ET CONVENEZ QUE VOUS UTILISEZ LA PLATEFORME À VOS SEULS RISQUES. DANS TOUTE LA MESURE PERMISE PAR LA LOI APPLICABLE, LA PLATEFORME AINSI QUE TOUT LE CONTENU QUI Y FIGURE OU QUI EST ACCESSIBLE À PARTIR DE CELLE-CI VOUS SONT FOURNIS « TELS QUELS », AVEC TOUS LEURS DÉFAUTS ET VICES, ET SANS AUCUNE DÉCLARATION, GARANTIE, CONDITION OU ASSURANCE DE QUELQUE NATURE QUE CE SOIT, EXPRESSE OU IMPLICITE, LÉGALE OU DÉCOULANT DES USAGES, DU COMMERCE OU D'UNE HABITUDE DE FAIRE AFFAIRE OU D'EXÉCUTION, Y COMPRIS, SANS S'Y LIMITER, LES GARANTIES D'ADAPTATION À UN USAGE PARTICULIER, DE QUALITÉ MARCHANDE, D'ABSENCE DE CONTREFAÇON, DE RENDEMENT, DE RÉSULTATS, DE CONVENANCE, DE QUALITÉ, D'ACTUALITÉ, DE TITRE ET DE FAÇON, LESQUELLES SONT PAR LES PRÉSENTES EXCLUES PAR HAVEN, EN SON PROPRE NOM ET AU NOM DE SES SOCIÉTÉS AFFILIÉES, FILIALES, SUCCESSEURS ET AYANTS DROIT, DANS TOUTE LA MESURE PERMISE PAR LA LOI. SANS LIMITER LA PORTÉE GÉNÉRALE DE CE QUI PRÉCÈDE, HAVEN NE DÉCLARE NI NE GARANTIT QUE : (I) LA PLATEFORME SERA COMPATIBLE AVEC VOS APPAREILS ET L'ÉQUIPEMENT, LES LOGICIELS, LES APPLICATIONS OU LES SYSTÈMES CONNEXES; (II) LA PLATEFORME SERA ACCESSIBLE OU FONCTIONNERA SANS INTERRUPTION OU SANS ERREUR, OU QUE LES ERREURS SERONT CORRIGÉES; (III) LA PLATEFORME RÉPONDRA À VOS EXIGENCES; (IV) LES DONNÉES TRAITÉES PAR LA PLATEFORME SERONT EXACTES, VALIDES, COMPLÈTES OU ACTUELLES; (V) CERTAINS RÉSULTATS POURRONT ÊTRE OBTENUS PAR L'UTILISATION DE LA PLATEFORME; (VI) L'UTILISATION DE LA PLATEFORME SERA EXEMPTE D'ERREURS, DE VIRUS OU D'AUTRES ÉLÉMENTS DESTRUCTEURS OU PERTURBATEURS; OU (VII) L'UTILISATION DE LA PLATEFORME NE PORTERA PAS ATTEINTE AUX DROITS (Y COMPRIS LES DROITS DE PROPRIÉTÉ INTELLECTUELLE) D'UNE PERSONNE. HAVEN DÉCLINE TOUTE RESPONSABILITÉ À L'ÉGARD DE CES QUESTIONS DANS TOUTE LA MESURE PERMISE PAR LA LOI. AUCUN RENSEIGNEMENT NI CONSEIL, VERBAL OU ÉCRIT, DONNÉ PAR LE CONCÉDANT OU SON REPRÉSENTANT AUTORISÉ NE SAURAIT CRÉER UNE GARANTIE. VOUS ASSUMEZ TOUS LES COÛTS LIÉS À L'ENTRETIEN, À LA RÉPARATION OU À LA CORRECTION DE VOS APPAREILS AINSI QU'AU CONTRÔLE DE LA SÉCURITÉ ET DE LA CONFIDENTIALITÉ DE VOS DONNÉES. HAVEN NE SAURAIT EN AUCUN CAS ÊTRE TENUE RESPONSABLE DE QUELQUE DOMMAGE QUE CE SOIT, Y COMPRIS, SANS S'Y LIMITER, LES DOMMAGES DÉCOULANT DE LA PERTE DE DONNÉES, DE DOMMAGES À L'ÉQUIPEMENT, D'UNE DÉFAILLANCE MATÉRIELLE OU LOGICIELLE, OU DE TOUTE AUTRE PERTE PÉCUNIAIRE DÉCOULANT DE L'UTILISATION OU DE L'IMPOSSIBILITÉ D'UTILISER LA PLATEFORME, MÊME SI VOUS AVEZ ÉTÉ AVISÉ DE LA POSSIBILITÉ DE TELS DOMMAGES.",
@@ -346,7 +381,7 @@ export function UserAgreementContentFr() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("13. Limitation de responsabilité")}
+              {t("14. Limitation de responsabilité")}
             </h2>
             <p className="mb-4 leading-relaxed">
               {t(
@@ -366,7 +401,7 @@ export function UserAgreementContentFr() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("14. Recours exclusif")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("15. Recours exclusif")}</h2>
             <p className="leading-relaxed">
               {t(
                 "Dans toute la mesure permise par la loi applicable, votre recours exclusif relativement à l'utilisation de la Plateforme consiste à résilier le présent Contrat et la licence octroyée aux présentes, et à cesser d'utiliser la Plateforme.",
@@ -375,7 +410,7 @@ export function UserAgreementContentFr() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("15. Renonciation et quittance")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("16. Renonciation et quittance")}</h2>
             <p className="leading-relaxed">
               {t(
                 "Vous êtes seul responsable de votre utilisation de la Plateforme et de vos interactions avec les commerçants et les autres sites. Dans la mesure permise par la loi applicable, vous libérez par les présentes Haven de toute réclamation, demande, procédure ou responsabilité liée aux Services de tiers ou aux Contenus de tiers, y compris à l'égard de toute offre, de tout produit ou de tout service.",
@@ -384,7 +419,7 @@ export function UserAgreementContentFr() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("16. Indemnisation")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("17. Indemnisation")}</h2>
             <p className="leading-relaxed">
               {t(
                 "Vous, ainsi que toute personne que vous représentez et qui utilise la Plateforme, indemniserez, défendrez et tiendrez à couvert Haven ainsi que ses dirigeants, employeurs, employés, entrepreneurs, personnel, commanditaires, gestionnaires, mandataires, sociétés mères, filiales, sociétés affiliées, représentants et autres partenaires à l'égard de tout dommage direct, indirect, accessoire, spécial, consécutif ou exemplaire, ainsi que de toute réclamation, demande, poursuite ou procédure, menacée ou en cours, découlant directement ou indirectement de votre utilisation de la Plateforme, de toute autre question relative à la Plateforme ou de toute négligence, inconduite ou violation du présent Contrat de votre part, ou s'y rapportant.",
@@ -394,7 +429,7 @@ export function UserAgreementContentFr() {
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("17. Conformité aux lois applicables")}
+              {t("18. Conformité aux lois applicables")}
             </h2>
             <p className="leading-relaxed">
               {t(
@@ -404,7 +439,7 @@ export function UserAgreementContentFr() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("18. Droit applicable")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("19. Droit applicable")}</h2>
             <p className="leading-relaxed">
               {t(
                 "Le présent Contrat, la Plateforme et l'utilisation de celle-ci sont régis par les lois de la province de l'Ontario et les lois fédérales du Canada qui s'y appliquent. Chacune des parties aux présentes reconnaît et accepte irrévocablement la compétence exclusive des tribunaux de la province de l'Ontario et convient en outre d'intenter toute procédure pouvant découler des présentes devant les tribunaux du district judiciaire de Toronto, dans la province de l'Ontario.",
@@ -413,17 +448,17 @@ export function UserAgreementContentFr() {
           </section>
 
           <section className="mb-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("19. Dispositions générales")}</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-4">{t("20. Dispositions générales")}</h2>
             <p className="leading-relaxed">
               {t(
-                "Le présent Contrat constitue l'intégralité de l'entente entre vous et Haven et remplace toute autre communication ou publicité relative à la Plateforme. Haven peut modifier les modalités du présent Contrat de temps à autre, de la manière décrite à la section 10. Vous ne pouvez céder le présent Contrat sans le consentement de Haven, lequel peut être refusé à son entière discrétion. Haven peut céder le présent Contrat à son entière discrétion, sans avoir à obtenir votre consentement. Aucun consentement ni aucune renonciation à l'égard de vos obligations aux termes des présentes ne sera valide à moins d'être écrit et signé par Haven. Si une disposition du présent Contrat est jugée invalide ou inexécutoire, les autres dispositions demeureront pleinement en vigueur, sans atteinte ni invalidation. Dans le présent Contrat : a) les titres ne servent qu'à des fins de référence; b) « personne » comprend une personne morale; c) les mots au singulier comprennent le pluriel, et inversement; d) les mots d'un genre comprennent les deux genres; et e) « y compris » ou « comprend » signifie y compris ou comprend, sans limitation ni restriction.",
+                "Le présent Contrat constitue l'intégralité de l'entente entre vous et Haven et remplace toute autre communication ou publicité relative à la Plateforme. Haven peut modifier les modalités du présent Contrat de temps à autre, de la manière décrite à la section 11. Vous ne pouvez céder le présent Contrat sans le consentement de Haven, lequel peut être refusé à son entière discrétion. Haven peut céder le présent Contrat à son entière discrétion, sans avoir à obtenir votre consentement. Aucun consentement ni aucune renonciation à l'égard de vos obligations aux termes des présentes ne sera valide à moins d'être écrit et signé par Haven. Si une disposition du présent Contrat est jugée invalide ou inexécutoire, les autres dispositions demeureront pleinement en vigueur, sans atteinte ni invalidation. Dans le présent Contrat : a) les titres ne servent qu'à des fins de référence; b) « personne » comprend une personne morale; c) les mots au singulier comprennent le pluriel, et inversement; d) les mots d'un genre comprennent les deux genres; et e) « y compris » ou « comprend » signifie y compris ou comprend, sans limitation ni restriction.",
               )}
             </p>
           </section>
 
           <section className="mb-10">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-              {t("20. Programme de messages texte de Haven")}
+              {t("21. Programme de messages texte de Haven")}
             </h2>
             <p className="mb-4 leading-relaxed">{t("Haven envoie deux types de messages texte.")}</p>
             <p className="mb-4 leading-relaxed">
