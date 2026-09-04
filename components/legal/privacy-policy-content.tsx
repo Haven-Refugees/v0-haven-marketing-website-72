@@ -71,15 +71,18 @@ export function PrivacyPolicyContent() {
     <article className="prose prose-lg max-w-none [&>section]:scroll-mt-28">
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t("Privacy Policy")}</h1>
       <p className="text-muted-foreground mb-8">
-        <strong>{t("Effective")}: </strong>{t("August 24, 2026 (replaces the version effective February 2, 2023)")}
-        <br />
-        <span>{"Cette politique est aussi offerte en français. "}</span><a href="/fr/privacy-policy" className="text-primary hover:underline">{"Voir la version française"}</a>
+        <strong>{t("Effective")}: </strong>{t("September 4, 2026 (replaces the version effective August 24, 2026)")}
       </p>
 
-      <p className="mb-6">{t('Haven Refugees ("Haven", "we", "our", "us") is a registered Canadian charity and a not-for-profit corporation incorporated under the Canada Not-for-profit Corporations Act, headquartered in Toronto, Canada. Haven provides resettlement services in Canada to refugees by connecting them with local supporters who can help.')}</p>
+      <p className="mb-6">{t('Haven Refugees ("Haven", "we", "our", "us") is a registered Canadian charity and a not-for-profit corporation registered under the Canada Not-for-profit Corporations Act, and headquartered in Toronto, Canada. Haven provides resettlement services to refugees by connecting them with supporters who can help.')}</p>
       <p className="mb-6">{t('When you visit and/or use www.findhaven.org or Haven\'s mobile application (together, the "Website"), you will share some personal information with us and we will collect personal information about you. Haven\'s services are intended for adults aged 18 and over.')}</p>
-      <p className="mb-6">{t('We want to be transparent about the information we collect, how we use it, whom we share it with, and the controls we give you to your personal information. This Privacy Policy describes the way in which Haven collects, uses, and discloses personal information about you and how you can exercise your privacy rights.')}</p>
-      <p className="mb-8">{t('Where the law requires your consent to a collection, use or disclosure of your personal information, Haven asks for that consent separately, at or before the time of collection. We do not treat your continued use of the Website as consent.')}</p>
+      <p className="mb-6">{t('We want to be transparent about the information we collect, how we use it, whom we share it with, and the controls we give you over your personal information. This Privacy Policy describes the way in which Haven collects, uses, and discloses personal information about you and how you can exercise your privacy rights.')}</p>
+      <p className="mb-6">{t('Where the law requires your consent to a collection, use or disclosure of your personal information, Haven asks for that consent separately, at or before the time of collection. We do not treat your continued use of the Website as consent.')}</p>
+      <p className="mb-8">
+        {t("This Privacy Policy is available in French and English.")}{" "}
+        {"Cette politique est offerte en français et en anglais. "}
+        <a href="/fr/privacy-policy" className="text-primary hover:underline">{"Voir la version française"}</a>
+      </p>
       <div className="bg-muted/50 p-6 rounded-lg mb-8">
         <h2 className="text-xl font-semibold mb-4">{t("Table of Contents")}</h2>
         <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
