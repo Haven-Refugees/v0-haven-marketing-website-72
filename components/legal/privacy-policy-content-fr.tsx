@@ -3,7 +3,7 @@
 import { Fragment } from "react"
 
 type Block =
-  | { type: "p"; text: string; lead?: string }
+  | { type: "p"; text: string; lead?: string; italic?: boolean }
   | { type: "ul"; items: string[] }
   | { type: "h3"; text: string }
   | { type: "h4"; text: string }
@@ -14,7 +14,7 @@ const tableOfContents = [
   "Qu'entend-on par « renseignements personnels »?",
   "Quels renseignements personnels Haven recueille-t-elle?",
   "Comment Haven utilise-t-elle les renseignements personnels?",
-  "Filtrage des messages à des fins de sécurité",
+  "Surveillance des appels et des messages à des fins de sécurité",
   "Dans quelles circonstances Haven peut-elle communiquer des renseignements personnels?",
   "Comment Haven protège-t-elle les renseignements personnels?",
   "Combien de temps Haven conserve-t-elle les renseignements personnels?",
@@ -27,17 +27,22 @@ const tableOfContents = [
 ]
 
 const retentionRows: [string, string][] = [
+  ["Enregistrements d'appels (vidéo et audio)", "7 jours à compter de l'appel, puis suppression"],
   [
-    "Renseignements ayant servi à prendre une décision concernant une personne (par exemple, dans le cadre d'un examen de sécurité)",
-    "Jusqu'à 24 mois à compter de la décision, puis suppression (la loi exige au moins 12 mois)",
+    "Transcriptions d'appels et texte publié dans le clavardage de l'appel",
+    "12 mois à compter de l'appel, puis suppression",
+  ],
+  [
+    "Contenu d'appel ayant servi à prendre une décision concernant une personne",
+    "18 mois à compter de la décision, puis suppression (12 mois est la durée minimale exigée par la loi)",
   ],
   [
     "Messages envoyés sur Haven",
-    "Conservés à titre d'historique de conversation tant que votre compte existe, afin que vous et votre interlocuteur puissiez vous référer à ce dont vous avez discuté",
+    "Conservés à titre d'historique de conversation tant que votre compte existe; si votre compte est supprimé, 12 mois à compter de votre demande de suppression, puis suppression",
   ],
   [
-    "Dossiers de filtrage et d'examen de sécurité (date, résultat, examinateur le cas échéant — aucun contenu de conversation)",
-    "Jusqu'à 24 mois à compter de la décision",
+    "Dossiers d'examen de sécurité (date, examinateur, résultat — aucun contenu de conversation)",
+    "Jusqu'à 18 mois à compter de la décision",
   ],
   ["Documents d'admissibilité", "Supprimés lorsqu'un membre du personnel en confirme la validité"],
   [
@@ -49,8 +54,12 @@ const retentionRows: [string, string][] = [
     "Durée de vie de votre compte, puis suppression ou dépersonnalisation",
   ],
   [
-    "Dossiers de consentement et de retrait en matière de marketing (ce à quoi vous avez consenti ou renoncé, et à quel moment)",
-    "Conservés aussi longtemps que nécessaire pour démontrer le consentement et honorer vos demandes de retrait",
+    "Dossier indiquant qu'une personne a été retirée définitivement pour un manquement à la sécurité (adresse courriel, numéro de téléphone, identifiant d'appareil et statut du retrait)",
+    "Aussi longtemps que nécessaire pour empêcher cette personne d'accéder à la plateforme",
+  ],
+  [
+    "Résultat de la vérification d'identité",
+    "Aussi longtemps que votre compte existe. Le document et la photo demeurent chez Stripe et sont supprimés lorsque votre compte est supprimé, à moins qu'un examen de sécurité ne soit en cours",
   ],
 ]
 
@@ -97,13 +106,18 @@ const sections: { title: string; blocks: Block[] }[] = [
       },
       {
         type: "p",
-        lead: "Messages.",
-        text: "Lorsque vous envoyez des messages au moyen de la messagerie de Haven, ces messages sont traités par nos systèmes de sécurité. La section 4 explique pourquoi, qui peut les consulter et quelles limites strictes s'appliquent.",
+        lead: "Appels et messages.",
+        text: "Lorsque vous participez à un appel vidéo individuel organisé par l'entremise de Haven, nous recueillons un enregistrement vidéo et audio de l'appel, une transcription automatisée de celui-ci ainsi que tout message texte publié dans le clavardage de l'appel. Lorsque vous envoyez des messages au moyen de la messagerie de Haven, ces messages sont traités par nos systèmes de sécurité. La section 4 explique pourquoi nous recueillons ces renseignements, qui peut les consulter et quelles limites strictes s'appliquent.",
       },
       {
         type: "p",
         lead: "Documents d'admissibilité.",
         text: "Pour certains programmes, nous demandons à une partie des candidats des documents confirmant leur identité, leur statut d'immigration ou de personne réfugiée, ou leur admissibilité au programme. Un membre du personnel formé examine le document et consigne le résultat, puis le document est supprimé. Nous ne conservons aucune copie des documents d'admissibilité après leur examen et nous ne les utilisons jamais, non plus que les renseignements qu'ils contiennent, à des fins de publicité, de marketing ou à toute autre fin que la confirmation de l'admissibilité.",
+      },
+      {
+        type: "p",
+        lead: "Vérification d'identité.",
+        text: "Certains utilisateurs vérifient leur identité au moyen de Stripe Identity. Vous transmettez une pièce d'identité gouvernementale et une photo de vous-même directement à Stripe. Stripe effectue la vérification dans ses propres systèmes et nous indique uniquement si celle-ci a réussi. Nous ne recevons ni ne conservons jamais le document ni la photo.",
       },
       { type: "h3", text: "2.2 Renseignements que nous recueillons automatiquement à partir de votre appareil" },
       { type: "h4", text: "Quand" },
@@ -127,8 +141,7 @@ const sections: { title: string; blocks: Block[] }[] = [
         items: [
           "rendre votre profil accessible aux autres utilisateurs du Site Web;",
           "développer, exploiter, améliorer, offrir, entretenir et protéger le Site Web;",
-          "protéger la sécurité des participants aux programmes de Haven, notamment en filtrant les messages envoyés sur Haven afin d'y déceler des signes de préjudice, comme il est décrit à la section 4;",
-          "personnaliser votre expérience lorsque vous utilisez le Site Web, par exemple en offrant des éléments interactifs ou personnalisés et en vous proposant du contenu en fonction de vos intérêts;",
+          "protéger la sécurité des participants aux programmes de Haven, notamment en surveillant les appels vidéo individuels (et le texte publié dans leur clavardage) ainsi que les messages envoyés sur Haven afin d'y déceler des signes de préjudice, et en améliorant notre capacité à déceler ces préjudices, comme il est décrit à la section 4;",
           "suivre et analyser les tendances et l'utilisation du Site Web;",
           "améliorer le service à la clientèle, notamment pour répondre plus efficacement à vos demandes et à vos besoins de soutien;",
           "protéger la sécurité ou l'intégrité du Site Web, de nos activités ou de nos services, notamment pour prévenir la fraude et d'autres activités interdites ou illégales;",
@@ -145,36 +158,46 @@ const sections: { title: string; blocks: Block[] }[] = [
     ],
   },
   {
-    title: "4. Filtrage des messages à des fins de sécurité",
+    title: "4. Surveillance des appels et des messages à des fins de sécurité",
     blocks: [
       {
         type: "p",
-        text: "En bref : un système informatique vérifie les messages envoyés sur Haven afin d'y déceler des signes de préjudice. Personne chez Haven ne lit vos messages, à moins que le système ne signale un problème possible. C'est une personne, jamais le système seul, qui décide de la suite.",
+        italic: true,
+        text: "En bref : vos appels sont enregistrés, et un système informatique les convertit en texte et les vérifie — de même que le clavardage de l'appel et vos messages Haven — afin d'y déceler des signes de préjudice. L'enregistrement est supprimé après 7 jours; le texte est conservé pendant 12 mois. Personne chez Haven ne lit ni ne visionne quoi que ce soit, à moins que le système ne signale un problème possible ou que quelqu'un ne soulève une préoccupation en matière de sécurité. C'est une personne, jamais un logiciel seul, qui décide de la suite.",
       },
       {
         type: "p",
         lead: "Ce qui se passe.",
-        text: "Un logiciel filtre les messages envoyés au moyen de la messagerie de Haven afin d'y déceler des signes de préjudice envers les participants : demandes d'argent ou de renseignements financiers; messages ou sollicitations à caractère sexuel; menaces, intimidation ou harcèlement; et pressions visant à poursuivre la conversation à l'extérieur de Haven. Le logiciel analyse le contenu et la conduite de la conversation à la recherche de ces signes.",
+        text: "Chaque appel vidéo individuel organisé par l'entremise de Haven est enregistré (vidéo et audio) et transcrit automatiquement. Un logiciel analyse la transcription, ainsi que tout texte publié dans le clavardage de l'appel, afin d'y déceler des signes de préjudice envers les participants : demandes d'argent ou de renseignements financiers; messages ou sollicitations à caractère sexuel; menaces, intimidation ou harcèlement; et pressions visant à poursuivre la conversation à l'extérieur de Haven. Le même logiciel filtre les messages envoyés au moyen de la messagerie de Haven à la recherche des mêmes signes. Le logiciel analyse le contenu et la conduite de la conversation à la recherche de ces signes.",
       },
       {
         type: "p",
         lead: "Pourquoi.",
-        text: "Haven jumelle des personnes qui ont pu traverser des circonstances très difficiles avec des bénévoles issus du grand public. Le filtrage n'existe que pour une seule raison : la sécurité des participants.",
+        text: "Haven jumelle des personnes qui ont pu traverser des circonstances très difficiles avec des bénévoles issus du grand public. La surveillance n'existe que pour une seule raison : la sécurité des participants.",
+      },
+      {
+        type: "p",
+        text: "En raison de cette finalité, la surveillance est une condition du service d'appels — Haven n'offre pas d'appels non surveillés. Vous en êtes informé et il vous est demandé de confirmer que vous le comprenez, avant votre premier appel.",
       },
       {
         type: "p",
         lead: "Qui voit quoi.",
-        text: "Personne chez Haven ne lit vos messages, à moins que le logiciel ne signale un problème possible. Le cas échéant, les membres du personnel de Haven formés dont les fonctions l'exigent examinent le contenu signalé; l'accès est limité à ces personnes et chaque accès est consigné. Le contenu des messages n'est jamais utilisé par les autres systèmes de Haven, y compris les outils d'analyse ou de publicité, et n'est jamais communiqué à des fournisseurs de publicité.",
+        text: "Personne chez Haven ne lit votre transcription, le clavardage de votre appel ou vos messages, ni ne visionne ou n'écoute l'enregistrement de votre appel, à moins que le logiciel ne signale un problème possible ou que quelqu'un ne soulève une préoccupation en matière de sécurité. Dans l'un ou l'autre cas, seuls les membres du personnel de Haven formés dont les fonctions l'exigent examinent le contenu. Le contenu des conversations n'est jamais utilisé par les autres systèmes de Haven, y compris les outils d'analyse ou de publicité, et n'est jamais communiqué à des fournisseurs de publicité.",
       },
       {
         type: "p",
-        lead: "Comment fonctionne la technologie.",
-        text: "Le logiciel de filtrage analyse le contenu et la conduite des conversations afin d'évaluer le comportement à la recherche des signes énumérés ci-dessus. Il s'agit d'un élément obligatoire de l'utilisation de la messagerie de Haven — il ne peut être désactivé et il s'applique à tous les messages envoyés sur la Plateforme. Il sert uniquement à déceler les préjudices décrits dans la présente section.",
+        lead: "Amélioration de la détection.",
+        text: "Nous utilisons ce que nous apprenons en examinant les transcriptions et le contenu signalé afin d'améliorer notre capacité à déceler les préjudices énumérés ci-dessus. Ce que nous conservons de ce travail, ce sont des tendances générales de comportements préjudiciables — jamais vos paroles, votre image, votre voix, ni quoi que ce soit qui vous identifie. Pour vérifier que la détection améliorée fonctionne réellement, nous pouvons la mettre à l'essai à partir du contenu d'appels que nous détenons déjà, à l'intérieur des périodes de conservation prévues à la section 7. Ces essais se déroulent au sein de nos systèmes de sécurité : ils n'ajoutent jamais à ce que nous conservons, ne prolongent jamais la durée de conservation de quoi que ce soit, et leurs résultats ne sont consignés que sous forme de dénombrements et de taux.",
       },
       {
         type: "p",
         lead: "C'est toujours une personne qui décide.",
-        text: "Aucune décision vous concernant — avertissement, restriction, suspension, retrait — n'est jamais prise par un logiciel seul. Dans tous les cas, un membre du personnel de Haven examine le contenu et prend la décision.",
+        text: "Aucune décision vous concernant — avertissement, restriction, suspension, retrait — n'est jamais prise par un logiciel seul. Dans tous les cas, un membre du personnel de Haven examine le contenu, peut consulter l'enregistrement pendant que nous le détenons encore afin de confirmer l'exactitude de la transcription et de comprendre le contexte, et prend la décision.",
+      },
+      {
+        type: "p",
+        lead: "Aucune identification par le visage ou par la voix.",
+        text: "Nous ne créons ni empreintes vocales ni gabarits faciaux, nous n'utilisons pas votre voix ni votre visage pour vous identifier ou vous authentifier, et nous n'apparions pas la voix ou le visage d'une personne d'un appel à l'autre.",
       },
     ],
   },
@@ -188,7 +211,7 @@ const sections: { title: string; blocks: Block[] }[] = [
       {
         type: "ul",
         items: [
-          "à d'autres organisations et entreprises qui nous fournissent des services (par exemple, des fournisseurs d'hébergement, des fournisseurs d'analyse de sécurité, des fournisseurs de vérification d'identité et d'antécédents, et des fournisseurs d'entretien de site Web). Nous exigeons de ces fournisseurs de services, par entente écrite, qu'ils protègent les renseignements personnels au moyen de mesures de sécurité appropriées, qu'ils les utilisent uniquement pour nous fournir des services et qu'ils nous les retournent ou les suppriment à la fin de leur mandat;",
+          "à d'autres organisations et entreprises qui nous fournissent des services (par exemple, des fournisseurs d'hébergement, des fournisseurs d'enregistrement et de transcription d'appels, des fournisseurs d'analyse de sécurité, des fournisseurs de vérification d'identité et d'antécédents, et des fournisseurs d'entretien de site Web). Nous exigeons de ces fournisseurs de services, par entente écrite, qu'ils protègent les renseignements personnels au moyen de mesures de sécurité appropriées, qu'ils les utilisent uniquement pour nous fournir des services et qu'ils nous les retournent ou les suppriment à la fin de leur mandat;",
           "lorsque la loi l'exige, par exemple pour se conformer à une assignation ou à une autre procédure judiciaire, ou pour respecter des obligations de déclaration gouvernementales — y compris toute obligation de signaler un préjudice ou un risque de préjudice à l'égard d'un enfant aux autorités de protection de la jeunesse;",
           "lorsque nous croyons de bonne foi que la communication est nécessaire a) pour protéger nos droits, l'intégrité du Site Web, votre sécurité ou celle d'autrui, ou b) pour déceler, prévenir ou traiter la fraude, la contrefaçon de propriété intellectuelle, les violations de nos politiques, les violations de la loi ou d'autres utilisations abusives du Site Web. Lorsque la loi permet la communication afin de protéger une personne d'un risque grave et urgent, nous ne communiquons que ce qui est nécessaire et nous consignons la communication;",
           "à des fournisseurs de services, à des conseillers, à des partenaires transactionnels potentiels ou à d'autres tiers dans le cadre de l'examen, de la négociation ou de la réalisation d'une opération d'entreprise par laquelle nous serions acquis par une autre société ou fusionnés avec elle, ou par laquelle nous vendrions, liquiderions ou transférerions la totalité ou une partie de nos actifs. Nous prendrons des mesures pour que vos renseignements personnels demeurent protégés conformément à la loi applicable.",
@@ -223,6 +246,10 @@ const sections: { title: string; blocks: Block[] }[] = [
       { type: "table" },
       {
         type: "p",
+        text: "Les transcriptions et le texte du clavardage des appels sont conservés pendant 12 mois parce que les schémas de préjudice — en particulier le leurre et l'exploitation financière — se développent souvent graduellement sur plusieurs mois, et une enquête de sécurité peut avoir besoin d'examiner des conversations antérieures pour comprendre ce qui s'est produit. Les enregistrements sont conservés pendant 7 jours afin que, lorsque le système signale un appel récent, notre équipe de sécurité puisse vérifier l'exactitude de la transcription et constater le ton et le contexte de ce qui s'est produit. Pendant ces périodes, ce contenu n'est accessible qu'aux fins de l'examen de sécurité décrit à la section 4, et à aucun autre système ou fonctionnalité de Haven.",
+      },
+      {
+        type: "p",
         text: "Lorsque la loi nous oblige à conserver des renseignements plus longtemps — par exemple, des renseignements faisant l'objet d'une demande ou d'une procédure —, cette période plus longue s'applique.",
       },
       {
@@ -236,7 +263,7 @@ const sections: { title: string; blocks: Block[] }[] = [
     blocks: [
       {
         type: "p",
-        text: "Dans certains cas, les renseignements personnels que nous gérons peuvent être transférés, traités et stockés à l'extérieur du Canada, notamment aux États-Unis, et pourraient donc être accessibles aux autorités gouvernementales en vertu d'ordonnances et de lois applicables dans ces territoires étrangers. Nous nous appuyons sur des mécanismes prévus par la loi pour transférer légalement des données à l'étranger, tels que des contrats intégrant des obligations de protection et de partage des données, et nous évaluons la protection des renseignements personnels avant de les confier à un fournisseur de services situé à l'extérieur de la province ou du pays, comme la loi applicable l'exige.",
+        text: "Dans certains cas, les renseignements personnels que nous gérons peuvent être transférés, traités et stockés à l'extérieur du Canada, notamment aux États-Unis, et pourraient donc être accessibles aux autorités gouvernementales en vertu d'ordonnances et de lois applicables dans ces territoires étrangers. Cela comprend le contenu des appels : les enregistrements sont détenus par notre fournisseur d'enregistrement aux États-Unis pendant 7 jours, et les transcriptions ainsi que le texte du clavardage des appels sont analysés par un fournisseur de services aux États-Unis avant d'être stockés dans nos propres systèmes. Les documents de vérification d'identité sont transmis à Stripe et détenus par celle-ci aux États-Unis; nous ne les recevons ni ne les conservons. Nous nous appuyons sur des mécanismes prévus par la loi pour transférer légalement des données à l'étranger, tels que des contrats intégrant des obligations de protection et de partage des données, et nous évaluons la protection des renseignements personnels avant de les confier à un fournisseur de services situé à l'extérieur de la province ou du pays, comme la loi applicable l'exige.",
       },
       {
         type: "p",
@@ -250,12 +277,12 @@ const sections: { title: string; blocks: Block[] }[] = [
       {
         type: "p",
         lead: "Témoins.",
-        text: "Les témoins nécessaires au fonctionnement du Site Web sont toujours actifs. Les témoins non essentiels et les technologies similaires — y compris ceux servant à l'analyse et à la mesure de notre rayonnement — sont inactifs jusqu'à ce que vous les autorisiez, et vous pouvez modifier vos choix en tout temps dans nos paramètres de confidentialité. Lorsque ces technologies peuvent servir à vous identifier, à vous localiser ou à établir votre profil, elles sont désactivées par défaut et ne sont activées que si vous choisissez de les autoriser. Vous pouvez également configurer votre navigateur pour refuser les témoins, bien que le Site Web puisse alors ne pas fonctionner comme prévu.",
+        text: "Les témoins nécessaires au fonctionnement du Site Web sont toujours actifs. Les témoins non essentiels et les technologies similaires ne sont pas utilisés avant que vous ne les autorisiez, et vous pouvez modifier vos choix en tout temps dans nos paramètres de confidentialité. Lorsque ces technologies peuvent servir à vous identifier, à vous localiser ou à établir votre profil, elles sont désactivées par défaut. Vous pouvez également configurer votre navigateur pour refuser les témoins, bien que le Site Web puisse alors ne pas fonctionner comme prévu.",
       },
       {
         type: "p",
         lead: "Outils d'analyse et de publicité.",
-        text: "Haven utilise Google Analytics, Google Tag Manager, le pixel Meta et PostHog pour obtenir des renseignements sur les activités des visiteurs du Site Web, y compris les pages consultées et le temps passé sur le Site Web, ainsi que pour mesurer notre rayonnement. Si vous souhaitez désactiver Google Analytics, vous pouvez utiliser le module complémentaire de désactivation de Google à l'adresse https://tools.google.com/dlpage/gaoptout. Nous ne transmettons jamais à ces fournisseurs vos messages, vos documents d'admissibilité, vos renseignements relatifs à votre statut de personne réfugiée ou d'immigration, ni vos renseignements de sécurité, et nous ne fournissons pas vos coordonnées aux plateformes publicitaires pour créer des audiences publicitaires.",
+        text: "Haven utilise Google Analytics, Google Tag Manager, le pixel Meta et PostHog pour obtenir des renseignements sur les activités des visiteurs du Site Web, y compris les pages consultées et le temps passé sur le Site Web, ainsi que pour mesurer notre rayonnement. Si vous souhaitez désactiver Google Analytics, vous pouvez utiliser le module complémentaire de désactivation de Google à l'adresse https://tools.google.com/dlpage/gaoptout. Nous ne transmettons jamais à ces fournisseurs vos conversations, vos enregistrements, vos transcriptions, le texte du clavardage de vos appels, vos messages, vos documents d'admissibilité, vos renseignements relatifs à votre statut de personne réfugiée ou d'immigration, ni vos renseignements de sécurité, et nous ne fournissons pas vos coordonnées aux plateformes publicitaires pour créer des audiences publicitaires.",
       },
       {
         type: "p",
@@ -278,7 +305,20 @@ const sections: { title: string; blocks: Block[] }[] = [
       },
       {
         type: "p",
-        text: "Moyennant un préavis raisonnable et sous réserve de restrictions légales ou contractuelles, vous pouvez retirer votre consentement à l'utilisation et à la communication de vos renseignements personnels par Haven. Par exemple, vous pouvez retirer votre consentement à l'utilisation de vos renseignements personnels à des fins de marketing. Pour retirer votre consentement, veuillez utiliser les coordonnées indiquées à la section « Nous joindre » ci-dessous. Le retrait de votre consentement peut avoir une incidence sur les services que nous sommes en mesure de vous offrir.",
+        text: "Moyennant un préavis raisonnable et sous réserve de restrictions légales ou contractuelles, vous pouvez retirer votre consentement à l'utilisation et à la communication de vos renseignements personnels par Haven. Par exemple, vous pouvez retirer votre consentement à l'utilisation de vos renseignements personnels à des fins de marketing. Pour retirer votre consentement, veuillez utiliser les coordonnées indiquées à la section « Nous joindre » ci-dessous. Le retrait de votre consentement peut avoir une incidence sur les services que nous sommes en mesure de vous offrir : comme la surveillance à des fins de sécurité est une condition du service d'appels, le fait de ne pas l'accepter signifie que la fonctionnalité d'appel ne vous est pas offerte; votre compte, vos cours et votre messagerie ne sont pas touchés (les obligations de programme prévues au Contrat de licence d'utilisateur final peuvent s'appliquer).",
+      },
+      {
+        type: "p",
+        lead: "Suppression de votre compte.",
+        text: "Vous pouvez nous demander de supprimer votre compte en tout temps aux coordonnées indiquées ci-dessous, et nous effectuons la suppression dans un délai de 14 jours. La suppression de votre compte entraîne la suppression ou la dépersonnalisation des renseignements de votre compte et de votre profil.",
+      },
+      {
+        type: "p",
+        text: "Les messages, les enregistrements d'appels, les transcriptions et le texte du clavardage des appels provenant de conversations auxquelles vous avez participé sont conservés pendant les périodes prévues à la section 7, puis supprimés. Votre nom et vos coordonnées en sont retirés, de sorte qu'ils ne permettent plus de vous identifier. Nous les conservons parce qu'une conversation constitue également un dossier pour l'autre personne qui y a participé, et parce que des préoccupations concernant une conversation sont parfois soulevées des mois plus tard.",
+      },
+      {
+        type: "p",
+        text: "Si un examen de sécurité vous concernant est en cours lorsque vous demandez la suppression de votre compte, nous effectuons la suppression une fois l'examen terminé. Le contenu ayant servi à prendre une décision en matière de sécurité, ainsi que le dossier de cette décision, sont conservés pendant les périodes prévues à la section 7. Si un compte a été retiré définitivement pour un manquement à la sécurité, nous conservons l'adresse courriel, le numéro de téléphone et l'identifiant d'appareil utilisés, afin que la personne ne puisse pas s'inscrire de nouveau. Nous n'utilisons ces renseignements à aucune autre fin.",
       },
       {
         type: "p",
@@ -425,7 +465,7 @@ function renderBlock(block: Block, index: number) {
       )
     default:
       return (
-        <p key={index} className="mb-4">
+        <p key={index} className={`mb-4${block.italic ? " italic" : ""}`}>
           {block.lead ? <strong className="font-semibold text-foreground">{block.lead} </strong> : null}
           {renderWithLinks(block.text)}
         </p>
@@ -438,17 +478,12 @@ export function PrivacyPolicyContentFr() {
     <article className="prose prose-lg max-w-none [&>section]:scroll-mt-28">
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Politique de confidentialité</h1>
       <p className="text-muted-foreground mb-8">
-        <strong>En vigueur le : </strong>24 août 2026 (remplace la version en vigueur le 2 février 2023)
-        <br />
-        <span>{"This policy is also available in English. "}</span>
-        <a href="/en/privacy-policy" className="text-primary hover:underline">
-          See the English version
-        </a>
+        <strong>En vigueur le : </strong>4 septembre 2026 (remplace la version en vigueur le 24 août 2026)
       </p>
 
       <p className="mb-6">
         {
-          "Haven Refugees (« Haven », « nous », « notre ») est un organisme de bienfaisance enregistré au Canada et une personne morale sans but lucratif constituée en vertu de la Loi canadienne sur les organisations à but non lucratif, dont le siège social est situé à Toronto, au Canada. Haven offre des services d'établissement au Canada aux personnes réfugiées en les mettant en relation avec des accompagnateurs locaux qui peuvent les aider."
+          "Haven Refugees (« Haven », « nous », « notre ») est un organisme de bienfaisance enregistré au Canada et une personne morale sans but lucratif constituée en vertu de la Loi canadienne sur les organisations à but non lucratif, dont le siège social est situé à Toronto, au Canada. Haven offre des services d'établissement aux personnes réfugiées en les mettant en relation avec des accompagnateurs qui peuvent les aider."
         }
       </p>
       <p className="mb-6">
@@ -461,10 +496,16 @@ export function PrivacyPolicyContentFr() {
           "Nous souhaitons faire preuve de transparence quant aux renseignements que nous recueillons, à la façon dont nous les utilisons, aux personnes avec qui nous les partageons et aux moyens de contrôle que nous vous offrons à l'égard de vos renseignements personnels. La présente politique de confidentialité décrit la manière dont Haven recueille, utilise et communique vos renseignements personnels, ainsi que la façon dont vous pouvez exercer vos droits en matière de vie privée."
         }
       </p>
-      <p className="mb-8">
+      <p className="mb-6">
         {
           "Lorsque la loi exige votre consentement à la collecte, à l'utilisation ou à la communication de vos renseignements personnels, Haven vous demande ce consentement séparément, au moment de la collecte ou avant celle-ci. Nous ne considérons pas la poursuite de votre utilisation du Site Web comme un consentement."
         }
+      </p>
+      <p className="mb-8">
+        {"This Privacy Policy is available in French and English. "}
+        <a href="/en/privacy-policy" className="text-primary hover:underline">
+          See the English version
+        </a>
       </p>
 
       <div className="bg-muted/50 p-6 rounded-lg mb-8">
