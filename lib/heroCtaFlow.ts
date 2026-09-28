@@ -6,7 +6,7 @@ import posthog from "posthog-js"
 export type HeroUserType = "local" | "newcomer"
 
 /**
- * A/B experiment flag `hero-cta-flow` for where the landing-page hero CTAs send
+ * A/B experiment flag `hero-cta-browse-first-vs-direct-signup-no-verification` for where the landing-page hero CTAs send
  * users. Standard experiment variant keys:
  *  - "control" (browse-first, current behavior): app.findhaven.org/?usertype=...
  *    (browse profiles; signup popup appears on "Meet")
@@ -22,7 +22,7 @@ export function useHeroDirectSignup(): boolean {
 
   useEffect(() => {
     const apply = () => {
-      setDirectSignup(posthog.getFeatureFlag("hero-cta-flow") === "test")
+      setDirectSignup(posthog.getFeatureFlag("hero-cta-browse-first-vs-direct-signup-no-verification") === "test")
     }
     // Flags may not be ready on first render; re-apply when they load.
     const unsubscribe = posthog.onFeatureFlags(apply)
