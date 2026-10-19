@@ -28,6 +28,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/tbb/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_source=tbb&utm_medium=referral&utm_campaign=partner-referrals',
+        permanent: false,
+      },
+      {
         source: '/tbb',
         destination: 'https://www.findhaven.org/en/language-refugees?utm_source=tbb&utm_medium=referral&utm_campaign=partner-referrals',
         permanent: false,
