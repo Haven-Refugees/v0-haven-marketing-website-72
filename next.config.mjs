@@ -29,7 +29,7 @@ const nextConfig = {
     return [
       {
         source: '/tbb/refer',
-        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSfMB2bFLajqI6m0sECV_vHvVpQYN-UYqYlSarklb3EfNYCffQ/viewform',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSfMB2bFLajqI6m0sECV_vHvVpQYN-UYqYlSarklb3EfNYCffQ/viewform?usp=pp_url&entry.485285477=Talent+Beyond+Boundaries+(TBB)',
         permanent: false,
       },
       {
