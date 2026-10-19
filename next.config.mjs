@@ -28,6 +28,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/tbb',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_source=tbb&utm_medium=referral&utm_campaign=partner-referrals',
+        permanent: false,
+      },
+      {
         source: '/tbb/refer',
         destination: 'https://docs.google.com/forms/d/e/1FAIpQLSfMB2bFLajqI6m0sECV_vHvVpQYN-UYqYlSarklb3EfNYCffQ/viewform?usp=pp_url&entry.485285477=Talent+Beyond+Boundaries+(TBB)',
         permanent: false,

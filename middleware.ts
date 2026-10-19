@@ -49,6 +49,8 @@ export function middleware(request: NextRequest) {
   // /ingest/i/v0/e/ (no file extension), and a locale redirect would send
   // them to /en/ingest/... which never reaches PostHog.
   if (
+    pathname === "/tbb" ||
+    pathname === "/tbb/" ||
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/ingest") ||
