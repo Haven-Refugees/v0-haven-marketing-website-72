@@ -34,7 +34,7 @@ const nextConfig = {
       },
       {
         source: '/tbb',
-        destination: 'https://www.findhaven.org/en/language-refugees?utm_source=tbb&utm_medium=referral&utm_campaign=partner-referrals',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=tbb&utm_medium=website',
         permanent: false,
       },
       {
