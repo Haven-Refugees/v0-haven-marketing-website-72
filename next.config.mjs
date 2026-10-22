@@ -29,7 +29,7 @@ const nextConfig = {
     return [
       {
         source: '/tbb/signup',
-        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_source=tbb&utm_medium=referral&utm_campaign=partner-referrals',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=tbb&utm_medium=website',
         permanent: false,
       },
       {
