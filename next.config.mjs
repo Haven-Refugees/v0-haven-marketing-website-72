@@ -29,7 +29,7 @@ const nextConfig = {
     return [
       {
         source: '/tbb/signup',
-        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_source=tbb&utm_medium=referral&utm_campaign=partner-referrals',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=tbb&utm_medium=website',
         permanent: false,
       },
       {
@@ -40,6 +40,21 @@ const nextConfig = {
       {
         source: '/tbb/refer',
         destination: 'https://docs.google.com/forms/d/e/1FAIpQLSfMB2bFLajqI6m0sECV_vHvVpQYN-UYqYlSarklb3EfNYCffQ/viewform?usp=pp_url&entry.485285477=Talent+Beyond+Boundaries+(TBB)',
+        permanent: false,
+      },
+      {
+        source: '/lef/refer',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSf8ljuqY5PpPQJf5D6d2EnH5v5iHWIV3-1mrHSvzQZEZSRI1Q/viewform?usp=pp_url&entry.485285477=The+Learning+Enrichment+Foundation+(LEF)',
+        permanent: false,
+      },
+      {
+        source: '/lef',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=lef&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/lef/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=lef&utm_medium=website',
         permanent: false,
       },
       {
