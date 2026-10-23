@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "How does Haven keep its users safe?",
-    answer: "All Canadian supporters on Haven verify their identity before reaching out. Newcomers can verify too. We recommend it — and most do.",
+    answer: "Your safety matters to us. Haven has safeguards in place to help keep conversations respectful and safe, including ways to flag inappropriate behaviour or report concerns.",
   },
   {
     question: "Is Haven all online?",
