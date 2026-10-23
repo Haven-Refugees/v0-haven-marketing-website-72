@@ -10,7 +10,7 @@ const features = [
   },
   {
     title: "Choose who you help",
-    description: "Browse newcomer profiles by location or explore Haven's recommended matches. You decide who to connect with.",
+    description: "Browse newcomer profiles by location or explore Haven's recommended matches.",
   },
   {
     title: "No long-term commitment",
