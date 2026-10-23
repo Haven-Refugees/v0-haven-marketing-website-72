@@ -11,7 +11,7 @@ export function CanadiansHero() {
   const withTracking = useTrackingLink()
 
   return (
-    <section className="relative pt-24 md:pt-14 pb-10 bg-haven-coral/10">
+    <section className="relative pt-24 md:pt-14 pb-10 bg-card">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-6 md:gap-12 items-center">
           <div className="space-y-4 md:space-y-6 lg:pl-16 text-center lg:text-left order-2 lg:order-1">
