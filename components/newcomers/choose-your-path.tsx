@@ -56,7 +56,7 @@ export function ChooseYourPath() {
               {t("Just Conversations")}
             </h3>
             <p className="font-body text-muted-foreground text-sm leading-relaxed mb-4 md:mb-5">
-              {t("Meet Canadian volunteers. Practice your English or French, find local and professional connections, and get help rebuilding your life in Canada.")}
+              {t("Meet friendly Canadian volunteers and practice speaking English or French through everyday conversations. Build your confidence and improve your language skills at your own pace.")}
             </p>
             <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
               <span className="inline-block bg-haven-purple/20 text-haven-purple text-xs font-semibold px-3 py-1 rounded-[100px]">
