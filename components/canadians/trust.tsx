@@ -6,9 +6,9 @@ import Image from "next/image"
 
 const trustItems = [
   {
-    iconSrc: "/images/icons/id-verification.png",
-    title: "ID verification",
-    description: "We use ID verification so you always know who you're connecting with. You can see who's verified before you reach out.",
+    iconSrc: "/images/icons/profile-control.png",
+    title: "You're in Control",
+    description: "Keep your profile public so newcomers can reach out, or go invisible and only connect with people you contact first. Your choice.",
     link: null,
   },
   {
