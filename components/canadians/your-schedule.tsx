@@ -9,8 +9,8 @@ const features = [
     description: "Set the days and times that work for you. No fixed schedule required.",
   },
   {
-    title: "Choose how you help",
-    description: "Match with someone whose needs fit what you're comfortable offering.",
+    title: "Choose who you help",
+    description: "Browse newcomer profiles by location or explore Haven's recommended matches.",
   },
   {
     title: "No long-term commitment",
