@@ -73,6 +73,21 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/newbornlander/refer',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSfBkzGyiCgs8zWfux49uBWKdyxf-biAFO-Xg7YuBol5hqSDiw/viewform?usp=pp_url&entry.485285477=Newbornlander',
+        permanent: false,
+      },
+      {
+        source: '/newbornlander',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=newbornlander&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/newbornlander/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=newbornlander&utm_medium=website',
+        permanent: false,
+      },
+      {
         source: '/refer/reception-house',
         destination: 'https://docs.google.com/forms/d/e/1FAIpQLSe69UuHkO1SyCNrPfB3ooc2Gx5t2sTQJe5MxB9zYVF31AVLYw/viewform?usp=pp_url&entry.485285477=Reception+House+Waterloo+Region',
         permanent: false,
