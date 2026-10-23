@@ -19,7 +19,10 @@ export function NewcomersHero() {
               {t("Better English or French.")} {t("Build your life in Canada.")}
             </h1>
             <p className="font-body font-normal text-base sm:text-lg md:text-xl lg:text-[22px] text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
-              {t("Haven connects you with Canadian volunteers and teachers who are here to help.")}
+              {t("Practice English or French with friendly Canadian volunteers, build your confidence, and meet new people in Canada.")}
+            </p>
+            <p className="font-body font-normal text-base sm:text-lg md:text-xl lg:text-[22px] text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
+              {t("Join for free conversations, or take language classes with professional teachers if you want more structured learning.")}
             </p>
             <div className="pt-2 flex justify-center lg:justify-start">
               <Button size="lg" variant="secondary" asChild>

@@ -34,13 +34,13 @@ export function HavenConnect() {
               {t("Haven Connect")}
             </p>
             <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 md:mb-4 tracking-tight">
-              {t("Meet Canadians who can help you start life in Canada.")}
+              {t("Practice English or French with Canadians.")}
             </h2>
             <p className="font-body font-normal text-muted-foreground text-base md:text-lg leading-relaxed mb-3 md:mb-4">
-              {t("These Canadians are here to help you practice your English or French, give you tips about life in your city, or help you navigate the Canadian job market.")}
+              {t("Meet Canadian volunteers who are happy to help you practice speaking English or French through everyday conversations.")}
             </p>
             <p className="font-body font-normal text-muted-foreground text-base md:text-lg leading-relaxed mb-5 md:mb-6">
-              {t("It's free and starts with a 30 minute video call.")}
+              {t("It's completely free, and each video call is just 30 minutes.")}
             </p>
 
             <div className="flex justify-center lg:justify-start">
