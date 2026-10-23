@@ -27,11 +27,17 @@ export function WaysToHelp() {
   return (
     <section className="py-12 md:py-24 bg-card">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 max-w-5xl mx-auto items-start pt-2 md:pt-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="font-sans font-bold text-2xl sm:text-3xl md:text-4xl text-foreground tracking-tight">
+            {t("Helping Is Easier Than You Think")}
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-fr gap-5 md:gap-6 max-w-5xl mx-auto items-stretch pt-2 md:pt-4">
           {ways.map((way, index) => (
             <div
               key={index}
-              className="relative bg-card rounded-xl md:rounded-2xl p-5 md:p-6 border-2 border-border shadow-[var(--shadow-flat)]"
+              className="relative h-full bg-card rounded-xl md:rounded-2xl p-5 md:p-6 border-2 border-border shadow-[var(--shadow-flat)]"
             >
               <div>
                 <div className="w-9 h-9 md:w-10 md:h-10 bg-haven-coral/10 rounded-lg md:rounded-xl flex items-center justify-center mb-3 md:mb-4">
