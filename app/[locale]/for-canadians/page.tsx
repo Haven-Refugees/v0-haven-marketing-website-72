@@ -1,7 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CanadiansHero } from "@/components/canadians/hero"
-import { WaysToHelp } from "@/components/canadians/ways-to-help"
 import { HowItWorks } from "@/components/canadians/how-it-works"
 import { YourSchedule } from "@/components/canadians/your-schedule"
 import { CanadiansTestimonial } from "@/components/canadians/testimonial"
@@ -21,7 +20,6 @@ export default function ForCanadiansPage() {
       <Header />
       <main className="min-h-screen">
         <CanadiansHero />
-        <WaysToHelp />
         <HowItWorks />
         <YourSchedule />
         <CanadiansTestimonial />
