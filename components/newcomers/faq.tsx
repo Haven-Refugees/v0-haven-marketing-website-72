@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "Who will I be matched with?",
-    answer: "You will be matched with a Canadian volunteer who lives in Canada and wants to help newcomers. All volunteers on Haven are verified before they can connect with anyone. You can browse volunteer profiles and choose who you want to connect with — you're always in control of who you talk to.",
+    answer: "You will be matched with a Canadian volunteer who lives in Canada and wants to help newcomers. You can browse volunteer profiles and choose who you want to connect with — you're always in control of who you talk to.",
   },
   {
     question: "What if my English or French is very low?",
