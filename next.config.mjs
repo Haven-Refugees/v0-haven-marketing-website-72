@@ -43,6 +43,21 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/f4pf/refer',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLScFtrkojEEqYtEXt6cGGjbKxzLqa7aqknCS0054SFILjqXO-A/viewform?usp=pp_url&entry.485285477=Foundation+for+a+Path+Forward+(F4PF)',
+        permanent: false,
+      },
+      {
+        source: '/f4pf',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=f4pf&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/f4pf/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=f4pf&utm_medium=website',
+        permanent: false,
+      },
+      {
         source: '/lef/refer',
         destination: 'https://docs.google.com/forms/d/e/1FAIpQLSf8ljuqY5PpPQJf5D6d2EnH5v5iHWIV3-1mrHSvzQZEZSRI1Q/viewform?usp=pp_url&entry.485285477=The+Learning+Enrichment+Foundation+(LEF)',
         permanent: false,
