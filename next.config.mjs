@@ -43,6 +43,21 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/lepont/refer',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSehllWRLju39rj3kB32o-xqHALxE5PizF0pWc02KsGpQCXuUw/viewform?usp=pp_url&entry.485285477=Le+Pont',
+        permanent: false,
+      },
+      {
+        source: '/lepont',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=lepont&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/lepont/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=lepont&utm_medium=website',
+        permanent: false,
+      },
+      {
         source: '/f4pf/refer',
         destination: 'https://docs.google.com/forms/d/e/1FAIpQLScFtrkojEEqYtEXt6cGGjbKxzLqa7aqknCS0054SFILjqXO-A/viewform?usp=pp_url&entry.485285477=Foundation+for+a+Path+Forward+(F4PF)',
         permanent: false,
