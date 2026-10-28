@@ -53,6 +53,12 @@ export function middleware(request: NextRequest) {
     pathname === "/tbb/" ||
     pathname === "/tbb/signup" ||
     pathname === "/tbb/signup/" ||
+    pathname === "/lepont" ||
+    pathname === "/lepont/" ||
+    pathname === "/lepont/refer" ||
+    pathname === "/lepont/refer/" ||
+    pathname === "/lepont/signup" ||
+    pathname === "/lepont/signup/" ||
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/ingest") ||
