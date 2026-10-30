@@ -28,6 +28,21 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/irc',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=irc&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/irc/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=irc&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/irc/refer',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLScmRPuqjkuJRQediBKlex0Yc_TWb4hNLNWnrnIjKpLEt7X6Jw/viewform?usp=pp_url&entry.485285477=Islamic+Relief+Canada+%28IRC%29',
+        permanent: false,
+      },
+      {
         source: '/tbb/signup',
         destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=tbb&utm_medium=website',
         permanent: false,
