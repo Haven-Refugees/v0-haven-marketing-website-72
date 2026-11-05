@@ -10,13 +10,26 @@ export function VisionFounder() {
     <section className="bg-card">
       <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[520px]">
         {/* Image Column */}
-        <div className="relative h-[250px] sm:h-[300px] md:h-auto">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Victor%20with%20Refugee-rkCImXc8fjnSAFlbtwYPVDjZmZlwCT.jpg"
-            alt="Victor Lal helping a newcomer at a Haven outreach event"
-            fill
-            className="object-cover object-center"
-          />
+        <div className="flex p-8 sm:p-10 md:p-14 md:pr-6">
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-auto">
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-2/3 h-2/3 rounded-[2rem] md:rounded-[2.5rem] bg-haven-coral-soft rotate-[-3deg]"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute -top-5 -right-3 md:-top-7 md:-right-4 size-20 md:size-24 rounded-full bg-haven-purple"
+            />
+            <div className="relative h-full rounded-2xl md:rounded-3xl overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Victor%20with%20Refugee-rkCImXc8fjnSAFlbtwYPVDjZmZlwCT.jpg"
+                alt="Victor Lal helping a newcomer at a Haven outreach event"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
+          </div>
         </div>
         
         {/* Content Column */}

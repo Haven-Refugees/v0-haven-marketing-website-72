@@ -18,13 +18,21 @@ export function VisionProblem() {
               {t("Most newcomers arrive in Canada ready to work, learn, and contribute. But the programs designed to help them are slow, expensive, and hard to access. Language classes have long waitlists and large class sizes. Canadians who want to help don't have an easy way to get involved. The result is that newcomers take far longer than necessary to become independent — and that's bad for everyone.")}
             </p>
           </div>
-          <div className="md:flex-shrink-0">
+          <div className="relative md:flex-shrink-0 max-w-xs w-full mx-auto md:mx-0 md:w-[320px]">
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-3/4 h-3/4 rounded-[2rem] md:rounded-[2.5rem] bg-haven-coral-soft rotate-[-4deg]"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute -top-5 -right-3 md:-top-7 md:-right-4 size-20 md:size-24 rounded-full bg-haven-purple"
+            />
             <Image
               src="/images/nasina-from-afghanistan.jpg"
               alt="Nasina from Afghanistan"
               width={320}
               height={480}
-              className="rounded-lg object-cover w-full md:w-[320px] h-auto"
+              className="relative rounded-2xl md:rounded-3xl object-cover w-full h-auto"
             />
           </div>
         </div>
