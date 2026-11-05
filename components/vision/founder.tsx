@@ -14,11 +14,15 @@ export function VisionFounder() {
           <div className="relative w-full h-[250px] sm:h-[300px] md:h-auto">
             <div
               aria-hidden="true"
-              className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-2/3 h-2/3 rounded-[2rem] md:rounded-[2.5rem] bg-haven-coral-soft rotate-[-3deg]"
+              className="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-4 w-1/2 h-3/5 rounded-[55%_45%_60%_40%/40%_60%_40%_60%] bg-haven-coral-soft rotate-6"
             />
             <div
               aria-hidden="true"
-              className="absolute -top-5 -right-3 md:-top-7 md:-right-4 size-20 md:size-24 rounded-full bg-haven-purple"
+              className="absolute -top-6 -left-6 md:-top-8 md:-left-8 size-24 md:size-32 rounded-full bg-haven-purple/35"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-5 left-12 md:-bottom-6 md:left-16 size-10 md:size-12 rounded-full bg-haven-purple"
             />
             <div className="relative h-full rounded-2xl md:rounded-3xl overflow-hidden">
               <Image

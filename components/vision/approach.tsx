@@ -13,11 +13,15 @@ export function VisionApproach() {
           <div className="relative md:flex-shrink-0 max-w-xs w-full mx-auto md:mx-0 md:w-[320px]">
             <div
               aria-hidden="true"
-              className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-3/4 h-3/4 rounded-[2rem] md:rounded-[2.5rem] bg-haven-purple/30 rotate-[4deg]"
+              className="absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 w-[85%] h-1/2 rounded-[45%_55%_40%_60%/60%_40%_60%_40%] bg-haven-coral-soft -rotate-6"
             />
             <div
               aria-hidden="true"
-              className="absolute -top-5 -left-3 md:-top-7 md:-left-4 size-20 md:size-24 rounded-full bg-haven-coral"
+              className="absolute -top-4 right-10 md:-top-6 md:right-14 size-10 md:size-12 rounded-full bg-haven-coral"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute top-1/3 -right-5 md:-right-7 w-10 md:w-14 h-24 md:h-32 rounded-full bg-haven-coral/40 rotate-12"
             />
             <Image
               src="/images/shihab-from-bangladesh.jpg"
