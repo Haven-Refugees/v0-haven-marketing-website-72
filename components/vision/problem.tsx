@@ -21,15 +21,7 @@ export function VisionProblem() {
           <div className="relative md:flex-shrink-0 max-w-xs w-full mx-auto md:mx-0 md:w-[320px]">
             <div
               aria-hidden="true"
-              className="absolute -top-8 -right-8 md:-top-10 md:-right-12 w-4/5 h-3/5 rounded-[62%_38%_55%_45%/45%_55%_45%_55%] bg-haven-purple/35 rotate-12"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-10 size-16 md:size-20 rounded-full border-[6px] border-haven-purple"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute bottom-16 -right-4 md:-right-6 size-5 md:size-6 rounded-full bg-haven-purple"
+              className="absolute -top-8 -right-8 md:-top-10 md:-right-12 size-28 md:size-36 rounded-full bg-haven-purple"
             />
             <Image
               src="/images/nasina-from-afghanistan.jpg"
