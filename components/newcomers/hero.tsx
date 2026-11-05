@@ -11,7 +11,7 @@ export function NewcomersHero() {
   const withTracking = useTrackingLink()
 
   return (
-    <section className="relative pt-24 md:pt-14 pb-10 bg-haven-purple/10">
+    <section className="relative pt-24 md:pt-16 pb-14 md:pb-16 bg-haven-purple/10">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center">
           <div className="space-y-4 md:space-y-6 lg:pl-16 text-center lg:text-left order-2 lg:order-1">
@@ -31,14 +31,24 @@ export function NewcomersHero() {
           </div>
 
           <div className="relative mt-0 md:mt-8 w-full lg:w-[101%] ml-0 order-1 lg:order-2">
-            <div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)] max-w-sm mx-auto lg:max-w-none">
-              <Image
-                src="/images/newcomers-hero.png"
-                alt={t("A joyful woman celebrating with arms raised in a city street")}
-                fill
-                className="object-cover object-[center_60%] rounded-2xl"
-                priority
+            <div className="relative max-w-sm mx-auto lg:max-w-none">
+              <div
+                aria-hidden="true"
+                className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-3/4 h-3/4 rounded-[2rem] md:rounded-[2.5rem] bg-haven-coral-soft rotate-[-4deg]"
               />
+              <div
+                aria-hidden="true"
+                className="absolute -top-5 -right-3 md:-top-7 md:-right-4 size-20 md:size-28 rounded-full bg-haven-purple"
+              />
+              <div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)]">
+                <Image
+                  src="/images/newcomers-hero.png"
+                  alt={t("A joyful woman celebrating with arms raised in a city street")}
+                  fill
+                  className="object-cover object-[center_60%] rounded-2xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
