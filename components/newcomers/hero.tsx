@@ -6,6 +6,24 @@ import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
 import { useTrackingLink } from "@/components/tracking-provider"
 
+const CANADA_WORDS = /(Canada|Canadá|كندا|کانادا|Канаді)/
+
+function HighlightCanada({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(CANADA_WORDS).map((part, i) =>
+        CANADA_WORDS.test(part) ? (
+          <span key={i} className="text-haven-coral">
+            {part}
+          </span>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  )
+}
+
 export function NewcomersHero() {
   const { t } = useTranslation()
   const withTracking = useTrackingLink()
@@ -15,8 +33,9 @@ export function NewcomersHero() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center">
           <div className="space-y-4 md:space-y-6 lg:pl-16 text-center lg:text-left order-2 lg:order-1">
-            <h1 className="font-sans font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[38px] text-foreground leading-tight tracking-tight">
-              {t("Better English or French.")} {t("Build your life in Canada.")}
+            <h1 className="font-sans font-extrabold text-3xl sm:text-4xl lg:text-[44px] text-foreground leading-[1.15] tracking-tight text-balance">
+              {t("Better English or French.")}{" "}
+              <HighlightCanada text={t("Build your life in Canada.")} />
             </h1>
             <p className="font-body font-normal text-base sm:text-lg md:text-xl lg:text-[22px] text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
               {t("Haven connects you with Canadian volunteers and teachers who are here to help.")}
