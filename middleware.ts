@@ -74,6 +74,40 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
+  // UCC uses path-based language URLs. Keep legacy and locale-less links working.
+  if (pathname === "/ucc" || pathname === "/ucc/") {
+    const acceptLanguage = request.headers.get("accept-language") || ""
+    const prefersUkrainian = acceptLanguage
+      .split(",")
+      .map((lang) => lang.split(";")[0].trim().toLowerCase())
+      .some((lang) => lang === "uk" || lang.startsWith("uk-"))
+    const target = new URL(prefersUkrainian ? "/uk/ucc" : "/en/ucc", request.url)
+    target.search = request.nextUrl.search
+    target.searchParams.delete("lang")
+    return persistFbclid(request, NextResponse.redirect(target, 302))
+  }
+
+  if (pathname === "/en/ucc" || pathname === "/en/ucc/") {
+    const legacyLanguage = request.nextUrl.searchParams.get("lang")
+    if (legacyLanguage === "uk") {
+      const target = new URL("/uk/ucc", request.url)
+      target.search = request.nextUrl.search
+      target.searchParams.delete("lang")
+      return persistFbclid(request, NextResponse.redirect(target, 301))
+    }
+  }
+
+  // Ukrainian content currently exists only for UCC. Keep other /uk/ paths
+  // available by serving their English locale equivalent.
+  if (pathname === "/uk" || pathname === "/uk/" || pathname.startsWith("/uk/")) {
+    const ukPath = pathname.replace(/^\/uk(?=\/|$)/, "") || "/"
+    if (ukPath !== "/ucc" && ukPath !== "/ucc/") {
+      const target = new URL(`/en${ukPath}`, request.url)
+      target.search = request.nextUrl.search
+      return persistFbclid(request, NextResponse.redirect(target, 302))
+    }
+  }
+
   // Check if the pathname already starts with a locale
   const segments = pathname.split("/")
   const pathnameLocale = segments[1]

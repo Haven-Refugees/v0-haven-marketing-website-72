@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 import { Check, ChevronDown, Globe2, GraduationCap, Languages, MessageCircleQuestion, MessagesSquare, NotebookPen, Sprout } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -54,30 +55,29 @@ function LanguageToggle({ lang, onChange }: { lang: Lang; onChange: (l: Lang) =>
   )
 }
 
-export function UccPage() {
-  const [lang, setLang] = useState<Language>("en")
+export function UccPage({ locale }: { locale: Language }) {
+  const router = useRouter()
   const [openFaq, setOpenFaq] = useState(0)
+  const lang = locale
   const t = copy[lang]
 
   useEffect(() => {
-    const fromUrl = new URLSearchParams(window.location.search).get("lang")
-    if (fromUrl === "uk") setLang("uk")
-  }, [])
+    document.documentElement.lang = locale
+  }, [locale])
 
-  useEffect(() => {
-    document.documentElement.lang = lang
+  const switchLanguage = (nextLocale: Language) => {
     const url = new URL(window.location.href)
-    if (lang === "uk") url.searchParams.set("lang", "uk")
-    else url.searchParams.delete("lang")
-    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`)
-  }, [lang])
+    url.pathname = `/${nextLocale}/ucc`
+    url.searchParams.delete("lang")
+    router.push(`${url.pathname}${url.search}${url.hash}`, { scroll: false })
+  }
 
   const teacherSection = <section className="bg-[#F5F6F8]"><div className="mx-auto grid max-w-[1120px] items-center gap-12 px-5 py-20 md:grid-cols-2 md:gap-16 md:px-6 md:py-20"><div><h2 className="max-w-[18ch] text-balance font-sans text-[clamp(1.75rem,2.6vw,2.5rem)] font-bold leading-tight">{t.teachH2}</h2><p className="mt-4 max-w-[560px] text-lg leading-[1.6] text-[#3A4356]">{t.teachSub}</p><div className="mt-7 grid gap-4">{t.teachBenefits.map((benefit, i) => { const Icon = [Languages, MessageCircleQuestion, Sprout][i]; return <div key={benefit} className="flex items-center gap-3 text-base font-medium text-foreground"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#EEF3FF] text-haven-blue"><Icon className="h-5 w-5" aria-hidden="true" /></span><span>{benefit}</span></div> })}</div><div className="mt-8 hidden md:block"><ButtonLink>{t.ctaPrimary}</ButtonLink></div></div><div className="flex w-full max-w-full flex-col gap-3 justify-self-center md:w-fit">{[["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anna-kovalenko-xYgizAECSxSR9RAniR5f5qxzFCr4zA.png", "Anna", "Calgary"], ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/larysa-sokolovska-uLtkfGcpXZ0KbB8iBcdPYz9RMAuGJd.jpg", "Larysa", "Ottawa"], ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/olga-kasyan-ZwZarazdDvMssxXCxHHlb1jAdOvKky.png", "Olga", "Winnipeg"]].map(([image, name, location], i) => <article key={name} className={`flex max-w-[460px] items-center gap-[22px] rounded-2xl bg-white px-[26px] py-[22px] shadow-[0_4px_16px_rgba(14,21,37,0.06)] ${i === 1 ? "md:translate-x-7" : ""}`}><img src={image} alt={`${name}, Haven teacher`} className="h-[88px] w-[88px] shrink-0 rounded-full border-4 border-white object-cover object-[center_top] shadow-[0_4px_12px_rgba(14,21,37,0.14)] md:h-[120px] md:w-[120px]" /><div className="min-w-0"><div className="flex items-baseline gap-1"><h3 className="text-xl font-bold text-foreground">{name}</h3><span aria-hidden="true" className="text-sm text-[#3A4356]">·</span><span className="text-[15px] text-[#3A4356]">{location}</span></div><div className="mt-2 flex flex-wrap gap-2"><span className="rounded-full bg-haven-blue px-2.5 py-1 text-[13px] font-medium text-white">Ukrainian</span><span className="rounded-full bg-[#E5EEFF] px-2.5 py-1 text-[13px] font-medium text-haven-blue">English</span></div></div></article>)}</div><div className="col-span-full mt-0 flex justify-center md:hidden"><ButtonLink>{t.ctaPrimary}</ButtonLink></div></div></section>
 
   return <>
-    <Header campaignLanguage={lang} onCampaignLanguageChange={setLang} uccMobileHeader />
+    <Header campaignLanguage={lang} onCampaignLanguageChange={switchLanguage} uccMobileHeader />
     <main className="pt-[var(--header-h)] font-body [--ucc-language-band-height:88px] md:[--ucc-language-band-height:64px]">
-      <div className="box-border flex h-auto min-h-[var(--ucc-language-band-height)] flex-col items-center justify-center gap-1 border-b border-[#D9E3FF] bg-[#EEF3FF] py-2 px-5 md:h-[var(--ucc-language-band-height)] md:flex-row md:gap-4 md:py-0 md:px-6"><div className="flex items-center gap-2 text-[15px] font-semibold leading-none text-haven-blue"><Globe2 className="h-5 w-5 shrink-0" /><span>Choose your language · Оберіть мову</span></div><LanguageToggle lang={lang} onChange={setLang} /></div>
+      <div className="box-border flex h-auto min-h-[var(--ucc-language-band-height)] flex-col items-center justify-center gap-1 border-b border-[#D9E3FF] bg-[#EEF3FF] py-2 px-5 md:h-[var(--ucc-language-band-height)] md:flex-row md:gap-4 md:py-0 md:px-6"><div className="flex items-center gap-2 text-[15px] font-semibold leading-none text-haven-blue"><Globe2 className="h-5 w-5 shrink-0" /><span>Choose your language · Оберіть мову</span></div><LanguageToggle lang={lang} onChange={switchLanguage} /></div>
 
       <section className="mx-auto grid overflow-hidden min-h-0 max-w-7xl md:min-h-[calc(100svh-var(--header-h)-var(--ucc-language-band-height))] items-center gap-8 px-5 pb-16 pt-8 md:px-6 md:pb-16 md:pt-8 min-[640px]:grid-cols-[1.1fr_0.9fr] min-[640px]:gap-12"><div><h1 className="max-w-[16ch] text-balance font-sans text-[clamp(2.25rem,3.4vw,3.25rem)] font-bold leading-[1.1] text-foreground">{t.h1}</h1><p className="mt-5 max-w-[560px] text-xl leading-[1.6] text-[#3A4356]">{t.sub}</p><div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4"><ButtonLink>{t.ctaPrimary}</ButtonLink><ButtonLink href="#program" outline>{t.ctaSecondary}</ButtonLink></div></div><div className="relative max-w-sm mx-auto lg:max-w-none"><div aria-hidden="true" className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-3/4 h-3/4 rounded-[2rem] md:rounded-[2.5rem] bg-[#FF9B87] rotate-[-4deg]" /><div aria-hidden="true" className="absolute -top-5 -right-3 md:-top-7 md:-right-4 size-20 md:size-28 rounded-full bg-[#A578F5]" /><div className="relative rounded-2xl overflow-hidden aspect-[3.24/3] shadow-[var(--shadow-card)]"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/newcomers-hero-Xgm5Qvc8kUlcagz1Damak93Ik4GeQx.png" alt="A smiling newcomer celebrating outdoors with her arms raised" className="h-full w-full object-cover object-[center_60%] rounded-2xl" /></div></div></section>
 

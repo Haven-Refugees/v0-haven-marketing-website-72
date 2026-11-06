@@ -1,11 +1,5 @@
-import type { Metadata } from "next"
-import { UccPage } from "@/components/ucc-page"
-
-export const metadata: Metadata = {
-  title: "Ukrainian Language Program | Haven x UCC",
-  description: "Improve your English in Canada with Haven and the Ukrainian Canadian Congress.",
-}
+import { redirect } from "next/navigation"
 
 export default function UccRoute() {
-  return <UccPage />
+  redirect("/en/ucc")
 }
