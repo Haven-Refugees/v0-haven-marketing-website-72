@@ -27,7 +27,7 @@ function ButtonLink({ children, href = signup, outline = false }: { children: Re
     window.history.replaceState(null, "", href)
   }
 
-  return <a href={href} onClick={handleClick} className={`inline-flex h-12 w-full max-w-[360px] items-center justify-center gap-2 rounded-full px-7 text-lg font-semibold transition hover:-translate-y-0.5 sm:w-auto ${outline ? "border-2 border-haven-blue bg-transparent text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white hover:bg-haven-blue/90"}`}>{children}</a>
+  return <a href={href} onClick={handleClick} className={`inline-flex h-12 w-full max-w-[360px] items-center justify-center gap-2 rounded-full px-7 text-base font-semibold transition hover:-translate-y-0.5 sm:w-auto ${outline ? "border-2 border-haven-blue bg-transparent text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white hover:bg-haven-blue/90"}`}>{children}</a>
 }
 
 type Lang = "en" | "uk"
