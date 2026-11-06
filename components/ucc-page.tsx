@@ -30,6 +30,30 @@ function ButtonLink({ children, href = signup, outline = false }: { children: Re
   return <a href={href} onClick={handleClick} className={`inline-flex h-12 w-full max-w-[360px] items-center justify-center gap-2 rounded-full px-7 text-lg font-semibold transition hover:-translate-y-0.5 sm:w-auto ${outline ? "border-2 border-haven-blue bg-transparent text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white hover:bg-haven-blue/90"}`}>{children}</a>
 }
 
+type Lang = "en" | "uk"
+
+function LanguageToggle({ lang, onChange }: { lang: Lang; onChange: (l: Lang) => void }) {
+  const options: { value: Lang; label: string }[] = [
+    { value: "en", label: "English" },
+    { value: "uk", label: "Українська" },
+  ]
+
+  return (
+    <div role="group" aria-label="Language / Мова" className="inline-grid grid-cols-2 gap-1 rounded-full border-[1.5px] border-haven-blue bg-white p-1">
+      {options.map((option) => (
+        <button
+          key={option.value}
+          type="button"
+          onClick={() => onChange(option.value)}
+          className={`box-border h-11 w-full rounded-full px-5 text-base leading-none whitespace-nowrap ${lang === option.value ? "bg-haven-blue text-white" : "bg-transparent text-haven-blue"}`}
+        >
+          {option.label}
+        </button>
+      ))}
+    </div>
+  )
+}
+
 export function UccPage() {
   const [lang, setLang] = useState<Language>("en")
   const [openFaq, setOpenFaq] = useState(0)
@@ -51,7 +75,7 @@ export function UccPage() {
   return <>
     <Header campaignLanguage={lang} onCampaignLanguageChange={setLang} uccMobileHeader />
     <main className="pt-[var(--ucc-header-height)] font-body [--ucc-header-height:73px] [--ucc-language-band-height:88px] md:[--ucc-language-band-height:64px]">
-      <div className="box-border flex h-auto min-h-[var(--ucc-language-band-height)] flex-col items-center justify-center gap-1 border-b border-[#D9E3FF] bg-[#EEF3FF] py-2 px-5 md:h-[var(--ucc-language-band-height)] md:flex-row md:gap-4 md:py-0 md:px-6"><div className="flex items-center gap-2 text-[15px] font-semibold leading-none text-haven-blue"><Globe2 className="h-5 w-5 shrink-0" /><span>Choose your language · Оберіть мову</span></div><div className="box-border grid h-[52px] w-full max-w-[360px] shrink-0 md:w-[248px] grid-cols-2 gap-1 rounded-full border-[1.5px] border-haven-blue bg-white p-1"><button onClick={() => setLang("en")} className={`box-border h-11 w-full whitespace-nowrap rounded-full px-5 text-base leading-none ${lang === "en" ? "bg-haven-blue text-white" : "bg-transparent text-haven-blue"}`}>English</button><button onClick={() => setLang("uk")} className={`box-border h-11 w-full whitespace-nowrap rounded-full px-5 text-base leading-none ${lang === "uk" ? "bg-haven-blue text-white" : "bg-transparent text-haven-blue"}`}>Українська</button></div></div>
+      <div className="box-border flex h-auto min-h-[var(--ucc-language-band-height)] flex-col items-center justify-center gap-1 border-b border-[#D9E3FF] bg-[#EEF3FF] py-2 px-5 md:h-[var(--ucc-language-band-height)] md:flex-row md:gap-4 md:py-0 md:px-6"><div className="flex items-center gap-2 text-[15px] font-semibold leading-none text-haven-blue"><Globe2 className="h-5 w-5 shrink-0" /><span>Choose your language · Оберіть мову</span></div><LanguageToggle lang={lang} onChange={setLang} /></div>
 
       <section className="mx-auto grid min-h-0 max-w-7xl md:min-h-[calc(100svh-var(--ucc-header-height)-var(--ucc-language-band-height))] items-center gap-8 px-5 py-8 md:px-6 min-[640px]:grid-cols-[1.1fr_0.9fr] min-[640px]:gap-12"><div><h1 className="max-w-[16ch] text-balance font-sans text-[clamp(2.25rem,3.4vw,3.25rem)] font-bold leading-[1.1] text-foreground">{t.h1}</h1><p className="mt-5 max-w-[560px] text-xl leading-[1.6] text-[#3A4356]">{t.sub}</p><div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4"><ButtonLink>{t.ctaPrimary}</ButtonLink><ButtonLink href="#program" outline>{t.ctaSecondary}</ButtonLink></div></div><div className="overflow-hidden rounded-[2rem] bg-muted"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/newcomers-hero-Xgm5Qvc8kUlcagz1Damak93Ik4GeQx.png" alt="A smiling newcomer celebrating outdoors with her arms raised" className="h-[360px] min-h-0 w-full md:h-[max(360px,calc(100svh-var(--ucc-header-height)-var(--ucc-language-band-height)-4rem))] object-cover object-top" /></div></section>
 
