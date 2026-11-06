@@ -16,15 +16,15 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-export function Header() {
+export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHeader }: { campaignLanguage?: "en" | "uk"; onCampaignLanguageChange?: (locale: "en" | "uk") => void; uccMobileHeader?: boolean } = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
   const withTracking = useTrackingLink()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 h-[var(--header-h)] bg-white backdrop-blur-md border-b border-border">
+      <div className="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
         <Link href={link("/")} className="flex items-center">
           <img 
             src="/images/haven-logo.png" 
@@ -34,7 +34,7 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-4 lg:gap-6">
+        <div className={`${uccMobileHeader ? "hidden lg:flex" : "hidden md:flex"} items-center gap-4 lg:gap-6`}>
           <Link href={link("/for-newcomers")} className="font-body text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
             {t("For Newcomers")}
           </Link>
@@ -72,19 +72,19 @@ export function Header() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <LanguageSwitcher />
+          <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange} />
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" asChild className="lg:size-default">
-              <Link href={withTracking("https://app.findhaven.org/login")}>{t("Log In")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
             </Button>
             <Button variant="primary" size="sm" asChild className="lg:size-default">
-              <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
             </Button>
           </div>
         </div>
 
         <button
-          className="md:hidden p-2"
+          className={`${uccMobileHeader ? "lg:hidden" : "md:hidden"} p-2`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -93,7 +93,7 @@ export function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className={`${uccMobileHeader ? "lg:hidden" : "md:hidden"} bg-background border-t border-border`}>
           <nav className="flex flex-col p-6 gap-4">
             <Link 
               href={link("/for-newcomers")} 
@@ -137,14 +137,14 @@ export function Header() {
               )}
             </div>
             <div className="py-2">
-              <LanguageSwitcher />
+              <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange} />
             </div>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">
-                <Link href={withTracking("https://app.findhaven.org/login")}>{t("Log In")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
               </Button>
               <Button variant="primary" asChild className="w-full">
-                <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
               </Button>
             </div>
           </nav>

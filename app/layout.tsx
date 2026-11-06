@@ -7,17 +7,17 @@ import { GoogleTagManager, FacebookPixel, ConsentGatedScripts } from '@/componen
 import './globals.css'
 
 const inter = Inter({ 
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   variable: '--font-inter',
 });
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   variable: '--font-montserrat',
 });
 
 const robotoMono = Roboto_Mono({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   variable: '--font-roboto-mono',
 });
 

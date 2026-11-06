@@ -5,7 +5,7 @@ import { Globe } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
 import { usePathname } from "next/navigation"
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ campaignLanguage, onCampaignLanguageChange }: { campaignLanguage?: Locale; onCampaignLanguageChange?: (locale: Locale) => void } = {}) {
   const { locale } = useTranslation()
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
@@ -22,6 +22,10 @@ export function LanguageSwitcher() {
   }, [])
 
   function switchLocale(newLocale: Locale) {
+    if (onCampaignLanguageChange) {
+      onCampaignLanguageChange(newLocale)
+      return
+    }
     const pathWithoutLocale = pathname.replace(new RegExp(`^/${locale}(?=/|$)`), "") || "/"
     window.location.href = `/${newLocale}${pathWithoutLocale}`
   }
@@ -34,7 +38,7 @@ export function LanguageSwitcher() {
         aria-label="Language"
       >
         <Globe className="w-5 h-5" />
-        <span className="text-sm uppercase">{locale}</span>
+        <span className="text-sm uppercase">{campaignLanguage ?? locale}</span>
       </button>
 
       {open && (
