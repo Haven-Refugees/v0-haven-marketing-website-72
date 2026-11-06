@@ -16,7 +16,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-export function Header({ campaignLanguage, onCampaignLanguageChange }: { campaignLanguage?: "en" | "uk"; onCampaignLanguageChange?: (locale: "en" | "uk") => void } = {}) {
+export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHeader }: { campaignLanguage?: "en" | "uk"; onCampaignLanguageChange?: (locale: "en" | "uk") => void; uccMobileHeader?: boolean } = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
@@ -34,7 +34,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange }: { campaig
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-4 lg:gap-6">
+        <div className={`${uccMobileHeader ? "hidden lg:flex" : "hidden md:flex"} items-center gap-4 lg:gap-6`}>
           <Link href={link("/for-newcomers")} className="font-body text-muted-foreground hover:text-foreground transition-colors text-sm lg:text-base whitespace-nowrap">
             {t("For Newcomers")}
           </Link>
@@ -84,7 +84,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange }: { campaig
         </div>
 
         <button
-          className="md:hidden p-2"
+          className={`${uccMobileHeader ? "lg:hidden" : "md:hidden"} p-2`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -93,7 +93,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange }: { campaig
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className={`${uccMobileHeader ? "lg:hidden" : "md:hidden"} bg-background border-t border-border`}>
           <nav className="flex flex-col p-6 gap-4">
             <Link 
               href={link("/for-newcomers")} 
