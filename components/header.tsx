@@ -16,7 +16,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-export function Header({ campaignLanguage }: { campaignLanguage?: "en" | "uk" } = {}) {
+export function Header({ campaignLanguage, onCampaignLanguageChange }: { campaignLanguage?: "en" | "uk"; onCampaignLanguageChange?: (locale: "en" | "uk") => void } = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
@@ -72,7 +72,7 @@ export function Header({ campaignLanguage }: { campaignLanguage?: "en" | "uk" } 
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <LanguageSwitcher />
+          <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange} />
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" asChild className="lg:size-default">
               <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
@@ -137,7 +137,7 @@ export function Header({ campaignLanguage }: { campaignLanguage?: "en" | "uk" } 
               )}
             </div>
             <div className="py-2">
-              <LanguageSwitcher />
+              <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange} />
             </div>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">
