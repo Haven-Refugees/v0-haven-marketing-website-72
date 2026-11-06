@@ -54,8 +54,8 @@ function LanguageToggle({ lang, onChange }: { lang: Lang; onChange: (l: Lang) =>
   )
 }
 
-export function UccPage() {
-  const [lang, setLang] = useState<Language>("en")
+export function UccPage({ initialLanguage = "en" }: { initialLanguage?: Language }) {
+  const [lang, setLang] = useState<Language>(initialLanguage)
   const [openFaq, setOpenFaq] = useState(0)
   const t = copy[lang]
 
