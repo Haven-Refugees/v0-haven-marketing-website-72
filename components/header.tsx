@@ -16,7 +16,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-export function Header() {
+export function Header({ campaignLanguage }: { campaignLanguage?: "en" | "uk" } = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
@@ -75,10 +75,10 @@ export function Header() {
           <LanguageSwitcher />
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" asChild className="lg:size-default">
-              <Link href={withTracking("https://app.findhaven.org/login")}>{t("Log In")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
             </Button>
             <Button variant="primary" size="sm" asChild className="lg:size-default">
-              <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
+              <Link href={withTracking("https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
             </Button>
           </div>
         </div>
@@ -141,10 +141,10 @@ export function Header() {
             </div>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">
-                <Link href={withTracking("https://app.findhaven.org/login")}>{t("Log In")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
               </Button>
               <Button variant="primary" asChild className="w-full">
-                <Link href={withTracking("https://app.findhaven.org/signup")}>{t("Join Haven")}</Link>
+                <Link href={withTracking("https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
               </Button>
             </div>
           </nav>
