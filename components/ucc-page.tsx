@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Check, ChevronDown, Globe2, ArrowRight } from "lucide-react"
+import { Check, ChevronDown, Globe2 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -18,7 +18,16 @@ const copy = {
 } as const
 
 function ButtonLink({ children, href = signup, outline = false }: { children: React.ReactNode; href?: string; outline?: boolean }) {
-  return <a href={href} className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition hover:-translate-y-0.5 ${outline ? "border-2 border-haven-blue text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white hover:bg-haven-blue/90"}`}>{children}</a>
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!href.startsWith("#")) return
+    const target = document.getElementById(href.slice(1))
+    if (!target) return
+    event.preventDefault()
+    target.scrollIntoView({ behavior: "smooth", block: "start" })
+    window.history.replaceState(null, "", href)
+  }
+
+  return <a href={href} onClick={handleClick} className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition hover:-translate-y-0.5 ${outline ? "border-2 border-haven-blue text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white hover:bg-haven-blue/90"}`}>{children}</a>
 }
 
 export function UccPage() {
@@ -44,11 +53,11 @@ export function UccPage() {
     <main className="pt-[73px] font-body">
       <div className="border-b border-[#D9E3FF] bg-[#EEF3FF] px-4 py-5"><div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row"><div className="flex items-center gap-2 text-sm font-semibold text-haven-blue"><Globe2 className="h-5 w-5" />Choose your language · Оберіть мову</div><div className="flex w-full max-w-sm rounded-full border border-haven-blue bg-white p-1"><button onClick={() => setLang("en")} className={`min-h-12 flex-1 rounded-full text-sm font-semibold ${lang === "en" ? "bg-haven-blue text-white" : "text-haven-blue"}`}>English</button><button onClick={() => setLang("uk")} className={`min-h-12 flex-1 rounded-full text-sm font-semibold ${lang === "uk" ? "bg-haven-blue text-white" : "text-haven-blue"}`}>Українська</button></div></div></div>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24"><div><h1 className="max-w-xl text-balance font-sans text-4xl font-bold leading-tight text-foreground md:text-6xl">{t.h1}</h1><p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{t.sub}</p><div className="mt-8 flex flex-wrap gap-3"><ButtonLink>{t.ctaPrimary}<ArrowRight className="h-4 w-4" /></ButtonLink><ButtonLink href="#partnership" outline>{t.ctaSecondary}</ButtonLink></div></div><div className="overflow-hidden rounded-[2rem] bg-muted"><img src="/images/hlp-hero.jpg" alt="A Haven student learning in class" className="aspect-[4/3] h-full w-full object-cover" /></div></section>
+      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24"><div><h1 className="max-w-xl text-balance font-sans text-4xl font-bold leading-tight text-foreground md:text-6xl">{t.h1}</h1><p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{t.sub}</p><div className="mt-8 flex flex-wrap gap-3"><ButtonLink>{t.ctaPrimary}</ButtonLink><ButtonLink href="#program" outline>{t.ctaSecondary}</ButtonLink></div></div><div className="overflow-hidden rounded-[2rem] bg-muted"><img src="/images/hlp-hero.jpg" alt="A Haven student learning in class" className="aspect-[4/3] h-full w-full object-cover" /></div></section>
 
       <section id="partnership" className="border-t border-border bg-white"><div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-[220px_1fr] md:py-20"><div className="flex h-36 items-center justify-center rounded-2xl border border-[#D9E3FF] bg-white p-3"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/UCC-Logo-1-300x300-9SjVhAa6Rhs6V3ugWXd42j3yzpcHrt.jpg" alt="Ukrainian Canadian Congress logo" className="h-full w-full object-contain" /></div><div><p className="text-xs font-bold uppercase tracking-[0.18em] text-haven-blue">{t.partnerKicker}</p><p className="mt-4 max-w-3xl text-2xl font-semibold leading-snug text-foreground md:text-3xl">{t.partnerBody}</p></div></div></section>
 
-      <section className="bg-[#F5F5F5]"><div className="mx-auto max-w-7xl px-6 py-16 md:py-20"><p className="text-xs font-bold uppercase tracking-[0.18em] text-haven-blue">{t.progKicker}</p><h2 className="mt-3 max-w-2xl font-sans text-3xl font-bold md:text-5xl">{t.progH2}</h2><p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t.progSub}</p><div className="mt-10 grid gap-5 md:grid-cols-3">{t.cards.map((card, i) => <article key={card.title} className="rounded-2xl bg-white p-7"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-haven-blue text-lg font-bold text-white">{i + 1}</span><h3 className="mt-6 text-xl font-bold">{card.title}</h3><p className="mt-3 leading-relaxed text-muted-foreground">{card.body}</p></article>)}</div></div></section>
+      <section id="program" className="scroll-mt-24 bg-[#F5F5F5]"><div className="mx-auto max-w-7xl px-6 py-16 md:py-20"><p className="text-xs font-bold uppercase tracking-[0.18em] text-haven-blue">{t.progKicker}</p><h2 className="mt-3 max-w-2xl font-sans text-3xl font-bold md:text-5xl">{t.progH2}</h2><p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t.progSub}</p><div className="mt-10 grid gap-5 md:grid-cols-3">{t.cards.map((card, i) => <article key={card.title} className="rounded-2xl bg-white p-7"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-haven-blue text-lg font-bold text-white">{i + 1}</span><h3 className="mt-6 text-xl font-bold">{card.title}</h3><p className="mt-3 leading-relaxed text-muted-foreground">{card.body}</p></article>)}</div></div></section>
 
       <section className="bg-white"><div className="mx-auto flex max-w-4xl flex-col items-center px-6 py-16 text-center md:py-24"><img src="/images/olena.jpg" alt="Olena, a Haven student" className="h-24 w-24 rounded-full object-cover" /><blockquote className="mt-8 text-2xl font-semibold leading-snug md:text-4xl">“{t.quote}”</blockquote><p className="mt-5 text-muted-foreground">{t.quoteBy}</p></div></section>
 
