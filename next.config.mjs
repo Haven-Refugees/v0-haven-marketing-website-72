@@ -43,6 +43,21 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/rcc',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=rcc&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/rcc/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=rcc&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/rcc/refer',
+        destination: 'https://docs.google.com/forms/d/e/1FAIpQLSc-dJtNqP7DKw54bXmGY4K2rJnr3igCmEvqQeiJVBuFtBvOHw/viewform?usp=pp_url&entry.485285477=Rohingya+Centre+of+Canada+%28RCC%29',
+        permanent: false,
+      },
+      {
         source: '/tbb/signup',
         destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=tbb&utm_medium=website',
         permanent: false,
