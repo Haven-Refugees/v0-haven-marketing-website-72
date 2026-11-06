@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --header-h: 73px;
+
   /* Haven Brand Colors */
   --haven-blue: #2457F1;
   --haven-purple: #AF76FF;
