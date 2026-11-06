@@ -27,7 +27,7 @@ function ButtonLink({ children, href = signup, outline = false }: { children: Re
     window.history.replaceState(null, "", href)
   }
 
-  return <a href={href} onClick={handleClick} className={`inline-flex h-[60px] w-full max-w-[360px] min-w-[200px] items-center justify-center gap-2 rounded-full px-9 text-lg font-semibold transition hover:-translate-y-0.5 sm:w-auto ${outline ? "border-2 border-haven-blue bg-transparent text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white shadow-[0_6px_16px_rgba(31,85,224,0.25)] hover:bg-haven-blue/90"}`}>{children}</a>
+  return <a href={href} onClick={handleClick} className={`inline-flex h-12 w-full max-w-[360px] items-center justify-center gap-2 rounded-full px-7 text-lg font-semibold transition hover:-translate-y-0.5 sm:w-auto ${outline ? "border-2 border-haven-blue bg-transparent text-haven-blue hover:bg-haven-blue/5" : "bg-haven-blue text-white hover:bg-haven-blue/90"}`}>{children}</a>
 }
 
 export function UccPage() {
