@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "When are classes held?",
-    answer: "Classes run evenings and weekends so they fit around your work and family schedule. You will be able to choose a schedule that works for you when you apply.",
+    answer: "Anytime of the week, including evenings and weekends. We ask you for your availability, then find a time that works for you and our teachers.",
   },
   {
     question: "What will I learn?",
