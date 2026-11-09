@@ -42,7 +42,7 @@ function NewcomerHelpAnswer() {
         {t("Haven can help you in two big ways. First, we can help you improve your English or French. Second, we can help you meet Canadians who want to help you build your life in Canada.")}
       </p>
       <p className="mb-4">
-        {t("We have two programs. The Haven Language Program combines classes with professional teachers and conversation practice with Canadian volunteers. It's a great way to improve your English in Canada — we're adding French classes soon.")}{" "}
+        {t("The full program is currently offered for learning English, with French learning focused on conversation practice with Canadians. Haven is raising funds to offer the full program in French, so refugees can learn in both of Canada’s official languages.")}{" "}
         <Link href="/hlp" className="text-primary underline hover:text-primary/80">
           {t("Learn more here")}
         </Link>
