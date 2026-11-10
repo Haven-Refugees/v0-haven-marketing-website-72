@@ -59,6 +59,10 @@ export function middleware(request: NextRequest) {
     pathname === "/irc/signup/" ||
     pathname === "/irc/refer" ||
     pathname === "/irc/refer/" ||
+    pathname === "/ucc" ||
+    pathname === "/ucc/" ||
+    pathname === "/ucc/signup" ||
+    pathname === "/ucc/signup/" ||
     pathname === "/rcc" ||
     pathname === "/rcc/" ||
     pathname === "/rcc/signup" ||
