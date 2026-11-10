@@ -43,6 +43,16 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/ucc',
+        destination: 'https://www.findhaven.org/en/ucc?utm_campaign=referral&utm_source=ucc&utm_medium=website',
+        permanent: false,
+      },
+      {
+        source: '/ucc/signup',
+        destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=ucc&utm_medium=website',
+        permanent: false,
+      },
+      {
         source: '/rcc',
         destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=rcc&utm_medium=website',
         permanent: false,
