@@ -72,7 +72,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHe
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange} />
+          <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange ? (locale) => { if (locale === "en" || locale === "uk") onCampaignLanguageChange(locale) } : undefined} />
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" asChild className="lg:size-default">
               <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
@@ -137,7 +137,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHe
               )}
             </div>
             <div className="py-2">
-              <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange} />
+              <LanguageSwitcher campaignLanguage={campaignLanguage} onCampaignLanguageChange={onCampaignLanguageChange ? (locale) => { if (locale === "en" || locale === "uk") onCampaignLanguageChange(locale) } : undefined} />
             </div>
             <div className="flex flex-col gap-3 pt-4 border-t border-border">
               <Button variant="outline" asChild className="w-full">

@@ -38,7 +38,7 @@ export function LanguageSwitcher({ campaignLanguage, onCampaignLanguageChange }:
         aria-label="Language"
       >
         <Globe className="w-5 h-5" />
-        <span className="text-sm uppercase">{campaignLanguage ?? locale}</span>
+        <span className="text-sm uppercase">{campaignLanguage === "uk" ? "УКР" : campaignLanguage ?? locale}</span>
       </button>
 
       {open && (
