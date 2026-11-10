@@ -1,11 +1,18 @@
-import type { Metadata } from "next"
-import { UccPage } from "@/components/ucc-page"
+import { redirect } from "next/navigation"
 
-export const metadata: Metadata = {
-  title: "Ukrainian Language Program | Haven x UCC",
-  description: "Improve your English in Canada with Haven and the Ukrainian Canadian Congress.",
-}
+export default async function UccRoute({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const params = await searchParams
+  const language = params.lang === "uk" ? "uk" : "en"
+  const query = new URLSearchParams()
 
-export default function UccRoute() {
-  return <UccPage />
+  for (const [key, value] of Object.entries(params)) {
+    if (key === "lang" || value === undefined) continue
+    if (Array.isArray(value)) {
+      value.forEach((item) => query.append(key, item))
+    } else {
+      query.set(key, value)
+    }
+  }
+
+  redirect(`/${language}/ucc${query.toString() ? `?${query.toString()}` : ""}`)
 }
