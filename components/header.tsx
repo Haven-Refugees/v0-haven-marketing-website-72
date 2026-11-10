@@ -16,7 +16,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHeader }: { campaignLanguage?: "en" | "uk"; onCampaignLanguageChange?: (locale: "en" | "uk") => void; uccMobileHeader?: boolean } = {}) {
+export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHeader, joinHref }: { campaignLanguage?: "en" | "uk"; onCampaignLanguageChange?: (locale: "en" | "uk") => void; uccMobileHeader?: boolean; joinHref?: string } = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const { t, link } = useTranslation()
@@ -78,7 +78,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHe
               <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
             </Button>
             <Button variant="primary" size="sm" asChild className="lg:size-default">
-              <Link href={withTracking("https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
+              <Link href={withTracking(joinHref ?? "https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
             </Button>
           </div>
         </div>
@@ -144,7 +144,7 @@ export function Header({ campaignLanguage, onCampaignLanguageChange, uccMobileHe
                 <Link href={withTracking("https://app.findhaven.org/login")}>{campaignLanguage === "uk" ? "Увійти" : t("Log In")}</Link>
               </Button>
               <Button variant="primary" asChild className="w-full">
-                <Link href={withTracking("https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
+                <Link href={withTracking(joinHref ?? "https://app.findhaven.org/signup")}>{campaignLanguage === "uk" ? "Приєднатися" : t("Join Haven")}</Link>
               </Button>
             </div>
           </nav>
