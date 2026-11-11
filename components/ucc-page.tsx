@@ -58,7 +58,7 @@ export function UccPage({ initialLanguage = "en" }: { initialLanguage?: Language
   const [lang] = useState<Language>(initialLanguage)
   const [openFaq, setOpenFaq] = useState(0)
   const t = copy[lang]
-  const weekItems = (lang === "uk" ? [{ big: "2 години", label: "Заняття", mobileLabel: "занять", detail: "З вашим професійним викладачем онлайн." }, { big: "2 години", label: "Розмови", mobileLabel: "розмо��но�� пр��ктики", detail: "З \u0432\u0430\u0448\u0438\u043C\u0438 канадськими волонтерами." }, { big: "2 години", label: "Домашні завдання", mobileLabel: "домашніх завдань", detail: "Персоналізовані матеріали від вашого викладача." }] : t.week.map((item, i) => ({ ...item, mobileLabel: ["of classes", "of conversation practice", "of homework"][i] }))) as Array<{ big: string; label: string; mobileLabel: string; detail: string }>
+  const weekItems = (lang === "uk" ? [{ big: "2 години", label: "Заняття", mobileLabel: "занять", detail: "З вашим професійним викладачем онлайн." }, { big: "2 години", label: "Розмови", mobileLabel: "розмовної практики", detail: "З \u0432\u0430\u0448\u0438\u043C\u0438 канадськими волонтерами." }, { big: "2 години", label: "Домашні завдання", mobileLabel: "домашніх завдань", detail: "Персоналізовані матеріали від вашого викладача." }] : t.week.map((item, i) => ({ ...item, mobileLabel: ["of classes", "of conversation practice", "of homework"][i] }))) as Array<{ big: string; label: string; mobileLabel: string; detail: string }>
 
   const switchLanguage = (nextLanguage: Language) => {
     const url = new URL(window.location.href)
