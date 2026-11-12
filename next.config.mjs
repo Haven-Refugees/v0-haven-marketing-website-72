@@ -58,6 +58,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/clarc',
+        destination: 'https://www.findhaven.org/en/language-refugees?utm_campaign=referral&utm_source=clarc&utm_medium=website',
+        permanent: false,
+      },
+      {
         source: '/rcc/signup',
         destination: 'https://app.findhaven.org/signup?usertype=refugee&utm_campaign=referral&utm_source=rcc&utm_medium=website',
         permanent: false,

@@ -69,6 +69,8 @@ export function middleware(request: NextRequest) {
     pathname === "/rcc/signup/" ||
     pathname === "/rcc/refer" ||
     pathname === "/rcc/refer/" ||
+    pathname === "/clarc" ||
+    pathname === "/clarc/" ||
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/ingest") ||
