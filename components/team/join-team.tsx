@@ -54,7 +54,7 @@ export function JoinTeam() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-haven-blue hover:bg-haven-blue/90 text-white px-5 md:px-6 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-[100px] transition-colors whitespace-nowrap"
                 >
-                  {t("Apply on LinkedIn")}
+                  {t("Apply now")}
                 </Link>
                 <p className="font-body text-xs text-muted-foreground text-center max-w-[200px]">
                   {t("Ignore the \"No longer accepting applications\" flag on LinkedIn")}
