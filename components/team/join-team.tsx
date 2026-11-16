@@ -9,7 +9,7 @@ const openPositions = [
     department: "Haven Language Program",
     location: "Remote · Canada",
     type: "Part-time",
-    applyUrl: "https://www.linkedin.com/jobs/view/4410714563",
+    applyUrl: "https://www.linkedin.com/jobs/view/4490936497",
   },
 ]
 
